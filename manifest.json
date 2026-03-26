@@ -1,0 +1,16 @@
+{
+  "name": "DevRoadmaps",
+  "short_name": "DevRoadmaps",
+  "description": "Interactive developer roadmaps with 800+ learning topics and 3000+ free resources",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f0f23",
+  "theme_color": "#6c63ff",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

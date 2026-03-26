@@ -1,0 +1,19 @@
+[
+  {"id": "frontend", "title": "Frontend Developer", "icon": "🎨", "nodes": 52, "difficulty": "Beginner", "time": "6 months"},
+  {"id": "backend", "title": "Backend Developer", "icon": "⚙️", "nodes": 50, "difficulty": "Intermediate", "time": "6 months"},
+  {"id": "fullstack", "title": "Full Stack Developer", "icon": "🌐", "nodes": 50, "difficulty": "Intermediate", "time": "8 months"},
+  {"id": "ml-ai", "title": "ML / AI Engineer", "icon": "🤖", "nodes": 50, "difficulty": "Advanced", "time": "12 months"},
+  {"id": "devops", "title": "DevOps / Cloud Engineer", "icon": "☁️", "nodes": 50, "difficulty": "Intermediate", "time": "8 months"},
+  {"id": "mobile", "title": "Mobile Developer", "icon": "📱", "nodes": 50, "difficulty": "Intermediate", "time": "6 months"},
+  {"id": "cybersecurity", "title": "Cybersecurity", "icon": "🔐", "nodes": 50, "difficulty": "Advanced", "time": "10 months"},
+  {"id": "data-engineer", "title": "Data Engineer", "icon": "📊", "nodes": 50, "difficulty": "Advanced", "time": "8 months"},
+  {"id": "blockchain", "title": "Blockchain / Web3", "icon": "⛓️", "nodes": 50, "difficulty": "Advanced", "time": "10 months"},
+  {"id": "game-dev", "title": "Game Developer", "icon": "🎮", "nodes": 50, "difficulty": "Intermediate", "time": "12 months"},
+  {"id": "embedded-iot", "title": "Embedded / IoT", "icon": "🔌", "nodes": 50, "difficulty": "Advanced", "time": "10 months"},
+  {"id": "product-manager", "title": "Product Manager", "icon": "📋", "nodes": 50, "difficulty": "Intermediate", "time": "6 months"},
+  {"id": "devsecops", "title": "DevSecOps Engineer", "icon": "🛡️", "nodes": 42, "difficulty": "Advanced", "time": "10 months"},
+  {"id": "qa-engineer", "title": "QA / Test Engineer", "icon": "🧪", "nodes": 42, "difficulty": "Intermediate", "time": "6 months"},
+  {"id": "technical-writer", "title": "Technical Writer", "icon": "✍️", "nodes": 41, "difficulty": "Beginner", "time": "4 months"},
+  {"id": "low-code-no-code", "title": "Low-Code / No-Code", "icon": "🚀", "nodes": 32, "difficulty": "Beginner", "time": "3 months"},
+  {"id": "cloud-architect", "title": "Cloud Architect", "icon": "🏗️", "nodes": 36, "difficulty": "Advanced", "time": "12 months"}
+]
