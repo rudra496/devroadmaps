@@ -1,0 +1,407 @@
+{
+  "title": "Low-Code / No-Code Developer",
+  "description": "Master no-code and low-code platforms to build applications, automate workflows, and accelerate digital transformation without deep programming knowledge.",
+  "icon": "⚡",
+  "categories": ["fundamentals", "intermediate", "advanced", "tools"],
+  "nodes": [
+    {
+      "id": "lcnc-intro",
+      "title": "What is Low-Code / No-Code",
+      "icon": "💡",
+      "category": "fundamentals",
+      "description": "Understand the LCNC movement, its history, and how it democratizes software development.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Gartner: Low-Code Guide", "url": "https://www.gartner.com/en/information-technology/glossary/low-code-development-platforms", "type": "docs", "free": true },
+        { "title": "Forbes: No-Code Revolution", "url": "https://www.forbes.com/sites/forbestechcouncil/2021/03/10/the-no-code-revolution/", "type": "docs", "free": true },
+        { "title": "No-Code Explained (YouTube)", "url": "https://www.youtube.com/watch?v=7t2Ekas6OTE", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-types",
+      "title": "Types of Platforms",
+      "icon": "🗂️",
+      "category": "fundamentals",
+      "description": "Website builders, app builders, workflow automation, database platforms, and enterprise suites.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Types of No-Code Platforms", "url": "https://www.buildship.com/blog/types-of-no-code-platforms", "type": "docs", "free": true },
+        { "title": "Low-Code Platform Categories", "url": "https://www.mendix.com/low-code-vs-no-code/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-bubble",
+      "title": "Bubble",
+      "icon": "🫧",
+      "category": "intermediate",
+      "description": "Build full web applications visually with Bubble's powerful no-code platform.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Bubble Official Docs", "url": "https://manual.bubble.io/", "type": "docs", "free": true },
+        { "title": "Bubble Crash Course (YouTube)", "url": "https://www.youtube.com/watch?v=sGbP-_s8D2k", "type": "video", "free": true },
+        { "title": "Bubble Tutorials", "url": "https://bubble.io/tutorials", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-webflow",
+      "title": "Webflow",
+      "icon": "🌊",
+      "category": "intermediate",
+      "description": "Design and launch professional websites without code using Webflow's visual builder.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Webflow University", "url": "https://university.webflow.com/", "type": "course", "free": true },
+        { "title": "Webflow Official Docs", "url": "https://developers.webflow.com/", "type": "docs", "free": true },
+        { "title": "Webflow CMS Crash Course", "url": "https://www.youtube.com/watch?v=FiS25iqE3tc", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-zapier-make",
+      "title": "Zapier & Make",
+      "icon": "🔄",
+      "category": "intermediate",
+      "description": "Automate workflows by connecting apps and services with Zapier and Make (Integromat).",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Zapier Documentation", "url": "https://help.zapier.com/hc/en-us", "type": "docs", "free": true },
+        { "title": "Make Academy", "url": "https://www.make.com/en/academy", "type": "course", "free": true },
+        { "title": "Zapier vs Make Comparison", "url": "https://www.youtube.com/watch?v=j4C3rBJpmzE", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-airtable",
+      "title": "Airtable",
+      "icon": "📋",
+      "category": "intermediate",
+      "description": "Build relational databases with a spreadsheet-like interface and powerful automations.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Airtable Support Center", "url": "https://support.airtable.com/hc/en-us", "type": "docs", "free": true },
+        { "title": "Airtable Community", "url": "https://community.airtable.com/", "type": "docs", "free": true },
+        { "title": "Airtable Tutorial for Beginners", "url": "https://www.youtube.com/watch?v=V1kUYj5n5Uo", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-notion",
+      "title": "Notion",
+      "icon": "📝",
+      "category": "intermediate",
+      "description": "Use Notion as a database, project manager, and knowledge base with relational features.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Notion Help Center", "url": "https://www.notion.so/help/", "type": "docs", "free": true },
+        { "title": "Notion API Docs", "url": "https://developers.notion.com/", "type": "docs", "free": true },
+        { "title": "Notion for Beginners", "url": "https://www.youtube.com/watch?v=9acx3FqcYaE", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-shopify",
+      "title": "Shopify",
+      "icon": "🛍️",
+      "category": "intermediate",
+      "description": "Build and run e-commerce stores with Shopify's no-code platform and Liquid templating.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Shopify Learn", "url": "https://www.shopify.com/learn", "type": "course", "free": true },
+        { "title": "Shopify Dev Docs", "url": "https://shopify.dev/", "type": "docs", "free": true },
+        { "title": "Shopify Theme Dev", "url": "https://shopify.dev/docs/themes", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-wordpress",
+      "title": "WordPress",
+      "icon": "📝",
+      "category": "intermediate",
+      "description": "Build websites with WordPress, Gutenberg, page builders (Elementor), and plugins.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "WordPress Codex", "url": "https://codex.wordpress.org/", "type": "docs", "free": true },
+        { "title": "WordPress.tv Tutorials", "url": "https://wordpress.tv/", "type": "video", "free": true },
+        { "title": "WPBeginner Tutorials", "url": "https://www.wpbeginner.com/wp-tutorials/", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-retool",
+      "title": "Retool",
+      "icon": "🔧",
+      "category": "intermediate",
+      "description": "Build internal tools and admin panels quickly with Retool's drag-and-drop interface.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Retool Documentation", "url": "https://docs.retool.com/", "type": "docs", "free": true },
+        { "title": "Retool Tutorials", "url": "https://docs.retool.com/tutorials", "type": "tutorial", "free": true },
+        { "title": "Retool Quickstart (YouTube)", "url": "https://www.youtube.com/watch?v=JHxtxMPx05Y", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-appsheet",
+      "title": "AppSheet",
+      "icon": "📱",
+      "category": "intermediate",
+      "description": "Build mobile and web apps from data sources using Google's AppSheet platform.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AppSheet Help Center", "url": "https://support.google.com/appsheet/answer/9803404", "type": "docs", "free": true },
+        { "title": "AppSheet Academy", "url": "https://support.google.com/appsheet/topic/10158220", "type": "course", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-glide",
+      "title": "Glide",
+      "icon": "✨",
+      "category": "intermediate",
+      "description": "Create apps from spreadsheets with Glide's simple no-code platform.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Glide Docs", "url": "https://docs.glideapp.com/", "type": "docs", "free": true },
+        { "title": "Glide University", "url": "https://www.glideapps.com/university", "type": "course", "free": true },
+        { "title": "Build an App in 10 Min", "url": "https://www.youtube.com/watch?v=_gBmFzKGvq4", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-flutterflow",
+      "title": "FlutterFlow",
+      "icon": "🦋",
+      "category": "intermediate",
+      "description": "Build Flutter apps visually with FlutterFlow — export to native code.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "FlutterFlow Docs", "url": "https://docs.flutterflow.io/", "type": "docs", "free": true },
+        { "title": "FlutterFlow Tutorials", "url": "https://docs.flutterflow.io/getting-started/tutorials", "type": "tutorial", "free": true },
+        { "title": "FlutterFlow Crash Course", "url": "https://www.youtube.com/watch?v=V3JRQpLn1nQ", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-outsystems",
+      "title": "OutSystems",
+      "icon": "🏢",
+      "category": "advanced",
+      "description": "Enterprise-grade low-code platform for building scalable web and mobile apps.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "OutSystems Documentation", "url": "https://success.outsystems.com/Documentation/", "type": "docs", "free": true },
+        { "title": "OutSystems Academy", "url": "https://www.outsystems.com/training/", "type": "course", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-power-platform",
+      "title": "Microsoft Power Platform",
+      "icon": "⚡",
+      "category": "intermediate",
+      "description": "Power Apps, Power Automate, Power BI, and Power Virtual Agents for business apps.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Power Platform Learn", "url": "https://learn.microsoft.com/en-us/training/powerplatform/", "type": "course", "free": true },
+        { "title": "Power Apps Docs", "url": "https://learn.microsoft.com/en-us/power-apps/", "type": "docs", "free": true },
+        { "title": "Power Platform in 100 Seconds", "url": "https://www.youtube.com/watch?v=3_LF6K8Vg_I", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-automation",
+      "title": "Automation Concepts",
+      "icon": "⚙️",
+      "category": "intermediate",
+      "description": "Triggers, conditions, loops, variables, and error handling in automation workflows.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Automation Best Practices", "url": "https://zapier.com/blog/automation-guide/", "type": "docs", "free": true },
+        { "title": "Make Scenarios Guide", "url": "https://www.make.com/en/help/getting-started/what-are-scenarios", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-integrations",
+      "title": "Integrations & APIs",
+      "icon": "🔗",
+      "category": "intermediate",
+      "description": "REST APIs, webhooks, OAuth, and connecting no-code tools with external services.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Understanding APIs for No-Code", "url": "https://zapier.com/blog/api/", "type": "docs", "free": true },
+        { "title": "Webhooks Explained", "url": "https://sendgrid.com/blog/whats-webhook/", "type": "docs", "free": true },
+        { "title": "REST API Concepts (YouTube)", "url": "https://www.youtube.com/watch?v=lsMQRaeKNDk", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-database-design",
+      "title": "Database Design for LCNC",
+      "icon": "🗃️",
+      "category": "intermediate",
+      "description": "Data modeling, relationships, normalization, and database design in no-code platforms.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Database Design Basics", "url": "https://www.youtube.com/watch?v=ztHopE5Wnpc", "type": "video", "free": true },
+        { "title": "Airtable Database Design", "url": "https://support.airtable.com/hc/en-us/articles/202535652-Guide-to-Airtable-relationships", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-ui-ux",
+      "title": "UI/UX Basics",
+      "icon": "🎨",
+      "category": "fundamentals",
+      "description": "Design thinking, wireframing, user flows, and UX principles for no-code builders.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Google UX Design Course", "url": "https://www.coursera.org/professional-certificates/google-ux-design", "type": "course", "free": true },
+        { "title": "Nielsen Norman Group Articles", "url": "https://www.nngroup.com/articles/", "type": "docs", "free": true },
+        { "title": "UX Design in 5 Minutes", "url": "https://www.youtube.com/watch?v=wHDsIGhbrQ8", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-logic-workflows",
+      "title": "Logic & Workflows",
+      "icon": "🔁",
+      "category": "intermediate",
+      "description": "Conditional logic, branching, loops, scheduling, and workflow patterns.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Workflow Patterns", "url": "https://www.workflowpatterns.com/", "type": "docs", "free": true },
+        { "title": "Bubble Conditional Logic", "url": "https://manual.bubble.io/core-resources/conditional-logic", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-api-connections",
+      "title": "API Connections",
+      "icon": "🌐",
+      "category": "intermediate",
+      "description": "Connect your no-code apps to third-party APIs using API connectors and custom endpoints.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Bubble API Connector", "url": "https://manual.bubble.io/api-connector", "type": "docs", "free": true },
+        { "title": "Zapier API Tutorials", "url": "https://zapier.com/developer/docs/", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-deployment",
+      "title": "Deployment & Hosting",
+      "icon": "🚀",
+      "category": "intermediate",
+      "description": "Custom domains, SSL, hosting options, and deploying no-code apps to production.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Bubble Deployment Guide", "url": "https://manual.bubble.io/deployment", "type": "docs", "free": true },
+        { "title": "Webflow Hosting Guide", "url": "https://university.webflow.com/lesson/hosting-overview", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-custom-code",
+      "title": "Custom Code Extensions",
+      "icon": "💻",
+      "category": "advanced",
+      "description": "Adding JavaScript, HTML, and CSS to extend no-code platform capabilities.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Bubble JavaScript", "url": "https://manual.bubble.io/how-to-adding-custom-javascript", "type": "docs", "free": true },
+        { "title": "Webflow Custom Code", "url": "https://university.webflow.com/lesson/adding-custom-code", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-best-practices",
+      "title": "Best Practices",
+      "icon": "✅",
+      "category": "advanced",
+      "description": "Naming conventions, version control, testing, documentation, and team collaboration.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "No-Code Best Practices", "url": "https://www.buildship.com/blog/no-code-best-practices", "type": "docs", "free": true },
+        { "title": "Bubble Best Practices", "url": "https://manual.bubble.io/best-practices", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-enterprise",
+      "title": "Enterprise Low-Code",
+      "icon": "🏢",
+      "category": "advanced",
+      "description": "Scaling no-code for enterprise: Mendix, Appian, and large-scale deployments.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Gartner MQ: Enterprise LCAP", "url": "https://www.gartner.com/en/doc/679627-magic-quadrant-for-enterprise-low-code-application-platforms", "type": "docs", "free": false },
+        { "title": "Mendix Docs", "url": "https://docs.mendix.com/", "type": "docs", "free": true },
+        { "title": "Appian Docs", "url": "https://docs.appian.com/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-governance",
+      "title": "Governance & Compliance",
+      "icon": "📜",
+      "category": "advanced",
+      "description": "Managing no-code sprawl, app lifecycle governance, audit trails, and compliance.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "No-Code Governance Guide", "url": "https://www.gartner.com/smarterwithgartner/low-code-governance", "type": "docs", "free": false },
+        { "title": "Power Platform Governance", "url": "https://learn.microsoft.com/en-us/power-platform/guidance/governance/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-security",
+      "title": "Security in LCNC",
+      "icon": "🔒",
+      "category": "advanced",
+      "description": "Data security, access control, GDPR compliance, and security auditing for no-code apps.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "No-Code Security Best Practices", "url": "https://www.infosecinstitute.com/resources/no-code-security/", "type": "docs", "free": true },
+        { "title": "Bubble Security Docs", "url": "https://manual.bubble.io/security", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-scalability",
+      "title": "Scalability",
+      "icon": "📈",
+      "category": "advanced",
+      "description": "Performance optimization, scaling strategies, caching, and handling growth in no-code.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Scaling No-Code Apps", "url": "https://www.buildship.com/blog/scaling-no-code-apps", "type": "docs", "free": true },
+        { "title": "Bubble Performance Guide", "url": "https://manual.bubble.io/performance", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-limitations",
+      "title": "Limitations & When NOT to Use",
+      "icon": "⚠️",
+      "category": "advanced",
+      "description": "Understanding vendor lock-in, performance ceilings, customization limits, and when traditional coding wins.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "When Not to Use No-Code", "url": "https://www.forbes.com/sites/forbestechcouncil/2022/01/24/when-not-to-use-no-code/", "type": "docs", "free": true },
+        { "title": "No-Code vs Code Tradeoffs", "url": "https://www.youtube.com/watch?v=kV5XGqfF1JQ", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-testing",
+      "title": "Testing LCNC Applications",
+      "icon": "🧪",
+      "category": "advanced",
+      "description": "Manual testing, user acceptance testing, and automated testing for no-code apps.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Testing No-Code Apps", "url": "https://www.zapier.com/blog/testing-no-code-apps/", "type": "docs", "free": true },
+        { "title": "QA for No-Code", "url": "https://medium.com/tag/no-code-testing", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-portfolios",
+      "title": "Building a Portfolio",
+      "icon": "💼",
+      "category": "intermediate",
+      "description": "Showcase your no-code projects to land freelance gigs or full-time roles.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "No-Code Portfolio Guide", "url": "https://www.nocodemba.com/blog/no-code-portfolio", "type": "docs", "free": true },
+        { "title": "No-Code Job Boards", "url": "https://wellfound.com/jobs?keywords=no-code", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "lcnc-ai-tools",
+      "title": "AI-Powered LCNC Tools",
+      "icon": "🤖",
+      "category": "advanced",
+      "description": "Using AI to accelerate no-code development: AI app builders, code generation, and smart automations.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AI No-Code Tools", "url": "https://www.buildship.com/blog/ai-no-code-tools", "type": "docs", "free": true },
+        { "title": "Bubble AI Features", "url": "https://manual.bubble.io/ai-features", "type": "docs", "free": true }
+      ]
+    }
+  ]
+}

@@ -543,3 +543,26 @@ a:hover { color: var(--accent-hover); }
     .bookmark-panel.open { right: 10px; }
     .nav-badge { font-size: 0.75rem; padding: 4px 8px; }
 }
+
+/* === Theme Transition === */
+html { transition: background-color 0.3s ease, color 0.3s ease; }
+body, .navbar, .hero, .section, .node, .feature-card, .roadmap-card, .faq-item, .testimonial-card, .newsletter-card, .cta-card, footer { transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; }
+
+/* === Resource Rating Stars === */
+.resource-rating { color: #ffc107; font-size: 12px; margin-left: auto; white-space: nowrap; letter-spacing: 1px; }
+.resource-link { align-items: center; gap: 6px; }
+.resource-link[data-type] { display: flex; }
+
+/* === Community Tips Section === */
+.community-tips-section { margin-top: 16px; padding: 16px; border-radius: var(--radius-sm); background: var(--bg-tertiary); border: 1px solid var(--border); }
+.tips-title { margin: 0 0 12px; font-size: 14px; }
+.tips-count { color: var(--text-muted); font-weight: 400; }
+.tip-item { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+.tip-item:last-of-type { border-bottom: none; }
+.tip-date { font-size: 11px; color: var(--text-muted); }
+.tip-form { display: flex; gap: 8px; margin-top: 12px; }
+.tip-input { flex: 1; padding: 8px 12px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-card); color: var(--text-primary); font-size: 13px; outline: none; }
+.tip-input:focus { border-color: var(--accent); }
+
+/* === Learner Count === */
+.learner-count-display { opacity: 0.8; }

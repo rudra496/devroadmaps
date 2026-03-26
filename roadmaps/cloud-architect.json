@@ -1,0 +1,460 @@
+{
+  "title": "Cloud Architect",
+  "description": "Master cloud architecture across AWS, GCP, and Azure — from fundamentals to multi-cloud strategy, security, cost management, and the Well-Architected Framework.",
+  "icon": "🏗️",
+  "categories": ["fundamentals", "intermediate", "advanced", "tools"],
+  "nodes": [
+    {
+      "id": "cloud-fundamentals",
+      "title": "Cloud Fundamentals",
+      "icon": "☁️",
+      "category": "fundamentals",
+      "description": "Cloud computing basics, service models, deployment models, and shared responsibility.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "AWS Cloud Practitioner Essentials", "url": "https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/", "type": "course", "free": true },
+        { "title": "NIST Cloud Computing", "url": "https://csrc.nist.gov/pubs/final/nist.sp.800-145", "type": "docs", "free": true },
+        { "title": "Cloud Computing Explained", "url": "https://www.youtube.com/watch?v=M988_fsOSWo", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-iaas-paas-saas",
+      "title": "IaaS / PaaS / SaaS",
+      "icon": "📊",
+      "category": "fundamentals",
+      "description": "Understand Infrastructure, Platform, and Software as a Service models and when to use each.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "IaaS vs PaaS vs SaaS", "url": "https://aws.amazon.com/what-is-cloud/iaas-paas-saas/", "type": "docs", "free": true },
+        { "title": "Service Models Explained", "url": "https://www.youtube.com/watch?v=uacZ5-80T_c", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-aws-core",
+      "title": "AWS Core Services",
+      "icon": "🔶",
+      "category": "intermediate",
+      "description": "EC2, S3, VPC, IAM, Lambda, RDS, CloudFront, Route53, SNS, SQS — the foundation of AWS.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS Well-Architected Labs", "url": "https://www.wellarchitectedlabs.com/", "type": "tutorial", "free": true },
+        { "title": "AWS SAA-C03 Study Guide", "url": "https://docs.aws.amazon.com/solutions/latest/developerperspective/welcome.html", "type": "docs", "free": true },
+        { "title": "AWS Core Services Playlist", "url": "https://www.youtube.com/playlist?list=PLhr1KZdCE7aZc9WMM4jOoE0gArKRWuWY-", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-aws-advanced",
+      "title": "AWS Advanced Services",
+      "icon": "🔺",
+      "category": "advanced",
+      "description": "EKS, ECS, Fargate, Step Functions, EventBridge, AppSync, and advanced serverless patterns.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS ECS Docs", "url": "https://docs.aws.amazon.com/ecs/", "type": "docs", "free": true },
+        { "title": "AWS Step Functions", "url": "https://docs.aws.amazon.com/step-functions/", "type": "docs", "free": true },
+        { "title": "AWS EventBridge", "url": "https://docs.aws.amazon.com/eventbridge/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-gcp",
+      "title": "Google Cloud Platform",
+      "icon": "🔵",
+      "category": "intermediate",
+      "description": "Compute Engine, Cloud Storage, BigQuery, Dataflow, Pub/Sub, and GCP networking.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "GCP Architecture Framework", "url": "https://cloud.google.com/architecture/framework", "type": "docs", "free": true },
+        { "title": "GCP Skills Boost", "url": "https://www.cloudskillsboost.google/", "type": "course", "free": true },
+        { "title": "GCP BigQuery Tutorial", "url": "https://cloud.google.com/bigquery/docs/tutorials", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-azure",
+      "title": "Microsoft Azure",
+      "icon": "🔷",
+      "category": "intermediate",
+      "description": "Azure VMs, Blob Storage, Azure Functions, CosmosDB, and Azure networking fundamentals.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Azure Architecture Center", "url": "https://learn.microsoft.com/en-us/azure/architecture/", "type": "docs", "free": true },
+        { "title": "Azure Fundamentals (AZ-900)", "url": "https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/", "type": "course", "free": true },
+        { "title": "Azure Docs", "url": "https://learn.microsoft.com/en-us/azure/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-multicloud",
+      "title": "Multi-Cloud Strategy",
+      "icon": "🌍",
+      "category": "advanced",
+      "description": "Designing systems that span AWS, GCP, and Azure. Avoiding vendor lock-in, cloud-agnostic patterns.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Multi-Cloud Architecture", "url": "https://docs.aws.amazon.com/whitepapers/latest/multi-cloud-strategies/multi-cloud-strategies.html", "type": "docs", "free": true },
+        { "title": "Terraform Multi-Cloud Guide", "url": "https://developer.hashicorp.com/terraform/tutorials/cloud/multi-cloud", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-networking",
+      "title": "Cloud Networking",
+      "icon": "🕸️",
+      "category": "intermediate",
+      "description": "VPC design, subnets, Transit Gateway, VPN, Direct Connect, DNS, load balancing.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS VPC Docs", "url": "https://docs.aws.amazon.com/vpc/", "type": "docs", "free": true },
+        { "title": "Cloud Networking Fundamentals", "url": "https://www.youtube.com/watch?v=QCJ1DjS5JOY", "type": "video", "free": true },
+        { "title": "AWS Networking Specialty", "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/", "type": "course", "free": false }
+      ]
+    },
+    {
+      "id": "cloud-security",
+      "title": "Cloud Security",
+      "icon": "🔐",
+      "category": "advanced",
+      "description": "IAM, KMS, GuardDuty, WAF, Shield, Secrets Manager, security best practices.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS Security Best Practices", "url": "https://docs.aws.amazon.com/security/", "type": "docs", "free": true },
+        { "title": "AWS IAM Docs", "url": "https://docs.aws.amazon.com/iam/", "type": "docs", "free": true },
+        { "title": "Cloud Security Playlist", "url": "https://www.youtube.com/watch?v=hM_fSEzIYpQ", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-cost",
+      "title": "Cloud Cost Management",
+      "icon": "💰",
+      "category": "intermediate",
+      "description": "Cost optimization strategies, reserved instances, spot instances, cost monitoring, right-sizing.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS Cost Explorer", "url": "https://aws.amazon.com/aws-cost-management/aws-cost-explorer/", "type": "tool", "free": true },
+        { "title": "Cost Optimization Whitepaper", "url": "https://docs.aws.amazon.com/whitepapers/latest/cost-optimization/welcome.html", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-iac",
+      "title": "Infrastructure as Code",
+      "icon": "📝",
+      "category": "intermediate",
+      "description": "Terraform, CloudFormation, Pulumi — managing cloud infrastructure declaratively.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Terraform Docs", "url": "https://developer.hashicorp.com/terraform/docs", "type": "docs", "free": true },
+        { "title": "AWS CloudFormation Docs", "url": "https://docs.aws.amazon.com/cloudformation/", "type": "docs", "free": true },
+        { "title": "Terraform Tutorial", "url": "https://developer.hashicorp.com/terraform/tutorials", "type": "tutorial", "free": true },
+        { "title": "Pulumi Learn", "url": "https://www.pulumi.com/learn/", "type": "course", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-containers",
+      "title": "Container Orchestration",
+      "icon": "📦",
+      "category": "advanced",
+      "description": "EKS, GKE, AKS — managed Kubernetes on major cloud providers, Helm charts, service mesh.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS EKS Docs", "url": "https://docs.aws.amazon.com/eks/", "type": "docs", "free": true },
+        { "title": "Kubernetes Basics", "url": "https://kubernetes.io/docs/tutorials/", "type": "tutorial", "free": true },
+        { "title": "GKE Docs", "url": "https://cloud.google.com/kubernetes-engine/docs", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-serverless",
+      "title": "Serverless Architecture",
+      "icon": "⚡",
+      "category": "intermediate",
+      "description": "AWS Lambda, Azure Functions, GCP Cloud Functions — event-driven, stateless compute.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS Lambda Docs", "url": "https://docs.aws.amazon.com/lambda/", "type": "docs", "free": true },
+        { "title": "Serverless Framework", "url": "https://www.serverless.com/framework/docs/", "type": "tool", "free": true },
+        { "title": "Serverless Best Practices", "url": "https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-event-driven",
+      "title": "Event-Driven Architecture",
+      "icon": "📡",
+      "category": "advanced",
+      "description": "EventBridge, SNS/SQS, Event Grid, Pub/Sub — building loosely coupled event-driven systems.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Event-Driven Architecture on AWS", "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/event-driven-architecture/", "type": "docs", "free": true },
+        { "title": "EventBridge Patterns", "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-microservices",
+      "title": "Microservices on Cloud",
+      "icon": "🔗",
+      "category": "advanced",
+      "description": "Designing microservices, service discovery, API Gateway, inter-service communication.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS Microservices", "url": "https://aws.amazon.com/microservices/", "type": "docs", "free": true },
+        { "title": "Building Microservices (O'Reilly)", "url": "https://www.oreilly.com/library/view/building-microservices-2nd/9781492034025/", "type": "docs", "free": false },
+        { "title": "Microservices on GCP", "url": "https://cloud.google.com/architecture/microservices-architecture", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-database",
+      "title": "Database Selection",
+      "icon": "🗃️",
+      "category": "intermediate",
+      "description": "Choosing between RDS, DynamoDB, Aurora, Cloud SQL, Spanner, CosmosDB based on workload.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS Database Services", "url": "https://aws.amazon.com/products/databases/", "type": "docs", "free": true },
+        { "title": "Database Migration Guide", "url": "https://docs.aws.amazon.com/dms/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-caching",
+      "title": "Caching Strategy",
+      "icon": "⚡",
+      "category": "intermediate",
+      "description": "ElastiCache (Redis/Memcached), CloudFront edge caching, CDN strategy, cache invalidation.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS ElastiCache Docs", "url": "https://docs.aws.amazon.com/elasticache/", "type": "docs", "free": true },
+        { "title": "Caching Best Practices", "url": "https://aws.amazon.com/builders-library/caching-strategies/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-cdn",
+      "title": "CDN Strategy",
+      "icon": "🌐",
+      "category": "intermediate",
+      "description": "CloudFront, Cloud CDN, Azure CDN — edge caching, cache control, origin configuration.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS CloudFront Docs", "url": "https://docs.aws.amazon.com/cloudfront/", "type": "docs", "free": true },
+        { "title": "CDN Best Practices", "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/BestPractices.html", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-dr",
+      "title": "Disaster Recovery",
+      "icon": "🛡️",
+      "category": "advanced",
+      "description": "DR strategies: backup & restore, pilot light, warm standby, multi-region active-active.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS DR Whitepaper", "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/welcome.html", "type": "docs", "free": true },
+        { "title": "Azure Site Recovery", "url": "https://learn.microsoft.com/en-us/azure/site-recovery/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-ha",
+      "title": "High Availability",
+      "icon": "🔄",
+      "category": "advanced",
+      "description": "Multi-AZ, auto-scaling, load balancing, health checks, fault-tolerant design patterns.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS HA Architecture", "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html", "type": "docs", "free": true },
+        { "title": "Auto Scaling Docs", "url": "https://docs.aws.amazon.com/autoscaling/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-migration",
+      "title": "Cloud Migration",
+      "icon": "🚚",
+      "category": "advanced",
+      "description": "6 Rs of migration (Rehost, Replatform, Repurchase, Refactor, Retain, Retire), migration strategies.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS Migration Guide", "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-strategy/welcome.html", "type": "docs", "free": true },
+        { "title": "AWS MGN (Migration)", "url": "https://docs.aws.amazon.com/mgn/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-well-architected",
+      "title": "Well-Architected Framework",
+      "icon": "📐",
+      "category": "advanced",
+      "description": "AWS 5 pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS Well-Architected Framework", "url": "https://docs.aws.amazon.com/wellarchitected/", "type": "docs", "free": true },
+        { "title": "Well-Architected Tool", "url": "https://aws.amazon.com/well-architected-tool/", "type": "tool", "free": true },
+        { "title": "WAF Review Guide", "url": "https://www.wellarchitectedlabs.com/", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-finops",
+      "title": "FinOps",
+      "icon": "📊",
+      "category": "intermediate",
+      "description": "Financial operations for cloud: cost allocation, tagging strategy, budgets, anomaly detection.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "FinOps Foundation", "url": "https://www.finops.org/", "type": "docs", "free": true },
+        { "title": "AWS Cost Management", "url": "https://aws.amazon.com/aws-cost-management/", "type": "tool", "free": true },
+        { "title": "FinOps Tutorial", "url": "https://www.youtube.com/watch?v=2KJPmOxPtCc", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-governance",
+      "title": "Cloud Governance",
+      "icon": "🏛️",
+      "category": "advanced",
+      "description": "Organizational policies, guardrails, landing zones, control tower, service control policies.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS Control Tower", "url": "https://docs.aws.amazon.com/controltower/", "type": "docs", "free": true },
+        { "title": "AWS Organizations", "url": "https://docs.aws.amazon.com/organizations/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-compliance",
+      "title": "Compliance",
+      "icon": "📋",
+      "category": "advanced",
+      "description": "HIPAA, GDPR, SOC2, PCI-DSS, ISO 27001 — compliance requirements in the cloud.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS Artifact (Compliance)", "url": "https://aws.amazon.com/artifact/", "type": "tool", "free": true },
+        { "title": "AWS Compliance Programs", "url": "https://aws.amazon.com/compliance/programs/", "type": "docs", "free": true },
+        { "title": "Cloud Compliance Guide", "url": "https://csrc.nist.gov/publications/detail/sp/800-144/final", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-monitoring",
+      "title": "Monitoring & Observability",
+      "icon": "👁️",
+      "category": "intermediate",
+      "description": "CloudWatch, Stackdriver, Azure Monitor — metrics, logs, traces, and alerting.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS CloudWatch Docs", "url": "https://docs.aws.amazon.com/cloudwatch/", "type": "docs", "free": true },
+        { "title": "Observability Best Practices", "url": "https://docs.aws.amazon.com/whitepapers/latest/observability-best-practices/welcome.html", "type": "docs", "free": true },
+        { "title": "GCP Cloud Monitoring", "url": "https://cloud.google.com/monitoring/docs", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-identity",
+      "title": "Identity & Access",
+      "icon": "🔑",
+      "category": "intermediate",
+      "description": "IAM policies, roles, federation, SSO, OIDC/SAML, least privilege principles.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS IAM Best Practices", "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html", "type": "docs", "free": true },
+        { "title": "Azure AD Docs", "url": "https://learn.microsoft.com/en-us/azure/active-directory/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-storage",
+      "title": "Storage Architecture",
+      "icon": "💾",
+      "category": "intermediate",
+      "description": "Object storage (S3), block storage (EBS), file storage (EFS), lifecycle policies, data lakes.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS Storage Services", "url": "https://aws.amazon.com/products/storage/", "type": "docs", "free": true },
+        { "title": "S3 Best Practices", "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/best-practices.html", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-api-gateway",
+      "title": "API Gateway & Management",
+      "icon": "🚪",
+      "category": "intermediate",
+      "description": "API Gateway, REST vs GraphQL APIs, rate limiting, API versioning, developer portals.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS API Gateway Docs", "url": "https://docs.aws.amazon.com/apigateway/", "type": "docs", "free": true },
+        { "title": "API Management Patterns", "url": "https://microservices.io/patterns/apigateway.html", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-messaging",
+      "title": "Messaging & Queues",
+      "icon": "📨",
+      "category": "intermediate",
+      "description": "SQS, SNS, Kafka on AWS (MSK), Pub/Sub, Service Bus — asynchronous communication.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS SQS Docs", "url": "https://docs.aws.amazon.com/sqs/", "type": "docs", "free": true },
+        { "title": "AWS SNS Docs", "url": "https://docs.aws.amazon.com/sns/", "type": "docs", "free": true },
+        { "title": "Messaging Patterns", "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/messaging-and-streaming-migration/welcome.html", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-logging",
+      "title": "Centralized Logging",
+      "icon": "📜",
+      "category": "intermediate",
+      "description": "CloudWatch Logs, Log Group management, S3 log archival, OpenSearch for log analytics.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS CloudWatch Logs", "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html", "type": "docs", "free": true },
+        { "title": "Centralized Logging Architecture", "url": "https://docs.aws.amazon.com/solutions/latest/centralized-logging/welcome.html", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-certs",
+      "title": "Cloud Certifications",
+      "icon": "🏅",
+      "category": "intermediate",
+      "description": "AWS SAA, SAP, Solutions Architect; GCP PCA; Azure AZ-104, AZ-305 certification paths.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS Certifications", "url": "https://aws.amazon.com/certification/", "type": "course", "free": true },
+        { "title": "GCP Certifications", "url": "https://cloud.google.com/certifications", "type": "course", "free": true },
+        { "title": "Azure Certifications", "url": "https://learn.microsoft.com/en-us/certifications/", "type": "course", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-architecture-patterns",
+      "title": "Architecture Patterns",
+      "icon": "🏛️",
+      "category": "advanced",
+      "description": "CQRS, Event Sourcing, Saga Pattern, CQRS, Strangler Fig, Sidecar, Ambassador patterns.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS Architecture Center", "url": "https://aws.amazon.com/architecture/", "type": "docs", "free": true },
+        { "title": "Cloud Design Patterns", "url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/", "type": "docs", "free": true },
+        { "title": "Microservices Patterns", "url": "https://microservices.io/patterns/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-edge",
+      "title": "Edge Computing",
+      "icon": "📡",
+      "category": "advanced",
+      "description": "AWS Lambda@Edge, CloudFront Functions, IoT Core, Snow Family for edge workloads.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS Lambda@Edge", "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html", "type": "docs", "free": true },
+        { "title": "AWS IoT Core", "url": "https://docs.aws.amazon.com/iotcore/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-data-pipeline",
+      "title": "Data Pipeline Architecture",
+      "icon": "🔄",
+      "category": "advanced",
+      "description": "AWS Glue, Data Pipeline, Step Functions for ETL, Lake Formation, data mesh patterns.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "AWS Glue Docs", "url": "https://docs.aws.amazon.com/glue/", "type": "docs", "free": true },
+        { "title": "Big Data on AWS", "url": "https://aws.amazon.com/big-data/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "cloud-kubernetes-advanced",
+      "title": "Advanced Kubernetes",
+      "icon": "☸️",
+      "category": "advanced",
+      "description": "Service mesh (Istio), Helm charts, Operators, GitOps (ArgoCD/Flux), policy engine (OPA).",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Kubernetes Docs", "url": "https://kubernetes.io/docs/", "type": "docs", "free": true },
+        { "title": "ArgoCD Docs", "url": "https://argo-cd.readthedocs.io/", "type": "docs", "free": true },
+        { "title": "Helm Docs", "url": "https://helm.sh/docs/", "type": "docs", "free": true }
+      ]
+    }
+  ]
+}

@@ -18,6 +18,8 @@ const ROADMAPS = [
     { id: "devsecops", slug: "devsecops", icon: "🛡️", title: "DevSecOps Engineer" },
     { id: "qa-engineer", slug: "qa-engineer", icon: "🧪", title: "QA / Test Engineer" },
     { id: "technical-writer", slug: "technical-writer", icon: "✍️", title: "Technical Writer" },
+    { id: "low-code-no-code", slug: "low-code-no-code", icon: "⚡", title: "Low-Code / No-Code" },
+    { id: "cloud-architect", slug: "cloud-architect", icon: "🏗️", title: "Cloud Architect" },
 ];
 
 // === Particle System ===
@@ -84,20 +86,46 @@ function initTheme() {
     const toggle = document.getElementById('themeToggle');
     if (!toggle) return;
     const saved = localStorage.getItem('devroadmaps-theme');
-    if (saved) document.documentElement.setAttribute('data-theme', saved);
+    if (saved === 'auto' || !saved) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    } else {
+        document.documentElement.setAttribute('data-theme', saved);
+    }
     updateThemeIcon();
 
+    // Listen for system theme changes when in auto mode
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        const current = localStorage.getItem('devroadmaps-theme');
+        if (current === 'auto' || !current) {
+            document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+            updateThemeIcon();
+        }
+    });
+
+    // Cycle: dark → light → auto → dark...
+    const themes = ['dark', 'light', 'auto'];
     toggle.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme');
-        const next = current === 'light' ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', next);
+        const current = localStorage.getItem('devroadmaps-theme') || 'auto';
+        const idx = themes.indexOf(current);
+        const next = themes[(idx + 1) % themes.length];
         localStorage.setItem('devroadmaps-theme', next);
+        if (next === 'auto') {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+        } else {
+            document.documentElement.setAttribute('data-theme', next);
+        }
         updateThemeIcon();
     });
 
     function updateThemeIcon() {
+        const stored = localStorage.getItem('devroadmaps-theme') || 'auto';
         const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
-        if (toggle) toggle.textContent = isDark ? '☀️' : '🌙';
+        if (toggle) {
+            if (stored === 'auto') toggle.textContent = '🔄';
+            else toggle.textContent = isDark ? '☀️' : '🌙';
+        }
     }
 }
 
@@ -219,6 +247,23 @@ async function initRoadmapViewer() {
     document.getElementById('roadmapTitle').textContent = data.title;
     document.getElementById('roadmapDesc').textContent = data.description || '';
 
+    // Community features
+    const ratingMgr = typeof initRatings === 'function' ? initRatings(slug) : null;
+    function getRating(nodeId, resIdx) { return ratingMgr ? ratingMgr.getRating(nodeId, resIdx) : 0; }
+
+    // Learner count
+    const learnerKey = `learner-count-${slug}`;
+    let learnerCount = parseInt(localStorage.getItem(learnerKey) || '0');
+    function updateLearnerCount(done, total) {
+        const pct = total > 0 ? done / total : 0;
+        if (!learnerCount) {
+            learnerCount = Math.max(Math.floor(pct * 47 + 20), 1);
+            localStorage.setItem(learnerKey, learnerCount.toString());
+        }
+        const el = document.getElementById('learnerCount');
+        if (el) el.textContent = `${learnerCount} learners`;
+    }
+
     const progressKey = `progress-${slug}`;
     let completed = JSON.parse(localStorage.getItem(progressKey) || '{}');
 
@@ -233,6 +278,7 @@ async function initRoadmapViewer() {
         const pct = total > 0 ? Math.round(done / total * 100) : 0;
         document.getElementById('progressFill').style.width = pct + '%';
         document.getElementById('progressText').textContent = pct + '%';
+        updateLearnerCount(done, total);
     }
 
     function renderNodes(nodes) {
@@ -256,13 +302,19 @@ async function initRoadmapViewer() {
             const diff = node.difficulty || 'Beginner';
 
             let resourcesHtml = '';
-            const typeIcons = { docs: '📖', video: '🎥', course: '🎯', tool: '🔧' };
-            node.resources.forEach(res => {
+            const typeIcons = { docs: '📖', video: '🎥', course: '🎯', tool: '🔧', tutorial: '🛠️' };
+            node.resources.forEach((res, ri) => {
                 const icon = typeIcons[res.type] || '📖';
-                resourcesHtml += `<a href="${res.url}" target="_blank" rel="noopener" class="resource-link">
+                const rating = typeof getRating === 'function' ? getRating(node.id, ri) : 0;
+                let starsHtml = '';
+                if (rating > 0) {
+                    starsHtml = '<span class="resource-rating">' + '★'.repeat(rating) + '☆'.repeat(5 - rating) + '</span>';
+                }
+                resourcesHtml += `<a href="${res.url}" target="_blank" rel="noopener" class="resource-link" data-type="${res.type}">
                     <span>${icon}</span>
                     <span>${res.title}</span>
                     <span class="resource-type">${res.type}</span>
+                    ${starsHtml}
                 </a>`;
             });
 

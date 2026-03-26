@@ -43,9 +43,19 @@
                     <button class="filter-btn" data-filter="advanced">📕 Advanced</button>
                     <button class="filter-btn" data-filter="tools">🔧 Tools</button>
                 </div>
+                <div class="filter-buttons" id="resourceTypeFilters" style="margin-top:8px">
+                    <button class="filter-btn active" data-rtype="all">📋 All Resources</button>
+                    <button class="filter-btn" data-rtype="docs">📖 Docs</button>
+                    <button class="filter-btn" data-rtype="video">🎥 Video</button>
+                    <button class="filter-btn" data-rtype="course">🎯 Course</button>
+                    <button class="filter-btn" data-rtype="tutorial">🛠️ Tutorial</button>
+                    <button class="filter-btn" data-rtype="tool">🔧 Tool</button>
+                </div>
                 <div class="action-buttons">
                     <button class="btn btn-sm" id="resetBtn">Reset Progress</button>
                     <button class="btn btn-sm" id="printBtn">🖨️ Print</button>
+                    <button class="btn btn-sm" id="printChecklistBtn">✅ Print Checklist</button>
+                    <button class="btn btn-sm" id="printBookmarksBtn">📌 Print Bookmarks</button>
                     <button class="btn btn-sm" id="expandAllBtn">Expand All</button>
                     <button class="btn btn-sm" onclick="toggleTimer(currentRoadmap)" id="timerToggle">▶ Start Timer</button>
                     <span class="nav-badge" title="Study Timer"><span id="timerDisplay">25:00</span> <span id="timerLabel">🍅 Focus</span></span>
@@ -55,6 +65,9 @@
             <div class="progress-bar-container">
                 <div class="progress-bar" id="progressBar"><div class="progress-fill" id="progressFill"></div></div>
                 <span class="progress-text" id="progressText">0%</span>
+            </div>
+            <div class="learner-count-display" style="text-align:center;margin-top:8px;font-size:13px;color:var(--text-muted)">
+                <span id="learnerCount"></span>
             </div>
         </div>
     </header>
@@ -79,12 +92,43 @@
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
 
     <script src="js/main.js"></script>
+    <script src="js/community.js"></script>
     <script src="js/learning-paths.js"></script>
     <script src="js/timer.js"></script>
     <script>
     const params = new URLSearchParams(window.location.search);
     const currentRoadmap = params.get('roadmap') || '';
     initTimerWidget();
+
+    // Wire up print buttons
+    document.getElementById('printChecklistBtn')?.addEventListener('click', () => {
+        const progressKey = `progress-${currentRoadmap}`;
+        const completed = JSON.parse(localStorage.getItem(progressKey) || '{}');
+        fetch(`roadmaps/${currentRoadmap}.json`).then(r => r.json()).then(data => {
+            printChecklist(data.nodes, completed);
+        });
+    });
+    document.getElementById('printBookmarksBtn')?.addEventListener('click', () => {
+        const bookmarks = JSON.parse(localStorage.getItem('devroadmaps-bookmarks') || '[]');
+        printBookmarksSummary(bookmarks);
+    });
+
+    // Resource type filter
+    let activeResourceType = 'all';
+    document.querySelectorAll('#resourceTypeFilters .filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('#resourceTypeFilters .filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeResourceType = btn.dataset.rtype;
+            document.querySelectorAll('.resource-link').forEach(link => {
+                if (activeResourceType === 'all') {
+                    link.style.display = '';
+                } else {
+                    link.style.display = link.dataset.type === activeResourceType ? '' : 'none';
+                }
+            });
+        });
+    });
     </script>
 </body>
 </html>
