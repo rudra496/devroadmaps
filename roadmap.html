@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadmap — DevRoadmaps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">🗺️ DevRoadmaps</a>
+      <div class="nav-links">
+        <a href="index.html">← All Roadmaps</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="roadmap-viewer" id="roadmap-content">
+    <div class="roadmap-header">
+      <div class="roadmap-icon" id="roadmap-icon"></div>
+      <h1 id="roadmap-title">Loading...</h1>
+      <p id="roadmap-desc" style="color:var(--text-secondary);max-width:600px;margin:12px auto 0"></p>
+      <div class="roadmap-meta" style="margin-top:16px">
+        <span id="roadmap-time"></span>
+        <span id="roadmap-difficulty"></span>
+        <span id="roadmap-progress-text"></span>
+      </div>
+      <div class="roadmap-progress-bar">
+        <div class="roadmap-progress-fill" id="roadmap-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="roadmap-actions">
+        <button class="btn btn-primary" onclick="printRoadmap()">🖨️ Print Roadmap</button>
+        <button class="btn btn-secondary" onclick="resetProgress()">🔄 Reset Progress</button>
+        <a href="index.html" class="btn btn-secondary">← All Roadmaps</a>
+      </div>
+    </div>
+
+    <div class="roadmap-nodes" id="roadmap-nodes"></div>
+  </div>
+
+  <footer class="footer">
+    <p>Built with ❤️ by the open-source community</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
