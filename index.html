@@ -35,6 +35,8 @@
                 <a href="#community">Community</a>
                 <a href="#faq">FAQ</a>
                 <a href="https://github.com" target="_blank" rel="noopener" class="nav-cta">⭐ Star on GitHub</a>
+                <span class="nav-badge" id="bookmarkToggle" title="Bookmarks">📌 <span class="bookmark-count">0</span></span>
+                <span class="nav-badge" title="Total Study Time">⏱️ <span class="total-study-time">0m 0s</span></span>
             </div>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
@@ -51,24 +53,24 @@
                 <span class="gradient-text">Developer Roadmaps</span>
             </h1>
             <p class="hero-typing animate-on-scroll" id="typingTarget"></p>
-            <p class="hero-desc animate-on-scroll">600+ curated topics with 2,000+ free resources. Interactive roadmaps to guide your learning journey from beginner to expert.</p>
+            <p class="hero-desc animate-on-scroll">700+ curated topics with 2,500+ free resources across 15 roadmaps. Interactive learning paths, bookmarks, study timer, and achievement badges to guide your journey.</p>
             <div class="hero-buttons animate-on-scroll">
                 <a href="#roadmaps" class="btn btn-primary btn-glow">Explore Roadmaps →</a>
                 <a href="https://github.com" target="_blank" class="btn btn-secondary">View on GitHub ⭐</a>
             </div>
             <div class="hero-stats animate-on-scroll">
                 <div class="stat-item">
-                    <span class="stat-number" data-target="12">0</span>
+                    <span class="stat-number" data-target="15">0</span>
                     <span class="stat-label">Roadmaps</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <span class="stat-number" data-target="600">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-number" data-target="700">0</span><span class="stat-suffix">+</span>
                     <span class="stat-label">Topics</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <span class="stat-number" data-target="2000">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-number" data-target="2500">0</span><span class="stat-suffix">+</span>
                     <span class="stat-label">Resources</span>
                 </div>
                 <div class="stat-divider"></div>
@@ -89,7 +91,7 @@
             <div class="section-header animate-on-scroll">
                 <span class="section-tag">🗺️ Roadmaps</span>
                 <h2 class="section-title">Choose Your Path</h2>
-                <p class="section-subtitle">12 comprehensive roadmaps covering every major tech discipline</p>
+                <p class="section-subtitle">15 comprehensive roadmaps covering every major tech discipline</p>
             </div>
             <!-- Search & Filter -->
             <div class="roadmap-filters animate-on-scroll">
@@ -261,6 +263,11 @@
                     <div class="community-label">Contributors</div>
                 </div>
                 <div class="community-stat">
+                    <div class="community-icon">💬</div>
+                    <div class="community-number"><a href="#" style="color:inherit;text-decoration:none">Join Discord</a></div>
+                    <div class="community-label">Community Chat</div>
+                </div>
+                <div class="community-stat">
                     <div class="community-icon">📜</div>
                     <div class="community-number">MIT</div>
                     <div class="community-label">License</div>
@@ -323,7 +330,7 @@
                 </div>
                 <div class="faq-item animate-on-scroll">
                     <button class="faq-question">Which roadmaps are available? <span>+</span></button>
-                    <div class="faq-answer"><p>Frontend, Backend, Full Stack, ML/AI, DevOps/Cloud, Mobile, Cybersecurity, Data Engineering, Blockchain/Web3, Game Dev, Embedded/IoT, and Product Management.</p></div>
+                    <div class="faq-answer"><p>Frontend, Backend, Full Stack, ML/AI, DevOps/Cloud, Mobile, Cybersecurity, Data Engineering, Blockchain/Web3, Game Dev, Embedded/IoT, Product Management, DevSecOps, QA Engineer, and Technical Writer.</p></div>
                 </div>
                 <div class="faq-item animate-on-scroll">
                     <button class="faq-question">How long does it take to complete a roadmap? <span>+</span></button>
@@ -354,6 +361,39 @@
                     <div class="faq-answer"><p>Completely. All data stays in your browser. We don't use cookies, analytics, or any tracking. Your learning is your business.</p></div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Bookmark Panel -->
+    <div class="bookmark-panel" id="bookmarkPanel">
+        <div class="bookmark-panel-header">
+            <h3>📌 Bookmarks</h3>
+            <button onclick="exportBookmarks()" class="btn btn-sm">Export Study Plan 📥</button>
+        </div>
+        <div id="bookmarkList"></div>
+    </div>
+
+    <!-- Learning Paths -->
+    <section class="section" id="learning-paths">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">🎯 Learning Paths</span>
+                <h2 class="section-title">Curated Paths</h2>
+                <p class="section-subtitle">Pre-built paths combining nodes from multiple roadmaps</p>
+            </div>
+            <div class="roadmaps-grid" id="learningPathsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="section section-alt" id="achievements">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">🏆 Achievements</span>
+                <h2 class="section-title">Your Badges</h2>
+                <p class="section-subtitle">Unlock achievements as you learn</p>
+            </div>
+            <div class="roadmaps-grid" id="achievementsGrid"></div>
         </div>
     </section>
 
@@ -399,6 +439,9 @@
                     <a href="roadmap.html?roadmap=game-dev">Game Dev</a>
                     <a href="roadmap.html?roadmap=embedded-iot">IoT</a>
                     <a href="roadmap.html?roadmap=product-manager">Product Manager</a>
+                    <a href="roadmap.html?roadmap=devsecops">DevSecOps</a>
+                    <a href="roadmap.html?roadmap=qa-engineer">QA Engineer</a>
+                    <a href="roadmap.html?roadmap=technical-writer">Technical Writer</a>
                 </div>
                 <div class="footer-col">
                     <h4>Project</h4>
@@ -421,5 +464,16 @@
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
 
     <script src="js/main.js"></script>
+    <script src="js/learning-paths.js"></script>
+    <script src="js/timer.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        initLearningPaths();
+        initBookmarkPanel();
+        initTimerWidget();
+        updateBookmarkCounters();
+        initAchievements();
+    });
+    </script>
 </body>
 </html>

@@ -1,0 +1,583 @@
+{
+  "title": "Technical Writer",
+  "description": "Learn to create clear, comprehensive technical documentation — from API docs to tutorials and developer guides.",
+  "icon": "✍️",
+  "categories": ["fundamentals", "intermediate", "advanced", "tools"],
+  "nodes": [
+    {
+      "id": "tw-writing-fundamentals",
+      "title": "Writing Fundamentals",
+      "icon": "📝",
+      "category": "fundamentals",
+      "description": "Clear writing principles: brevity, clarity, audience awareness, and structure.",
+      "resources": [
+        {"title": "Google Technical Writing Course", "url": "https://developers.google.com/tech-writing", "type": "course", "free": true},
+        {"title": "The Elements of Style", "url": "https://www.gutenberg.org/ebooks/37134", "type": "docs", "free": true},
+        {"title": "Writing Well — Andrew Mayo", "url": "https://www.youtube.com/watch?v=GdE2B9xZJ3Q", "type": "video", "free": true}
+      ],
+      "children": ["tw-grammar-style"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "tw-grammar-style",
+      "title": "Grammar & Style",
+      "icon": "✏️",
+      "category": "fundamentals",
+      "description": "Master grammar rules, active voice, consistency, and technical writing style guides.",
+      "resources": [
+        {"title": "Grammarly Handbook", "url": "https://www.grammarly.com/handbook/", "type": "docs", "free": true},
+        {"title": "Microsoft Writing Style Guide", "url": "https://learn.microsoft.com/en-us/style-guide/", "type": "docs", "free": true},
+        {"title": "Google Developer Documentation Style Guide", "url": "https://developers.google.com/style", "type": "docs", "free": true}
+      ],
+      "children": ["tw-doc-types"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "tw-doc-types",
+      "title": "Documentation Types",
+      "icon": "📚",
+      "category": "fundamentals",
+      "description": "Tutorials, how-to guides, reference docs, explanation — the four types of docs.",
+      "resources": [
+        {"title": "Divio Documentation System", "url": "https://diataxis.fr/", "type": "docs", "free": true},
+        {"title": "Documentation Types — Write the Docs", "url": "https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/", "type": "docs", "free": true},
+        {"title": "Every Page is Page One", "url": "https://everypageispageone.com/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-docs-as-code"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "tw-docs-as-code",
+      "title": "Docs-as-Code",
+      "icon": "💻",
+      "category": "fundamentals",
+      "description": "Write docs in plain text, version control with Git, review with PRs.",
+      "resources": [
+        {"title": "Docs-as-Code Guide — Write the Docs", "url": "https://www.writethedocs.org/guide/docs-as-code/", "type": "docs", "free": true},
+        {"title": "What is Docs-as-Code? — Chris Ward", "url": "https://www.youtube.com/watch?v=-phDu3pcYGM", "type": "video", "free": true},
+        {"title": "Git for Writers", "url": "https://www.atlassian.com/git/tutorials", "type": "docs", "free": true}
+      ],
+      "children": ["tw-markdown"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "tw-markdown",
+      "title": "Markdown",
+      "icon": "📄",
+      "category": "fundamentals",
+      "description": "Master Markdown syntax for writing documentation.",
+      "resources": [
+        {"title": "Markdown Guide", "url": "https://www.markdownguide.org/", "type": "docs", "free": true},
+        {"title": "GitHub Markdown", "url": "https://docs.github.com/en/get-started/writing-on-github", "type": "docs", "free": true},
+        {"title": "Markdown Tutorial", "url": "https://commonmark.org/help/tutorial/", "type": "course", "free": true}
+      ],
+      "children": ["tw-restructuredtext"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "tw-restructuredtext",
+      "title": "reStructuredText",
+      "icon": "📑",
+      "category": "intermediate",
+      "description": "RST syntax used by Python docs, Sphinx, and many open-source projects.",
+      "resources": [
+        {"title": "reStructuredText Primer", "url": "https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html", "type": "docs", "free": true},
+        {"title": "RST Quick Reference", "url": "https://docutils.sourceforge.io/docs/user/rst/quickref.html", "type": "docs", "free": true},
+        {"title": "RST Cheat Sheet", "url": "https://sphinx-tutorial.readthedocs.io/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-asciidoc"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-asciidoc",
+      "title": "AsciiDoc",
+      "icon": "📃",
+      "category": "intermediate",
+      "description": "Powerful markup language for technical documentation.",
+      "resources": [
+        {"title": "AsciiDoc Documentation", "url": "https://docs.asciidoctor.org/asciidoc/latest/", "type": "docs", "free": true},
+        {"title": "AsciiDoc Tutorial", "url": "https://asciidoctor.org/docs/asciidoc-writers-guide/", "type": "docs", "free": true},
+        {"title": "Asciidoctor", "url": "https://asciidoctor.org/", "type": "tool", "free": true}
+      ],
+      "children": ["tw-docusaurus"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-docusaurus",
+      "title": "Docusaurus",
+      "icon": "🦖",
+      "category": "intermediate",
+      "description": "Build beautiful doc sites with React and Markdown.",
+      "resources": [
+        {"title": "Docusaurus Documentation", "url": "https://docusaurus.io/docs", "type": "docs", "free": true},
+        {"title": "Docusaurus Tutorial", "url": "https://docusaurus.io/docs/tutorial-basics/", "type": "course", "free": true},
+        {"title": "Docusaurus Examples", "url": "https://github.com/facebook/docusaurus/tree/main/website", "type": "tool", "free": true}
+      ],
+      "children": ["tw-mkdocs"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-mkdocs",
+      "title": "MkDocs",
+      "icon": "📖",
+      "category": "intermediate",
+      "description": "Fast, simple documentation site generator with Material theme.",
+      "resources": [
+        {"title": "MkDocs Documentation", "url": "https://www.mkdocs.org/", "type": "docs", "free": true},
+        {"title": "Material for MkDocs", "url": "https://squidfunk.github.io/mkdocs-material/", "type": "docs", "free": true},
+        {"title": "Getting Started with MkDocs", "url": "https://www.mkdocs.org/getting-started/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-gitbook"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-gitbook",
+      "title": "GitBook",
+      "icon": "📕",
+      "category": "intermediate",
+      "description": "Modern documentation platform for teams.",
+      "resources": [
+        {"title": "GitBook Documentation", "url": "https://docs.gitbook.com/", "type": "docs", "free": true},
+        {"title": "Getting Started with GitBook", "url": "https://docs.gitbook.com/getting-started/", "type": "docs", "free": true},
+        {"title": "GitBook API", "url": "https://docs.gitbook.com/api/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-sphinx"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-sphinx",
+      "title": "Sphinx",
+      "icon": "🏛️",
+      "category": "intermediate",
+      "description": "Python documentation tool used by major projects.",
+      "resources": [
+        {"title": "Sphinx Documentation", "url": "https://www.sphinx-doc.org/", "type": "docs", "free": true},
+        {"title": "Sphinx Tutorial — Read the Docs", "url": "https://docs.readthedocs.io/en/stable/tutorial/", "type": "course", "free": true},
+        {"title": "Read the Docs", "url": "https://readthedocs.org/", "type": "tool", "free": true}
+      ],
+      "children": ["tw-api-documentation"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-api-documentation",
+      "title": "API Documentation",
+      "icon": "🔌",
+      "category": "intermediate",
+      "description": "Write API docs with OpenAPI/Swagger, Postman collections.",
+      "resources": [
+        {"title": "OpenAPI Specification", "url": "https://swagger.io/specification/", "type": "docs", "free": true},
+        {"title": "Swagger UI", "url": "https://swagger.io/tools/swagger-ui/", "type": "tool", "free": true},
+        {"title": "Writing API Docs — Google", "url": "https://developers.google.com/tech-writing/api", "type": "course", "free": true}
+      ],
+      "children": ["tw-diagrams"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-diagrams",
+      "title": "Diagrams & Visuals",
+      "icon": "📊",
+      "category": "intermediate",
+      "description": "Create diagrams with Mermaid, PlantUML, and Draw.io.",
+      "resources": [
+        {"title": "Mermaid Documentation", "url": "https://mermaid.js.org/", "type": "docs", "free": true},
+        {"title": "PlantUML", "url": "https://plantuml.com/", "type": "tool", "free": true},
+        {"title": "Draw.io (diagrams.net)", "url": "https://app.diagrams.net/", "type": "tool", "free": true},
+        {"title": "Excalidraw", "url": "https://excalidraw.com/", "type": "tool", "free": true}
+      ],
+      "children": ["tw-ux-writing"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-ux-writing",
+      "title": "UX Writing",
+      "icon": "💬",
+      "category": "intermediate",
+      "description": "Write clear, concise UI text, microcopy, and error messages.",
+      "resources": [
+        {"title": "UX Writing Guide — Google", "url": "https://material.io/design/usability/writing.html", "type": "docs", "free": true},
+        {"title": "UX Writing Hub", "url": "https://uxwritinghub.com/", "type": "docs", "free": true},
+        {"title": "Content Design — NNGroup", "url": "https://www.nngroup.com/articles/content-design/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-content-strategy"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-content-strategy",
+      "title": "Content Strategy",
+      "icon": "📋",
+      "category": "advanced",
+      "description": "Plan, create, and manage documentation at scale.",
+      "resources": [
+        {"title": "Content Strategy — NNGroup", "url": "https://www.nngroup.com/topics/content-strategy/", "type": "docs", "free": true},
+        {"title": "Content Strategy for Technical Docs", "url": "https://www.youtube.com/watch?v=RfVSCoR9K8Y", "type": "video", "free": true},
+        {"title": "A List Apart — Content", "url": "https://alistapart.com/topic/content/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-information-architecture"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "tw-information-architecture",
+      "title": "Information Architecture",
+      "icon": "🏛️",
+      "category": "advanced",
+      "description": "Organize, structure, and label content effectively.",
+      "resources": [
+        {"title": "Information Architecture — NNGroup", "url": "https://www.nngroup.com/articles/information-architecture/", "type": "docs", "free": true},
+        {"title": "IA for Documentation", "url": "https://idratherbewriting.com/learnapidoc/", "type": "docs", "free": true},
+        {"title": "Information Architecture Bible", "url": "https://www.youtube.com/watch?v=IugH8iD6HFI", "type": "video", "free": true}
+      ],
+      "children": ["tw-audience-analysis"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "tw-audience-analysis",
+      "title": "Audience Analysis",
+      "icon": "👥",
+      "category": "fundamentals",
+      "description": "Understand your readers: personas, tasks, skill levels, and context.",
+      "resources": [
+        {"title": "Know Your Audience — Google", "url": "https://developers.google.com/tech-writing/one/audience", "type": "course", "free": true},
+        {"title": "User Research for Docs", "url": "https://www.nngroup.com/articles/user-research-methods/", "type": "docs", "free": true},
+        {"title": "Writing for Developers", "url": "https://www.writethedocs.org/guide/writing/writing-for-developers/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-writing-fundamentals"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "tw-localization",
+      "title": "Localization (i18n)",
+      "icon": "🌍",
+      "category": "advanced",
+      "description": "Prepare documentation for translation and international audiences.",
+      "resources": [
+        {"title": "W3C Internationalization", "url": "https://www.w3.org/International/", "type": "docs", "free": true},
+        {"title": "Localization Guide — Mozilla", "url": "https://developer.mozilla.org/en-US/docs/Mozilla/Localization", "type": "docs", "free": true},
+        {"title": "Crowdin", "url": "https://crowdin.com/", "type": "tool", "free": true}
+      ],
+      "children": ["tw-accessibility-docs"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "tw-accessibility-docs",
+      "title": "Accessible Documentation",
+      "icon": "♿",
+      "category": "intermediate",
+      "description": "Write documentation that meets WCAG accessibility standards.",
+      "resources": [
+        {"title": "WCAG Guidelines", "url": "https://www.w3.org/WAI/WCAG21/quickref/", "type": "docs", "free": true},
+        {"title": "MDN Accessibility Guide", "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility", "type": "docs", "free": true},
+        {"title": "A11Y Style Guide", "url": "https://a11y-style-guide.com/style-guide/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-versioning"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-versioning",
+      "title": "Doc Versioning",
+      "icon": "🔄",
+      "category": "advanced",
+      "description": "Manage multiple versions of documentation alongside product releases.",
+      "resources": [
+        {"title": "Docusaurus Versioning", "url": "https://docusaurus.io/docs/versioning", "type": "docs", "free": true},
+        {"title": "Read the Docs Versions", "url": "https://docs.readthedocs.io/en/stable/versioning.html", "type": "docs", "free": true},
+        {"title": "Doc Versioning Strategy", "url": "https://www.writethedocs.org/guide/docs/versioning/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-search-optimization"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "tw-search-optimization",
+      "title": "Search Optimization for Docs",
+      "icon": "🔍",
+      "category": "intermediate",
+      "description": "Make your docs findable: SEO, Algolia DocSearch, metadata.",
+      "resources": [
+        {"title": "Algolia DocSearch", "url": "https://docsearch.algolia.com/", "type": "tool", "free": true},
+        {"title": "SEO for Technical Docs", "url": "https://developers.google.com/search/docs", "type": "docs", "free": true},
+        {"title": "MeiliSearch", "url": "https://www.meilisearch.com/", "type": "tool", "free": true}
+      ],
+      "children": ["tw-analytics"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-analytics",
+      "title": "Doc Analytics",
+      "icon": "📈",
+      "category": "advanced",
+      "description": "Measure documentation effectiveness with analytics.",
+      "resources": [
+        {"title": "Google Analytics for Docs", "url": "https://analytics.google.com/", "type": "tool", "free": true},
+        {"title": "Hotjar for UX", "url": "https://www.hotjar.com/", "type": "tool", "free": true},
+        {"title": "Plausible Analytics", "url": "https://plausible.io/", "type": "tool", "free": true}
+      ],
+      "children": ["tw-style-guides"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "tw-style-guides",
+      "title": "Creating Style Guides",
+      "icon": "📕",
+      "category": "intermediate",
+      "description": "Build and maintain a documentation style guide for your team.",
+      "resources": [
+        {"title": "Apple Style Guide", "url": "https://help.apple.com/en-us/style-guide/", "type": "docs", "free": true},
+        {"title": "Write the Docs Style Guide", "url": "https://www.writethedocs.org/guide/writing/style-guides/", "type": "docs", "free": true},
+        {"title": "Vale — Linting for Docs", "url": "https://vale.sh/", "type": "tool", "free": true}
+      ],
+      "children": ["tw-collaboration"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-collaboration",
+      "title": "Collaboration & Review",
+      "icon": "🤝",
+      "category": "intermediate",
+      "description": "Work with teams using GitHub, PR reviews, and collaborative writing.",
+      "resources": [
+        {"title": "GitHub Collaboration", "url": "https://docs.github.com/en/pull-requests", "type": "docs", "free": true},
+        {"title": "Google Docs Collaboration", "url": "https://support.google.com/a/users/answer/9300026", "type": "docs", "free": true},
+        {"title": "Content Review Checklist", "url": "https://www.writethedocs.org/guide/review/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-cicd-docs"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-cicd-docs",
+      "title": "CI/CD for Documentation",
+      "icon": "🔄",
+      "category": "advanced",
+      "description": "Automate doc builds, previews, and deployments.",
+      "resources": [
+        {"title": "Netlify Docs", "url": "https://docs.netlify.com/", "type": "docs", "free": true},
+        {"title": "Vercel Documentation", "url": "https://vercel.com/docs", "type": "docs", "free": true},
+        {"title": "GitHub Pages", "url": "https://pages.github.com/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-video-tutorials"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "tw-video-tutorials",
+      "title": "Video Tutorials",
+      "icon": "🎥",
+      "category": "intermediate",
+      "description": "Create effective video tutorials and screencasts.",
+      "resources": [
+        {"title": "OBS Studio", "url": "https://obsproject.com/", "type": "tool", "free": true},
+        {"title": "Screen Recording Guide", "url": "https://www.youtube.com/watch?v=AGV95F5wWjM", "type": "video", "free": true},
+        {"title": "DaVinci Resolve (Free)", "url": "https://www.blackmagicdesign.com/products/davinciresolve", "type": "tool", "free": true}
+      ],
+      "children": ["tw-ai-docs"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-ai-docs",
+      "title": "AI-Powered Documentation",
+      "icon": "🤖",
+      "category": "advanced",
+      "description": "Use AI tools for writing, reviewing, and maintaining documentation.",
+      "resources": [
+        {"title": "AI for Technical Writing", "url": "https://www.writethedocs.org/guide/writing/ai-tools/", "type": "docs", "free": true},
+        {"title": "ChatGPT for Docs", "url": "https://openai.com/chatgpt/", "type": "tool", "free": true},
+        {"title": "Grammarly AI", "url": "https://www.grammarly.com/", "type": "tool", "free": true}
+      ],
+      "children": [],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "tw-open-source-docs",
+      "title": "Open Source Documentation",
+      "icon": "🌐",
+      "category": "intermediate",
+      "description": "Write docs for open-source projects: READMEs, CONTRIBUTING, changelogs.",
+      "resources": [
+        {"title": "Open Source Guide — GitHub", "url": "https://opensource.guide/", "type": "docs", "free": true},
+        {"title": "Standard Readme", "url": "https://github.com/RichardLitt/standard-readme", "type": "docs", "free": true},
+        {"title": "Keep a Changelog", "url": "https://keepachangelog.com/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-collaboration"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-sdk-documentation",
+      "title": "SDK & Library Documentation",
+      "icon": "📦",
+      "category": "advanced",
+      "description": "Document SDKs, libraries, and code references.",
+      "resources": [
+        {"title": "JSDoc", "url": "https://jsdoc.app/", "type": "tool", "free": true},
+        {"title": "Sphinx Autodoc", "url": "https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html", "type": "docs", "free": true},
+        {"title": "TypeDoc", "url": "https://typedoc.org/", "type": "tool", "free": true}
+      ],
+      "children": ["tw-api-documentation"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "tw-structured-writing",
+      "title": "Structured Writing (DITA)",
+      "icon": "🏗️",
+      "category": "advanced",
+      "description": "DITA XML for structured, reusable documentation.",
+      "resources": [
+        {"title": "DITA — OASIS", "url": "https://www.oasis-open.org/committees/dita/", "type": "docs", "free": true},
+        {"title": "Learning DITA", "url": "https://learningdita.com/", "type": "course", "free": true},
+        {"title": "DITA 1.3 Specification", "url": "https://docs.oasis-open.org/dita/dita/v1.3/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-content-strategy"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "tw-README-writing",
+      "title": "Writing Great READMEs",
+      "icon": "📄",
+      "category": "fundamentals",
+      "description": "Craft compelling README files that get projects noticed.",
+      "resources": [
+        {"title": "Make a README — GitHub", "url": "https://www.makeareadme.com/", "type": "docs", "free": true},
+        {"title": "Awesome README", "url": "https://github.com/matiassingers/awesome-readme", "type": "docs", "free": true},
+        {"title": "README Template", "url": "https://github.com/RichardLitt/standard-readme", "type": "tool", "free": true}
+      ],
+      "children": ["tw-open-source-docs"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "tw-javascript-docs",
+      "title": "JavaScript Documentation",
+      "icon": "🟨",
+      "category": "intermediate",
+      "description": "Document JavaScript code with JSDoc, TypeScript, and inline docs.",
+      "resources": [
+        {"title": "JSDoc Guide", "url": "https://jsdoc.app/", "type": "docs", "free": true},
+        {"title": "TypeScript Handbook", "url": "https://www.typescriptlang.org/docs/handbook/", "type": "docs", "free": true},
+        {"title": "TSDoc", "url": "https://tsdoc.org/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-api-documentation"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-docs-review",
+      "title": "Documentation Review Process",
+      "icon": "🔍",
+      "category": "intermediate",
+      "description": "Establish peer review, editorial guidelines, and feedback loops.",
+      "resources": [
+        {"title": "Review Process — Write the Docs", "url": "https://www.writethedocs.org/guide/review/", "type": "docs", "free": true},
+        {"title": "Google Doc Review", "url": "https://developers.google.com/tech-writing/two/review-process", "type": "course", "free": true},
+        {"title": "PR Review for Docs", "url": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests", "type": "docs", "free": true}
+      ],
+      "children": ["tw-collaboration"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-changelog-writing",
+      "title": "Changelog Writing",
+      "icon": "📝",
+      "category": "fundamentals",
+      "description": "Write clear, user-friendly changelogs.",
+      "resources": [
+        {"title": "Keep a Changelog", "url": "https://keepachangelog.com/", "type": "docs", "free": true},
+        {"title": "Semantic Versioning", "url": "https://semver.org/", "type": "docs", "free": true},
+        {"title": "Conventional Commits", "url": "https://www.conventionalcommits.org/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-open-source-docs"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "tw-contributing-guides",
+      "title": "Writing Contributing Guides",
+      "icon": "🤝",
+      "category": "intermediate",
+      "description": "Help contributors understand how to contribute to your project.",
+      "resources": [
+        {"title": "Contributing Guide Template", "url": "https://github.com/nayafia/contributing-template", "type": "tool", "free": true},
+        {"title": "Open Source Contributing", "url": "https://opensource.guide/how-to-contribute/", "type": "docs", "free": true},
+        {"title": "Contributor Covenant", "url": "https://www.contributor-covenant.org/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-open-source-docs"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-walkthrough-docs",
+      "title": "Tutorial & Walkthrough Writing",
+      "icon": "🎓",
+      "category": "intermediate",
+      "description": "Write effective step-by-step tutorials and quickstart guides.",
+      "resources": [
+        {"title": "Tutorial Writing — Google", "url": "https://developers.google.com/tech-writing/one/tutorials-overview", "type": "course", "free": true},
+        {"title": "Id Rather Be Writing", "url": "https://idratherbewriting.com/", "type": "docs", "free": true},
+        {"title": "Quickstart Guide Template", "url": "https://www.writethedocs.org/guide/writing/tutorials/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-diagrams"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-troubleshooting",
+      "title": "Troubleshooting & FAQ Docs",
+      "icon": "❓",
+      "category": "intermediate",
+      "description": "Write helpful troubleshooting guides and FAQ sections.",
+      "resources": [
+        {"title": "Writing Troubleshooting Docs", "url": "https://idratherbewriting.com/learnapidoc/", "type": "docs", "free": true},
+        {"title": "FAQ Writing Guide", "url": "https://www.nngroup.com/articles/faq-design/", "type": "docs", "free": true},
+        {"title": "Error Message Writing", "url": "https://developers.google.com/tech-writing/writing/error-messages", "type": "course", "free": true}
+      ],
+      "children": ["tw-search-optimization"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-docs-portals",
+      "title": "Documentation Portals",
+      "icon": "🏠",
+      "category": "advanced",
+      "description": "Design and build comprehensive documentation portals.",
+      "resources": [
+        {"title": "Postman API Network", "url": "https://www.postman.com/api-network/", "type": "docs", "free": true},
+        {"title": "Stripe API Docs (Gold Standard)", "url": "https://stripe.com/docs/api", "type": "docs", "free": true},
+        {"title": "Twilio Docs", "url": "https://www.twilio.com/docs", "type": "docs", "free": true}
+      ],
+      "children": ["tw-search-optimization"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "tw-onboarding-docs",
+      "title": "Onboarding Documentation",
+      "icon": "👋",
+      "category": "intermediate",
+      "description": "Write effective onboarding docs for new users and developers.",
+      "resources": [
+        {"title": "Onboarding Docs Guide", "url": "https://idratherbewriting.com/learnapidoc/", "type": "docs", "free": true},
+        {"title": "Developer Onboarding — GitHub", "url": "https://github.blog/developer-skills/github/how-to-create-an-onboarding-guide-for-your-open-source-project/", "type": "docs", "free": true},
+        {"title": "Writing Getting Started Guides", "url": "https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-doc-types"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-landing-pages",
+      "title": "Documentation Landing Pages",
+      "icon": "🏠",
+      "category": "intermediate",
+      "description": "Design effective doc homepages that help users find what they need.",
+      "resources": [
+        {"title": "Doc Landing Page Design", "url": "https://www.nngroup.com/articles/", "type": "docs", "free": true},
+        {"title": "Stripe Docs (Reference)", "url": "https://stripe.com/docs", "type": "docs", "free": true},
+        {"title": "Best Doc Sites", "url": "https://www.writethedocs.org/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-search-optimization"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "tw-measurements",
+      "title": "Measuring Doc Quality",
+      "icon": "📏",
+      "category": "advanced",
+      "description": "Track readability scores, content freshness, and doc effectiveness.",
+      "resources": [
+        {"title": "Readability Scores", "url": "https://www.webfx.com/tools/read-able/", "type": "tool", "free": true},
+        {"title": "Content Effectiveness Metrics", "url": "https://www.nngroup.com/articles/", "type": "docs", "free": true},
+        {"title": "Tech Writing KPIs", "url": "https://www.writethedocs.org/guide/", "type": "docs", "free": true}
+      ],
+      "children": ["tw-analytics"],
+      "difficulty": "Advanced"
+    }
+  ]
+}

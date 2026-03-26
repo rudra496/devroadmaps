@@ -47,6 +47,9 @@
                     <button class="btn btn-sm" id="resetBtn">Reset Progress</button>
                     <button class="btn btn-sm" id="printBtn">🖨️ Print</button>
                     <button class="btn btn-sm" id="expandAllBtn">Expand All</button>
+                    <button class="btn btn-sm" onclick="toggleTimer(currentRoadmap)" id="timerToggle">▶ Start Timer</button>
+                    <span class="nav-badge" title="Study Timer"><span id="timerDisplay">25:00</span> <span id="timerLabel">🍅 Focus</span></span>
+                    <span class="nav-badge" title="Total Study Time">⏱️ <span class="total-study-time">0m 0s</span></span>
                 </div>
             </div>
             <div class="progress-bar-container">
@@ -76,5 +79,12 @@
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
 
     <script src="js/main.js"></script>
+    <script src="js/learning-paths.js"></script>
+    <script src="js/timer.js"></script>
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    const currentRoadmap = params.get('roadmap') || '';
+    initTimerWidget();
+    </script>
 </body>
 </html>

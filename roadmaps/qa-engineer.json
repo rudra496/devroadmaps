@@ -1,0 +1,597 @@
+{
+  "title": "QA / Test Engineer",
+  "description": "Master software testing — from manual fundamentals to advanced automation frameworks and quality engineering.",
+  "icon": "🧪",
+  "categories": ["fundamentals", "intermediate", "advanced", "tools"],
+  "nodes": [
+    {
+      "id": "qa-testing-fundamentals",
+      "title": "Testing Fundamentals",
+      "icon": "📖",
+      "category": "fundamentals",
+      "description": "Why we test, testing principles, the testing pyramid, and quality mindset.",
+      "resources": [
+        {"title": "ISTQB Foundation Guide", "url": "https://www.istqb.org/", "type": "docs", "free": true},
+        {"title": "Software Testing Course — freeCodeCamp", "url": "https://www.freecodecamp.org/news/software-testing-beginner-course/", "type": "video", "free": true},
+        {"title": "Ministry of Testing", "url": "https://www.ministryoftesting.com/", "type": "docs", "free": true}
+      ],
+      "children": ["qa-test-types"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "qa-test-types",
+      "title": "Types of Testing",
+      "icon": "📋",
+      "category": "fundamentals",
+      "description": "Unit, Integration, E2E, Smoke, Regression, Sanity, and other test types.",
+      "resources": [
+        {"title": "Testing Types Explained — Guru99", "url": "https://www.guru99.com/types-of-software-testing.html", "type": "docs", "free": true},
+        {"title": "Test Automation University", "url": "https://testautomationu.applitools.com/", "type": "course", "free": true},
+        {"title": "The Testing Pyramid — Martin Fowler", "url": "https://martinfowler.com/articles/practical-test-pyramid.html", "type": "docs", "free": true}
+      ],
+      "children": ["qa-test-design"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "qa-test-design",
+      "title": "Test Design Techniques",
+      "icon": "📐",
+      "category": "fundamentals",
+      "description": "Equivalence partitioning, boundary value analysis, decision tables, state transitions.",
+      "resources": [
+        {"title": "Test Design Techniques — ISTQB", "url": "https://www.istqb.org/", "type": "docs", "free": true},
+        {"title": "Test Design by Example", "url": "https://www.youtube.com/watch?v=bASyGbGotZY", "type": "video", "free": true},
+        {"title": "BBST Test Design Course", "url": "https://www.bbst.info/", "type": "course", "free": true}
+      ],
+      "children": ["qa-test-planning"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "qa-test-planning",
+      "title": "Test Planning & Strategy",
+      "icon": "🗺️",
+      "category": "fundamentals",
+      "description": "Create test plans, define scope, estimate effort, and manage test cycles.",
+      "resources": [
+        {"title": "Test Plan Template — Atlassian", "url": "https://www.atlassian.com/software/testing/test-plans", "type": "docs", "free": true},
+        {"title": "Test Strategy Guide", "url": "https://www.guru99.com/test-strategy.html", "type": "docs", "free": true},
+        {"title": "Agile Testing — Lisa Crispin", "url": "https://www.youtube.com/watch?v=ZaYQcOLpM2E", "type": "video", "free": true}
+      ],
+      "children": ["qa-python-testing"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "qa-python-testing",
+      "title": "Python for Testing",
+      "icon": "🐍",
+      "category": "intermediate",
+      "description": "Python basics for writing test scripts and automation.",
+      "resources": [
+        {"title": "Python for Testers — freeCodeCamp", "url": "https://www.freecodecamp.org/news/python-for-testers/", "type": "video", "free": true},
+        {"title": "Python Official Tutorial", "url": "https://docs.python.org/3/tutorial/", "type": "docs", "free": true},
+        {"title": "Automate the Boring Stuff", "url": "https://automatetheboringstuff.com/", "type": "course", "free": true}
+      ],
+      "children": ["qa-selenium"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-selenium",
+      "title": "Selenium WebDriver",
+      "icon": "🌐",
+      "category": "intermediate",
+      "description": "Browser automation with Selenium — the industry standard for web testing.",
+      "resources": [
+        {"title": "Selenium Documentation", "url": "https://www.selenium.dev/documentation/", "type": "docs", "free": true},
+        {"title": "Selenium Tutorial — Guru99", "url": "https://www.guru99.com/selenium-tutorial.html", "type": "docs", "free": true},
+        {"title": "Selenium with Python — freeCodeCamp", "url": "https://www.freecodecamp.org/news/selenium-python-tutorial/", "type": "video", "free": true}
+      ],
+      "children": ["qa-playwright"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-playwright",
+      "title": "Playwright",
+      "icon": "🎭",
+      "category": "intermediate",
+      "description": "Modern browser automation by Microsoft — faster, more reliable than Selenium.",
+      "resources": [
+        {"title": "Playwright Documentation", "url": "https://playwright.dev/", "type": "docs", "free": true},
+        {"title": "Playwright Tutorial — freeCodeCamp", "url": "https://www.freecodecamp.org/news/playwright-tutorial/", "type": "video", "free": true},
+        {"title": "Playwright Course — TAU", "url": "https://testautomationu.applitools.com/playwright-python/", "type": "course", "free": true}
+      ],
+      "children": ["qa-cypress"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-cypress",
+      "title": "Cypress",
+      "icon": "🌲",
+      "category": "intermediate",
+      "description": "Frontend testing framework — fast, easy setup, great developer experience.",
+      "resources": [
+        {"title": "Cypress Documentation", "url": "https://www.cypress.io/", "type": "docs", "free": true},
+        {"title": "Cypress Tutorial — freeCodeCamp", "url": "https://www.freecodecamp.org/news/cypress-testing-tutorial/", "type": "video", "free": true},
+        {"title": "Cypress Real World App", "url": "https://github.com/cypress-io/cypress-realworld-app", "type": "tool", "free": true}
+      ],
+      "children": ["qa-appium"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-appium",
+      "title": "Appium (Mobile Testing)",
+      "icon": "📱",
+      "category": "advanced",
+      "description": "Cross-platform mobile automation for iOS and Android.",
+      "resources": [
+        {"title": "Appium Documentation", "url": "https://appium.io/docs/en/latest/", "type": "docs", "free": true},
+        {"title": "Appium Tutorial — freeCodeCamp", "url": "https://www.freecodecamp.org/news/appium-tutorial/", "type": "video", "free": true},
+        {"title": "Appium Desktop", "url": "https://github.com/appium/appium-desktop", "type": "tool", "free": true}
+      ],
+      "children": ["qa-api-testing"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-api-testing",
+      "title": "API Testing",
+      "icon": "🔗",
+      "category": "intermediate",
+      "description": "Test REST APIs with Postman, REST Assured, and HTTP clients.",
+      "resources": [
+        {"title": "Postman Learning", "url": "https://learning.postman.com/", "type": "docs", "free": true},
+        {"title": "REST Assured — GitHub", "url": "https://github.com/rest-assured/rest-assured", "type": "tool", "free": true},
+        {"title": "API Testing Tutorial — Guru99", "url": "https://www.guru99.com/api-testing.html", "type": "docs", "free": true}
+      ],
+      "children": ["qa-performance-testing"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-performance-testing",
+      "title": "Performance Testing",
+      "icon": "⚡",
+      "category": "advanced",
+      "description": "Measure application performance with JMeter, k6, and Gatling.",
+      "resources": [
+        {"title": "JMeter Documentation", "url": "https://jmeter.apache.org/usermanual/index.html", "type": "docs", "free": true},
+        {"title": "k6 — Grafana", "url": "https://k6.io/", "type": "tool", "free": true},
+        {"title": "Gatling", "url": "https://gatling.io/", "type": "tool", "free": true},
+        {"title": "k6 Tutorial — freeCodeCamp", "url": "https://www.freecodecamp.org/news/k6-load-testing-tutorial/", "type": "video", "free": true}
+      ],
+      "children": ["qa-load-stress-testing"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-load-stress-testing",
+      "title": "Load & Stress Testing",
+      "icon": "📈",
+      "category": "advanced",
+      "description": "Simulate user load, identify bottlenecks, test system limits.",
+      "resources": [
+        {"title": "Load Testing Guide", "url": "https://www.guru99.com/load-testing-tutorial.html", "type": "docs", "free": true},
+        {"title": "Locust — Python Load Testing", "url": "https://locust.io/", "type": "tool", "free": true},
+        {"title": "Artillery", "url": "https://www.artillery.io/", "type": "tool", "free": true}
+      ],
+      "children": ["qa-security-testing"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-security-testing",
+      "title": "Security Testing Basics",
+      "icon": "🔒",
+      "category": "intermediate",
+      "description": "Basic security testing: OWASP Top 10, input validation, auth testing.",
+      "resources": [
+        {"title": "OWASP Testing Guide", "url": "https://owasp.org/www-project-web-security-testing-guide/", "type": "docs", "free": true},
+        {"title": "PortSwigger Web Security Academy", "url": "https://portswigger.net/web-security", "type": "course", "free": true},
+        {"title": "Burp Suite Community", "url": "https://portswigger.net/burp", "type": "tool", "free": true}
+      ],
+      "children": ["qa-accessibility-testing"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-accessibility-testing",
+      "title": "Accessibility Testing",
+      "icon": "♿",
+      "category": "intermediate",
+      "description": "Test for WCAG compliance and inclusive user experiences.",
+      "resources": [
+        {"title": "WCAG Guidelines", "url": "https://www.w3.org/WAI/WCAG21/quickref/", "type": "docs", "free": true},
+        {"title": "axe DevTools", "url": "https://www.deque.com/axe/", "type": "tool", "free": true},
+        {"title": "Lighthouse Accessibility", "url": "https://developer.chrome.com/docs/lighthouse/accessibility/", "type": "docs", "free": true}
+      ],
+      "children": ["qa-visual-testing"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-visual-testing",
+      "title": "Visual Regression Testing",
+      "icon": "👁️",
+      "category": "advanced",
+      "description": "Detect unintended visual changes using screenshot comparison tools.",
+      "resources": [
+        {"title": "Percy by BrowserStack", "url": "https://percy.io/", "type": "tool", "free": true},
+        {"title": "BackstopJS", "url": "https://github.com/garris/BackstopJS", "type": "tool", "free": true},
+        {"title": "Applitools Eyes", "url": "https://applitools.com/", "type": "tool", "free": true}
+      ],
+      "children": ["qa-automation-framework"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-automation-framework",
+      "title": "Test Automation Framework",
+      "icon": "🏗️",
+      "category": "advanced",
+      "description": "Design and build scalable, maintainable test automation frameworks.",
+      "resources": [
+        {"title": "Pytest Documentation", "url": "https://docs.pytest.org/", "type": "docs", "free": true},
+        {"title": "Test Automation Architecture", "url": "https://martinfowler.com/articles/practical-test-pyramid.html", "type": "docs", "free": true},
+        {"title": "Page Object Model", "url": "https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/", "type": "docs", "free": true}
+      ],
+      "children": ["qa-bdd"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-bdd",
+      "title": "BDD — Behavior-Driven Development",
+      "icon": "🥒",
+      "category": "intermediate",
+      "description": "Write tests in natural language with Cucumber, Behave, and SpecFlow.",
+      "resources": [
+        {"title": "Cucumber Documentation", "url": "https://cucumber.io/docs", "type": "docs", "free": true},
+        {"title": "Behave — Python BDD", "url": "https://behave.readthedocs.io/", "type": "tool", "free": true},
+        {"title": "BDD Tutorial — freeCodeCamp", "url": "https://www.freecodecamp.org/news/behavior-driven-development/", "type": "video", "free": true}
+      ],
+      "children": ["qa-tdd"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-tdd",
+      "title": "TDD — Test-Driven Development",
+      "icon": "🔁",
+      "category": "intermediate",
+      "description": "Write tests before code: Red-Green-Refactor cycle.",
+      "resources": [
+        {"title": "TDD Guide — Martin Fowler", "url": "https://martinfowler.com/bliki/TestDrivenDevelopment.html", "type": "docs", "free": true},
+        {"title": "TDD with Python — freeCodeCamp", "url": "https://www.freecodecamp.org/news/test-driven-development-with-python/", "type": "video", "free": true},
+        {"title": "Kent Beck on TDD", "url": "https://www.youtube.com/watch?v=z9SCzIEdye4", "type": "video", "free": true}
+      ],
+      "children": ["qa-cicd-testing"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-cicd-testing",
+      "title": "CI/CD Integration for Tests",
+      "icon": "🔄",
+      "category": "advanced",
+      "description": "Run automated tests in CI/CD: GitHub Actions, Jenkins, GitLab CI.",
+      "resources": [
+        {"title": "Testing in GitHub Actions", "url": "https://docs.github.com/en/actions/quickstart", "type": "docs", "free": true},
+        {"title": "CI/CD Testing Best Practices", "url": "https://www.atlassian.com/continuous-delivery/software-testing", "type": "docs", "free": true},
+        {"title": "Parallel Test Execution", "url": "https://docs.pytest.org/en/stable/how-to/parallel.html", "type": "docs", "free": true}
+      ],
+      "children": ["qa-test-reporting"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-test-reporting",
+      "title": "Test Reporting",
+      "icon": "📊",
+      "category": "intermediate",
+      "description": "Generate beautiful test reports with Allure, ExtentReports, and pytest-html.",
+      "resources": [
+        {"title": "Allure Report", "url": "https://docs.qameta.io/allure/", "type": "tool", "free": true},
+        {"title": "ExtentReports", "url": "https://extentreports.com/", "type": "tool", "free": true},
+        {"title": "pytest-html", "url": "https://pytest-html.readthedocs.io/", "type": "tool", "free": true}
+      ],
+      "children": ["qa-mocking"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-mocking",
+      "title": "Mocking & Stubbing",
+      "icon": "🎭",
+      "category": "intermediate",
+      "description": "Isolate tests with mocks, stubs, and fakes using unittest.mock, Mockito.",
+      "resources": [
+        {"title": "Python unittest.mock", "url": "https://docs.python.org/3/library/unittest.mock.html", "type": "docs", "free": true},
+        {"title": "Mockito — Java", "url": "https://site.mockito.org/", "type": "tool", "free": true},
+        {"title": "Sinon.js — JavaScript", "url": "https://sinonjs.org/", "type": "tool", "free": true}
+      ],
+      "children": ["qa-contract-testing"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-contract-testing",
+      "title": "Contract Testing",
+      "icon": "📝",
+      "category": "advanced",
+      "description": "Verify API contracts between services using Pact.",
+      "resources": [
+        {"title": "Pact Documentation", "url": "https://docs.pact.io/", "type": "docs", "free": true},
+        {"title": "Consumer-Driven Contracts", "url": "https://martinfowler.com/articles/consumerDrivenContracts.html", "type": "docs", "free": true},
+        {"title": "Pact Tutorial — freeCodeCamp", "url": "https://www.freecodecamp.org/news/pact-contract-testing/", "type": "video", "free": true}
+      ],
+      "children": ["qa-chaos-testing"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-chaos-testing",
+      "title": "Chaos Testing",
+      "icon": "💥",
+      "category": "advanced",
+      "description": "Test system resilience by intentionally introducing failures.",
+      "resources": [
+        {"title": "Chaos Engineering Principles", "url": "https://principlesofchaos.org/", "type": "docs", "free": true},
+        {"title": "Gremlin Chaos Engineering", "url": "https://www.gremlin.com/", "type": "tool", "free": true},
+        {"title": "Chaos Mesh", "url": "https://chaos-mesh.org/", "type": "tool", "free": true}
+      ],
+      "children": ["qa-database-testing"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-database-testing",
+      "title": "Database Testing",
+      "icon": "🗄️",
+      "category": "intermediate",
+      "description": "Test data integrity, stored procedures, and database migrations.",
+      "resources": [
+        {"title": "Database Testing Guide", "url": "https://www.guru99.com/database-testing.html", "type": "docs", "free": true},
+        {"title": "SQL Testing with pytest", "url": "https://docs.pytest.org/", "type": "docs", "free": true},
+        {"title": "TestContainers", "url": "https://www.testcontainers.org/", "type": "tool", "free": true}
+      ],
+      "children": ["qa-api-mocking"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-api-mocking",
+      "title": "API Mocking (WireMock)",
+      "icon": "🔌",
+      "category": "intermediate",
+      "description": "Mock external APIs and services for isolated testing.",
+      "resources": [
+        {"title": "WireMock", "url": "https://wiremock.org/", "type": "tool", "free": true},
+        {"title": "JSON Server", "url": "https://github.com/typicode/json-server", "type": "tool", "free": true},
+        {"title": "Mockoon", "url": "https://mockoon.com/", "type": "tool", "free": true}
+      ],
+      "children": ["qa-test-data"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-test-data",
+      "title": "Test Data Management",
+      "icon": "📁",
+      "category": "intermediate",
+      "description": "Generate, manage, and maintain test data effectively.",
+      "resources": [
+        {"title": "Faker — Fake Data Generator", "url": "https://faker.readthedocs.io/", "type": "tool", "free": true},
+        {"title": "Test Data Strategies", "url": "https://www.atlassian.com/continuous-delivery/software-testing", "type": "docs", "free": true},
+        {"title": "Factory Boy — Python", "url": "https://factoryboy.readthedocs.io/", "type": "tool", "free": true}
+      ],
+      "children": ["qa-test-environment"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-test-environment",
+      "title": "Test Environment Management",
+      "icon": "🖥️",
+      "category": "intermediate",
+      "description": "Set up and manage test environments, Docker containers, and cloud sandboxes.",
+      "resources": [
+        {"title": "Docker for Testing", "url": "https://docs.docker.com/", "type": "docs", "free": true},
+        {"title": "TestContainers", "url": "https://www.testcontainers.org/", "type": "tool", "free": true},
+        {"title": "Vagrant", "url": "https://www.vagrantup.com/", "type": "tool", "free": true}
+      ],
+      "children": ["qa-bug-tracking"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-bug-tracking",
+      "title": "Bug Tracking & Reporting",
+      "icon": "🐛",
+      "category": "fundamentals",
+      "description": "Write effective bug reports, triage, and track defects.",
+      "resources": [
+        {"title": "How to Write Bug Reports", "url": "https://www.atlassian.com/agile/project-management/bug-tracking", "type": "docs", "free": true},
+        {"title": "Jira Bug Tracking", "url": "https://www.atlassian.com/software/jira", "type": "tool", "free": true},
+        {"title": "Bug Report Template", "url": "https://github.com/avocado-framework/avocado/issues", "type": "docs", "free": true}
+      ],
+      "children": ["qa-agile-testing"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "qa-agile-testing",
+      "title": "Agile Testing",
+      "icon": "🏃",
+      "category": "intermediate",
+      "description": "Testing in agile: sprints, standups, user stories, acceptance criteria.",
+      "resources": [
+        {"title": "Agile Testing — Atlassian", "url": "https://www.atlassian.com/agile", "type": "docs", "free": true},
+        {"title": "Agile Testing Quadrants", "url": "https://agiletesting.quadrants/", "type": "docs", "free": true},
+        {"title": "Testing in Scrum", "url": "https://www.scrum.org/", "type": "docs", "free": true}
+      ],
+      "children": ["qa-shift-left"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-shift-left",
+      "title": "Shift Left Testing",
+      "icon": "⬅️",
+      "category": "advanced",
+      "description": "Move testing earlier in the development lifecycle.",
+      "resources": [
+        {"title": "Shift Left Testing Guide", "url": "https://www.atlassian.com/continuous-delivery/software-testing", "type": "docs", "free": true},
+        {"title": "Shift Left Security Testing", "url": "https://snyk.io/learn/shift-left-testing/", "type": "docs", "free": true},
+        {"title": "Shift Left Quality", "url": "https://www.youtube.com/watch?v=Kl1Ff6fMF0A", "type": "video", "free": true}
+      ],
+      "children": ["qa-quality-metrics"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-quality-metrics",
+      "title": "Quality Metrics & KPIs",
+      "icon": "📈",
+      "category": "advanced",
+      "description": "Track test coverage, defect density, pass rates, and release quality.",
+      "resources": [
+        {"title": "Software Quality Metrics", "url": "https://www.guru99.com/software-quality-metrics.html", "type": "docs", "free": true},
+        {"title": "Code Coverage Guide", "url": "https://docs.pytest.org/en/stable/how-to/usage.html#measure-coverage", "type": "docs", "free": true},
+        {"title": "SonarQube", "url": "https://www.sonarqube.org/", "type": "tool", "free": true}
+      ],
+      "children": ["qa-cross-browser"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-cross-browser",
+      "title": "Cross-Browser Testing",
+      "icon": "🖥️",
+      "category": "intermediate",
+      "description": "Ensure your app works across browsers and devices.",
+      "resources": [
+        {"title": "BrowserStack Live", "url": "https://www.browserstack.com/", "type": "tool", "free": true},
+        {"title": "Sauce Labs Open Source", "url": "https://saucelabs.com/open-source", "type": "tool", "free": true},
+        {"title": "LambdaTest", "url": "https://www.lambdatest.com/", "type": "tool", "free": true}
+      ],
+      "children": ["qa-java-testing"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-java-testing",
+      "title": "Java for Testing",
+      "icon": "☕",
+      "category": "intermediate",
+      "description": "Java fundamentals for enterprise test automation with TestNG, JUnit.",
+      "resources": [
+        {"title": "JUnit 5 Documentation", "url": "https://junit.org/junit5/docs/current/user-guide/", "type": "docs", "free": true},
+        {"title": "TestNG", "url": "https://testng.org/", "type": "tool", "free": true},
+        {"title": "Java Tutorial — Baeldung", "url": "https://www.baeldung.com/", "type": "docs", "free": true}
+      ],
+      "children": ["qa-automation-framework"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-javascript-testing",
+      "title": "JavaScript Testing",
+      "icon": "🟨",
+      "category": "intermediate",
+      "description": "Jest, Mocha, Chai, and Vitest for frontend/backend JS testing.",
+      "resources": [
+        {"title": "Jest Documentation", "url": "https://jestjs.io/", "type": "docs", "free": true},
+        {"title": "Vitest", "url": "https://vitest.dev/", "type": "tool", "free": true},
+        {"title": "Testing JavaScript — freeCodeCamp", "url": "https://www.freecodecamp.org/news/testing-javascript-with-jest/", "type": "video", "free": true}
+      ],
+      "children": ["qa-automation-framework"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-exploratory-testing",
+      "title": "Exploratory Testing",
+      "icon": "🔍",
+      "category": "intermediate",
+      "description": "Structured but informal testing to discover unexpected issues.",
+      "resources": [
+        {"title": "Exploratory Testing — Ministry of Testing", "url": "https://www.ministryoftesting.com/", "type": "docs", "free": true},
+        {"title": "Session-Based Test Management", "url": "https://www.satisfice.com/sbtm/", "type": "docs", "free": true},
+        {"title": "James Bach on ET", "url": "https://www.youtube.com/watch?v=1RaqDJRzZVE", "type": "video", "free": true}
+      ],
+      "children": ["qa-agile-testing"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-cypress-advanced",
+      "title": "Advanced Cypress Patterns",
+      "icon": "🌲",
+      "category": "advanced",
+      "description": "Custom commands, Cypress plugins, component testing, and visual testing.",
+      "resources": [
+        {"title": "Cypress Custom Commands", "url": "https://docs.cypress.io/api/cypress-api/custom-commands", "type": "docs", "free": true},
+        {"title": "Cypress Real World Best Practices", "url": "https://github.com/cypress-io/cypress-realworld-app", "type": "tool", "free": true},
+        {"title": "Cypress Component Testing", "url": "https://docs.cypress.io/guides/component-testing", "type": "docs", "free": true}
+      ],
+      "children": ["qa-automation-framework"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-soap-testing",
+      "title": "SOAP API Testing",
+      "icon": "📦",
+      "category": "intermediate",
+      "description": "Test SOAP web services with SoapUI and Postman.",
+      "resources": [
+        {"title": "SoapUI Open Source", "url": "https://www.soapui.org/", "type": "tool", "free": true},
+        {"title": "Postman SOAP Requests", "url": "https://learning.postman.com/docs/sending-requests/supported-api-frameworks/soap/", "type": "docs", "free": true},
+        {"title": "WSDL Tutorial", "url": "https://www.w3schools.com/xml/xml_wsdl.asp", "type": "docs", "free": true}
+      ],
+      "children": ["qa-api-testing"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-graphql-testing",
+      "title": "GraphQL Testing",
+      "icon": "◈",
+      "category": "advanced",
+      "description": "Test GraphQL APIs: queries, mutations, subscriptions, and schema validation.",
+      "resources": [
+        {"title": "GraphQL Testing Guide", "url": "https://graphql.org/learn/queries/", "type": "docs", "free": true},
+        {"title": "Apollo Client Testing", "url": "https://www.apollographql.com/docs/react/data/testing/", "type": "docs", "free": true},
+        {"title": "Postman GraphQL", "url": "https://learning.postman.com/docs/sending-requests/supported-api-frameworks/graphql/", "type": "docs", "free": true}
+      ],
+      "children": ["qa-api-testing"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-ui-automation-pitfalls",
+      "title": "UI Automation Pitfalls",
+      "icon": "⚠️",
+      "category": "advanced",
+      "description": "Common UI automation problems: flaky tests, synchronization, selectors.",
+      "resources": [
+        {"title": "Handling Flaky Tests", "url": "https://martinfowler.com/articles/flaky-tests.html", "type": "docs", "free": true},
+        {"title": "Selenium Best Practices", "url": "https://www.selenium.dev/documentation/webdriver/best_practices/", "type": "docs", "free": true},
+        {"title": "Playwright Best Practices", "url": "https://playwright.dev/docs/best-practices", "type": "docs", "free": true}
+      ],
+      "children": ["qa-automation-framework"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-mobile-testing-basics",
+      "title": "Mobile Testing Fundamentals",
+      "icon": "📲",
+      "category": "intermediate",
+      "description": "Mobile-specific testing: gestures, orientations, permissions, interrupts.",
+      "resources": [
+        {"title": "Mobile Testing Guide", "url": "https://www.guru99.com/mobile-testing.html", "type": "docs", "free": true},
+        {"title": "Android Testing Guide", "url": "https://developer.android.com/training/testing", "type": "docs", "free": true},
+        {"title": "iOS Testing — Apple", "url": "https://developer.apple.com/documentation/xcode", "type": "docs", "free": true}
+      ],
+      "children": ["qa-appium"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "qa-software-quality",
+      "title": "Software Quality Engineering",
+      "icon": "🏗️",
+      "category": "advanced",
+      "description": "Quality engineering beyond testing: quality gates, SLAs, and quality culture.",
+      "resources": [
+        {"title": "Quality Engineering — Atlassian", "url": "https://www.atlassian.com/continuous-delivery/software-testing", "type": "docs", "free": true},
+        {"title": "Building Quality In", "url": "https://www.youtube.com/watch?v=eWnGmVxTrT0", "type": "video", "free": true},
+        {"title": "Test Maturity Model", "url": "https://www.istqb.org/", "type": "docs", "free": true}
+      ],
+      "children": ["qa-quality-metrics"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "qa-etl-testing",
+      "title": "ETL & Data Pipeline Testing",
+      "icon": "🔄",
+      "category": "advanced",
+      "description": "Test data pipelines, ETL processes, and data warehouse validations.",
+      "resources": [
+        {"title": "ETL Testing Guide", "url": "https://www.guru99.com/etl-testing.html", "type": "docs", "free": true},
+        {"title": "dbt Testing", "url": "https://docs.getdbt.com/docs/build/tests", "type": "docs", "free": true},
+        {"title": "Great Expectations", "url": "https://docs.greatexpectations.io/", "type": "tool", "free": true}
+      ],
+      "children": ["qa-database-testing"],
+      "difficulty": "Advanced"
+    }
+  ]
+}

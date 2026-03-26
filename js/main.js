@@ -15,6 +15,9 @@ const ROADMAPS = [
     { id: "game-dev", slug: "game-dev", icon: "🎮", title: "Game Developer" },
     { id: "embedded-iot", slug: "embedded-iot", icon: "🔌", title: "Embedded / IoT" },
     { id: "product-manager", slug: "product-manager", icon: "📋", title: "Product Manager" },
+    { id: "devsecops", slug: "devsecops", icon: "🛡️", title: "DevSecOps Engineer" },
+    { id: "qa-engineer", slug: "qa-engineer", icon: "🧪", title: "QA / Test Engineer" },
+    { id: "technical-writer", slug: "technical-writer", icon: "✍️", title: "Technical Writer" },
 ];
 
 // === Particle System ===
@@ -269,6 +272,7 @@ async function initRoadmapViewer() {
                     <span class="node-title">${node.title}</span>
                     <span class="node-badge ${badgeClass}">${node.category}</span>
                     <span class="node-expand-icon">▶</span>
+                    <button class="bookmark-btn" data-node-id="${node.id}" title="Bookmark">${isBookmarked(node.id, slug) ? '⭐' : '☆'}</button>
                 </div>
                 <div class="node-body">
                     <div class="node-content">
@@ -295,6 +299,15 @@ async function initRoadmapViewer() {
                 saveProgress();
                 updateMinimap();
             });
+
+            // Bookmark
+            const bookmarkBtn = el.querySelector('.bookmark-btn');
+            if (bookmarkBtn) {
+                bookmarkBtn.addEventListener('click', () => {
+                    const bookmarked = toggleBookmark(node.id, slug);
+                    bookmarkBtn.textContent = bookmarked ? '⭐' : '☆';
+                });
+            }
 
             container.appendChild(el);
         });

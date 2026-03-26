@@ -13,13 +13,13 @@
 
 **The open-source roadmap.sh alternative**
 
-> 12 comprehensive roadmaps • 600+ topics • 2,000+ free resources • 100% free forever
+> 15 comprehensive roadmaps • 700+ topics • 2,500+ free resources • 100% free forever
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-brightgreen)](https://yourusername.github.io/devroadmaps)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Roadmaps](https://img.shields.io/badge/Roadmaps-12-purple)](#roadmaps)
-[![Topics](https://img.shields.io/badge/Topics-600%2B-orange)](#)
-[![Resources](https://img.shields.io/badge/Resources-2000%2B-green)](#)
+[![Roadmaps](https://img.shields.io/badge/Roadmaps-15-purple)](#roadmaps)
+[![Topics](https://img.shields.io/badge/Topics-700%2B-orange)](#)
+[![Resources](https://img.shields.io/badge/Resources-2500%2B-green)](#)
 
 ---
 
@@ -55,7 +55,45 @@
 | 9 | ⛓️ [Blockchain / Web3](roadmaps/blockchain.json) | 50 | Solidity, DeFi, smart contracts |
 | 10 | 🎮 [Game Developer](roadmaps/game-dev.json) | 50 | Unity, Godot, Unreal, C#, C++ |
 | 11 | 🔌 [Embedded / IoT](roadmaps/embedded-iot.json) | 50 | Arduino, ESP32, RTOS, sensors |
-| 12 | 📋 [Product Manager](roadmaps/product-manager.json) | 50 | Product thinking, analytics, agile |
+| 12 | 🛡️ [DevSecOps Engineer](roadmaps/devsecops.json) | 40 | Container security, SAST/DAST, compliance, zero trust |
+| 13 | 🧪 [QA / Test Engineer](roadmaps/qa-engineer.json) | 43 | Selenium, Playwright, performance testing, BDD, TDD |
+| 14 | ✍️ [Technical Writer](roadmaps/technical-writer.json) | 42 | API docs, Docusaurus, Mermaid, content strategy |
+
+## 🎯 Learning Paths
+
+Pre-built paths combining nodes from multiple roadmaps:
+
+| Path | Description | Topics |
+|------|-------------|:------:|
+| 🌐 Full Stack in 6 Months | Frontend + Backend + DevOps essentials | ~22 |
+| 🧠 Zero to ML Engineer | Python → ML → Deep Learning → NLP → Deployment | ~12 |
+| ☁️ DevOps Career Switch | Linux → Docker → K8s → Terraform → Cloud | ~14 |
+
+## 📌 Bookmarking
+
+- ⭐ Bookmark any node across any roadmap
+- View all bookmarks in one place
+- Export bookmarks as a study plan (Markdown)
+
+## ⏱️ Study Timer
+
+- 🍅 Pomodoro timer built into each roadmap
+- Track study time per roadmap
+- Total study time displayed in header
+- Automatic break reminders
+
+## 🏆 Achievements
+
+Unlock badges as you learn:
+
+| Achievement | Requirement |
+|-------------|-------------|
+| 🌟 First Steps | Complete your first node |
+| 🔥 Getting Serious | Complete 10 nodes |
+| 🏆 Roadmap Master | Complete an entire roadmap |
+| 🧠 Polymath | Start 5 different roadmaps |
+| 📌 Collector | Bookmark 10 nodes |
+| ⏰ Dedicated | Study for 1 hour total |
 
 ## 🚀 Quick Start
 
@@ -86,10 +124,14 @@ python3 -m http.server 8000
 devroadmaps/
 ├── index.html          # Landing page
 ├── roadmap.html        # Roadmap viewer
+├── achievements.json   # Achievement badges data
 ├── css/style.css       # All styles (dark + light themes)
-├── js/main.js          # All JavaScript
+├── js/
+│   ├── main.js         # Core JavaScript
+│   ├── learning-paths.js # Learning paths & bookmarks
+│   └── timer.js        # Study timer & achievements
 ├── roadmaps/
-│   ├── frontend.json   # Roadmap data (12 files)
+│   ├── frontend.json   # Roadmap data (15 files)
 │   ├── backend.json
 │   ├── fullstack.json
 │   ├── ml-ai.json
@@ -100,7 +142,14 @@ devroadmaps/
 │   ├── blockchain.json
 │   ├── game-dev.json
 │   ├── embedded-iot.json
-│   └── product-manager.json
+│   ├── product-manager.json
+│   ├── devsecops.json
+│   ├── qa-engineer.json
+│   └── technical-writer.json
+├── .github/
+│   └── ISSUE_TEMPLATE/
+│       ├── bug_report.md
+│       └── feature_request.md
 ├── README.md
 ├── CONTRIBUTING.md
 └── LICENSE

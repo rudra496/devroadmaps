@@ -1,0 +1,598 @@
+{
+  "title": "DevSecOps Engineer",
+  "description": "Integrate security into every stage of the development lifecycle — from code commit to production.",
+  "icon": "🛡️",
+  "categories": ["fundamentals", "intermediate", "advanced", "tools"],
+  "nodes": [
+    {
+      "id": "ds-devops-fundamentals",
+      "title": "DevOps Fundamentals",
+      "icon": "☁️",
+      "category": "fundamentals",
+      "description": "Understand CI/CD, infrastructure as code, and DevOps culture before adding security.",
+      "resources": [
+        {"title": "DevOps Explained — freeCodeCamp", "url": "https://www.freecodecamp.org/news/what-is-devops/", "type": "docs", "free": true},
+        {"title": "CI/CD Pipeline Tutorial", "url": "https://docs.github.com/en/actions/quickstart", "type": "docs", "free": true},
+        {"title": "Atlassian DevOps Guide", "url": "https://www.atlassian.com/devops", "type": "docs", "free": true}
+      ],
+      "children": ["ds-linux-networking"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "ds-linux-networking",
+      "title": "Linux & Networking Basics",
+      "icon": "🐧",
+      "category": "fundamentals",
+      "description": "Linux command line, file permissions, networking fundamentals for security.",
+      "resources": [
+        {"title": "Linux Journey", "url": "https://linuxjourney.com/", "type": "course", "free": true},
+        {"title": "OverTheWire Bandit", "url": "https://overthewire.org/wargames/bandit/", "type": "course", "free": true},
+        {"title": "Computer Networking Course — Stanford", "url": "https://www.youtube.com/watch?v=2yEpKia3O4o", "type": "video", "free": true}
+      ],
+      "children": ["ds-container-security"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "ds-container-security",
+      "title": "Container Security",
+      "icon": "📦",
+      "category": "intermediate",
+      "description": "Secure Docker containers: minimal base images, non-root users, read-only filesystems.",
+      "resources": [
+        {"title": "Docker Security Best Practices", "url": "https://docs.docker.com/engine/security/", "type": "docs", "free": true},
+        {"title": "NIST Application Container Security Guide", "url": "https://csrc.nist.gov/publications/detail/sp/800-190/final", "type": "docs", "free": true},
+        {"title": "Container Security Course — KodeKloud", "url": "https://kodekloud.com/courses/container-security", "type": "course", "free": true}
+      ],
+      "children": ["ds-image-scanning"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-image-scanning",
+      "title": "Container Image Scanning",
+      "icon": "🔍",
+      "category": "intermediate",
+      "description": "Scan container images for vulnerabilities using Trivy, Grype, and Snyk.",
+      "resources": [
+        {"title": "Trivy — Aqua Security", "url": "https://aquasecurity.github.io/trivy/", "type": "tool", "free": true},
+        {"title": "Grype — Anchore", "url": "https://github.com/anchore/grype", "type": "tool", "free": true},
+        {"title": "Trivy Tutorial — freeCodeCamp", "url": "https://www.freecodecamp.org/news/how-to-scan-container-images-for-vulnerabilities-with-trivy/", "type": "video", "free": true}
+      ],
+      "children": ["ds-sast-dast"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-sast-dast",
+      "title": "SAST & DAST",
+      "icon": "🩺",
+      "category": "intermediate",
+      "description": "Static and Dynamic Application Security Testing tools and methodologies.",
+      "resources": [
+        {"title": "OWASP SAST Guide", "url": "https://owasp.org/www-community/Source_Code_Analysis_Tools", "type": "docs", "free": true},
+        {"title": "OWASP ZAP", "url": "https://www.zaproxy.org/", "type": "tool", "free": true},
+        {"title": "Semgrep — Static Analysis", "url": "https://semgrep.dev/", "type": "tool", "free": true},
+        {"title": "SonarQube (Community)", "url": "https://www.sonarqube.org/", "type": "tool", "free": true}
+      ],
+      "children": ["ds-sca"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-sca",
+      "title": "Software Composition Analysis",
+      "icon": "📚",
+      "category": "intermediate",
+      "description": "Analyze open source dependencies for known vulnerabilities.",
+      "resources": [
+        {"title": "OWASP Dependency-Check", "url": "https://owasp.org/www-project-dependency-check/", "type": "tool", "free": true},
+        {"title": "npm audit & yarn audit", "url": "https://docs.npmjs.com/cli/v10/commands/npm-audit", "type": "docs", "free": true},
+        {"title": "Snyk Open Source", "url": "https://snyk.io/", "type": "tool", "free": true}
+      ],
+      "children": ["ds-iac-security"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-iac-security",
+      "title": "Infrastructure as Code Security",
+      "icon": "🏗️",
+      "category": "intermediate",
+      "description": "Secure Terraform, CloudFormation, and Kubernetes manifests with scanning tools.",
+      "resources": [
+        {"title": "Checkov — Bridgecrew", "url": "https://www.checkov.io/", "type": "tool", "free": true},
+        {"title": "tfsec — Terraform Security Scanner", "url": "https://aquasecurity.github.io/tfsec/", "type": "tool", "free": true},
+        {"title": "Kubernetes Security Best Practices", "url": "https://kubernetes.io/docs/concepts/security/", "type": "docs", "free": true}
+      ],
+      "children": ["ds-secrets-management"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-secrets-management",
+      "title": "Secrets Management",
+      "icon": "🔑",
+      "category": "intermediate",
+      "description": "Manage API keys, passwords, and certificates securely across the pipeline.",
+      "resources": [
+        {"title": "HashiCorp Vault", "url": "https://www.vaultproject.io/", "type": "tool", "free": true},
+        {"title": "GitHub Actions Secrets", "url": "https://docs.github.com/en/actions/security-guides/encrypted-secrets", "type": "docs", "free": true},
+        {"title": "Secret Scanning with Gitleaks", "url": "https://github.com/gitleaks/gitleaks", "type": "tool", "free": true},
+        {"title": "truffleHog", "url": "https://github.com/trufflesecurity/trufflehog", "type": "tool", "free": true}
+      ],
+      "children": ["ds-compliance-as-code"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-compliance-as-code",
+      "title": "Compliance as Code",
+      "icon": "📋",
+      "category": "advanced",
+      "description": "OPA, Rego policies, and automated compliance checking.",
+      "resources": [
+        {"title": "Open Policy Agent (OPA)", "url": "https://www.openpolicyagent.org/", "type": "tool", "free": true},
+        {"title": "OPA Tutorial — freeCodeCamp", "url": "https://www.freecodecamp.org/news/intro-to-open-policy-agent-opa/", "type": "video", "free": true},
+        {"title": "Checkov Policies", "url": "https://www.checkov.io/5.Policy%20Index/index.html", "type": "docs", "free": true}
+      ],
+      "children": ["ds-sbom"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-sbom",
+      "title": "Software Bill of Materials (SBOM)",
+      "icon": "📑",
+      "category": "advanced",
+      "description": "Generate and manage SBOMs for supply chain transparency.",
+      "resources": [
+        {"title": "Syft — Anchore SBOM Tool", "url": "https://github.com/anchore/syft", "type": "tool", "free": true},
+        {"title": "SPDX Specification", "url": "https://spdx.dev/", "type": "docs", "free": true},
+        {"title": "CycloneDX", "url": "https://cyclonedx.org/", "type": "docs", "free": true}
+      ],
+      "children": ["ds-runtime-security"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-runtime-security",
+      "title": "Runtime Security",
+      "icon": "🛡️",
+      "category": "advanced",
+      "description": "Monitor container and workload security at runtime.",
+      "resources": [
+        {"title": "Falco — Cloud Native Runtime Security", "url": "https://falco.org/", "type": "tool", "free": true},
+        {"title": "Tetragon — Cilium", "url": "https://github.com/cilium/tetragon", "type": "tool", "free": true},
+        {"title": "eBPF for Security", "url": "https://ebpf.io/applications/#security", "type": "docs", "free": true}
+      ],
+      "children": ["ds-threat-modeling"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-threat-modeling",
+      "title": "Threat Modeling",
+      "icon": "🎯",
+      "category": "intermediate",
+      "description": "Systematically identify threats using STRIDE, PASTA, and DREAD methodologies.",
+      "resources": [
+        {"title": "OWASP Threat Modeling", "url": "https://owasp.org/www-community/Threat_Modeling", "type": "docs", "free": true},
+        {"title": "Threat Modeling Manifesto", "url": "https://www.threatmodelingmanifesto.org/", "type": "docs", "free": true},
+        {"title": "Microsoft Threat Modeling Tool", "url": "https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling", "type": "tool", "free": true}
+      ],
+      "children": ["ds-incident-response"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-incident-response",
+      "title": "Incident Response Automation",
+      "icon": "🚨",
+      "category": "advanced",
+      "description": "Automate incident detection, triage, and response with SOAR playbooks.",
+      "resources": [
+        {"title": "NIST Incident Response Guide", "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final", "type": "docs", "free": true},
+        {"title": "Shuffle — SOAR Platform", "url": "https://shuffler.io/", "type": "tool", "free": true},
+        {"title": "TheHive — Incident Response Platform", "url": "https://thehive-project.org/", "type": "tool", "free": true}
+      ],
+      "children": ["ds-vulnerability-management"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-vulnerability-management",
+      "title": "Vulnerability Management",
+      "icon": "🐛",
+      "category": "advanced",
+      "description": "Systematic approach to finding, assessing, and remediating vulnerabilities.",
+      "resources": [
+        {"title": "OpenVAS — Greenbone", "url": "https://www.openvas.org/", "type": "tool", "free": true},
+        {"title": "Nuclei — ProjectDiscovery", "url": "https://github.com/projectdiscovery/nuclei", "type": "tool", "free": true},
+        {"title": "OWASP Vulnerability Management", "url": "https://owasp.org/www-project-vulnerability-management/", "type": "docs", "free": true}
+      ],
+      "children": ["ds-supply-chain-security"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-supply-chain-security",
+      "title": "Software Supply Chain Security",
+      "icon": "🔗",
+      "category": "advanced",
+      "description": "Secure your software supply chain from code to deployment.",
+      "resources": [
+        {"title": "Sigstore — Container Signing", "url": "https://www.sigstore.dev/", "type": "tool", "free": true},
+        {"title": "SLSA Framework", "url": "https://slsa.dev/", "type": "docs", "free": true},
+        {"title": "in-toto — Supply Chain Layout", "url": "https://in-toto.io/", "type": "tool", "free": true}
+      ],
+      "children": ["ds-cloud-security-posture"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-cloud-security-posture",
+      "title": "Cloud Security Posture Management",
+      "icon": "🌐",
+      "category": "advanced",
+      "description": "Monitor and manage cloud security configurations and compliance.",
+      "resources": [
+        {"title": "Prowler — AWS Security", "url": "https://github.com/prowler-cloud/prowler", "type": "tool", "free": true},
+        {"title": "ScoutSuite", "url": "https://github.com/nccgroup/ScoutSuite", "type": "tool", "free": true},
+        {"title": "CIS Benchmarks", "url": "https://www.cisecurity.org/cis-benchmarks/", "type": "docs", "free": true}
+      ],
+      "children": ["ds-policy-as-code"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-policy-as-code",
+      "title": "Policy as Code",
+      "icon": "📜",
+      "category": "advanced",
+      "description": "Define, enforce, and automate security policies as code.",
+      "resources": [
+        {"title": "OPA Gatekeeper — K8s", "url": "https://open-policy-agent.github.io/gatekeeper/", "type": "tool", "free": true},
+        {"title": "Kyverno — K8s Policy Engine", "url": "https://kyverno.io/", "type": "tool", "free": true},
+        {"title": "Conftest", "url": "https://www.conftest.dev/", "type": "tool", "free": true}
+      ],
+      "children": ["ds-zero-trust"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-zero-trust",
+      "title": "Zero Trust Architecture",
+      "icon": "🔐",
+      "category": "advanced",
+      "description": "Never trust, always verify — implement zero trust principles.",
+      "resources": [
+        {"title": "NIST Zero Trust Architecture", "url": "https://csrc.nist.gov/publications/detail/sp/800-207/final", "type": "docs", "free": true},
+        {"title": "Google BeyondCorp", "url": "https://cloud.google.com/beyondcorp", "type": "docs", "free": true},
+        {"title": "Zero Trust Network Design", "url": "https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/", "type": "docs", "free": true}
+      ],
+      "children": ["ds-security-observability"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-security-observability",
+      "title": "Security Observability",
+      "icon": "👁️",
+      "category": "advanced",
+      "description": "Logging, monitoring, and tracing with a security lens.",
+      "resources": [
+        {"title": "ELK Stack for Security", "url": "https://www.elastic.co/security", "type": "tool", "free": true},
+        {"title": "Wazuh — SIEM", "url": "https://wazuh.com/", "type": "tool", "free": true},
+        {"title": "Security Onion", "url": "https://securityonionsolutions.com/", "type": "tool", "free": true}
+      ],
+      "children": ["ds-soc-integration"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-soc-integration",
+      "title": "SOC Integration",
+      "icon": "🏢",
+      "category": "advanced",
+      "description": "Integrate DevSecOps tools with Security Operations Centers.",
+      "resources": [
+        {"title": "Wazuh SIEM Integration", "url": "https://documentation.wazuh.com/current/integrations/index.html", "type": "docs", "free": true},
+        {"title": "Splunk (Free Tier)", "url": "https://www.splunk.com/en_us/download/splunk-enterprise.html", "type": "tool", "free": true},
+        {"title": "Elastic Security", "url": "https://www.elastic.co/security", "type": "tool", "free": true}
+      ],
+      "children": ["ds-automated-remediation"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-automated-remediation",
+      "title": "Automated Remediation",
+      "icon": "🤖",
+      "category": "advanced",
+      "description": "Auto-fix security issues: patching, config drift correction, quarantine.",
+      "resources": [
+        {"title": "Renovate — Dependency Updates", "url": "https://github.com/renovatebot/renovate", "type": "tool", "free": true},
+        {"title": "Dependabot", "url": "https://docs.github.com/en/code-security/dependabot", "type": "tool", "free": true},
+        {"title": "StackStorm — Auto-Remediation", "url": "https://stackstorm.com/", "type": "tool", "free": true}
+      ],
+      "children": ["ds-security-champions"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-security-champions",
+      "title": "Security Champions Program",
+      "icon": "🏆",
+      "category": "intermediate",
+      "description": "Embed security advocates in every development team.",
+      "resources": [
+        {"title": "OWASP Security Champions Playbook", "url": "https://owasp.org/www-project-security-champions/", "type": "docs", "free": true},
+        {"title": "Security Champions Guide — OWASP", "url": "https://owasp.org/www-project-security-knowledge-framework/", "type": "docs", "free": true},
+        {"title": "Building Security Champions", "url": "https://www.youtube.com/watch?v=1oZf-SJTbAE", "type": "video", "free": true}
+      ],
+      "children": ["ds-risk-assessment"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-risk-assessment",
+      "title": "Risk Assessment & Management",
+      "icon": "📊",
+      "category": "advanced",
+      "description": "Quantify and prioritize security risks systematically.",
+      "resources": [
+        {"title": "NIST Risk Management Framework", "url": "https://www.nist.gov/itl/executive-orders-and-policies/executive-order-13636-critical-infrastructure", "type": "docs", "free": true},
+        {"title": "DREAD Risk Assessment Model", "url": "https://owasp.org/www-community/OWASP_Risk_Rating_Methodology", "type": "docs", "free": true},
+        {"title": "FAIR Risk Model", "url": "https://www.fairinstitute.org/", "type": "docs", "free": true}
+      ],
+      "children": ["ds-audit-automation"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-audit-automation",
+      "title": "Audit Automation",
+      "icon": "📝",
+      "category": "advanced",
+      "description": "Automate security audits, evidence collection, and compliance reporting.",
+      "resources": [
+        {"title": "InSpec — Chef Automate", "url": "https://www.inspec.io/", "type": "tool", "free": true},
+        {"title": "OpenSCAP", "url": "https://www.open-scap.org/", "type": "tool", "free": true},
+        {"title": "AWS Config Rules", "url": "https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html", "type": "docs", "free": true}
+      ],
+      "children": ["ds-compliance-frameworks"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-compliance-frameworks",
+      "title": "Compliance Frameworks",
+      "icon": "⚖️",
+      "category": "advanced",
+      "description": "SOC2, HIPAA, PCI-DSS, GDPR compliance automation.",
+      "resources": [
+        {"title": "Compliance-as-Code with AWS", "url": "https://aws.amazon.com/compliance/", "type": "docs", "free": true},
+        {"title": "SOC2 Compliance Guide", "url": "https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2", "type": "docs", "free": true},
+        {"title": "Drata — Compliance Automation", "url": "https://drata.com/", "type": "tool", "free": true}
+      ],
+      "children": ["ds-security-metrics"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-security-metrics",
+      "title": "Security Metrics & KPIs",
+      "icon": "📈",
+      "category": "advanced",
+      "description": "Measure security posture: MTTR, vulnerability SLAs, coverage metrics.",
+      "resources": [
+        {"title": "OWASP Security Metrics", "url": "https://owasp.org/www-community/OWASP_Security_Metrics", "type": "docs", "free": true},
+        {"title": "DefectDojo", "url": "https://github.com/DefectDojo/django-DefectDojo", "type": "tool", "free": true},
+        {"title": "DORA Metrics for Security", "url": "https://dora.dev/guides/dora-metrics-four-keys/", "type": "docs", "free": true}
+      ],
+      "children": ["ds-chaos-engineering"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-chaos-engineering",
+      "title": "Chaos Engineering for Security",
+      "icon": "💥",
+      "category": "advanced",
+      "description": "Test resilience against failures and security incidents.",
+      "resources": [
+        {"title": "Chaos Mesh", "url": "https://chaos-mesh.org/", "type": "tool", "free": true},
+        {"title": "LitmusChaos", "url": "https://litmuschaos.io/", "type": "tool", "free": true},
+        {"title": "Chaos Engineering Principles", "url": "https://principlesofchaos.org/", "type": "docs", "free": true}
+      ],
+      "children": ["ds-forensics-as-code"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-forensics-as-code",
+      "title": "Digital Forensics & IR Automation",
+      "icon": "🔬",
+      "category": "advanced",
+      "description": "Automate digital forensics collection and analysis.",
+      "resources": [
+        {"title": "Velociraptor — DFIR Tool", "url": "https://docs.velociraptor.app/", "type": "tool", "free": true},
+        {"title": "Autopsy — Forensic Platform", "url": "https://www.sleuthkit.org/autopsy/", "type": "tool", "free": true},
+        {"title": "KAPE — Forensic Triage", "url": "https://www.kroll.com/en/services/cyber-risk/incident-response-forensic-investigation/kroll-artifact-parser-extractor-kape", "type": "tool", "free": true}
+      ],
+      "children": ["ds-pentest-automation"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-pentest-automation",
+      "title": "Penetration Testing Automation",
+      "icon": "🎯",
+      "category": "advanced",
+      "description": "Automate reconnaissance, scanning, and exploitation workflows.",
+      "resources": [
+        {"title": "Metasploit Framework", "url": "https://www.metasploit.com/", "type": "tool", "free": true},
+        {"title": "Nuclei Templates", "url": "https://github.com/projectdiscovery/nuclei-templates", "type": "tool", "free": true},
+        {"title": "OWASP ZAP Automated Scans", "url": "https://www.zaproxy.org/docs/docker/baseline-scan/", "type": "docs", "free": true}
+      ],
+      "children": ["ds-secure-sdlc"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-secure-sdlc",
+      "title": "Secure SDLC",
+      "icon": "🔄",
+      "category": "intermediate",
+      "description": "Integrate security into every phase of the software development lifecycle.",
+      "resources": [
+        {"title": "OWASP SAMM", "url": "https://owaspsamm.org/", "type": "docs", "free": true},
+        {"title": "Microsoft SDL", "url": "https://www.microsoft.com/en-us/securityengineering/sdl", "type": "docs", "free": true},
+        {"title": "NIST SSDF", "url": "https://csrc.nist.gov/Projects/Secure-Software-Development-Framework", "type": "docs", "free": true}
+      ],
+      "children": ["ds-devsecops-pipeline"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-devsecops-pipeline",
+      "title": "Building a DevSecOps Pipeline",
+      "icon": "🚀",
+      "category": "advanced",
+      "description": "End-to-end: integrate all security tools into your CI/CD pipeline.",
+      "resources": [
+        {"title": "DevSecOps Pipeline Guide", "url": "https://www.redhat.com/en/topics/devops/what-is-devsecops", "type": "docs", "free": true},
+        {"title": "GitHub Actions Security Hardening", "url": "https://github.com/step-security/hardened-runner", "type": "tool", "free": true},
+        {"title": "Full DevSecOps Pipeline Tutorial", "url": "https://www.youtube.com/watch?v=j5Zsa_eOXeY", "type": "video", "free": true}
+      ],
+      "children": [],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-git-security",
+      "title": "Git & Repository Security",
+      "icon": "📂",
+      "category": "intermediate",
+      "description": "Branch protection, signed commits, PR security reviews.",
+      "resources": [
+        {"title": "GitHub Security Features", "url": "https://docs.github.com/en/code-security", "type": "docs", "free": true},
+        {"title": "GPG Signing Commits", "url": "https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits", "type": "docs", "free": true},
+        {"title": "git-secrets", "url": "https://github.com/awslabs/git-secrets", "type": "tool", "free": true}
+      ],
+      "children": ["ds-container-security"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-api-security",
+      "title": "API Security",
+      "icon": "🌐",
+      "category": "intermediate",
+      "description": "Secure REST and GraphQL APIs: auth, rate limiting, input validation.",
+      "resources": [
+        {"title": "OWASP API Security Top 10", "url": "https://owasp.org/www-project-api-security/", "type": "docs", "free": true},
+        {"title": "42Crunch API Security", "url": "https://42crunch.com/", "type": "tool", "free": true},
+        {"title": "API Security Testing with ZAP", "url": "https://www.zaproxy.org/docs/api/", "type": "docs", "free": true}
+      ],
+      "children": ["ds-compliance-as-code"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-k8s-security",
+      "title": "Kubernetes Security",
+      "icon": "☸️",
+      "category": "advanced",
+      "description": "RBAC, network policies, pod security, admission controllers.",
+      "resources": [
+        {"title": "Kubernetes Security Best Practices", "url": "https://kubernetes.io/docs/concepts/security/", "type": "docs", "free": true},
+        {"title": "Kube-bench — CIS Benchmark", "url": "https://github.com/aquasecurity/kube-bench", "type": "tool", "free": true},
+        {"title": "Kubeaudit", "url": "https://github.com/interactive-instruments/kubeaudit", "type": "tool", "free": true}
+      ],
+      "children": ["ds-runtime-security"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-identity-access",
+      "title": "Identity & Access Management",
+      "icon": "🪪",
+      "category": "intermediate",
+      "description": "SSO, MFA, OAuth 2.0, OIDC, and identity governance.",
+      "resources": [
+        {"title": "OAuth 2.0 Simplified", "url": "https://aaronparecki.com/oauth-2-simplified/", "type": "docs", "free": true},
+        {"title": "Keycloak", "url": "https://www.keycloak.org/", "type": "tool", "free": true},
+        {"title": "Auth0 (Free Tier)", "url": "https://auth0.com/", "type": "tool", "free": true}
+      ],
+      "children": ["ds-zero-trust"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-logging-monitoring",
+      "title": "Security Logging & Monitoring",
+      "icon": "📡",
+      "category": "intermediate",
+      "description": "Centralized logging, SIEM basics, security alerting.",
+      "resources": [
+        {"title": "ELK Stack Tutorial", "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html", "type": "docs", "free": true},
+        {"title": "Prometheus + Grafana", "url": "https://prometheus.io/docs/tutorials/getting_started/", "type": "docs", "free": true},
+        {"title": "Audit Logging Best Practices", "url": "https://owasp.org/www-community/Logging_Cheat_Sheet", "type": "docs", "free": true}
+      ],
+      "children": ["ds-security-observability"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-dast-scanning",
+      "title": "Dynamic Application Security Testing",
+      "icon": "🔎",
+      "category": "intermediate",
+      "description": "Run automated DAST scans in CI/CD pipelines.",
+      "resources": [
+        {"title": "OWASP ZAP CI Integration", "url": "https://www.zaproxy.org/docs/docker/baseline-scan/", "type": "docs", "free": true},
+        {"title": "Nikto Web Scanner", "url": "https://github.com/sullo/nikto", "type": "tool", "free": true},
+        {"title": "Arachni Scanner", "url": "https://github.com/Arachni/arachni", "type": "tool", "free": true}
+      ],
+      "children": ["ds-api-security"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-cloud-native-security",
+      "title": "Cloud Native Security Tools",
+      "icon": "☁️",
+      "category": "advanced",
+      "description": "CNCF security landscape: cert-manager, external-secrets, SPIFFE.",
+      "resources": [
+        {"title": "CNCF Security Landscape", "url": "https://landscape.cncf.io/category=security-compliance", "type": "docs", "free": true},
+        {"title": "cert-manager", "url": "https://cert-manager.io/", "type": "tool", "free": true},
+        {"title": "External Secrets Operator", "url": "https://external-secrets.io/", "type": "tool", "free": true}
+      ],
+      "children": ["ds-k8s-security"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "ds-ssh-hardening",
+      "title": "SSH & Server Hardening",
+      "icon": "🖥️",
+      "category": "fundamentals",
+      "description": "Secure SSH configurations, server baselines, and system hardening.",
+      "resources": [
+        {"title": "Mozilla SSH Guidelines", "url": "https://infosec.mozilla.org/guidelines/openssh", "type": "docs", "free": true},
+        {"title": "Lynis — Security Auditing", "url": "https://cisofy.com/lynis/", "type": "tool", "free": true},
+        {"title": "SSH Hardening Guide", "url": "https://www.ssh.com/academy/ssh/hardening-best-practices", "type": "docs", "free": true}
+      ],
+      "children": ["ds-linux-networking"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "ds-network-security",
+      "title": "Network Security Fundamentals",
+      "icon": "🔌",
+      "category": "fundamentals",
+      "description": "Firewalls, IDS/IPS, VPNs, network segmentation basics.",
+      "resources": [
+        {"title": "Network Security Course — Cybrary", "url": "https://www.cybrary.it/course/network-security/", "type": "course", "free": true},
+        {"title": "Wireshark Tutorial", "url": "https://www.wireshark.org/#learn", "type": "docs", "free": true},
+        {"title": "Suricata IDS", "url": "https://suricata.io/", "type": "tool", "free": true}
+      ],
+      "children": ["ds-container-security"],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "ds-web-security",
+      "title": "Web Application Security",
+      "icon": "🕸️",
+      "category": "intermediate",
+      "description": "OWASP Top 10: XSS, SQLi, CSRF, and common web vulnerabilities.",
+      "resources": [
+        {"title": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/", "type": "docs", "free": true},
+        {"title": "PortSwigger Web Security Academy", "url": "https://portswigger.net/web-security", "type": "course", "free": true},
+        {"title": "DVWA — Damn Vulnerable Web App", "url": "https://github.com/digininja/DVWA", "type": "tool", "free": true}
+      ],
+      "children": ["ds-sast-dast"],
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ds-security-testing",
+      "title": "Security Testing in CI/CD",
+      "icon": "🔄",
+      "category": "tools",
+      "description": "Integrate security scanning tools into GitHub Actions, GitLab CI, Jenkins.",
+      "resources": [
+        {"title": "GitHub CodeQL", "url": "https://codeql.github.com/", "type": "tool", "free": true},
+        {"title": "GitLab SAST", "url": "https://docs.gitlab.com/ee/user/application_security/sast/", "type": "docs", "free": true},
+        {"title": "Jenkins Security Plugins", "url": "https://www.jenkins.io/doc/pipeline/steps/", "type": "docs", "free": true}
+      ],
+      "children": ["ds-devsecops-pipeline"],
+      "difficulty": "Advanced"
+    }
+  ]
+}

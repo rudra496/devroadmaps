@@ -1,0 +1,8 @@
+[
+  {"id": "first_complete", "title": "First Steps", "description": "Complete your first node", "icon": "🌟"},
+  {"id": "ten_nodes", "title": "Getting Serious", "description": "Complete 10 nodes", "icon": "🔥"},
+  {"id": "roadmap_complete", "title": "Roadmap Master", "description": "Complete an entire roadmap", "icon": "🏆"},
+  {"id": "five_roadmaps", "title": "Polymath", "description": "Start 5 different roadmaps", "icon": "🧠"},
+  {"id": "bookmark_10", "title": "Collector", "description": "Bookmark 10 nodes", "icon": "📌"},
+  {"id": "study_hour", "title": "Dedicated", "description": "Study for 1 hour total", "icon": "⏰"}
+]
