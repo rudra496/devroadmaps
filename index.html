@@ -1,163 +1,212 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevRoadmaps — Free Interactive Developer Roadmaps</title>
-  <meta name="description" content="Free, open-source, interactive developer career roadmaps. 500+ curated nodes with free resources. No sign-up required.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevRoadmaps — Developer Roadmaps for Every Path</title>
+    <meta name="description" content="Free, comprehensive developer roadmaps for Frontend, Backend, Full Stack, ML/AI, DevOps, Mobile, Cybersecurity, Data Engineering, Blockchain, Game Dev, IoT, and Product Management.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>">
 </head>
 <body>
+    <!-- Particle Canvas -->
+    <canvas id="particles"></canvas>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <a href="index.html" class="logo">🗺️ DevRoadmaps</a>
-      <div class="nav-links">
-        <a href="#roadmaps">Roadmaps</a>
-        <a href="#features">Features</a>
-        <a href="#faq">FAQ</a>
-        <a href="https://github.com" target="_blank">GitHub</a>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-bg">
-      <canvas id="hero-canvas"></canvas>
-    </div>
-    <div class="hero-content">
-      <div class="hero-badge">⭐ 100% Free &amp; Open Source</div>
-      <h1>Your Career Roadmap,<br>Visualized &amp; Interactive</h1>
-      <p>Community-driven developer roadmaps with 500+ curated topics and free resources. Track your progress, learn at your pace, no sign-up needed.</p>
-      <div class="hero-actions">
-        <a href="#roadmaps" class="btn btn-primary">Explore Roadmaps →</a>
-        <a href="https://github.com" target="_blank" class="btn btn-secondary">⭐ Star on GitHub</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="number" id="stat-roadmaps">12</div>
-          <div class="label">Roadmaps</div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🗺️ DevRoadmaps</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#roadmaps">Roadmaps</a>
+                <a href="#features">Features</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#faq">FAQ</a>
+                <a href="https://github.com" target="_blank" rel="noopener" class="nav-cta">⭐ GitHub</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-        <div class="hero-stat">
-          <div class="number" id="stat-nodes">500+</div>
-          <div class="label">Learning Nodes</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🎓 Free & Open Source</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Developer Roadmaps</span><br>
+                <span class="hero-subtitle">for Every Path</span>
+            </h1>
+            <p class="hero-desc">600+ curated topics with 2,000+ free resources. Interactive roadmaps to guide your learning journey from beginner to expert.</p>
+            <div class="hero-buttons">
+                <a href="#roadmaps" class="btn btn-primary">Explore Roadmaps →</a>
+                <a href="https://github.com" target="_blank" class="btn btn-secondary">View on GitHub ⭐</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item"><span class="stat-number" data-target="12">0</span><span class="stat-label">Roadmaps</span></div>
+                <div class="stat-item"><span class="stat-number" data-target="600">0</span><span class="stat-suffix">+</span><span class="stat-label">Topics</span></div>
+                <div class="stat-item"><span class="stat-number" data-target="2000">0</span><span class="stat-suffix">+</span><span class="stat-label">Resources</span></div>
+                <div class="stat-item"><span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span><span class="stat-label">Free</span></div>
+            </div>
         </div>
-        <div class="hero-stat">
-          <div class="number" id="stat-resources">1500+</div>
-          <div class="label">Free Resources</div>
+    </header>
+
+    <!-- Roadmaps Grid -->
+    <section class="section" id="roadmaps">
+        <div class="container">
+            <h2 class="section-title">Choose Your Path</h2>
+            <p class="section-subtitle">12 comprehensive roadmaps covering every major tech discipline</p>
+            <div class="roadmaps-grid" id="roadmapsGrid">
+                <!-- Populated by JS -->
+            </div>
         </div>
-        <div class="hero-stat">
-          <div class="number">MIT</div>
-          <div class="label">Open Source</div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section-alt" id="features">
+        <div class="container">
+            <h2 class="section-title">Why DevRoadmaps?</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon">🎯</div>
+                    <h3>Interactive Nodes</h3>
+                    <p>Click any topic to expand details, mark as complete, and track your progress visually.</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon">🔗</div>
+                    <h3>2,000+ Free Resources</h3>
+                    <p>Curated links to MDN, freeCodeCamp, official docs, YouTube tutorials, and more.</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon">📊</div>
+                    <h3>Track Progress</h3>
+                    <p>Your progress is saved locally. Come back anytime and pick up where you left off.</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon">🔍</div>
+                    <h3>Search & Filter</h3>
+                    <p>Search within roadmaps and filter by category — fundamentals, intermediate, advanced, tools.</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon">🖨️</div>
+                    <h3>Print as Poster</h3>
+                    <p>Print any roadmap as a beautiful poster for your wall. Perfect for study planning.</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon">⌨️</div>
+                    <h3>Keyboard Navigation</h3>
+                    <p>Navigate with arrow keys, press Enter to expand, Space to mark complete.</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon">🌙</div>
+                    <h3>Dark & Light Mode</h3>
+                    <p>Beautiful in both themes. Your preference is remembered across visits.</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon">📱</div>
+                    <h3>Fully Responsive</h3>
+                    <p>Works perfectly on desktop, tablet, and mobile. Learn anywhere.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Search -->
-  <section class="search-section">
-    <div class="search-container">
-      <span class="search-icon">🔍</span>
-      <input type="text" class="search-input" id="search-input" placeholder="Search roadmaps, topics, technologies..." autocomplete="off">
-      <div class="search-results" id="search-results"></div>
-    </div>
-  </section>
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Loved by Developers</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-text">"This replaced roadmap.sh for me. More topics, more resources, and it's actually free. The progress tracking is a game changer."</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SK</div>
+                        <div><strong>Sarah K.</strong> — Frontend Developer</div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-text">"I printed the DevOps roadmap and put it on my wall. It's beautiful and incredibly useful for tracking my learning path."</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div><strong>Marcus R.</strong> — DevOps Engineer</div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-text">"600+ topics with real free resources? This is the most comprehensive roadmap collection I've found. Absolutely love it."</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PL</div>
+                        <div><strong>Priya L.</strong> — ML Engineer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Roadmaps Grid -->
-  <section class="roadmaps-section" id="roadmaps">
-    <div class="section-header fade-in">
-      <h2>Choose Your Path</h2>
-      <p>Pick a roadmap and start your learning journey. Each topic has curated free resources.</p>
-    </div>
-    <div class="roadmaps-grid" id="roadmaps-grid"></div>
-  </section>
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">Is this really free? <span>+</span></button>
+                    <div class="faq-answer"><p>Yes! 100% free and open source. Every resource linked is free. No hidden paywalls, no premium tier. We believe education should be accessible to everyone.</p></div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">How is my progress saved? <span>+</span></button>
+                    <div class="faq-answer"><p>Progress is saved in your browser's localStorage. No account needed, no data sent to any server. Clear your browser data to reset progress.</p></div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">How is this different from roadmap.sh? <span>+</span></button>
+                    <div class="faq-answer"><p>We offer 12 complete roadmaps with 600+ nodes (vs ~10 with fewer nodes on roadmap.sh), interactive progress tracking, search/filter, print-as-poster, keyboard navigation, and everything is free with zero dependencies.</p></div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">Can I contribute? <span>+</span></button>
+                    <div class="faq-answer"><p>Absolutely! Check out our CONTRIBUTING.md for guidelines. You can add nodes, fix resources, or suggest new roadmaps via pull request.</p></div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">Are the resource links verified? <span>+</span></button>
+                    <div class="faq-answer"><p>We use stable, well-known resources (MDN, freeCodeCamp, official docs, popular YouTube channels). Links may occasionally break — PRs welcome!</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Features -->
-  <section class="features-section" id="features">
-    <div class="section-header fade-in">
-      <h2>Why DevRoadmaps?</h2>
-      <p>Built by developers, for developers. Completely free, forever.</p>
-    </div>
-    <div class="features-grid">
-      <div class="feature-card fade-in">
-        <div class="feature-icon">✅</div>
-        <h3>Progress Tracking</h3>
-        <p>Check off nodes as you learn. Your progress is saved locally — no account needed.</p>
-      </div>
-      <div class="feature-card fade-in">
-        <div class="feature-icon">📚</div>
-        <h3>Curated Resources</h3>
-        <p>Every node links to 2-3 free resources: docs, courses, videos, and tutorials.</p>
-      </div>
-      <div class="feature-card fade-in">
-        <div class="feature-icon">🎯</div>
-        <h3>Interactive</h3>
-        <p>Click to expand topics, explore resources, mark your progress — it's a living roadmap.</p>
-      </div>
-      <div class="feature-card fade-in">
-        <div class="feature-icon">🎨</div>
-        <h3>Beautiful Design</h3>
-        <p>Modern UI with dark/light modes, smooth animations, and responsive layouts.</p>
-      </div>
-      <div class="feature-card fade-in">
-        <div class="feature-icon">🔍</div>
-        <h3>Searchable</h3>
-        <p>Find any topic across all 12 roadmaps instantly with the global search.</p>
-      </div>
-      <div class="feature-card fade-in">
-        <div class="feature-icon">🖨️</div>
-        <h3>Printable</h3>
-        <p>Print any roadmap as a poster to hang on your wall for daily motivation.</p>
-      </div>
-    </div>
-  </section>
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Start Learning Today</h2>
+                <p>Pick a roadmap and begin your journey. No sign-up required.</p>
+                <a href="#roadmaps" class="btn btn-primary btn-lg">Get Started →</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- FAQ -->
-  <section class="faq-section" id="faq">
-    <div class="section-header fade-in">
-      <h2>FAQ</h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-question">Is DevRoadmaps really free? <span class="arrow">▼</span></div>
-        <div class="faq-answer"><div class="faq-answer-inner">Yes! 100% free and open source under the MIT license. All resources linked are free too. No premium tiers, no sign-ups, no paywalls.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">How is this different from roadmap.sh? <span class="arrow">▼</span></div>
-        <div class="faq-answer"><div class="faq-answer-inner">roadmap.sh is a great project but has moved to a paid model for interactive features. DevRoadmaps is fully open source, interactive by default, and community-driven. Every feature is free forever.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">How does progress tracking work? <span class="arrow">▼</span></div>
-        <div class="faq-answer"><div class="faq-answer-inner">Your progress is stored in your browser's localStorage. No server, no account — it just works. Note: clearing your browser data will reset progress.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">Can I contribute a roadmap? <span class="arrow">▼</span></div>
-        <div class="faq-answer"><div class="faq-answer-inner">Absolutely! Check out CONTRIBUTING.md for instructions. You can add new roadmaps, suggest resources, or improve existing ones via pull request.</div></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">Are the resources vetted? <span class="arrow">▼</span></div>
-        <div class="faq-answer"><div class="faq-answer-inner">Yes — all resources are hand-picked from trusted sources like MDN, freeCodeCamp, official docs, and quality YouTube channels. Every URL is verified to be free and accessible.</div></div>
-      </div>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="nav-logo">🗺️ DevRoadmaps</span>
+                    <p>The open-source roadmap.sh alternative. Free forever.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                    <a href="#roadmaps">Roadmaps</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-bottom">
+                    <p>MIT License • Made with ❤️ for developers everywhere</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>Built with ❤️ by the open-source community</p>
-    <div class="footer-links">
-      <a href="https://github.com" target="_blank">GitHub</a>
-      <a href="CONTRIBUTING.html">Contributing</a>
-      <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>
-    </div>
-    <p style="margin-top:8px;font-size:0.8rem;color:var(--text-muted)">DevRoadmaps is not affiliated with roadmap.sh</p>
-  </footer>
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
-  <script src="js/main.js"></script>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

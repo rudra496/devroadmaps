@@ -1,139 +1,132 @@
 <div align="center">
 
+```
+    ____        __                  ____                  __
+   / __ \__  __/ /_____  _____    / __ \____  ____  ____/ /_
+  / /_/ / / / / __/ __ \/ ___/   / / / / __ \/ __ \/ __  __ \
+ / _, _/ /_/ / /_/ /_/ / /      / /_/ / /_/ / / / / /_/ / / /
+/_/ |_|\__,_/\__/\____/_/       \____/ .___/_/ /_/\__,_/_/ _/
+                                   /_/
+```
+
 # 🗺️ DevRoadmaps
 
-**Free, Open-Source, Interactive Developer Roadmaps**
+**The open-source roadmap.sh alternative**
 
+> 12 comprehensive roadmaps • 600+ topics • 2,000+ free resources • 100% free forever
+
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-brightgreen)](https://yourusername.github.io/devroadmaps)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Roadmaps](https://img.shields.io/badge/roadmaps-12-purple.svg)](#roadmaps)
-[![Nodes](https://img.shields.io/badge/nodes-300+-green.svg)](#roadmaps)
-[![Resources](https://img.shields.io/badge/resources-575+-orange.svg)](#roadmaps)
-[![No Backend](https://img.shields.io/badge/pure-static-✓-brightgreen.svg)](#quick-start)
-
-*Your career roadmap, visualized and interactive. 500+ curated topics with free resources.*
-
-[**Explore Roadmaps →**](https://yourusername.github.io/devroadmaps)
-
-</div>
-
----
-
-## 🤔 Why DevRoadmaps?
-
-| | DevRoadmaps | roadmap.sh |
-|---|---|---|
-| **Price** | 100% Free | Paid (Team/Pro plans) |
-| **Source** | Open Source (MIT) | Closed Source |
-| **Interactive** | Yes (default) | Paid feature |
-| **Progress Tracking** | Yes (localStorage) | Paid feature |
-| **Resources** | 1500+ curated free links | Limited |
-| **No Sign-up** | Works instantly | Account required |
-| **Customizable** | Fork & modify | Not possible |
-| **Print** | Any roadmap as poster | Limited |
-
----
-
-## 🗺️ Roadmaps
-
-| # | Roadmap | Nodes | Time | Difficulty |
-|---|---------|-------|------|------------|
-| 1 | [🎨 Frontend Developer](roadmaps/frontend.json) | 42 | 6-12 months | Beginner → Advanced |
-| 2 | [⚙️ Backend Developer](roadmaps/backend.json) | 29 | 6-12 months | Beginner → Advanced |
-| 3 | [🚀 Full Stack Developer](roadmaps/fullstack.json) | 27 | 12-18 months | Beginner → Advanced |
-| 4 | [🤖 ML / AI Engineer](roadmaps/ml-ai.json) | 28 | 8-14 months | Beginner → Advanced |
-| 5 | [☁️ DevOps / Cloud Engineer](roadmaps/devops.json) | 24 | 6-12 months | Beginner → Advanced |
-| 6 | [📱 Mobile Developer](roadmaps/mobile.json) | 20 | 6-12 months | Beginner → Advanced |
-| 7 | [🔒 Cybersecurity Analyst](roadmaps/cybersecurity.json) | 21 | 8-14 months | Beginner → Advanced |
-| 8 | [📊 Data Engineer](roadmaps/data-engineer.json) | 24 | 6-12 months | Beginner → Advanced |
-| 9 | [⛓️ Blockchain / Web3 Developer](roadmaps/blockchain.json) | 23 | 6-12 months | Beginner → Advanced |
-| 10 | [🎮 Game Developer](roadmaps/game-dev.json) | 21 | 8-14 months | Beginner → Advanced |
-| 11 | [🔌 Embedded / IoT Developer](roadmaps/embedded-iot.json) | 21 | 8-14 months | Beginner → Advanced |
-| 12 | [📋 Product Manager (Tech)](roadmaps/product-manager.json) | 26 | 4-8 months | Beginner → Advanced |
-
-**Total: 303 nodes, 575+ free resources, 12 career paths**
+[![Roadmaps](https://img.shields.io/badge/Roadmaps-12-purple)](#roadmaps)
+[![Topics](https://img.shields.io/badge/Topics-600%2B-orange)](#)
+[![Resources](https://img.shields.io/badge/Resources-2000%2B-green)](#)
 
 ---
 
 ## ✨ Features
 
-- ✅ **Progress Tracking** — Check off nodes, saved in localStorage
-- 📚 **Curated Resources** — 2-3 free resources per node (docs, courses, videos)
-- 🎯 **Interactive** — Click to expand, explore resources, mark complete
-- 🎨 **Beautiful Design** — Modern UI, dark/light mode, smooth animations
-- 🔍 **Searchable** — Find topics across all roadmaps instantly
-- 🖨️ **Printable** — Print any roadmap as a poster
-- 📱 **Responsive** — Works on all screen sizes
-- 🚫 **No Backend** — Pure static, works on GitHub Pages
-- 🔄 **Community-Driven** — Easy PR-based contribution
+| Feature | DevRoadmaps | roadmap.sh |
+|---------|:-----------:|:----------:|
+| Interactive progress tracking | ✅ | ❌ |
+| 600+ curated topics | ✅ | ~300 |
+| 2,000+ free resources | ✅ | Limited |
+| Search within roadmaps | ✅ | ❌ |
+| Filter by category | ✅ | ❌ |
+| Print as poster | ✅ | ✅ (paid) |
+| Keyboard navigation | ✅ | ❌ |
+| Dark & light mode | ✅ | ❌ |
+| 100% free | ✅ | Partial |
+| Zero dependencies | ✅ | ✅ |
+| Offline capable | ✅ | ❌ |
+| Minimap navigation | ✅ | ❌ |
 
----
+## 🗺️ Roadmaps
+
+| # | Roadmap | Topics | Description |
+|---|---------|:------:|-------------|
+| 1 | 🎨 [Frontend Developer](roadmaps/frontend.json) | 52 | HTML, CSS, JS, React, Vue, Angular, and more |
+| 2 | ⚙️ [Backend Developer](roadmaps/backend.json) | 50 | Python, Node, Go, APIs, databases, Docker |
+| 3 | 🌐 [Full Stack Developer](roadmaps/fullstack.json) | 50 | End-to-end web development |
+| 4 | 🧠 [ML / AI Engineer](roadmaps/ml-ai.json) | 50 | Machine learning, deep learning, LLMs |
+| 5 | ☁️ [DevOps / Cloud](roadmaps/devops.json) | 50 | Docker, K8s, AWS, Terraform, CI/CD |
+| 6 | 📱 [Mobile Developer](roadmaps/mobile.json) | 50 | Flutter, React Native, Swift, Kotlin |
+| 7 | 🔒 [Cybersecurity](roadmaps/cybersecurity.json) | 50 | Pentesting, OWASP, cloud security |
+| 8 | 🗃️ [Data Engineer](roadmaps/data-engineer.json) | 50 | Spark, Kafka, Snowflake, Airflow |
+| 9 | ⛓️ [Blockchain / Web3](roadmaps/blockchain.json) | 50 | Solidity, DeFi, smart contracts |
+| 10 | 🎮 [Game Developer](roadmaps/game-dev.json) | 50 | Unity, Godot, Unreal, C#, C++ |
+| 11 | 🔌 [Embedded / IoT](roadmaps/embedded-iot.json) | 50 | Arduino, ESP32, RTOS, sensors |
+| 12 | 📋 [Product Manager](roadmaps/product-manager.json) | 50 | Product thinking, analytics, agile |
 
 ## 🚀 Quick Start
 
-1. **Clone the repo:**
-   ```bash
-   git clone https://github.com/yourusername/devroadmaps.git
-   cd devroadmaps
-   ```
+### Option 1: Visit Live Demo
+Open the GitHub Pages URL in your browser.
 
-2. **Open `index.html` in your browser:**
-   ```bash
-   # macOS
-   open index.html
+### Option 2: Open Locally
+Just open `index.html` in your browser — no build step needed!
 
-   # Linux
-   xdg-open index.html
-
-   # Windows
-   start index.html
-   ```
-
-3. **Or serve locally:**
-   ```bash
-   # Python
-   python3 -m http.server 8000
-
-   # Node.js (npx)
-   npx serve .
-   ```
-
-That's it! No build step, no install, no sign-up. 🎉
-
----
+### Option 3: Clone & Serve
+```bash
+git clone https://github.com/yourusername/devroadmaps.git
+cd devroadmaps
+python3 -m http.server 8000
+# Open http://localhost:8000
+```
 
 ## 🛠️ Tech Stack
 
 - **HTML5** — Semantic markup
-- **CSS3** — Custom properties, Flexbox, Grid, animations
-- **Vanilla JavaScript** — No framework dependencies
-- **JSON** — Roadmap data format
-- **localStorage** — Progress persistence
+- **CSS3** — Custom properties, glassmorphism, animations
+- **Vanilla JavaScript** — Zero dependencies
+- **GitHub Pages** — Hosting
 
-Zero dependencies. Zero build tools. Pure web.
+## 📁 Project Structure
 
----
+```
+devroadmaps/
+├── index.html          # Landing page
+├── roadmap.html        # Roadmap viewer
+├── css/style.css       # All styles (dark + light themes)
+├── js/main.js          # All JavaScript
+├── roadmaps/
+│   ├── frontend.json   # Roadmap data (12 files)
+│   ├── backend.json
+│   ├── fullstack.json
+│   ├── ml-ai.json
+│   ├── devops.json
+│   ├── mobile.json
+│   ├── cybersecurity.json
+│   ├── data-engineer.json
+│   ├── blockchain.json
+│   ├── game-dev.json
+│   ├── embedded-iot.json
+│   └── product-manager.json
+├── README.md
+├── CONTRIBUTING.md
+└── LICENSE
+```
 
 ## 🤝 Contributing
 
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-- How to add new roadmaps
-- How to add resources to existing roadmaps
-- JSON schema for roadmap nodes
-- PR template
-
----
+**Ways to contribute:**
+- 🐛 Fix broken resource links
+- ➕ Add new nodes or resources to existing roadmaps
+- 🗺️ Propose a new roadmap
+- 🎨 Improve the design
+- 📝 Improve documentation
 
 ## 📄 License
 
-[MIT License](LICENSE) — Use it, fork it, modify it freely.
+MIT License — free for personal and commercial use.
 
 ---
 
 <div align="center">
 
-**Built with ❤️ by the open-source community**
+**Made with ❤️ for developers everywhere**
 
-*DevRoadmaps is not affiliated with roadmap.sh*
+[⭐ Star this repo](https://github.com/yourusername/devroadmaps) if you find it useful!
 
 </div>

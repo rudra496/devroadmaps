@@ -1,52 +1,1371 @@
 {
-  "id": "frontend",
   "title": "Frontend Developer",
-  "description": "Master the art of building user interfaces with modern web technologies. From semantic HTML to advanced React patterns, this roadmap covers everything you need to become a professional frontend developer.",
+  "description": "Master the art of building modern, responsive web interfaces from HTML to React and beyond.",
   "icon": "🎨",
-  "color": "#61dafb",
-  "time": "6-12 months",
-  "difficulty": "Beginner to Advanced",
-  "nodes": [
-    {"id":"html-basics","title":"HTML Basics","icon":"📄","category":"fundamentals","description":"Learn the foundation of every web page — tags, attributes, document structure, and how browsers parse HTML.","resources":[{"title":"MDN HTML Basics","url":"https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics","type":"docs","free":true},{"title":"freeCodeCamp HTML Course","url":"https://www.freecodecamp.org/learn/responsive-web-design/","type":"course","free":true},{"title":"W3Schools HTML Tutorial","url":"https://www.w3schools.com/html/","type":"docs","free":true}],"children":["html-semantic"]},
-    {"id":"html-semantic","title":"Semantic HTML","icon":"🏗️","category":"fundamentals","description":"Use meaningful HTML elements like header, nav, main, article, section, and footer for accessibility and SEO.","resources":[{"title":"MDN Semantic HTML","url":"https://developer.mozilla.org/en-US/docs/Glossary/Semantics","type":"docs","free":true},{"title":"web.dev Meaningful Markup","url":"https://web.dev/learn/html/semantic-html/","type":"docs","free":true}],"children":["html-forms"]},
-    {"id":"html-forms","title":"HTML Forms & Validation","icon":"📝","category":"fundamentals","description":"Build forms with input types, form validation, accessibility labels, and form submission handling.","resources":[{"title":"MDN Web Forms Guide","url":"https://developer.mozilla.org/en-US/docs/Learn/Forms","type":"docs","free":true},{"title":"web.dev Forms Course","url":"https://web.dev/learn/forms/","type":"course","free":true}],"children":["css-basics"]},
-    {"id":"html-media","title":"HTML Media & Embedding","icon":"🎬","category":"fundamentals","description":"Work with images, video, audio, iframes, and responsive media elements.","resources":[{"title":"MDN Images & Media","url":"https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding","type":"docs","free":true}],"children":["css-basics"]},
-    {"id":"html-accessibility","title":"Web Accessibility (a11y)","icon":"♿","category":"fundamentals","description":"ARIA roles, screen reader support, keyboard navigation, color contrast, and inclusive design practices.","resources":[{"title":"MDN Accessibility Guide","url":"https://developer.mozilla.org/en-US/docs/Web/Accessibility","type":"docs","free":true},{"title":"web.dev Accessibility Course","url":"https://web.dev/learn/accessibility/","type":"course","free":true},{"title":"A11Y Project","url":"https://www.a11yproject.com/","type":"docs","free":true}],"children":["css-basics"]},
-    {"id":"css-basics","title":"CSS Fundamentals","icon":"🎨","category":"fundamentals","description":"Selectors, box model, cascade, specificity, inheritance, and how CSS styles are applied to HTML.","resources":[{"title":"MDN CSS First Steps","url":"https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps","type":"docs","free":true},{"title":"CSS-Tricks Getting Started","url":"https://css-tricks.com/guides/beginner/","type":"docs","free":true}],"children":["css-layout"]},
-    {"id":"css-layout","title":"CSS Layout — Flexbox & Grid","icon":"📐","category":"fundamentals","description":"Master Flexbox for 1D layouts and CSS Grid for 2D layouts. The modern way to build page layouts.","resources":[{"title":"CSS-Tricks Complete Guide to Flexbox","url":"https://css-tricks.com/snippets/css/a-guide-to-flexbox/","type":"docs","free":true},{"title":"CSS-Tricks Complete Guide to Grid","url":"https://css-tricks.com/snippets/css/complete-guide-grid/","type":"docs","free":true},{"title":"Flexbox Froggy (Game)","url":"https://flexboxfroggy.com/","type":"interactive","free":true},{"title":"Grid Garden (Game)","url":"https://cssgridgarden.com/","type":"interactive","free":true}],"children":["css-responsive"]},
-    {"id":"css-responsive","title":"Responsive Design","icon":"📱","category":"fundamentals","description":"Media queries, mobile-first design, viewport units, fluid typography, and responsive images.","resources":[{"title":"web.dev Responsive Design","url":"https://web.dev/responsive-web-design-basics/","type":"docs","free":true},{"title":"MDN Responsive Design","url":"https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design","type":"docs","free":true}],"children":["css-variables"]},
-    {"id":"css-variables","title":"CSS Custom Properties","icon":"🔧","category":"fundamentals","description":"CSS variables (custom properties) for maintainable themes, dynamic styling, and design systems.","resources":[{"title":"MDN Custom Properties","url":"https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties","type":"docs","free":true},{"title":"CSS-Tricks CSS Variables Guide","url":"https://css-tricks.com/a-complete-guide-to-custom-properties/","type":"docs","free":true}],"children":["css-animations"]},
-    {"id":"css-animations","title":"CSS Animations & Transitions","icon":"✨","category":"fundamentals","description":"Keyframe animations, transitions, transforms, and performance considerations for smooth UI motion.","resources":[{"title":"MDN CSS Animations","url":"https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations","type":"docs","free":true},{"title":"web.dev Animations Guide","url":"https://web.dev/animations-guide/","type":"docs","free":true}],"children":["js-basics"]},
-    {"id":"css-methodologies","title":"CSS Methodologies & Preprocessors","icon":"📦","category":"tools","description":"BEM, OOCSS, SMACSS naming conventions. Sass/SCSS preprocessor for variables, nesting, and mixins.","resources":[{"title":"Sass Documentation","url":"https://sass-lang.com/documentation/","type":"docs","free":true},{"title":"BEM Methodology","url":"https://getbem.com/introduction/","type":"docs","free":true}],"children":["css-frameworks"]},
-    {"id":"css-frameworks","title":"CSS Frameworks","icon":"🧩","category":"frameworks","description":"Tailwind CSS, Bootstrap, or utility-first CSS frameworks for rapid UI development.","resources":[{"title":"Tailwind CSS Docs","url":"https://tailwindcss.com/docs","type":"docs","free":true},{"title":"Bootstrap Documentation","url":"https://getbootstrap.com/docs/","type":"docs","free":true}],"children":["js-basics"]},
-    {"id":"js-basics","title":"JavaScript Fundamentals","icon":"⚡","category":"fundamentals","description":"Variables, data types, operators, control flow, functions, scope, hoisting, and error handling.","resources":[{"title":"MDN JavaScript Guide","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide","type":"docs","free":true},{"title":"JavaScript.info","url":"https://javascript.info/","type":"docs","free":true},{"title":"freeCodeCamp JavaScript Algorithms","url":"https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/","type":"course","free":true}],"children":["js-dom"]},
-    {"id":"js-dom","title":"DOM Manipulation","icon":"🌳","category":"fundamentals","description":"Selecting elements, modifying content, event handling, event delegation, and creating/removing elements.","resources":[{"title":"MDN DOM Introduction","url":"https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction","type":"docs","free":true},{"title":"JavaScript.info DOM","url":"https://javascript.info/document","type":"docs","free":true}],"children":["js-async"]},
-    {"id":"js-async","title":"Asynchronous JavaScript","icon":"🔄","category":"fundamentals","description":"Callbacks, Promises, async/await, the event loop, and working with the Fetch API.","resources":[{"title":"MDN Asynchronous JavaScript","url":"https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous","type":"docs","free":true},{"title":"JavaScript.info Promises","url":"https://javascript.info/promise-basics","type":"docs","free":true}],"children":["js-es6"]},
-    {"id":"js-es6","title":"ES6+ Modern JavaScript","icon":"🆕","category":"fundamentals","description":"Arrow functions, destructuring, template literals, modules, spread/rest, Map/Set, optional chaining, and nullish coalescing.","resources":[{"title":"ES6 Features Overview","url":"https://es6-features.org/","type":"docs","free":true},{"title":"JavaScript.info Modern JS","url":"https://javascript.info/modern-js-features","type":"docs","free":true}],"children":["js-modules"]},
-    {"id":"js-modules","title":"ES Modules & Tooling","icon":"📦","category":"tools","description":"ES modules, import/export, module bundlers (Vite, Webpack), and npm package management.","resources":[{"title":"MDN ES Modules","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules","type":"docs","free":true},{"title":"Vite Documentation","url":"https://vitejs.dev/guide/","type":"docs","free":true},{"title":"npm Documentation","url":"https://docs.npmjs.com/","type":"docs","free":true}],"children":["git-basics"]},
-    {"id":"git-basics","title":"Git & Version Control","icon":"🔀","category":"tools","description":"Git basics: init, add, commit, branch, merge, pull, push, and GitHub workflow.","resources":[{"title":"Pro Git Book (Free)","url":"https://git-scm.com/book/en/v2","type":"docs","free":true},{"title":"GitHub Skills","url":"https://skills.github.com/","type":"course","free":true},{"title":"Git Cheat Sheet","url":"https://education.github.com/git-cheat-sheet-education.pdf","type":"docs","free":true}],"children":["typescript"]},
-    {"id":"typescript","title":"TypeScript","icon":"🔷","category":"fundamentals","description":"Static typing for JavaScript — interfaces, types, generics, enums, and type guards for safer code.","resources":[{"title":"TypeScript Handbook","url":"https://www.typescriptlang.org/docs/handbook/","type":"docs","free":true},{"title":"TypeScript Deep Dive (Free Book)","url":"https://basarat.gitbook.io/typescript/","type":"docs","free":true},{"title":"freeCodeCamp TypeScript Course","url":"https://www.freecodecamp.org/news/learn-typescript-beginners-guide/","type":"course","free":true}],"children":["react"]},
-    {"id":"react-basics","title":"React Fundamentals","icon":"⚛️","category":"frameworks","description":"Components, JSX, props, state, hooks (useState, useEffect), conditional rendering, and lists.","resources":[{"title":"React Official Docs","url":"https://react.dev/learn","type":"docs","free":true},{"title":"freeCodeCamp React Course","url":"https://www.freecodecamp.org/learn/front-end-development-libraries/","type":"course","free":true}],"children":["react-advanced"]},
-    {"id":"react-advanced","title":"React Advanced Patterns","icon":"🧠","category":"frameworks","description":"Context API, useReducer, custom hooks, error boundaries, code splitting, and performance optimization.","resources":[{"title":"React Advanced Patterns","url":"https://react.dev/learn/referencing-values-with-refs","type":"docs","free":true},{"title":"Kent C. Dodds Blog","url":"https://kentcdodds.com/blog","type":"docs","free":true}],"children":["react-routing"]},
-    {"id":"react-routing","title":"React Router & Navigation","icon":"🧭","category":"frameworks","description":"Client-side routing with React Router — dynamic routes, nested routes, navigation guards, and URL parameters.","resources":[{"title":"React Router Docs","url":"https://reactrouter.com/en/main","type":"docs","free":true}],"children":["state-management"]},
-    {"id":"state-management","title":"State Management","icon":"🗄️","category":"frameworks","description":"Global state solutions — Zustand, Redux Toolkit, Jotai, or React Context for shared application state.","resources":[{"title":"Redux Toolkit Docs","url":"https://redux-toolkit.js.org/","type":"docs","free":true},{"title":"Zustand Documentation","url":"https://zustand-demo.pmnd.rs/","type":"docs","free":true}],"children":["nextjs"]},
-    {"id":"nextjs","title":"Next.js","icon":"▲","category":"frameworks","description":"The React meta-framework — App Router, SSR, SSG, ISR, API routes, and deployment on Vercel.","resources":[{"title":"Next.js Official Docs","url":"https://nextjs.org/docs","type":"docs","free":true},{"title":"Next.js Learn Course","url":"https://nextjs.org/learn","type":"course","free":true}],"children":["api-integration"]},
-    {"id":"api-integration","title":"API Integration","icon":"🔌","category":"tools","description":"Fetch API, Axios, RESTful API consumption, GraphQL queries, handling loading/error states, and data caching.","resources":[{"title":"MDN Fetch API","url":"https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API","type":"docs","free":true},{"title":"GraphQL Official Docs","url":"https://graphql.org/learn/","type":"docs","free":true}],"children":["testing"]},
-    {"id":"testing","title":"Testing","icon":"🧪","category":"testing","description":"Unit tests (Jest/Vitest), component tests (React Testing Library), end-to-end tests (Playwright/Cypress).","resources":[{"title":"Jest Documentation","url":"https://jestjs.io/docs/getting-started","type":"docs","free":true},{"title":"React Testing Library","url":"https://testing-library.com/docs/react-testing-library/intro/","type":"docs","free":true},{"title":"Playwright Documentation","url":"https://playwright.dev/docs/intro","type":"docs","free":true}],"children":["performance"]},
-    {"id":"performance","title":"Web Performance","icon":"⚡","category":"advanced","description":"Core Web Vitals, lazy loading, code splitting, image optimization, caching strategies, and Lighthouse auditing.","resources":[{"title":"web.dev Performance","url":"https://web.dev/explore/performance","type":"docs","free":true},{"title":"MDN Web Performance","url":"https://developer.mozilla.org/en-US/docs/Web/Performance","type":"docs","free":true}],"children":["pwa"]},
-    {"id":"pwa","title":"Progressive Web Apps","icon":"📲","category":"advanced","description":"Service workers, web app manifests, offline support, push notifications, and installability.","resources":[{"title":"web.dev PWA Course","url":"https://web.dev/progressive-web-apps/","type":"course","free":true},{"title":"MDN Service Workers","url":"https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API","type":"docs","free":true}],"children":["seo"]},
-    {"id":"seo","title":"SEO for Developers","icon":"🔍","category":"advanced","description":"Meta tags, structured data, sitemaps, Open Graph, SSR/SSG for SEO, and Core Web Vitals impact on rankings.","resources":[{"title":"web.dev SEO Guide","url":"https://web.dev/learn-seo/","type":"docs","free":true},{"title":"Google Search Central","url":"https://developers.google.com/search/docs/fundamentals/seo-starter-guide","type":"docs","free":true}],"children":["deployment"]},
-    {"id":"deployment","title":"Deployment & CI/CD","icon":"🚀","category":"deployment","description":"Deploy to Vercel, Netlify, or GitHub Pages. Set up CI/CD with GitHub Actions for automated testing and deployment.","resources":[{"title":"Vercel Deployment Docs","url":"https://vercel.com/docs","type":"docs","free":true},{"title":"Netlify Deployment Docs","url":"https://docs.netlify.com/","type":"docs","free":true},{"title":"GitHub Actions Docs","url":"https://docs.github.com/en/actions","type":"docs","free":true}],"children":["web-security"]},
-    {"id":"web-security","title":"Web Security Basics","icon":"🛡️","category":"security","description":"XSS, CSRF, CORS, Content Security Policy, HTTPS, and secure authentication practices for frontend.","resources":[{"title":"MDN Web Security","url":"https://developer.mozilla.org/en-US/docs/Web/Security","type":"docs","free":true},{"title":"OWASP Web Security Guide","url":"https://owasp.org/www-community/attacks/","type":"docs","free":true}],"children":["design-systems"]},
-    {"id":"design-systems","title":"Design Systems & UI Libraries","icon":"🎭","category":"tools","description":"Component libraries (shadcn/ui, Radix, Headless UI), design tokens, and building reusable component systems.","resources":[{"title":"shadcn/ui","url":"https://ui.shadcn.com/","type":"docs","free":true},{"title":"Radix UI","url":"https://www.radix-ui.com/","type":"docs","free":true},{"title":"Headless UI","url":"https://headlessui.com/","type":"docs","free":true}],"children":[]},
-    {"id":"figma-basics","title":"Figma Basics for Devs","icon":"🖌️","category":"tools","description":"Reading designs, inspecting elements, extracting assets, and understanding design handoffs from Figma.","resources":[{"title":"Figma for Devs","url":"https://www.figma.com/best-practices/developers/","type":"docs","free":true}],"children":["design-systems"]},
-    {"id":"webpack","title":"Bundlers & Build Tools","icon":"🔧","category":"tools","description":"Webpack, Vite, esbuild, Rollup — module bundling, tree shaking, minification, and build optimization.","resources":[{"title":"Vite Documentation","url":"https://vitejs.dev/guide/","type":"docs","free":true},{"title":"Webpack Documentation","url":"https://webpack.js.org/concepts/","type":"docs","free":true}],"children":["deployment"]},
-    {"id":"eslint","title":"Linting & Formatting","icon":"🧹","category":"tools","description":"ESLint, Prettier, Husky, lint-staged — enforce code quality, consistency, and catch bugs before they ship.","resources":[{"title":"ESLint Documentation","url":"https://eslint.org/docs/latest/","type":"docs","free":true},{"title":"Prettier Documentation","url":"https://prettier.io/docs/en/index.html","type":"docs","free":true}],"children":["deployment"]},
-    {"id":"data-structures","title":"Basic Data Structures","icon":"🌳","category":"fundamentals","description":"Arrays, objects, maps, sets, stacks, queues, and graphs — essential for algorithmic problem solving.","resources":[{"title":"freeCodeCamp Data Structures","url":"https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/","type":"course","free":true},{"title":"JavaScript.info Data Structures","url":"https://javascript.info/data-structures","type":"docs","free":true}],"children":["js-basics"]},
-    {"id":"browser-apis","title":"Browser APIs","icon":"🌐","category":"advanced","description":"Local Storage, Session Storage, IndexedDB, Web Workers, WebSockets, Geolocation, and Clipboard APIs.","resources":[{"title":"MDN Web APIs","url":"https://developer.mozilla.org/en-US/docs/Web/API","type":"docs","free":true}],"children":["pwa"]},
-    {"id":"cypress","title":"End-to-End Testing","icon":"🤖","category":"testing","description":"E2E testing with Cypress or Playwright — simulate real user flows, test critical paths, and catch integration bugs.","resources":[{"title":"Cypress Documentation","url":"https://docs.cypress.io/","type":"docs","free":true},{"title":"Playwright Documentation","url":"https://playwright.dev/docs/intro","type":"docs","free":true}],"children":["deployment"]},
-    {"id":"storybook","title":"Storybook","icon":"📖","category":"tools","description":"Component-driven development with Storybook — build, test, and document UI components in isolation.","resources":[{"title":"Storybook Documentation","url":"https://storybook.js.org/docs","type":"docs","free":true}],"children":["design-systems"]},
-    {"id":"micro-frontends","title":"Micro Frontends","icon":"🧩","category":"advanced","description":"Module Federation, single-spa, and techniques for breaking large frontend apps into smaller, independent pieces.","resources":[{"title":"Module Federation Docs","url":"https://webpack.js.org/concepts/module-federation/","type":"docs","free":true},{"title":"Micro Frontends (Martin Fowler)","url":"https://martinfowler.com/articles/micro-frontends.html","type":"docs","free":true}],"children":["deployment"]}
+  "categories": [
+    "fundamentals",
+    "intermediate",
+    "advanced",
+    "tools"
   ],
-  "connections":[["html-basics","html-semantic"],["html-semantic","html-forms"],["html-forms","css-basics"],["html-media","css-basics"],["html-accessibility","css-basics"],["css-basics","css-layout"],["css-layout","css-responsive"],["css-responsive","css-variables"],["css-variables","css-animations"],["css-animations","js-basics"],["css-methodologies","css-frameworks"],["css-frameworks","js-basics"],["js-basics","js-dom"],["js-dom","js-async"],["js-async","js-es6"],["js-es6","js-modules"],["js-modules","git-basics"],["git-basics","typescript"],["typescript","react-basics"],["react-basics","react-advanced"],["react-advanced","react-routing"],["react-routing","state-management"],["state-management","nextjs"],["nextjs","api-integration"],["api-integration","testing"],["testing","performance"],["performance","pwa"],["pwa","seo"],["seo","deployment"],["deployment","web-security"],["web-security","design-systems"],["figma-basics","design-systems"],["webpack","deployment"],["eslint","deployment"],["data-structures","js-basics"],["browser-apis","pwa"],["cypress","deployment"],["storybook","design-systems"],["micro-frontends","deployment"]]
+  "nodes": [
+    {
+      "id": "html-basics",
+      "title": "HTML Basics",
+      "icon": "📄",
+      "category": "fundamentals",
+      "description": "Foundation of web pages — tags, attributes, document structure.",
+      "resources": [
+        {
+          "title": "MDN HTML Basics",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "freeCodeCamp HTML",
+          "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "W3Schools HTML",
+          "url": "https://www.w3schools.com/html/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "html-semantic"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "html-semantic",
+      "title": "Semantic HTML",
+      "icon": "🏗️",
+      "category": "fundamentals",
+      "description": "Using meaningful tags for structure and accessibility.",
+      "resources": [
+        {
+          "title": "MDN Semantics",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "freeCodeCamp Semantic HTML",
+          "url": "https://www.freecodecamp.org/news/semantic-html5-elements/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "html-forms"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "html-forms",
+      "title": "HTML Forms & Validation",
+      "icon": "📝",
+      "category": "fundamentals",
+      "description": "Form elements, input types, and client-side validation.",
+      "resources": [
+        {
+          "title": "MDN Web Forms",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Forms",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "W3Schools Forms",
+          "url": "https://www.w3schools.com/html/html_forms.asp",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "html-media"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "html-media",
+      "title": "HTML5 Media",
+      "icon": "🎬",
+      "category": "fundamentals",
+      "description": "Audio, video, canvas, and SVG elements.",
+      "resources": [
+        {
+          "title": "MDN Video & Audio",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN Canvas",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "html-accessibility"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "html-accessibility",
+      "title": "Web Accessibility Basics",
+      "icon": "♿",
+      "category": "fundamentals",
+      "description": "ARIA roles, semantic markup, and inclusive design.",
+      "resources": [
+        {
+          "title": "W3C WAI Intro",
+          "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN Accessibility",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "html5-apis"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "html5-apis",
+      "title": "HTML5 APIs",
+      "icon": "⚡",
+      "category": "fundamentals",
+      "description": "Geolocation, Web Storage, Web Workers, Drag & Drop.",
+      "resources": [
+        {
+          "title": "MDN Web APIs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "HTML5 APIs Overview",
+          "url": "https://www.html5rocks.com/en/tutorials/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "css-basics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "css-basics",
+      "title": "CSS Fundamentals",
+      "icon": "🎨",
+      "category": "fundamentals",
+      "description": "Selectors, box model, colors, typography.",
+      "resources": [
+        {
+          "title": "MDN CSS First Steps",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "W3Schools CSS",
+          "url": "https://www.w3schools.com/css/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "css-box-model"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "css-box-model",
+      "title": "Box Model & Layout",
+      "icon": "📦",
+      "category": "fundamentals",
+      "description": "Margin, padding, border, display, and positioning.",
+      "resources": [
+        {
+          "title": "MDN Box Model",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "CSS Tricks Box Model",
+          "url": "https://css-tricks.com/box-sizing/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "flexbox"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "flexbox",
+      "title": "Flexbox",
+      "icon": "🔀",
+      "category": "fundamentals",
+      "description": "One-dimensional layout with flexible containers and items.",
+      "resources": [
+        {
+          "title": "CSS Tricks Flexbox Guide",
+          "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN Flexbox",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Flexbox Froggy",
+          "url": "https://flexboxfroggy.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "css-grid"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "css-grid",
+      "title": "CSS Grid",
+      "icon": "📐",
+      "category": "fundamentals",
+      "description": "Two-dimensional layout system for complex designs.",
+      "resources": [
+        {
+          "title": "CSS Tricks Grid Guide",
+          "url": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN Grid",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Grid Garden",
+          "url": "https://cssgridgarden.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "css-responsive"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "css-responsive",
+      "title": "Responsive Design",
+      "icon": "📱",
+      "category": "fundamentals",
+      "description": "Media queries, fluid layouts, and mobile-first approach.",
+      "resources": [
+        {
+          "title": "MDN Responsive Design",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "freeCodeCamp Responsive",
+          "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "css-variables"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "css-variables",
+      "title": "CSS Custom Properties",
+      "icon": "🎯",
+      "category": "fundamentals",
+      "description": "Variables, calc(), and dynamic theming.",
+      "resources": [
+        {
+          "title": "MDN Custom Properties",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "CSS Tricks Variables",
+          "url": "https://css-tricks.com/a-complete-guide-to-custom-properties/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "css-transforms"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "css-transforms",
+      "title": "Transforms & Transitions",
+      "icon": "✨",
+      "category": "intermediate",
+      "description": "CSS transforms, transitions, and basic animations.",
+      "resources": [
+        {
+          "title": "MDN Transforms",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transforms",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN Transitions",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "css-animations"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "css-animations",
+      "title": "CSS Animations",
+      "icon": "🎞️",
+      "category": "intermediate",
+      "description": "Keyframes, animation properties, and performance.",
+      "resources": [
+        {
+          "title": "MDN Animations",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "CSS Tricks Animations",
+          "url": "https://css-tricks.com/almanac/properties/a/animation/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sass"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sass",
+      "title": "Sass/SCSS",
+      "icon": "💅",
+      "category": "intermediate",
+      "description": "CSS preprocessor with variables, nesting, and mixins.",
+      "resources": [
+        {
+          "title": "Sass Official Docs",
+          "url": "https://sass-lang.com/documentation/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Sass Crash Course (YouTube)",
+          "url": "https://www.youtube.com/watch?v=_a5j7KjJkaM",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "tailwind"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "tailwind",
+      "title": "Tailwind CSS",
+      "icon": "🌊",
+      "category": "intermediate",
+      "description": "Utility-first CSS framework for rapid UI development.",
+      "resources": [
+        {
+          "title": "Tailwind Docs",
+          "url": "https://tailwindcss.com/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Tailwind Crash Course",
+          "url": "https://www.youtube.com/watch?v=lbQpXWj_jGI",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bootstrap"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bootstrap",
+      "title": "Bootstrap",
+      "icon": "🅱️",
+      "category": "intermediate",
+      "description": "Most popular CSS framework with components and grid.",
+      "resources": [
+        {
+          "title": "Bootstrap Docs",
+          "url": "https://getbootstrap.com/docs/5.3/getting-started/introduction/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "W3Schools Bootstrap",
+          "url": "https://www.w3schools.com/bootstrap/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "js-basics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "js-basics",
+      "title": "JavaScript Basics",
+      "icon": "🟨",
+      "category": "fundamentals",
+      "description": "Variables, types, operators, control flow, functions.",
+      "resources": [
+        {
+          "title": "MDN JS Guide",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "freeCodeCamp JS",
+          "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "JavaScript.info",
+          "url": "https://javascript.info/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "js-dom"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "js-dom",
+      "title": "DOM Manipulation",
+      "icon": "🌳",
+      "category": "fundamentals",
+      "description": "Selecting, creating, and modifying DOM elements.",
+      "resources": [
+        {
+          "title": "MDN DOM Intro",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "JavaScript.info DOM",
+          "url": "https://javascript.info/document",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "js-events"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "js-events",
+      "title": "Events & Event Handling",
+      "icon": "📢",
+      "category": "fundamentals",
+      "description": "Event listeners, bubbling, delegation, and custom events.",
+      "resources": [
+        {
+          "title": "MDN Events",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "JavaScript.info Events",
+          "url": "https://javascript.info/introduction-browser-events",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "js-async"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "js-async",
+      "title": "Async JavaScript",
+      "icon": "⏳",
+      "category": "intermediate",
+      "description": "Promises, async/await, fetch API, and error handling.",
+      "resources": [
+        {
+          "title": "MDN Async",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "JavaScript.info Promises",
+          "url": "https://javascript.info/promise-basics",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "js-es6"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "js-es6",
+      "title": "ES6+ Features",
+      "icon": "🆕",
+      "category": "intermediate",
+      "description": "Arrow functions, destructuring, modules, template literals.",
+      "resources": [
+        {
+          "title": "ES6 Features Overview",
+          "url": "https://es6-features.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN JS Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "js-modules"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "js-modules",
+      "title": "ES Modules",
+      "icon": "📦",
+      "category": "intermediate",
+      "description": "Import/export, module patterns, and bundling concepts.",
+      "resources": [
+        {
+          "title": "MDN ES Modules",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "JavaScript.info Modules",
+          "url": "https://javascript.info/modules-intro",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "typescript"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "typescript",
+      "title": "TypeScript",
+      "icon": "🔷",
+      "category": "intermediate",
+      "description": "Static typing for JavaScript — interfaces, generics, and more.",
+      "resources": [
+        {
+          "title": "TypeScript Handbook",
+          "url": "https://www.typescriptlang.org/docs/handbook/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "TypeScript Crash Course",
+          "url": "https://www.youtube.com/watch?v=gieEQFIfgYc",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "js-oop"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "js-oop",
+      "title": "JavaScript OOP",
+      "icon": "🎪",
+      "category": "intermediate",
+      "description": "Prototypes, classes, inheritance, and design patterns.",
+      "resources": [
+        {
+          "title": "MDN OOP",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "JavaScript.info Classes",
+          "url": "https://javascript.info/class",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "js-data-structures"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "js-data-structures",
+      "title": "JS Data Structures",
+      "icon": "🗂️",
+      "category": "intermediate",
+      "description": "Arrays, maps, sets, and common algorithms in JS.",
+      "resources": [
+        {
+          "title": "JavaScript.info Data Structures",
+          "url": "https://javascript.info/data-structures",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN Array Methods",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "js-errors"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "js-errors",
+      "title": "Error Handling",
+      "icon": "🛡️",
+      "category": "intermediate",
+      "description": "Try/catch, custom errors, and debugging strategies.",
+      "resources": [
+        {
+          "title": "MDN Error Handling",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#exception_handling_statements",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "JavaScript.info Error Handling",
+          "url": "https://javascript.info/error-handling",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "js-testing"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "js-testing",
+      "title": "JavaScript Testing",
+      "icon": "🧪",
+      "category": "intermediate",
+      "description": "Unit testing with Jest and integration testing.",
+      "resources": [
+        {
+          "title": "Jest Docs",
+          "url": "https://jestjs.io/docs/getting-started",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Testing JavaScript (YouTube)",
+          "url": "https://www.youtube.com/watch?v=KF6G11KDPGc",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "browser-apis"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "browser-apis",
+      "title": "Browser APIs",
+      "icon": "🌐",
+      "category": "intermediate",
+      "description": "Storage, Fetch, History, and Web APIs.",
+      "resources": [
+        {
+          "title": "MDN Web APIs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "What Web Can Do Today",
+          "url": "https://whatwebcando.today/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "react-basics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "react-basics",
+      "title": "React Fundamentals",
+      "icon": "⚛️",
+      "category": "intermediate",
+      "description": "Components, JSX, props, state, and hooks.",
+      "resources": [
+        {
+          "title": "React Official Tutorial",
+          "url": "https://react.dev/learn",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "freeCodeCamp React",
+          "url": "https://www.freecodecamp.org/learn/front-end-development-libraries/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "React Crash Course (YouTube)",
+          "url": "https://www.youtube.com/watch?v=w7ejDZ8SWv8",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "react-hooks"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "react-hooks",
+      "title": "React Hooks",
+      "icon": "🪝",
+      "category": "intermediate",
+      "description": "useState, useEffect, useContext, useRef, and custom hooks.",
+      "resources": [
+        {
+          "title": "React Hooks Guide",
+          "url": "https://react.dev/reference/react/hooks",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Hooks Explained (YouTube)",
+          "url": "https://www.youtube.com/watch?v=dpw9NFhC2kg",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "react-routing"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "react-routing",
+      "title": "React Router",
+      "icon": "🧭",
+      "category": "intermediate",
+      "description": "Client-side routing, nested routes, and navigation.",
+      "resources": [
+        {
+          "title": "React Router Docs",
+          "url": "https://reactrouter.com/en/main",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "React Router Tutorial",
+          "url": "https://reactrouter.com/en/main/start/tutorial",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "react-advanced"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "react-advanced",
+      "title": "Advanced React",
+      "icon": "🚀",
+      "category": "advanced",
+      "description": "Context API, code splitting, lazy loading, error boundaries.",
+      "resources": [
+        {
+          "title": "React Docs Advanced",
+          "url": "https://react.dev/learn",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Kent C. Dodds Blog",
+          "url": "https://kentcdodds.com/blog",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "vue-basics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "vue-basics",
+      "title": "Vue.js Fundamentals",
+      "icon": "💚",
+      "category": "intermediate",
+      "description": "Reactivity, components, directives, and composition API.",
+      "resources": [
+        {
+          "title": "Vue Official Docs",
+          "url": "https://vuejs.org/guide/introduction.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Vue Crash Course",
+          "url": "https://www.youtube.com/watch?v=FXpIoQ_rT_c",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "angular-basics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "angular-basics",
+      "title": "Angular Fundamentals",
+      "icon": "🅰️",
+      "category": "intermediate",
+      "description": "Components, services, dependency injection, and RxJS.",
+      "resources": [
+        {
+          "title": "Angular Docs",
+          "url": "https://angular.dev/overview",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Angular Tutorial",
+          "url": "https://angular.dev/tutorial/tour-of-heroes",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "svelte-basics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "svelte-basics",
+      "title": "Svelte",
+      "icon": "🔥",
+      "category": "intermediate",
+      "description": "Compiler-based framework with reactive declarations.",
+      "resources": [
+        {
+          "title": "Svelte Tutorial",
+          "url": "https://svelte.dev/tutorial",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Svelte Crash Course",
+          "url": "https://www.youtube.com/watch?v=rvEBtq4xTFs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "nextjs"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "nextjs",
+      "title": "Next.js",
+      "icon": "▲",
+      "category": "advanced",
+      "description": "SSR, SSG, API routes, and full-stack React framework.",
+      "resources": [
+        {
+          "title": "Next.js Docs",
+          "url": "https://nextjs.org/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Next.js Tutorial",
+          "url": "https://nextjs.org/learn",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "nuxtjs"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "nuxtjs",
+      "title": "Nuxt.js",
+      "icon": "💚",
+      "category": "advanced",
+      "description": "Vue.js meta-framework with SSR and auto-imports.",
+      "resources": [
+        {
+          "title": "Nuxt Docs",
+          "url": "https://nuxt.com/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Nuxt Tutorial",
+          "url": "https://nuxt.com/docs/getting-started/introduction",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "state-management"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "state-management",
+      "title": "State Management",
+      "icon": "🗄️",
+      "category": "advanced",
+      "description": "Redux, Zustand, Pinia, and Context patterns.",
+      "resources": [
+        {
+          "title": "Redux Toolkit Docs",
+          "url": "https://redux-toolkit.js.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Zustand Docs",
+          "url": "https://zustand-demo.pmnd.rs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Pinia Docs",
+          "url": "https://pinia.vuejs.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "graphql-frontend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "graphql-frontend",
+      "title": "GraphQL Client",
+      "icon": "🔗",
+      "category": "advanced",
+      "description": "Apollo Client, URQL, and GraphQL queries.",
+      "resources": [
+        {
+          "title": "Apollo Client Docs",
+          "url": "https://www.apollographql.com/docs/react/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GraphQL Official",
+          "url": "https://graphql.org/learn/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "testing-frontend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "testing-frontend",
+      "title": "Frontend Testing",
+      "icon": "✅",
+      "category": "advanced",
+      "description": "Jest, React Testing Library, Cypress, and Playwright.",
+      "resources": [
+        {
+          "title": "Testing Library Docs",
+          "url": "https://testing-library.com/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Cypress Docs",
+          "url": "https://docs.cypress.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Playwright Docs",
+          "url": "https://playwright.dev/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "webperf"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "webperf",
+      "title": "Performance Optimization",
+      "icon": "⚡",
+      "category": "advanced",
+      "description": "Core Web Vitals, lazy loading, code splitting, caching.",
+      "resources": [
+        {
+          "title": "Web.dev Performance",
+          "url": "https://web.dev/performance/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN Performance",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/Performance",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pwa"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pwa",
+      "title": "Progressive Web Apps",
+      "icon": "📲",
+      "category": "advanced",
+      "description": "Service workers, web app manifest, and offline support.",
+      "resources": [
+        {
+          "title": "web.dev PWA",
+          "url": "https://web.dev/progressive-web-apps/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN Service Workers",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "rest-apis"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "rest-apis",
+      "title": "REST APIs",
+      "icon": "🔗",
+      "category": "advanced",
+      "description": "Consuming REST APIs, fetch, and axios.",
+      "resources": [
+        {
+          "title": "MDN Fetch",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "RESTful API Design",
+          "url": "https://restfulapi.net/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "websockets"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "websockets",
+      "title": "WebSockets",
+      "icon": "🔌",
+      "category": "advanced",
+      "description": "Real-time bidirectional communication.",
+      "resources": [
+        {
+          "title": "MDN WebSockets",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "WebSockets Guide",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "build-tools"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "build-tools",
+      "title": "Build Tools",
+      "icon": "🔧",
+      "category": "tools",
+      "description": "Webpack, Vite, and modern build pipelines.",
+      "resources": [
+        {
+          "title": "Vite Docs",
+          "url": "https://vitejs.dev/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Webpack Docs",
+          "url": "https://webpack.js.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Vite vs Webpack",
+          "url": "https://www.youtube.com/watch?v=3eMaGkWJhnI",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "seo"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "seo",
+      "title": "SEO for Developers",
+      "icon": "🔍",
+      "category": "tools",
+      "description": "Meta tags, structured data, sitemaps, and lighthouse.",
+      "resources": [
+        {
+          "title": "web.dev SEO",
+          "url": "https://web.dev/learn-core-web-vitals/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Google SEO Starter",
+          "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "accessibility-advanced"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "accessibility-advanced",
+      "title": "Advanced Accessibility",
+      "icon": "♿",
+      "category": "tools",
+      "description": "Screen readers, keyboard nav, and WCAG compliance.",
+      "resources": [
+        {
+          "title": "W3C WCAG",
+          "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "A11Y Project",
+          "url": "https://www.a11yproject.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "design-systems"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "design-systems",
+      "title": "Design Systems",
+      "icon": "🎯",
+      "category": "tools",
+      "description": "Component libraries, design tokens, and Storybook.",
+      "resources": [
+        {
+          "title": "Storybook Docs",
+          "url": "https://storybook.js.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Design Systems Guide",
+          "url": "https://www.designsystems.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "deployment-frontend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "deployment-frontend",
+      "title": "Deployment",
+      "icon": "🚀",
+      "category": "tools",
+      "description": "Vercel, Netlify, GitHub Pages, and CI/CD.",
+      "resources": [
+        {
+          "title": "Vercel Docs",
+          "url": "https://vercel.com/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Netlify Docs",
+          "url": "https://docs.netlify.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GitHub Pages",
+          "url": "https://pages.github.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "security-frontend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "security-frontend",
+      "title": "Web Security",
+      "icon": "🔒",
+      "category": "tools",
+      "description": "CSP, CORS, XSS prevention, and HTTPS.",
+      "resources": [
+        {
+          "title": "OWASP Top 10",
+          "url": "https://owasp.org/www-project-top-ten/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN Web Security",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/Security",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "animation-frontend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "animation-frontend",
+      "title": "Web Animation Libraries",
+      "icon": "🎬",
+      "category": "tools",
+      "description": "Framer Motion, GSAP, and CSS animations.",
+      "resources": [
+        {
+          "title": "Framer Motion",
+          "url": "https://www.framer.com/motion/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GSAP Docs",
+          "url": "https://gsap.com/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Animate.css",
+          "url": "https://animate.style/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    }
+  ]
 }

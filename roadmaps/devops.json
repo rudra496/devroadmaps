@@ -1,35 +1,1241 @@
 {
-  "id": "devops",
   "title": "DevOps / Cloud Engineer",
-  "description": "Master infrastructure, deployment, and cloud computing. From Linux basics to Kubernetes orchestration, build and maintain scalable, reliable systems.",
+  "description": "Infrastructure automation, cloud platforms, and reliable deployments.",
   "icon": "☁️",
-  "color": "#3b82f6",
-  "time": "6-12 months",
-  "difficulty": "Beginner to Advanced",
-  "nodes": [
-    {"id":"do-linux","title":"Linux Fundamentals","icon":"🐧","category":"fundamentals","description":"File system, permissions, processes, package management, shell scripting, and SSH.","resources":[{"title":"Linux Journey","url":"https://linuxjourney.com/","type":"course","free":true},{"title":"OverTheWire Bandit","url":"https://overthewire.org/wargames/bandit/","type":"interactive","free":true}],"children":["do-networking"]},
-    {"id":"do-networking","title":"Networking Fundamentals","icon":"🌐","category":"fundamentals","description":"TCP/IP, DNS, HTTP/HTTPS, load balancing, firewalls, VPNs, and CDN concepts.","resources":[{"title":"Computer Networking Course (Stanford)","url":"https://www.youtube.com/playlist?list=PLoCMsyE1cvdWKsLVyf6cPwCLHLLJYIuhG","type":"video","free":true},{"title":"NetworkChuck Networking","url":"https://www.youtube.com/c/NetworkChuck","type":"video","free":true}],"children":["do-shell"]},
-    {"id":"do-shell","title":"Shell Scripting (Bash)","icon":"💻","category":"tools","description":"Write automation scripts, cron jobs, and system administration scripts with Bash.","resources":[{"title":"Bash Guide (TLDR)","url":"https://tldr.sh/","type":"docs","free":true},{"title":"ShellCheck","url":"https://www.shellcheck.net/","type":"tools","free":true},{"title":"Exercism Bash Track","url":"https://exercism.org/tracks/bash","type":"interactive","free":true}],"children":["do-git"]},
-    {"id":"do-git","title":"Git & GitHub","icon":"🔀","category":"tools","description":"Advanced Git — rebasing, cherry-picking, bisect, worktrees, and Git hooks.","resources":[{"title":"Pro Git Book","url":"https://git-scm.com/book/en/v2","type":"docs","free":true},{"title":"GitHub Skills","url":"https://skills.github.com/","type":"course","free":true}],"children":["do-python"]},
-    {"id":"do-python","title":"Python for DevOps","icon":"🐍","category":"tools","description":"Python scripting for automation, API interactions, infrastructure management, and tooling.","resources":[{"title":"Python Official Tutorial","url":"https://docs.python.org/3/tutorial/","type":"docs","free":true}],"children":["do-iac"]},
-    {"id":"do-iac","title":"Infrastructure as Code (Terraform)","icon":"🏗️","category":"devops","description":"Define infrastructure declaratively with Terraform — providers, modules, state management, and HCL syntax.","resources":[{"title":"Terraform Documentation","url":"https://developer.hashicorp.com/terraform/docs","type":"docs","free":true},{"title":"Terraform Up & Running (Free Chapters)","url":"https://www.terraform-up-and-running.info/","type":"docs","free":true}],"children":["do-docker"]},
-    {"id":"do-docker","title":"Docker","icon":"🐳","category":"devops","description":"Containerization — Dockerfile, images, containers, volumes, networking, and Docker Compose.","resources":[{"title":"Docker Getting Started","url":"https://docs.docker.com/get-started/","type":"docs","free":true},{"title":"Play with Docker","url":"https://labs.play-with-docker.com/","type":"interactive","free":true}],"children":["do-k8s"]},
-    {"id":"do-k8s","title":"Kubernetes","icon":"☸️","category":"devops","description":"Container orchestration — pods, services, deployments, configmaps, secrets, and scaling.","resources":[{"title":"Kubernetes Official Docs","url":"https://kubernetes.io/docs/tutorials/","type":"docs","free":true},{"title":"Kubernetes by Example","url":"https://kubernetesbyexample.com/","type":"docs","free":true},{"title":"Killercoda K8s Playground","url":"https://killercoda.com/playgrounds","type":"interactive","free":true}],"children":["do-helm"]},
-    {"id":"do-helm","title":"Helm & K8s Package Management","icon":"📦","category":"devops","description":"Package and deploy applications on Kubernetes with Helm charts and Kustomize.","resources":[{"title":"Helm Documentation","url":"https://helm.sh/docs/","type":"docs","free":true},{"title":"Kustomize Documentation","url":"https://kustomize.io/","type":"docs","free":true}],"children":["do-cicd"]},
-    {"id":"do-cicd","title":"CI/CD Pipelines","icon":"🔄","category":"devops","description":"GitHub Actions, GitLab CI, Jenkins, or CircleCI for automated build, test, and deploy workflows.","resources":[{"title":"GitHub Actions Docs","url":"https://docs.github.com/en/actions","type":"docs","free":true},{"title":"Jenkins Documentation","url":"https://www.jenkins.io/doc/","type":"docs","free":true}],"children":["do-monitoring"]},
-    {"id":"do-monitoring","title":"Monitoring & Logging","icon":"📊","category":"devops","description":"Prometheus, Grafana, ELK stack, Loki, and alerting for observability.","resources":[{"title":"Prometheus Documentation","url":"https://prometheus.io/docs/","type":"docs","free":true},{"title":"Grafana Documentation","url":"https://grafana.com/docs/","type":"docs","free":true},{"title":"ELK Stack Guide","url":"https://www.elastic.co/guide/","type":"docs","free":true}],"children":["do-aws"]},
-    {"id":"do-aws","title":"AWS Core Services","icon":"☁️","category":"cloud","description":"EC2, S3, RDS, Lambda, CloudFormation, IAM, VPC, and CloudFront.","resources":[{"title":"AWS Free Tier","url":"https://aws.amazon.com/free/","type":"docs","free":true},{"title":"AWS Skill Builder","url":"https://aws.amazon.com/training/digital/","type":"course","free":true}],"children":["do-security"]},
-    {"id":"do-gcp","title":"Google Cloud Platform","icon":"🔵","category":"cloud","description":"GCP fundamentals — Compute Engine, Cloud Storage, BigQuery, Cloud Functions, and GKE.","resources":[{"title":"GCP Free Tier","url":"https://cloud.google.com/free","type":"docs","free":true},{"title":"GCP Skills Boost","url":"https://www.cloudskillsboost.google/","type":"course","free":true}],"children":["do-security"]},
-    {"id":"do-azure","title":"Microsoft Azure","icon":"🔷","category":"cloud","description":"Azure fundamentals — VMs, Blob Storage, Azure Functions, AKS, and Azure DevOps.","resources":[{"title":"Azure Free Account","url":"https://azure.microsoft.com/free/","type":"docs","free":true},{"title":"Microsoft Learn","url":"https://learn.microsoft.com/","type":"course","free":true}],"children":["do-security"]},
-    {"id":"do-security","title":"DevSecOps","icon":"🔒","category":"security","description":"Security scanning, secret management (Vault), container security, SAST/DAST, and compliance.","resources":[{"title":"Vault Documentation","url":"https://developer.hashicorp.com/vault/docs","type":"docs","free":true},{"title":"OWASP DevSecOps","url":"https://owasp.org/www-project-devsecops-guideline/","type":"docs","free":true}],"children":["do-linux-hardening"]},
-    {"id":"do-linux-hardening","title":"Linux Security & Hardening","icon":"🛡️","category":"security","description":"SELinux, AppArmor, firewall (iptables/ufw), SSH hardening, and system security best practices.","resources":[{"title":"Linux Security (NSA Guide)","url":"https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/1614866/nsa-releases-guidance-on-how-to-secure-your-operating-system/","type":"docs","free":true}],"children":["do-backup"]},
-    {"id":"do-backup","title":"Backup & Disaster Recovery","icon":"💾","category":"devops","description":"Backup strategies, RTO/RPO, disaster recovery planning, and infrastructure resilience.","resources":[{"title":"AWS Backup Docs","url":"https://docs.aws.amazon.com/aws-backup/","type":"docs","free":true}],"children":["do-ansible"]},
-    {"id":"do-ansible","title":"Ansible / Configuration Management","icon":"📜","category":"devops","description":"Automate server configuration, deployment, and infrastructure management with Ansible playbooks.","resources":[{"title":"Ansible Documentation","url":"https://docs.ansible.com/","type":"docs","free":true},{"title":"Spacelift Ansible Guide","url":"https://spacelift.io/blog/ansible-tutorial","type":"docs","free":true}],"children":["do-iac"]},
-    {"id":"do-nginx","title":"Web Servers (Nginx/Apache)","icon":"🌐","category":"tools","description":"Configure Nginx or Apache as reverse proxy, load balancer, and static file server.","resources":[{"title":"Nginx Documentation","url":"https://nginx.org/en/docs/","type":"docs","free":true},{"title":"DigitalOcean Nginx Guide","url":"https://www.digitalocean.com/community/tags/nginx","type":"docs","free":true}],"children":["do-docker"]},
-    {"id":"do-linux-perf","title":"Linux Performance","icon":"⚡","category":"advanced","description":"Performance profiling — top, htop, strace, perf, sysstat, and kernel tuning.","resources":[{"title":"Brendan Gregg's Performance Page","url":"https://www.brendangregg.com/","type":"docs","free":true},{"title":"Linux Performance (Netflix)","url":"https://www.youtube.com/watch?v=F2j7X5f8RkI","type":"video","free":true}],"children":["do-monitoring"]},
-    {"id":"do-certs","title":"Certifications","icon":"🏆","category":"advanced","description":"AWS Solutions Architect, CKA (Kubernetes), Azure Fundamentals, or HashiCorp Terraform Associate.","resources":[{"title":"AWS Certified Solutions Architect","url":"https://aws.amazon.com/certification/certified-solutions-architect-associate/","type":"docs","free":true},{"title":"CKA Exam (CNCF)","url":"https://www.cncf.io/certification/cka/","type":"docs","free":true}],"children":[]},
-    {"id":"do-serverless","title":"Serverless Computing","icon":"⚡","category":"cloud","description":"AWS Lambda, Google Cloud Functions, or Azure Functions — event-driven, pay-per-use compute.","resources":[{"title":"AWS Lambda Docs","url":"https://docs.aws.amazon.com/lambda/","type":"docs","free":true}],"children":["do-aws"]},
-    {"id":"do-gitops","title":"GitOps","icon":"🔀","category":"advanced","description":"ArgoCD, Flux — declarative deployments driven by Git, continuous reconciliation, and progressive delivery.","resources":[{"title":"ArgoCD Documentation","url":"https://argo-cd.readthedocs.io/","type":"docs","free":true},{"title":"OpenGitOps","url":"https://opengitops.dev/","type":"docs","free":true}],"children":["do-k8s"]}
+  "categories": [
+    "fundamentals",
+    "intermediate",
+    "advanced",
+    "tools"
   ],
-  "connections":[["do-linux","do-networking"],["do-networking","do-shell"],["do-shell","do-git"],["do-git","do-python"],["do-python","do-iac"],["do-iac","do-docker"],["do-docker","do-k8s"],["do-k8s","do-helm"],["do-helm","do-cicd"],["do-cicd","do-monitoring"],["do-monitoring","do-aws"],["do-gcp","do-security"],["do-azure","do-security"],["do-aws","do-security"],["do-security","do-linux-hardening"],["do-linux-hardening","do-backup"],["do-backup","do-ansible"],["do-ansible","do-iac"],["do-nginx","do-docker"],["do-linux-perf","do-monitoring"],["do-certs","do-aws"],["do-serverless","do-aws"],["do-gitops","do-k8s"]]
+  "nodes": [
+    {
+      "id": "dev-linux",
+      "title": "Linux Fundamentals",
+      "icon": "🐧",
+      "category": "fundamentals",
+      "description": "Command line, file system, permissions, and processes.",
+      "resources": [
+        {
+          "title": "Linux Journey",
+          "url": "https://linuxjourney.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OverTheWire Bandit",
+          "url": "https://overthewire.org/wargames/bandit/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-networking"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-networking",
+      "title": "Networking",
+      "icon": "🌐",
+      "category": "fundamentals",
+      "description": "TCP/IP, DNS, HTTP, and troubleshooting.",
+      "resources": [
+        {
+          "title": "Computer Networking Course",
+          "url": "https://www.youtube.com/watch?v=IPvYjXCsTg8",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Network Protocols",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-shell"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-shell",
+      "title": "Shell Scripting",
+      "icon": "📝",
+      "category": "fundamentals",
+      "description": "Bash scripting, automation, and cron.",
+      "resources": [
+        {
+          "title": "Bash Guide",
+          "url": "https://www.gnu.org/software/bash/manual/bash.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "ShellCheck",
+          "url": "https://www.shellcheck.net/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-gitops-basics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-gitops-basics",
+      "title": "Git",
+      "icon": "📦",
+      "category": "fundamentals",
+      "description": "Version control, branching strategies, and GitHub.",
+      "resources": [
+        {
+          "title": "Git Docs",
+          "url": "https://git-scm.com/doc",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GitHub Skills",
+          "url": "https://skills.github.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-docker"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-docker",
+      "title": "Docker",
+      "icon": "🐳",
+      "category": "fundamentals",
+      "description": "Containers, Dockerfile, images, and volumes.",
+      "resources": [
+        {
+          "title": "Docker Docs",
+          "url": "https://docs.docker.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Docker Tutorial",
+          "url": "https://docs.docker.com/get-started/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Docker Crash Course",
+          "url": "https://www.youtube.com/watch?v=fqMOX6JJhGo",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-docker-compose"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-docker-compose",
+      "title": "Docker Compose",
+      "icon": "📋",
+      "category": "fundamentals",
+      "description": "Multi-container applications with compose.",
+      "resources": [
+        {
+          "title": "Compose Docs",
+          "url": "https://docs.docker.com/compose/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Compose Tutorial",
+          "url": "https://docs.docker.com/compose/gettingstarted/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-k8s"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-k8s",
+      "title": "Kubernetes",
+      "icon": "☸️",
+      "category": "intermediate",
+      "description": "Pods, services, deployments, and scaling.",
+      "resources": [
+        {
+          "title": "K8s Docs",
+          "url": "https://kubernetes.io/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "K8s Tutorial",
+          "url": "https://kubernetes.io/docs/tutorials/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "K8s Crash Course",
+          "url": "https://www.youtube.com/watch?v=X48VuDVv0do",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-helm"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-helm",
+      "title": "Helm",
+      "icon": "⚓",
+      "category": "intermediate",
+      "description": "Kubernetes package management.",
+      "resources": [
+        {
+          "title": "Helm Docs",
+          "url": "https://helm.sh/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Helm Hub",
+          "url": "https://hub.helm.sh/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-jenkins"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-jenkins",
+      "title": "Jenkins",
+      "icon": "🔧",
+      "category": "intermediate",
+      "description": "CI/CD with Jenkins pipelines.",
+      "resources": [
+        {
+          "title": "Jenkins Docs",
+          "url": "https://www.jenkins.io/doc/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Jenkins Tutorial",
+          "url": "https://www.jenkins.io/doc/tutorials/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-ghactions"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-ghactions",
+      "title": "GitHub Actions",
+      "icon": "🔄",
+      "category": "intermediate",
+      "description": "Automated workflows on GitHub.",
+      "resources": [
+        {
+          "title": "GitHub Actions Docs",
+          "url": "https://docs.github.com/en/actions",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Actions Marketplace",
+          "url": "https://github.com/marketplace?type=actions",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-gitlab-ci"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-gitlab-ci",
+      "title": "GitLab CI",
+      "icon": "🔄",
+      "category": "intermediate",
+      "description": "CI/CD pipelines with GitLab.",
+      "resources": [
+        {
+          "title": "GitLab CI Docs",
+          "url": "https://docs.gitlab.com/ee/ci/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GitLab CI Tutorial",
+          "url": "https://docs.gitlab.com/ee/ci/quick_start/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-terraform"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-terraform",
+      "title": "Terraform",
+      "icon": "🏗️",
+      "category": "advanced",
+      "description": "Infrastructure as Code with HashiCorp Terraform.",
+      "resources": [
+        {
+          "title": "Terraform Docs",
+          "url": "https://developer.hashicorp.com/terraform/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Terraform Tutorial",
+          "url": "https://developer.hashicorp.com/terraform/tutorials",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-ansible"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-ansible",
+      "title": "Ansible",
+      "icon": "⚙️",
+      "category": "advanced",
+      "description": "Configuration management and automation.",
+      "resources": [
+        {
+          "title": "Ansible Docs",
+          "url": "https://docs.ansible.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Ansible Tutorial",
+          "url": "https://docs.ansible.com/ansible/latest/getting_started/index.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-aws-core"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-aws-core",
+      "title": "AWS Core",
+      "icon": "☁️",
+      "category": "intermediate",
+      "description": "EC2, S3, VPC, IAM, and core services.",
+      "resources": [
+        {
+          "title": "AWS Docs",
+          "url": "https://docs.aws.amazon.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "AWS Free Tier",
+          "url": "https://aws.amazon.com/free/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "AWS Cloud Practitioner",
+          "url": "https://aws.amazon.com/training/learn-about/aws-cloud-practitioner-essentials/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-aws-advanced"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-aws-advanced",
+      "title": "AWS Advanced",
+      "icon": "🚀",
+      "category": "advanced",
+      "description": "Lambda, ECS, EKS, RDS, and CloudFormation.",
+      "resources": [
+        {
+          "title": "AWS Lambda",
+          "url": "https://docs.aws.amazon.com/lambda/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "AWS ECS",
+          "url": "https://docs.aws.amazon.com/ecs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-gcp"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-gcp",
+      "title": "Google Cloud Platform",
+      "icon": "🌐",
+      "category": "advanced",
+      "description": "GCP core services and deployment.",
+      "resources": [
+        {
+          "title": "GCP Docs",
+          "url": "https://cloud.google.com/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GCP Training",
+          "url": "https://cloud.google.com/training",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-azure"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-azure",
+      "title": "Azure",
+      "icon": "🔷",
+      "category": "advanced",
+      "description": "Microsoft Azure core services.",
+      "resources": [
+        {
+          "title": "Azure Docs",
+          "url": "https://learn.microsoft.com/en-us/azure/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Azure Learn",
+          "url": "https://learn.microsoft.com/en-us/training/paths/azure-fundamentals/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-prometheus"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-prometheus",
+      "title": "Prometheus & Grafana",
+      "icon": "📊",
+      "category": "tools",
+      "description": "Monitoring and alerting stack.",
+      "resources": [
+        {
+          "title": "Prometheus Docs",
+          "url": "https://prometheus.io/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Grafana Docs",
+          "url": "https://grafana.com/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Prometheus Crash Course",
+          "url": "https://www.youtube.com/watch?v=h4Sl21AKiHg",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-elk"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-elk",
+      "title": "ELK Stack",
+      "icon": "📋",
+      "category": "tools",
+      "description": "Elasticsearch, Logstash, Kibana for logging.",
+      "resources": [
+        {
+          "title": "ELK Docs",
+          "url": "https://www.elastic.co/guide/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "ELK Tutorial",
+          "url": "https://www.elastic.co/guide/en/observability/current/getting-started.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-security-ops"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-security-ops",
+      "title": "Security",
+      "icon": "🔒",
+      "category": "tools",
+      "description": "DevSecOps, secrets management, and compliance.",
+      "resources": [
+        {
+          "title": "Vault Docs",
+          "url": "https://www.vaultproject.io/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OWASP DevSecOps",
+          "url": "https://owasp.org/www-project-devsecops-maturity-model/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-incident"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-incident",
+      "title": "Incident Response",
+      "icon": "🚨",
+      "category": "tools",
+      "description": "On-call, runbooks, and incident management.",
+      "resources": [
+        {
+          "title": "PagerDuty Incident Response",
+          "url": "https://response.pagerduty.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Atlassian Incident Mgmt",
+          "url": "https://www.atlassian.com/incident-management",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-cost"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-cost",
+      "title": "Cost Optimization",
+      "icon": "💰",
+      "category": "tools",
+      "description": "Cloud cost management and right-sizing.",
+      "resources": [
+        {
+          "title": "AWS Cost Explorer",
+          "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-explorer.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Infracost",
+          "url": "https://www.infracost.io/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-istio"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-istio",
+      "title": "Service Mesh",
+      "icon": "🕸️",
+      "category": "advanced",
+      "description": "Istio for microservices communication.",
+      "resources": [
+        {
+          "title": "Istio Docs",
+          "url": "https://istio.io/latest/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Istio Tutorial",
+          "url": "https://istio.io/latest/docs/tasks/traffic-management/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-argocd"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-argocd",
+      "title": "GitOps (ArgoCD)",
+      "icon": "🔄",
+      "category": "advanced",
+      "description": "Declarative GitOps deployments.",
+      "resources": [
+        {
+          "title": "ArgoCD Docs",
+          "url": "https://argo-cd.readthedocs.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "ArgoCD Tutorial",
+          "url": "https://argo-cd.readthedocs.io/en/stable/getting_started/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-linux-hardening"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-linux-hardening",
+      "title": "Linux Hardening",
+      "icon": "🛡️",
+      "category": "intermediate",
+      "description": "Server security, firewalls, and hardening.",
+      "resources": [
+        {
+          "title": "Linux Hardening Guide",
+          "url": "https://medium.com/@thezero/linux-harden-security-18-tips-312672b8e7e2",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Lynis",
+          "url": "https://cisofy.com/lynis/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-nginx"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-nginx",
+      "title": "Nginx",
+      "icon": "⚡",
+      "category": "tools",
+      "description": "Reverse proxy, load balancing, and web server.",
+      "resources": [
+        {
+          "title": "Nginx Docs",
+          "url": "https://nginx.org/en/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "DigitalOcean Nginx",
+          "url": "https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-databases-ops"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-databases-ops",
+      "title": "Database Ops",
+      "icon": "🗃️",
+      "category": "tools",
+      "description": "Backup, replication, and managed databases.",
+      "resources": [
+        {
+          "title": "PostgreSQL Backup",
+          "url": "https://www.postgresql.org/docs/current/backup.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MongoDB Ops",
+          "url": "https://www.mongodb.com/docs/manual/administration/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "dev-ssh"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-ssh",
+      "title": "SSH & Remote Access",
+      "icon": "🔑",
+      "category": "fundamentals",
+      "description": "SSH keys, tunnels, and secure access.",
+      "resources": [
+        {
+          "title": "SSH Docs",
+          "url": "https://www.ssh.com/ssh/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "SSH Guide",
+          "url": "https://linuxize.com/post/how-to-set-up-ssh-keys-on-ubuntu-20-04/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-bash-advanced",
+      "title": "Advanced Bash",
+      "icon": "🖥️",
+      "category": "fundamentals",
+      "description": "Advanced shell scripting and automation.",
+      "resources": [
+        {
+          "title": "Advanced Bash Scripting",
+          "url": "https://tldp.org/LDP/abs/html/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Bash Pitfalls",
+          "url": "https://mywiki.wooledge.org/BashPitfalls",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-process-mgmt",
+      "title": "Process Management",
+      "icon": "⚙️",
+      "category": "fundamentals",
+      "description": "Systemd, process signals, and process management.",
+      "resources": [
+        {
+          "title": "Systemd Docs",
+          "url": "https://www.freedesktop.org/software/systemd/man/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Linux Processes",
+          "url": "https://linuxize.com/post/linux-processes/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-network-troubleshooting",
+      "title": "Network Troubleshooting",
+      "icon": "🔍",
+      "category": "intermediate",
+      "description": "tcpdump, nslookup, and network debugging.",
+      "resources": [
+        {
+          "title": "tcpdump Guide",
+          "url": "https://www.tcpdump.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Network Debugging",
+          "url": "https://www.linode.com/docs/guides/linux-networking-commands/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-http-basics",
+      "title": "HTTP & HTTPS",
+      "icon": "🌐",
+      "category": "fundamentals",
+      "description": "HTTP methods, status codes, headers, and TLS.",
+      "resources": [
+        {
+          "title": "MDN HTTP",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "HTTP/3 Explained",
+          "url": "https://http3-explained.haxx.se/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-dns",
+      "title": "DNS",
+      "icon": "🗺️",
+      "category": "intermediate",
+      "description": "DNS resolution, records, and configuration.",
+      "resources": [
+        {
+          "title": "DNS Guide",
+          "url": "https://howdns.works/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Cloudflare DNS",
+          "url": "https://www.cloudflare.com/learning/dns/what-is-dns/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-load-balancing",
+      "title": "Load Balancing",
+      "icon": "⚖️",
+      "category": "advanced",
+      "description": "HAProxy, Nginx LB, and algorithms.",
+      "resources": [
+        {
+          "title": "Nginx Load Balancing",
+          "url": "https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "HAProxy Docs",
+          "url": "https://www.haproxy.org/documentation.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-auto-scaling",
+      "title": "Auto Scaling",
+      "icon": "📈",
+      "category": "advanced",
+      "description": "Horizontal/vertical scaling strategies.",
+      "resources": [
+        {
+          "title": "AWS Auto Scaling",
+          "url": "https://docs.aws.amazon.com/autoscaling/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "K8s HPA",
+          "url": "https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-blue-green",
+      "title": "Deployment Strategies",
+      "icon": "🚀",
+      "category": "advanced",
+      "description": "Blue-green, canary, and rolling deployments.",
+      "resources": [
+        {
+          "title": "Deployment Strategies",
+          "url": "https://martinfowler.com/bliki/BlueGreenDeployment.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Argo Rollouts",
+          "url": "https://argoproj.github.io/rollouts/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-config-mgmt",
+      "title": "Configuration Management",
+      "icon": "🔧",
+      "category": "tools",
+      "description": "Consul, etcd, and config management.",
+      "resources": [
+        {
+          "title": "Consul Docs",
+          "url": "https://www.consul.io/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "etcd Docs",
+          "url": "https://etcd.io/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-packer",
+      "title": "Packer",
+      "icon": "📦",
+      "category": "advanced",
+      "description": "Building machine images.",
+      "resources": [
+        {
+          "title": "Packer Docs",
+          "url": "https://developer.hashicorp.com/packer/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Packer Tutorial",
+          "url": "https://developer.hashicorp.com/packer/tutorials/docker/get-started",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-vault",
+      "title": "HashiCorp Vault",
+      "icon": "🔐",
+      "category": "tools",
+      "description": "Secrets management platform.",
+      "resources": [
+        {
+          "title": "Vault Docs",
+          "url": "https://www.vaultproject.io/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Vault Tutorial",
+          "url": "https://developer.hashicorp.com/tutorials/vault/getting-started-intro",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-aws-s3",
+      "title": "AWS S3 & Storage",
+      "icon": "🪣",
+      "category": "intermediate",
+      "description": "Object storage and CDN integration.",
+      "resources": [
+        {
+          "title": "S3 Docs",
+          "url": "https://docs.aws.amazon.com/s3/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "CloudFront",
+          "url": "https://docs.aws.amazon.com/cloudfront/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-aws-ec2",
+      "title": "AWS EC2 & Compute",
+      "icon": "🖥️",
+      "category": "intermediate",
+      "description": "Virtual servers and compute services.",
+      "resources": [
+        {
+          "title": "EC2 Docs",
+          "url": "https://docs.aws.amazon.com/AWSEC2/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "EC2 Tutorial",
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-aws-lambda",
+      "title": "AWS Lambda",
+      "icon": "⚡",
+      "category": "advanced",
+      "description": "Serverless compute service.",
+      "resources": [
+        {
+          "title": "Lambda Docs",
+          "url": "https://docs.aws.amazon.com/lambda/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Lambda Tutorial",
+          "url": "https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-gcp-compute",
+      "title": "GCP Compute",
+      "icon": "🌐",
+      "category": "advanced",
+      "description": "GCE, Cloud Functions, and Cloud Run.",
+      "resources": [
+        {
+          "title": "GCP Compute Docs",
+          "url": "https://cloud.google.com/compute/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-azure-compute",
+      "title": "Azure Compute",
+      "icon": "🔷",
+      "category": "advanced",
+      "description": "VMs, Functions, and App Service.",
+      "resources": [
+        {
+          "title": "Azure VMs",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-fluentd",
+      "title": "Fluentd",
+      "icon": "📋",
+      "category": "tools",
+      "description": "Log collection and forwarding.",
+      "resources": [
+        {
+          "title": "Fluentd Docs",
+          "url": "https://www.fluentd.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Fluent Bit",
+          "url": "https://docs.fluentbit.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-prometheus-rules",
+      "title": "Alerting Rules",
+      "icon": "🔔",
+      "category": "tools",
+      "description": "Prometheus alerting and notification.",
+      "resources": [
+        {
+          "title": "Prometheus Alerting",
+          "url": "https://prometheus.io/docs/alerting/latest/overview/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Alertmanager",
+          "url": "https://prometheus.io/docs/alerting/latest/alertmanager/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-backup",
+      "title": "Backup & Recovery",
+      "icon": "💾",
+      "category": "tools",
+      "description": "Backup strategies and disaster recovery.",
+      "resources": [
+        {
+          "title": "AWS Backup",
+          "url": "https://docs.aws.amazon.com/aws-backup/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Backup Best Practices",
+          "url": "https://www.ibm.com/topics/backup-and-recovery",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-iac-testing",
+      "title": "IaC Testing",
+      "icon": "🧪",
+      "category": "tools",
+      "description": "Testing Terraform and infrastructure code.",
+      "resources": [
+        {
+          "title": "Terratest",
+          "url": "https://terratest.gruntwork.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Terraform Validate",
+          "url": "https://developer.hashicorp.com/terraform/cli/commands/validate",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-container-registry",
+      "title": "Container Registry",
+      "icon": "📦",
+      "category": "tools",
+      "description": "Docker Hub, ECR, and GCR.",
+      "resources": [
+        {
+          "title": "Docker Hub",
+          "url": "https://hub.docker.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GitHub Container Registry",
+          "url": "https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "dev-troubleshooting",
+      "title": "Debugging & Troubleshooting",
+      "icon": "🔍",
+      "category": "tools",
+      "description": "System debugging and incident diagnosis.",
+      "resources": [
+        {
+          "title": "Linux Debugging",
+          "url": "https://www.brendangregg.com/linuxperf.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "strace",
+          "url": "https://strace.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    }
+  ]
 }

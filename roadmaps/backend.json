@@ -1,41 +1,1284 @@
 {
-  "id": "backend",
   "title": "Backend Developer",
-  "description": "Build robust servers, APIs, and database systems. Learn programming fundamentals, web frameworks, databases, authentication, caching, testing, and deployment for scalable backend systems.",
+  "description": "Build robust, scalable server-side applications and APIs.",
   "icon": "⚙️",
-  "color": "#68a063",
-  "time": "6-12 months",
-  "difficulty": "Beginner to Advanced",
-  "nodes": [
-    {"id":"lang-choice","title":"Choose a Language","icon":"🌍","category":"fundamentals","description":"Pick a backend language — Node.js/JavaScript, Python, Go, Java, or C#. Each has strong ecosystems for backend development.","resources":[{"title":"freeCodeCamp Backend Development","url":"https://www.freecodecamp.org/learn/back-end-development-and-apis/","type":"course","free":true},{"title":"The Odin Project Backend","url":"https://www.theodinproject.com/paths/full-stack-javascript/courses/ruby-on-rails","type":"course","free":true}],"children":["lang-fundamentals"]},
-    {"id":"lang-fundamentals","title":"Language Fundamentals","icon":"📖","category":"fundamentals","description":"Variables, types, control flow, functions, OOP, error handling, and standard library mastery for your chosen language.","resources":[{"title":"Python Tutorial (Official)","url":"https://docs.python.org/3/tutorial/","type":"docs","free":true},{"title":"Node.js Documentation","url":"https://nodejs.org/en/docs/","type":"docs","free":true},{"title":"Go Tour","url":"https://go.dev/tour/","type":"course","free":true}],"children":["data-structures"]},
-    {"id":"data-structures","title":"Data Structures & Algorithms","icon":"🌳","category":"fundamentals","description":"Arrays, linked lists, stacks, queues, hash maps, trees, graphs, sorting, and searching algorithms.","resources":[{"title":"Visualgo","url":"https://visualgo.net/en","type":"interactive","free":true},{"title":"freeCodeCamp Algorithm Course","url":"https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/","type":"course","free":true}],"children":["git"]},
-    {"id":"git","title":"Git & GitHub","icon":"🔀","category":"tools","description":"Version control, branching strategies, pull requests, code reviews, and collaborative workflows.","resources":[{"title":"Pro Git Book (Free)","url":"https://git-scm.com/book/en/v2","type":"docs","free":true},{"title":"GitHub Skills","url":"https://skills.github.com/","type":"course","free":true}],"children":["cmd-line"]},
-    {"id":"cmd-line","title":"Command Line Proficiency","icon":"💻","category":"tools","description":"Navigate the terminal, file operations, process management, environment variables, and shell scripting basics.","resources":[{"title":"Linux Command Line Basics","url":"https://linuxcommand.org/lc3_learning_the_shell.php","type":"docs","free":true},{"title":"OverTheWire Bandit (Game)","url":"https://overthewire.org/wargames/bandit/","type":"interactive","free":true}],"children":["http"]},
-    {"id":"http","title":"HTTP & Networking","icon":"🌐","category":"fundamentals","description":"HTTP methods, status codes, headers, request/response cycle, DNS, TCP/IP, and REST principles.","resources":[{"title":"MDN HTTP Overview","url":"https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview","type":"docs","free":true},{"title":"freeCodeCamp HTTP Course","url":"https://www.freecodecamp.org/news/http-crash-course/","type":"course","free":true}],"children":["rest-apis"]},
-    {"id":"rest-apis","title":"RESTful API Design","icon":"🔌","category":"frameworks","description":"Design RESTful APIs — resource naming, proper HTTP methods, status codes, pagination, versioning, and HATEOAS.","resources":[{"title":"RESTful API Design (MDN)","url":"https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview","type":"docs","free":true},{"title":"REST API Tutorial","url":"https://restfulapi.net/","type":"docs","free":true}],"children":["web-framework"]},
-    {"id":"web-framework","title":"Web Framework","icon":"🏗️","category":"frameworks","description":"Express.js, FastAPI, Django, Spring Boot, or Gin — learn routing, middleware, request handling, and error management.","resources":[{"title":"Express.js Guide","url":"https://expressjs.com/en/guide/routing.html","type":"docs","free":true},{"title":"FastAPI Documentation","url":"https://fastapi.tiangolo.com/","type":"docs","free":true},{"title":"Django Tutorial","url":"https://docs.djangoproject.com/en/stable/intro/tutorial/","type":"docs","free":true}],"children":["databases"]},
-    {"id":"databases","title":"Database Fundamentals","icon":"🗄️","category":"databases","description":"Relational vs NoSQL, ACID properties, normalization, indexing, and choosing the right database for your use case.","resources":[{"title":"SQLBolt (Interactive SQL)","url":"https://sqlbolt.com/","type":"interactive","free":true},{"title":"MongoDB University (Free)","url":"https://university.mongodb.com/","type":"course","free":true}],"children":["sql"]},
-    {"id":"sql","title":"SQL Mastery","icon":"📊","category":"databases","description":"Complex queries, JOINs, subqueries, window functions, CTEs, indexes, query optimization, and stored procedures.","resources":[{"title":"SQLBolt","url":"https://sqlbolt.com/","type":"interactive","free":true},{"title":"Mode SQL Tutorial","url":"https://mode.com/sql-tutorial/","type":"course","free":true},{"title":"Use The Index Luke","url":"https://use-the-index-luke.com/","type":"docs","free":true}],"children":["orm"]},
-    {"id":"orm","title":"ORM & Database Drivers","icon":"🔄","category":"databases","description":"Prisma, SQLAlchemy, TypeORM, or raw drivers — connecting your app to databases, migrations, and query building.","resources":[{"title":"Prisma Documentation","url":"https://www.prisma.io/docs","type":"docs","free":true},{"title":"SQLAlchemy Documentation","url":"https://docs.sqlalchemy.org/en/20/","type":"docs","free":true}],"children":["auth"]},
-    {"id":"auth","title":"Authentication & Authorization","icon":"🔐","category":"security","description":"JWT, OAuth 2.0, session-based auth, password hashing (bcrypt), 2FA, and role-based access control.","resources":[{"title":"JWT.io Introduction","url":"https://jwt.io/introduction","type":"docs","free":true},{"title":"OAuth 2.0 Simplified","url":"https://aaronparecki.com/oauth-2-simplified/","type":"docs","free":true},{"title":"freeCodeCamp Auth Course","url":"https://www.freecodecamp.org/news/learn-how-to-handle-authentication-with-nodejs-and-passport/","type":"course","free":true}],"children":["validation"]},
-    {"id":"validation","title":"Input Validation & Sanitization","icon":"✅","category":"security","description":"Validate and sanitize all user input — prevent SQL injection, XSS, and other injection attacks.","resources":[{"title":"OWASP Injection Prevention","url":"https://owasp.org/www-community/Injection_Prevention_Cheat_Sheet","type":"docs","free":true},{"title":"Zod Documentation","url":"https://zod.dev/","type":"docs","free":true}],"children":["caching"]},
-    {"id":"caching","title":"Caching Strategies","icon":"⚡","category":"advanced","description":"Redis, Memcached, application-level caching, HTTP caching, cache invalidation patterns, and CDN caching.","resources":[{"title":"Redis Documentation","url":"https://redis.io/docs/","type":"docs","free":true},{"title":"freeCodeCamp Caching Course","url":"https://www.freecodecamp.org/news/how-to-cache-a-database-in-node-js/","type":"course","free":true}],"children":["queues"]},
-    {"id":"queues","title":"Message Queues & Jobs","icon":"📨","category":"advanced","description":"Background jobs, message queues (RabbitMQ, Kafka, Bull/BullMQ), event-driven architecture, and async processing.","resources":[{"title":"RabbitMQ Tutorials","url":"https://www.rabbitmq.com/tutorials","type":"docs","free":true},{"title":"BullMQ Documentation","url":"https://docs.bullmq.io/","type":"docs","free":true}],"children":["websockets"]},
-    {"id":"websockets","title":"WebSockets & Real-time","icon":"📡","category":"advanced","description":"Real-time communication with WebSockets, Socket.io, Server-Sent Events, and pub/sub patterns.","resources":[{"title":"Socket.io Documentation","url":"https://socket.io/docs/v4/","type":"docs","free":true},{"title":"MDN WebSockets","url":"https://developer.mozilla.org/en-US/docs/Web/API/WebSocket","type":"docs","free":true}],"children":["file-uploads"]},
-    {"id":"file-uploads","title":"File Handling & Storage","icon":"📁","category":"tools","description":"File uploads, streaming, image processing, cloud storage (S3), and CDN delivery for media files.","resources":[{"title":"Multer Documentation (Node.js)","url":"https://github.com/expressjs/multer","type":"docs","free":true},{"title":"AWS S3 Documentation","url":"https://docs.aws.amazon.com/s3/","type":"docs","free":true}],"children":["email"]},
-    {"id":"email","title":"Email & Notifications","icon":"📧","category":"tools","description":"Transactional emails (SendGrid, SES), email templates, push notifications, and SMS integrations.","resources":[{"title":"SendGrid Documentation","url":"https://docs.sendgrid.com/","type":"docs","free":true},{"title":"Nodemailer Documentation","url":"https://nodemailer.com/","type":"docs","free":true}],"children":["testing"]},
-    {"id":"testing","title":"API Testing","icon":"🧪","category":"testing","description":"Unit tests, integration tests, API endpoint testing with Jest/Pytest, and E2E API testing.","resources":[{"title":"Jest Documentation","url":"https://jestjs.io/docs/getting-started","type":"docs","free":true},{"title":"Pytest Documentation","url":"https://docs.pytest.org/","type":"docs","free":true}],"children":["api-docs"]},
-    {"id":"api-docs","title":"API Documentation","icon":"📝","category":"tools","description":"OpenAPI/Swagger specs, API documentation tools, and generating interactive API docs.","resources":[{"title":"Swagger/OpenAPI Specification","url":"https://swagger.io/specification/","type":"docs","free":true},{"title":"Postman API Documentation","url":"https://learning.postman.com/docs/publishing-your-api/documenting-your-api/","type":"docs","free":true}],"children":["logging"]},
-    {"id":"logging","title":"Logging & Monitoring","icon":"📊","category":"devops","description":"Structured logging, log levels, log aggregation (ELK stack), monitoring, and alerting for backend services.","resources":[{"title":"Winston (Node.js Logging)","url":"https://github.com/winstonjs/winston","type":"docs","free":true},{"title":"ELK Stack Guide","url":"https://www.elastic.co/guide/","type":"docs","free":true}],"children":["docker"]},
-    {"id":"docker","title":"Docker","icon":"🐳","category":"devops","description":"Containerize your application — Dockerfile, Docker Compose, multi-stage builds, and container networking.","resources":[{"title":"Docker Documentation","url":"https://docs.docker.com/get-started/","type":"docs","free":true},{"title":"Docker Tutorial (freeCodeCamp)","url":"https://www.freecodecamp.org/news/learn-docker-by-building-a-crud-app/","type":"course","free":true}],"children":["cicd"]},
-    {"id":"cicd","title":"CI/CD Pipelines","icon":"🔄","category":"devops","description":"Automated testing, building, and deployment with GitHub Actions, GitLab CI, or Jenkins.","resources":[{"title":"GitHub Actions Documentation","url":"https://docs.github.com/en/actions","type":"docs","free":true},{"title":"GitLab CI Documentation","url":"https://docs.gitlab.com/ee/ci/","type":"docs","free":true}],"children":["deployment"]},
-    {"id":"deployment","title":"Deployment & Hosting","icon":"🚀","category":"deployment","description":"Deploy to AWS, GCP, Azure, Railway, Render, or Fly.io. Health checks, auto-scaling, and zero-downtime deployments.","resources":[{"title":"AWS Free Tier","url":"https://aws.amazon.com/free/","type":"docs","free":true},{"title":"Railway Documentation","url":"https://docs.railway.app/","type":"docs","free":true},{"title":"Render Documentation","url":"https://render.com/docs","type":"docs","free":true}],"children":["security"]},
-    {"id":"security","title":"Backend Security","icon":"🛡️","category":"security","description":"OWASP Top 10, CORS, rate limiting, HTTPS/TLS, dependency scanning, and security best practices.","resources":[{"title":"OWASP Top 10","url":"https://owasp.org/www-project-top-ten/","type":"docs","free":true},{"title":"Helmet.js (Security Middleware)","url":"https://helmetjs.github.io/","type":"docs","free":true}],"children":["microservices"]},
-    {"id":"microservices","title":"Microservices Architecture","icon":"🏠","category":"advanced","description":"Service decomposition, API gateways, service discovery, inter-service communication, and distributed systems basics.","resources":[{"title":"Martin Fowler Microservices","url":"https://martinfowler.com/articles/microservices.html","type":"docs","free":true},{"title":"freeCodeCamp Microservices Course","url":"https://www.freecodecamp.org/news/microservices-tutorial/","type":"course","free":true}],"children":["graphql"]},
-    {"id":"graphql","title":"GraphQL","icon":"🔮","category":"frameworks","description":"GraphQL schema design, resolvers, queries, mutations, subscriptions, and Apollo Server.","resources":[{"title":"GraphQL Official Docs","url":"https://graphql.org/learn/","type":"docs","free":true},{"title":"Apollo Server Docs","url":"https://www.apollographql.com/docs/apollo-server/","type":"docs","free":true}],"children":["performance"]},
-    {"id":"performance","title":"API Performance","icon":"⚡","category":"advanced","description":"Query optimization, connection pooling, N+1 problem, database indexing, response caching, and load testing.","resources":[{"title":"k6 Load Testing","url":"https://k6.io/docs/","type":"docs","free":true},{"title":"Postman Load Testing","url":"https://learning.postman.com/docs/collections-and-workspaces/collections/run-collections-using-the-collection-runner/","type":"docs","free":true}],"children":["system-design"]},
-    {"id":"system-design","title":"System Design Basics","icon":"🏗️","category":"advanced","description":"Scalability, high availability, load balancing, database sharding, CAP theorem, and distributed systems concepts.","resources":[{"title":"System Design Primer (GitHub)","url":"https://github.com/donnemartin/system-design-primer","type":"docs","free":true},{"title":"ByteByteGo System Design","url":"https://bytebytego.com/","type":"course","free":true}],"children":[]}
+  "categories": [
+    "fundamentals",
+    "intermediate",
+    "advanced",
+    "tools"
   ],
-  "connections":[["lang-choice","lang-fundamentals"],["lang-fundamentals","data-structures"],["data-structures","git"],["git","cmd-line"],["cmd-line","http"],["http","rest-apis"],["rest-apis","web-framework"],["web-framework","databases"],["databases","sql"],["sql","orm"],["orm","auth"],["auth","validation"],["validation","caching"],["caching","queues"],["queues","websockets"],["websockets","file-uploads"],["file-uploads","email"],["email","testing"],["testing","api-docs"],["api-docs","logging"],["logging","docker"],["docker","cicd"],["cicd","deployment"],["deployment","security"],["security","microservices"],["microservices","graphql"],["graphql","performance"],["performance","system-design"]]
+  "nodes": [
+    {
+      "id": "python-basics",
+      "title": "Python Fundamentals",
+      "icon": "🐍",
+      "category": "fundamentals",
+      "description": "Core Python syntax, data structures, and OOP.",
+      "resources": [
+        {
+          "title": "Python Docs",
+          "url": "https://docs.python.org/3/tutorial/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "freeCodeCamp Python",
+          "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Python Crash Course",
+          "url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "nodejs-basics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "nodejs-basics",
+      "title": "Node.js Basics",
+      "icon": "🟢",
+      "category": "fundamentals",
+      "description": "Server-side JavaScript runtime, npm, and modules.",
+      "resources": [
+        {
+          "title": "Node.js Docs",
+          "url": "https://nodejs.org/en/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Node.js Crash Course",
+          "url": "https://www.youtube.com/watch?v=Oe421EPjeBE",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "go-basics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "go-basics",
+      "title": "Go Fundamentals",
+      "icon": "🔵",
+      "category": "fundamentals",
+      "description": "Golang syntax, goroutines, and concurrent programming.",
+      "resources": [
+        {
+          "title": "Go Tour",
+          "url": "https://go.dev/tour/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Go by Example",
+          "url": "https://gobyexample.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "java-basics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "java-basics",
+      "title": "Java Fundamentals",
+      "icon": "☕",
+      "category": "fundamentals",
+      "description": "Core Java, JVM, and object-oriented programming.",
+      "resources": [
+        {
+          "title": "Java Docs",
+          "url": "https://docs.oracle.com/en/java/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "freeCodeCamp Java",
+          "url": "https://www.freecodecamp.org/news/learn-java/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "W3Schools Java",
+          "url": "https://www.w3schools.com/java/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sql-basics",
+        "be-regex"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sql-basics",
+      "title": "SQL Fundamentals",
+      "icon": "🗃️",
+      "category": "fundamentals",
+      "description": "Tables, queries, joins, indexes, and normalization.",
+      "resources": [
+        {
+          "title": "SQL Bolt",
+          "url": "https://sqlbolt.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "W3Schools SQL",
+          "url": "https://www.w3schools.com/sql/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Mode SQL Tutorial",
+          "url": "https://mode.com/sql-tutorial/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "database-design"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "database-design",
+      "title": "Database Design",
+      "icon": "🏗️",
+      "category": "fundamentals",
+      "description": "ER diagrams, normalization, and schema design.",
+      "resources": [
+        {
+          "title": "DB Design Tutorial",
+          "url": "https://www.guru99.com/database-normalization.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "DB Diagrams",
+          "url": "https://dbdiagram.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "postgres"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "postgres",
+      "title": "PostgreSQL",
+      "icon": "🐘",
+      "category": "fundamentals",
+      "description": "Advanced SQL, JSONB, and PostgreSQL-specific features.",
+      "resources": [
+        {
+          "title": "PostgreSQL Docs",
+          "url": "https://www.postgresql.org/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "PostgreSQL Tutorial",
+          "url": "https://www.postgresqltutorial.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "mongodb"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "mongodb",
+      "title": "MongoDB",
+      "icon": "🍃",
+      "category": "fundamentals",
+      "description": "Document-oriented NoSQL database and Mongoose.",
+      "resources": [
+        {
+          "title": "MongoDB University",
+          "url": "https://university.mongodb.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MongoDB Docs",
+          "url": "https://www.mongodb.com/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "redis"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "redis",
+      "title": "Redis",
+      "icon": "🔴",
+      "category": "fundamentals",
+      "description": "In-memory data store for caching and sessions.",
+      "resources": [
+        {
+          "title": "Redis Docs",
+          "url": "https://redis.io/documentation",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Redis University",
+          "url": "https://redis.com/university/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "orms"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "orms",
+      "title": "ORMs & Query Builders",
+      "icon": "🔧",
+      "category": "fundamentals",
+      "description": "SQLAlchemy, Prisma, TypeORM, and Hibernate.",
+      "resources": [
+        {
+          "title": "Prisma Docs",
+          "url": "https://www.prisma.io/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "SQLAlchemy Docs",
+          "url": "https://docs.sqlalchemy.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "rest-api-design"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "rest-api-design",
+      "title": "REST API Design",
+      "icon": "🔗",
+      "category": "intermediate",
+      "description": "HTTP methods, status codes, resource naming, HATEOAS.",
+      "resources": [
+        {
+          "title": "RESTful API Design",
+          "url": "https://restfulapi.net/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Google API Design Guide",
+          "url": "https://cloud.google.com/apis/design",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "graphql"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "graphql",
+      "title": "GraphQL",
+      "icon": "📡",
+      "category": "intermediate",
+      "description": "Schema, resolvers, queries, mutations, and subscriptions.",
+      "resources": [
+        {
+          "title": "GraphQL Official",
+          "url": "https://graphql.org/learn/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Apollo Docs",
+          "url": "https://www.apollographql.com/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "auth-basics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "auth-basics",
+      "title": "Authentication",
+      "icon": "🔑",
+      "category": "intermediate",
+      "description": "JWT, sessions, OAuth 2.0, and SAML.",
+      "resources": [
+        {
+          "title": "JWT.io",
+          "url": "https://jwt.io/introduction",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OAuth 2.0 Simplified",
+          "url": "https://www.oauth.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Auth0 Docs",
+          "url": "https://auth0.com/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "authorization"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "authorization",
+      "title": "Authorization",
+      "icon": "🛡️",
+      "category": "intermediate",
+      "description": "RBAC, ABAC, and permission systems.",
+      "resources": [
+        {
+          "title": "RBAC vs ABAC",
+          "url": "https://www.okta.com/identity-101/rbac-vs-abac/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OWASP Auth Guide",
+          "url": "https://owasp.org/www-project-developer-guide/authorization/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "rate-limiting"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "rate-limiting",
+      "title": "Rate Limiting",
+      "icon": "🚦",
+      "category": "intermediate",
+      "description": "Throttling, sliding windows, and API protection.",
+      "resources": [
+        {
+          "title": "Rate Limiting Guide",
+          "url": "https://cloud.google.com/architecture/rate-limiting-strategies-techniques",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Express Rate Limit",
+          "url": "https://www.npmjs.com/package/express-rate-limit",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "caching"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "caching",
+      "title": "Caching Strategies",
+      "icon": "💾",
+      "category": "intermediate",
+      "description": "Cache headers, CDN, application-level caching.",
+      "resources": [
+        {
+          "title": "MDN Caching",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Caching Strategies",
+          "url": "https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "message-queues"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "message-queues",
+      "title": "Message Queues",
+      "icon": "📨",
+      "category": "intermediate",
+      "description": "RabbitMQ, Kafka, and event-driven architecture.",
+      "resources": [
+        {
+          "title": "Kafka Docs",
+          "url": "https://kafka.apache.org/documentation/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "RabbitMQ Tutorial",
+          "url": "https://www.rabbitmq.com/tutorials",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "websockets-backend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "websockets-backend",
+      "title": "WebSockets",
+      "icon": "🔌",
+      "category": "intermediate",
+      "description": "Real-time communication with Socket.IO and native WS.",
+      "resources": [
+        {
+          "title": "Socket.IO Docs",
+          "url": "https://socket.io/docs/v4/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN WebSockets",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "microservices"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "microservices",
+      "title": "Microservices",
+      "icon": "🏗️",
+      "category": "advanced",
+      "description": "Service decomposition, patterns, and communication.",
+      "resources": [
+        {
+          "title": "Microservices.io",
+          "url": "https://microservices.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Martin Fowler Microservices",
+          "url": "https://martinfowler.com/articles/microservices.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "api-gateway"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "api-gateway",
+      "title": "API Gateway",
+      "icon": "🚪",
+      "category": "advanced",
+      "description": "Kong, Nginx, and API gateway patterns.",
+      "resources": [
+        {
+          "title": "Kong Docs",
+          "url": "https://docs.konghq.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "API Gateway Pattern",
+          "url": "https://microservices.io/patterns/apigateway.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "logging"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "logging",
+      "title": "Logging",
+      "icon": "📋",
+      "category": "advanced",
+      "description": "Structured logging, log levels, and centralized logging.",
+      "resources": [
+        {
+          "title": "ELK Stack Guide",
+          "url": "https://www.elastic.co/guide/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Winston.js Docs",
+          "url": "https://github.com/winstonjs/winston",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "monitoring-backend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "monitoring-backend",
+      "title": "Monitoring",
+      "icon": "📊",
+      "category": "advanced",
+      "description": "Prometheus, Grafana, health checks, and alerting.",
+      "resources": [
+        {
+          "title": "Prometheus Docs",
+          "url": "https://prometheus.io/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Grafana Docs",
+          "url": "https://grafana.com/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "error-handling"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "error-handling",
+      "title": "Error Handling",
+      "icon": "⚠️",
+      "category": "advanced",
+      "description": "Global error handlers, retry logic, and circuit breakers.",
+      "resources": [
+        {
+          "title": "Error Handling Patterns",
+          "url": "https://martinfowler.com/articles/replaceThrowWithNotification.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Circuit Breaker",
+          "url": "https://martinfowler.com/bliki/CircuitBreaker.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "testing-backend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "testing-backend",
+      "title": "Backend Testing",
+      "icon": "🧪",
+      "category": "advanced",
+      "description": "Unit, integration, and end-to-end testing.",
+      "resources": [
+        {
+          "title": "Pytest Docs",
+          "url": "https://docs.pytest.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Jest Docs",
+          "url": "https://jestjs.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "docker-backend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "docker-backend",
+      "title": "Docker",
+      "icon": "🐳",
+      "category": "tools",
+      "description": "Containers, Dockerfile, and multi-stage builds.",
+      "resources": [
+        {
+          "title": "Docker Docs",
+          "url": "https://docs.docker.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Docker Tutorial",
+          "url": "https://docs.docker.com/get-started/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "kubernetes-backend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "kubernetes-backend",
+      "title": "Kubernetes",
+      "icon": "☸️",
+      "category": "tools",
+      "description": "Pods, services, deployments, and orchestration.",
+      "resources": [
+        {
+          "title": "K8s Docs",
+          "url": "https://kubernetes.io/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Kubernetes Tutorial",
+          "url": "https://kubernetes.io/docs/tutorials/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "cicd-backend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "cicd-backend",
+      "title": "CI/CD",
+      "icon": "🔄",
+      "category": "tools",
+      "description": "GitHub Actions, Jenkins, and automated pipelines.",
+      "resources": [
+        {
+          "title": "GitHub Actions Docs",
+          "url": "https://docs.github.com/en/actions",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Jenkins Docs",
+          "url": "https://www.jenkins.io/doc/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "security-backend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "security-backend",
+      "title": "API Security",
+      "icon": "🔒",
+      "category": "tools",
+      "description": "OWASP, input validation, encryption, and HTTPS.",
+      "resources": [
+        {
+          "title": "OWASP API Security",
+          "url": "https://owasp.org/www-project-api-security/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OWASP Top 10",
+          "url": "https://owasp.org/www-project-top-ten/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "perf-backend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "perf-backend",
+      "title": "Performance",
+      "icon": "⚡",
+      "category": "tools",
+      "description": "Profiling, database optimization, and load testing.",
+      "resources": [
+        {
+          "title": "Locust Docs",
+          "url": "https://locust.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Artillery Docs",
+          "url": "https://www.artillery.io/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "api-docs"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "api-docs",
+      "title": "API Documentation",
+      "icon": "📖",
+      "category": "tools",
+      "description": "OpenAPI/Swagger, Postman, and API versioning.",
+      "resources": [
+        {
+          "title": "Swagger Docs",
+          "url": "https://swagger.io/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OpenAPI Spec",
+          "url": "https://spec.openapis.org/oas/v3.1.0",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "deployment-backend"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "deployment-backend",
+      "title": "Deployment",
+      "icon": "🚀",
+      "category": "tools",
+      "description": "Cloud platforms, Docker, and production concerns.",
+      "resources": [
+        {
+          "title": "Railway Docs",
+          "url": "https://docs.railway.app/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Render Docs",
+          "url": "https://render.com/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "nosql-advanced"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "nosql-advanced",
+      "title": "Advanced NoSQL",
+      "icon": "🗄️",
+      "category": "intermediate",
+      "description": "Cassandra, CouchDB, and polyglot persistence.",
+      "resources": [
+        {
+          "title": "Cassandra Docs",
+          "url": "https://cassandra.apache.org/doc/latest/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MongoDB Advanced",
+          "url": "https://www.mongodb.com/docs/manual/core/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "serverless"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "serverless",
+      "title": "Serverless",
+      "icon": "☁️",
+      "category": "advanced",
+      "description": "AWS Lambda, serverless patterns, and FaaS.",
+      "resources": [
+        {
+          "title": "AWS Lambda Docs",
+          "url": "https://docs.aws.amazon.com/lambda/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Serverless Framework",
+          "url": "https://www.serverless.com/framework/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-regex",
+      "title": "Regular Expressions",
+      "icon": "🔎",
+      "category": "fundamentals",
+      "description": "Pattern matching and text processing.",
+      "resources": [
+        {
+          "title": "RegexOne",
+          "url": "https://regexone.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Regex101",
+          "url": "https://regex101.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-api-versioning"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-api-versioning",
+      "title": "API Versioning",
+      "icon": "🔄",
+      "category": "intermediate",
+      "description": "Versioning strategies for REST APIs.",
+      "resources": [
+        {
+          "title": "API Versioning Guide",
+          "url": "https://restfulapi.net/versioning/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Microsoft API Versioning",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/versioning",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-sse"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-sse",
+      "title": "Server-Sent Events",
+      "icon": "📡",
+      "category": "intermediate",
+      "description": "Unidirectional real-time updates.",
+      "resources": [
+        {
+          "title": "MDN SSE",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "SSE vs WebSockets",
+          "url": "https://medium.com/@amedeobanti/server-sent-events-vs-websockets-a427ed11d18d",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-pagination"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-pagination",
+      "title": "Pagination Strategies",
+      "icon": "📄",
+      "category": "intermediate",
+      "description": "Cursor, offset, and keyset pagination.",
+      "resources": [
+        {
+          "title": "Cursor Pagination",
+          "url": "https://slack.engineering/evolving-api-pagination-at-slack/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Pagination Guide",
+          "url": "https://www.postgrest.org/en/stable/references/api/pagination.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-validation"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-validation",
+      "title": "Input Validation",
+      "icon": "✅",
+      "category": "intermediate",
+      "description": "Joi, Zod, and validation libraries.",
+      "resources": [
+        {
+          "title": "Zod Docs",
+          "url": "https://zod.dev/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Joi Docs",
+          "url": "https://joi.dev/api/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-file-handling"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-file-handling",
+      "title": "File Handling",
+      "icon": "📁",
+      "category": "intermediate",
+      "description": "Uploading, storing, and processing files.",
+      "resources": [
+        {
+          "title": "Multer Docs",
+          "url": "https://github.com/expressjs/multer",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "AWS S3 Uploads",
+          "url": "https://docs.aws.amazon.com/s3/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-email-sending"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-email-sending",
+      "title": "Email Sending",
+      "icon": "📧",
+      "category": "tools",
+      "description": "Transactional email with SendGrid/Resend.",
+      "resources": [
+        {
+          "title": "Resend Docs",
+          "url": "https://resend.com/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "SendGrid API",
+          "url": "https://docs.sendgrid.com/api-reference/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-scheduling"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-scheduling",
+      "title": "Background Jobs",
+      "icon": "⏰",
+      "category": "advanced",
+      "description": "BullMQ, Celery, and scheduled tasks.",
+      "resources": [
+        {
+          "title": "BullMQ Docs",
+          "url": "https://docs.bullmq.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Celery Docs",
+          "url": "https://docs.celeryq.dev/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-search"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-search",
+      "title": "Search Engine",
+      "icon": "🔎",
+      "category": "advanced",
+      "description": "Elasticsearch, Meilisearch, and full-text search.",
+      "resources": [
+        {
+          "title": "Meilisearch Docs",
+          "url": "https://www.meilisearch.com/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Elasticsearch Docs",
+          "url": "https://www.elastic.co/guide/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-intl"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-internationalization",
+      "title": "Internationalization",
+      "icon": "🌍",
+      "category": "tools",
+      "description": "i18n, l10n, and timezone handling.",
+      "resources": [
+        {
+          "title": "i18next",
+          "url": "https://www.i18next.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "ICU MessageFormat",
+          "url": "https://messageformat.github.io/messageformat/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-health-checks"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-health-checks",
+      "title": "Health Checks",
+      "icon": "💚",
+      "category": "tools",
+      "description": "Readiness and liveness probes.",
+      "resources": [
+        {
+          "title": "Health Check Patterns",
+          "url": "https://martinfowler.com/articles/healthCheckPattern.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "K8s Health Checks",
+          "url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-secrets"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-secrets",
+      "title": "Secrets Management",
+      "icon": "🔐",
+      "category": "tools",
+      "description": "Vault, environment variables, and encryption.",
+      "resources": [
+        {
+          "title": "Vault Docs",
+          "url": "https://www.vaultproject.io/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Doppler Docs",
+          "url": "https://docs.doppler.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-rate-limit-impl"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-rate-limit-impl",
+      "title": "Rate Limiting Implementation",
+      "icon": "🚦",
+      "category": "advanced",
+      "description": "Token bucket, sliding window algorithms.",
+      "resources": [
+        {
+          "title": "Rate Limiting Algorithms",
+          "url": "https://cloud.google.com/architecture/rate-limiting-strategies-techniques",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Redis Rate Limiting",
+          "url": "https://redis.com/learn/use-cases/rate-limiting",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-observability"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-observability",
+      "title": "Observability",
+      "icon": "🔭",
+      "category": "tools",
+      "description": "Tracing, metrics, and structured logging.",
+      "resources": [
+        {
+          "title": "OpenTelemetry",
+          "url": "https://opentelemetry.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Jaeger Docs",
+          "url": "https://www.jaegertracing.io/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-webhooks"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-webhooks",
+      "title": "Webhooks",
+      "icon": "🪝",
+      "category": "intermediate",
+      "description": "Implementing outbound webhooks.",
+      "resources": [
+        {
+          "title": "Webhook Guide",
+          "url": "https://sendgrid.com/docs/for-developers/tracking-events/event-webhook/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Svix Webhooks",
+          "url": "https://docs.svix.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-graphql-subscriptions"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-graphql-subscriptions",
+      "title": "GraphQL Subscriptions",
+      "icon": "📡",
+      "category": "advanced",
+      "description": "Real-time data with GraphQL subscriptions.",
+      "resources": [
+        {
+          "title": "GraphQL Subscriptions",
+          "url": "https://www.apollographql.com/docs/react/data/subscriptions/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GraphQL_WS",
+          "url": "https://github.com/enisdenjo/graphql-ws",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "be-idempotency"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "be-idempotency",
+      "title": "Idempotency",
+      "icon": "🔁",
+      "category": "advanced",
+      "description": "Ensuring safe request retries.",
+      "resources": [
+        {
+          "title": "Idempotency Keys",
+          "url": "https://stripe.com/docs/api/idempotent_requests",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Idempotency Patterns",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-use-idempotency-keys.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    }
+  ]
 }

@@ -1,37 +1,1143 @@
 {
-  "id": "product-manager",
   "title": "Product Manager (Tech)",
-  "description": "Lead product strategy, user research, and cross-functional teams. Learn how to discover user needs, define roadmaps, run experiments, and drive product success.",
+  "description": "Guide products from concept to launch with data-driven decisions.",
   "icon": "📋",
-  "color": "#eab308",
-  "time": "4-8 months",
-  "difficulty": "Beginner to Advanced",
-  "nodes": [
-    {"id":"pm-basics","title":"Product Management Fundamentals","icon":"📚","category":"fundamentals","description":"What is product management? Role definition, product lifecycle, and how PMs fit into tech organizations.","resources":[{"title":"Product School Free Courses","url":"https://productschool.com/free-resources","type":"course","free":true},{"title":"Lenny's Newsletter","url":"https://www.lennysnewsletter.com/","type":"docs","free":true}],"children":["pm-discovery"]},
-    {"id":"pm-discovery","title":"Product Discovery","icon":"🔍","category":"fundamentals","description":"Identify user problems, market opportunities, and validate ideas before building.","resources":[{"title":"Teresa Torres (Continuous Discovery)","url":"https://www.producttalk.org/","type":"docs","free":true},{"title":"Marty Cagan (SVPG)","url":"https://svpg.com/","type":"docs","free":true}],"children":["pm-research"]},
-    {"id":"pm-research","title":"User Research","icon":"👤","category":"fundamentals","description":"User interviews, surveys, usability testing, personas, journey mapping, and jobs-to-be-done framework.","resources":[{"title":"Nielsen Norman Group","url":"https://www.nngroup.com/articles/","type":"docs","free":true},{"title":"UserTesting Blog","url":"https://www.usertesting.com/blog","type":"docs","free":true}],"children":["pm-stories"]},
-    {"id":"pm-stories","title":"User Stories & Requirements","icon":"📝","category":"tools","description":"Write effective user stories, acceptance criteria, requirements documents, and PRDs.","resources":[{"title":"Atlassian User Stories Guide","url":"https://www.atlassian.com/agile/project-management/user-stories","type":"docs","free":true}],"children":["pm-prioritization"]},
-    {"id":"pm-prioritization","title":"Prioritization Frameworks","icon":"📊","category":"business","description":"RICE, MoSCoW, Kano model, impact/effort matrix, and WSJF for feature prioritization.","resources":[{"title":"Product Plan (Prioritization)","url":"https://www.productplan.com/glossary/prioritization-matrix/","type":"docs","free":true},{"title":"RICE Framework (Intercom)","url":"https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/","type":"docs","free":true}],"children":["pm-roadmap"]},
-    {"id":"pm-roadmap","title":"Product Roadmapping","icon":"🗺️","category":"business","description":"Create and communicate product roadmaps — timelines, milestones, OKRs, and stakeholder alignment.","resources":[{"title":"Product Roadmap Guide (Atlassian)","url":"https://www.atlassian.com/agile/project-management/roadmaps","type":"docs","free":true}],"children":["pm-analytics"]},
-    {"id":"pm-analytics","title":"Product Analytics","icon":"📈","category":"tools","description":"Metrics and KPIs — DAU/MAU, retention, funnel analysis, cohort analysis, and North Star metric.","resources":[{"title":"Amplitude Academy","url":"https://amplitude.com/academy","type":"course","free":true},{"title":"Mixpanel Documentation","url":"https://mixpanel.com/docs/","type":"docs","free":true}],"children":["pm-ab"]},
-    {"id":"pm-ab","title":"A/B Testing & Experiments","icon":"🧪","category":"tools","description":"Design and run A/B tests — hypothesis, sample size, statistical significance, and interpreting results.","resources":[{"title":"A/B Testing Guide (Optimizely)","url":"https://www.optimizely.com/optimization-glossary/ab-testing/","type":"docs","free":true},{"title":"Google Optimize Archive","url":"https://support.google.com/optimize","type":"docs","free":true}],"children":["pm-agile"]},
-    {"id":"pm-agile","title":"Agile & Scrum","icon":"🔄","category":"fundamentals","description":"Scrum ceremonies, sprints, backlog grooming, story points, velocity, and agile planning.","resources":[{"title":"Scrum Guide (Official)","url":"https://scrumguides.org/","type":"docs","free":true},{"title":"Atlassian Agile Coach","url":"https://www.atlassian.com/agile","type":"docs","free":true}],"children":["pm-communication"]},
-    {"id":"pm-communication","title":"Stakeholder Communication","icon":"🗣️","category":"business","description":"Manage stakeholders, run product reviews, create presentations, and align teams around product vision.","resources":[{"title":"Fellow App (Stakeholder Mgmt)","url":"https://fellow.app/blog/stakeholder-management/","type":"docs","free":true}],"children":["pm-launch"]},
-    {"id":"pm-launch","title":"Go-to-Market Strategy","icon":"🚀","category":"business","description":"Product launches, positioning, messaging, pricing strategy, and marketing coordination.","resources":[{"title":"Lenny's GTM Newsletter","url":"https://www.lennysnewsletter.com/p/how-to-design-an-effective-gtm-strategy","type":"docs","free":true}],"children":["pm-iteration"]},
-    {"id":"pm-iteration","title":"Feedback & Iteration","icon":"🔁","category":"business","description":"Collect user feedback, iterate on features, run retrospectives, and continuously improve the product.","resources":[{"title":"Product Feedback Guide","url":"https://www.hotjar.com/feedback-tools","type":"docs","free":true}],"children":["pm-strategy"]},
-    {"id":"pm-strategy","title":"Product Strategy","icon":"🎯","category":"business","description":"Vision, mission, competitive analysis, market positioning, and long-term product strategy.","resources":[{"title":"Strategyzer (Business Model Canvas)","url":"https://strategyzer.com/canvas/business-model-canvas","type":"docs","free":true},{"title":"SVPG Inspired Products","url":"https://svpg.com/inspired/","type":"docs","free":true}],"children":["pm-tech"]},
-    {"id":"pm-tech","title":"Technical Literacy for PMs","icon":"💻","category":"tools","description":"Understand APIs, databases, frontend/backend, infrastructure, and be able to talk to engineers effectively.","resources":[{"title":"ByteByteGo System Design","url":"https://bytebytego.com/","type":"course","free":true},{"title":"Tech for PMs (Product School)","url":"https://productschool.com/free-resources","type":"course","free":true}],"children":["pm-growth"]},
-    {"id":"pm-growth","title":"Growth Product Management","icon":"🌱","category":"advanced","description":"Growth loops, viral coefficients, activation, retention strategies, and PLG (Product-Led Growth).","resources":[{"title":"Reforge (Growth Series)","url":"https://www.reforge.com/","type":"docs","free":true}],"children":["pm-data"]},
-    {"id":"pm-data","title":"Data-Driven Decisions","icon":"📊","category":"advanced","description":"SQL for PMs, dashboard creation, data-informed decision making, and working with data teams.","resources":[{"title":"SQLBolt","url":"https://sqlbolt.com/","type":"interactive","free":true},{"title":"Mode Analytics SQL Tutorial","url":"https://mode.com/sql-tutorial/","type":"course","free":true}],"children":["pm-leadership"]},
-    {"id":"pm-leadership","title":"Product Leadership","icon":"👑","category":"advanced","description":"Hiring and mentoring PMs, building product culture, leading product teams, and influencing without authority.","resources":[{"title":"Product Leadership (Silicon Valley Product Group)","url":"https://svpg.com/empowered/","type":"docs","free":true},{"title":"First Round Review (PM Articles)","url":"https://review.firstround.com/","type":"docs","free":true}],"children":[]},
-    {"id":"pm-tools","title":"PM Tools & Software","icon":"🛠️","category":"tools","description":"Jira, Notion, Figma, Miro, Amplitude, and other tools used by product managers daily.","resources":[{"title":"Jira Product Management","url":"https://www.atlassian.com/software/jira","type":"docs","free":true},{"title":"Notion Templates","url":"https://www.notion.so/templates","type":"docs","free":true}],"children":["pm-stories"]},
-    {"id":"pm-ai","title":"AI/ML for PMs","icon":"🤖","category":"advanced","description":"Understanding AI capabilities, ML product management, and building AI-powered features.","resources":[{"title":"AI for PMs (Lenny's Newsletter)","url":"https://www.lennysnewsletter.com/p/how-to-incorporate-ai-into-your-product","type":"docs","free":true}],"children":["pm-growth"]},
-    {"id":"pm-platform","title":"Platform Product Management","icon":"🏗️","category":"advanced","description":"Developer platforms, APIs, SDKs, and platform thinking — building products for other developers.","resources":[{"title":"Platform Thinking (SVPG)","url":"https://svpg.com/platform-thinking/","type":"docs","free":true}],"children":["pm-strategy"]},
-    {"id":"pm-ethical","title":"Ethics & Responsible Product","icon":"⚖️","category":"advanced","description":"Privacy by design, accessibility, inclusive design, dark patterns to avoid, and ethical product decisions.","resources":[{"title":"Ethics in Product (Cennydd Bowles)","url":"https://www.cennydd.com/","type":"docs","free":true}],"children":["pm-launch"]},
-    {"id":"pm-pricing","title":"Pricing & Monetization","icon":"💰","category":"business","description":"Pricing models (SaaS, freemium, usage-based), pricing pages, and revenue optimization.","resources":[{"title":"Pricing Strategy Guide","url":"https://www.priceintelligently.com/blog","type":"docs","free":true}],"children":["pm-launch"]},
-    {"id":"pm-competitive","title":"Competitive Analysis","icon":"🔎","category":"business","description":"Analyze competitors, identify differentiation, market positioning, and competitive intelligence.","resources":[{"title":"Competitive Analysis Template","url":"https://www.productplan.com/glossary/competitive-analysis/","type":"docs","free":true}],"children":["pm-strategy"]},
-    {"id":"pm-okr","title":"OKRs & Goal Setting","icon":"🎯","category":"business","description":"Objectives and Key Results, goal cascading, tracking progress, and aligning teams.","resources":[{"title":"OKR Guide (Re:Work by Google)","url":"https://rework.withgoogle.com/guides/set-goals-with-okrs/","type":"docs","free":true}],"children":["pm-roadmap"]},
-    {"id":"pm-design","title":"Working with Design","icon":"🎨","category":"tools","description":"Design thinking, wireframing, prototyping, design handoffs, and collaborating with UX designers.","resources":[{"title":"Design Thinking (IDEO)","url":"https://designthinking.ideo.com/","type":"docs","free":true},{"title":"Figma for PMs","url":"https://www.figma.com/best-practices/collaborate/","type":"docs","free":true}],"children":["pm-stories"]}
+  "categories": [
+    "fundamentals",
+    "intermediate",
+    "advanced",
+    "tools"
   ],
-  "connections":[["pm-basics","pm-discovery"],["pm-discovery","pm-research"],["pm-research","pm-stories"],["pm-stories","pm-prioritization"],["pm-prioritization","pm-roadmap"],["pm-roadmap","pm-analytics"],["pm-analytics","pm-ab"],["pm-ab","pm-agile"],["pm-agile","pm-communication"],["pm-communication","pm-launch"],["pm-launch","pm-iteration"],["pm-iteration","pm-strategy"],["pm-strategy","pm-tech"],["pm-tech","pm-growth"],["pm-growth","pm-data"],["pm-data","pm-leadership"],["pm-tools","pm-stories"],["pm-ai","pm-growth"],["pm-platform","pm-strategy"],["pm-ethical","pm-launch"],["pm-pricing","pm-launch"],["pm-competitive","pm-strategy"],["pm-okr","pm-roadmap"],["pm-design","pm-stories"]]
+  "nodes": [
+    {
+      "id": "pm-thinking",
+      "title": "Product Thinking",
+      "icon": "💡",
+      "category": "fundamentals",
+      "description": "Understanding user needs and market opportunities.",
+      "resources": [
+        {
+          "title": "Product Thinking Guide",
+          "url": "https://productcoalition.com/what-is-product-thinking/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Lenny's Newsletter",
+          "url": "https://www.lennysnewsletter.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-research"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-research",
+      "title": "User Research",
+      "icon": "🔍",
+      "category": "fundamentals",
+      "description": "Interviews, surveys, and user insights.",
+      "resources": [
+        {
+          "title": "UX Research Guide",
+          "url": "https://www.nngroup.com/articles/ux-research-cheat-sheet/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "User Interviews Guide",
+          "url": "https://www.intercom.com/blog/how-to-do-user-interviews/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-personas"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-personas",
+      "title": "Personas & Segmentation",
+      "icon": "👤",
+      "category": "fundamentals",
+      "description": "Creating user personas and segments.",
+      "resources": [
+        {
+          "title": "Personas Guide",
+          "url": "https://www.usability.gov/how-to-and-tools/methods/personas.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Creating Personas",
+          "url": "https://xtensio.com/user-persona-template/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-user-stories"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-user-stories",
+      "title": "User Stories",
+      "icon": "📝",
+      "category": "fundamentals",
+      "description": "Writing effective user stories.",
+      "resources": [
+        {
+          "title": "User Stories Guide",
+          "url": "https://www.atlassian.com/agile/project-management/user-stories",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Agile User Stories",
+          "url": "https://www.mountaingoatsoftware.com/agile/user-stories",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-prds"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-prds",
+      "title": "PRDs & Specs",
+      "icon": "📄",
+      "category": "intermediate",
+      "description": "Product Requirements Documents.",
+      "resources": [
+        {
+          "title": "PRD Guide",
+          "url": "https://www.productplan.com/glossary/product-requirements-document/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "How to Write PRDs",
+          "url": "https://www.fellow.app/blog/product-requirements-document-template/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-roadmapping"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-roadmapping",
+      "title": "Product Roadmapping",
+      "icon": "🗺️",
+      "category": "intermediate",
+      "description": "Creating and maintaining product roadmaps.",
+      "resources": [
+        {
+          "title": "Roadmap Guide",
+          "url": "https://www.productplan.com/glossary/product-roadmap/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Lenny on Roadmaps",
+          "url": "https://www.lennysnewsletter.com/p/how-to-create-an-effective-product",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-prioritization"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-prioritization",
+      "title": "Prioritization",
+      "icon": "🎯",
+      "category": "intermediate",
+      "description": "RICE, MoSCoW, and prioritization frameworks.",
+      "resources": [
+        {
+          "title": "RICE Framework",
+          "url": "https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MoSCoW Method",
+          "url": "https://www.digite.com/agile/project-management/moscow-technique/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-wireframing"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-wireframing",
+      "title": "Wireframing",
+      "icon": "✏️",
+      "category": "intermediate",
+      "description": "Low-fidelity design mockups.",
+      "resources": [
+        {
+          "title": "Wireframing Guide",
+          "url": "https://www.nngroup.com/articles/wireframing/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Figma",
+          "url": "https://www.figma.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-prototyping"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-prototyping",
+      "title": "Prototyping",
+      "icon": "🔧",
+      "category": "intermediate",
+      "description": "Creating interactive prototypes.",
+      "resources": [
+        {
+          "title": "Prototyping Guide",
+          "url": "https://www.nngroup.com/articles/prototyping/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Figma Prototyping",
+          "url": "https://www.figma.com/best-practices/prototyping/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-ux-design"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-ux-design",
+      "title": "UX Design",
+      "icon": "🎨",
+      "category": "intermediate",
+      "description": "User experience principles and patterns.",
+      "resources": [
+        {
+          "title": "Laws of UX",
+          "url": "https://lawsofux.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Nielsen Norman Group",
+          "url": "https://www.nngroup.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-analytics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-analytics",
+      "title": "Product Analytics",
+      "icon": "📊",
+      "category": "intermediate",
+      "description": "Tracking and analyzing product metrics.",
+      "resources": [
+        {
+          "title": "Amplitude Docs",
+          "url": "https://amplitude.com/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Mixpanel",
+          "url": "https://mixpanel.com/help/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-ab-testing"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-ab-testing",
+      "title": "A/B Testing",
+      "icon": "🔬",
+      "category": "advanced",
+      "description": "Experiment design and analysis.",
+      "resources": [
+        {
+          "title": "A/B Testing Guide",
+          "url": "https://www.optimizely.com/optimization-glossary/ab-testing/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Google Optimize Guide",
+          "url": "https://support.google.com/optimize/answer/6211935",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-data-driven"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-data-driven",
+      "title": "Data-Driven Decisions",
+      "icon": "📈",
+      "category": "advanced",
+      "description": "Using data to guide product decisions.",
+      "resources": [
+        {
+          "title": "Data-Driven PM",
+          "url": "https://www.productplan.com/glossary/data-driven-product-management/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "McKinsey Data Driven",
+          "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-metrics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-metrics",
+      "title": "Product Metrics",
+      "icon": "📊",
+      "category": "advanced",
+      "description": "DAU, retention, churn, LTV, and more.",
+      "resources": [
+        {
+          "title": "Product Metrics Guide",
+          "url": "https://www.reforge.com/blog/pirate-metrics",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Amplitude Metrics",
+          "url": "https://amplitude.com/blog/north-star-metric",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-agile"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-agile",
+      "title": "Agile Methodology",
+      "icon": "🔄",
+      "category": "intermediate",
+      "description": "Scrum, Kanban, and agile principles.",
+      "resources": [
+        {
+          "title": "Agile Guide",
+          "url": "https://www.atlassian.com/agile",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Scrum Guide",
+          "url": "https://scrumguides.org/scrum-guide.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-scrum"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-scrum",
+      "title": "Scrum Framework",
+      "icon": "📋",
+      "category": "intermediate",
+      "description": "Sprints, ceremonies, and Scrum Master role.",
+      "resources": [
+        {
+          "title": "Scrum Guide",
+          "url": "https://scrumguides.org/scrum-guide.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Atlassian Scrum",
+          "url": "https://www.atlassian.com/agile/scrum",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-kanban"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-kanban",
+      "title": "Kanban",
+      "icon": "📋",
+      "category": "intermediate",
+      "description": "Flow-based project management.",
+      "resources": [
+        {
+          "title": "Kanban Guide",
+          "url": "https://www.atlassian.com/agile/kanban",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Kanban Principles",
+          "url": "https://kanbanize.com/kanban-resources/getting-started/what-is-kanban",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-jira"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-jira",
+      "title": "Jira & Tools",
+      "icon": "🔧",
+      "category": "tools",
+      "description": "Project management with Jira and tools.",
+      "resources": [
+        {
+          "title": "Jira Docs",
+          "url": "https://www.atlassian.com/software/jira/guides",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Linear",
+          "url": "https://linear.app/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-stakeholders"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-stakeholders",
+      "title": "Stakeholder Management",
+      "icon": "🤝",
+      "category": "advanced",
+      "description": "Managing expectations and communication.",
+      "resources": [
+        {
+          "title": "Stakeholder Guide",
+          "url": "https://www.mindtools.com/pages/article/newPPM_07.htm",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Atlassian Stakeholder Mgmt",
+          "url": "https://www.atlassian.com/agile/project-management/stakeholder-management",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-communication"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-communication",
+      "title": "Communication Skills",
+      "icon": "💬",
+      "category": "intermediate",
+      "description": "Effective communication as a PM.",
+      "resources": [
+        {
+          "title": "PM Communication",
+          "url": "https://www.productplan.com/glossary/product-management-communication/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Fellow Communication",
+          "url": "https://www.fellow.app/blog/communication-skills/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-tech-literacy"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-tech-literacy",
+      "title": "Technical Literacy",
+      "icon": "💻",
+      "category": "intermediate",
+      "description": "Understanding APIs, databases, and architecture.",
+      "resources": [
+        {
+          "title": "Tech for PMs",
+          "url": "https://svpg.com/technical-product-management/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "APIs for PMs",
+          "url": "https://productcoalition.com/api-guide-for-product-managers/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "System Design for PMs",
+          "url": "https://www.productplan.com/glossary/system-design/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-api-design"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-api-design",
+      "title": "API Design",
+      "icon": "🔗",
+      "category": "advanced",
+      "description": "Designing REST and GraphQL APIs.",
+      "resources": [
+        {
+          "title": "RESTful API Design",
+          "url": "https://restfulapi.net/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GraphQL Guide",
+          "url": "https://graphql.org/learn/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-sysdesign"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-sysdesign",
+      "title": "System Design Basics",
+      "icon": "🏗️",
+      "category": "advanced",
+      "description": "Understanding system architecture.",
+      "resources": [
+        {
+          "title": "System Design Primer",
+          "url": "https://github.com/donnemartin/system-design-primer",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "ByteByteGo",
+          "url": "https://bytebytego.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-gtm"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-gtm",
+      "title": "Go-to-Market",
+      "icon": "🚀",
+      "category": "advanced",
+      "description": "Launch strategy and market positioning.",
+      "resources": [
+        {
+          "title": "GTM Guide",
+          "url": "https://www.productplan.com/glossary/go-to-market-strategy/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Lenny GTM",
+          "url": "https://www.lennysnewsletter.com/p/how-to-design-a-gtm-strategy",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-pricing"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-pricing",
+      "title": "Pricing Strategy",
+      "icon": "💰",
+      "category": "advanced",
+      "description": "Pricing models and strategy.",
+      "resources": [
+        {
+          "title": "Pricing Guide",
+          "url": "https://www.priceintelligently.com/blog/pricing-strategy-guide",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Patrick Campbell",
+          "url": "https://www.priceintelligently.com/blog",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-growth"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-growth",
+      "title": "Growth Hacking",
+      "icon": "📈",
+      "category": "advanced",
+      "description": "Growth loops and viral mechanics.",
+      "resources": [
+        {
+          "title": "Growth Guide",
+          "url": "https://www.reforge.com/blog/growth",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Growth Hackers",
+          "url": "https://growthhackers.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-leadership"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-leadership",
+      "title": "Team Leadership",
+      "icon": "👥",
+      "category": "advanced",
+      "description": "Leading product teams and hiring.",
+      "resources": [
+        {
+          "title": "PM Leadership",
+          "url": "https://svpg.com/product-leadership/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Lenny on Hiring",
+          "url": "https://www.lennysnewsletter.com/p/how-to-hire-great-product-managers",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-okrs"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-okrs",
+      "title": "OKRs",
+      "icon": "🎯",
+      "category": "tools",
+      "description": "Objectives and Key Results.",
+      "resources": [
+        {
+          "title": "OKR Guide",
+          "url": "https://rework.withgoogle.com/guides/set-goals-with-okrs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Lattice OKRs",
+          "url": "https://www.lattice.com/library/okrs-everything-you-need-to-know",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-career"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-career",
+      "title": "Career Growth",
+      "icon": "🚀",
+      "category": "tools",
+      "description": "PM career paths and growth.",
+      "resources": [
+        {
+          "title": "PM Career Guide",
+          "url": "https://www.productplan.com/glossary/product-manager-career-path/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Lenny on Career",
+          "url": "https://www.lennysnewsletter.com/p/levels-and-career-paths-for",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-competitive"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-competitive",
+      "title": "Competitive Analysis",
+      "icon": "🔎",
+      "category": "intermediate",
+      "description": "Analyzing competitors and markets.",
+      "resources": [
+        {
+          "title": "Competitive Analysis",
+          "url": "https://www.productplan.com/glossary/competitive-analysis/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "How to Analyze",
+          "url": "https://www.crayon.co/blog/competitive-analysis",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-discovery"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-discovery",
+      "title": "Product Discovery",
+      "icon": "🔍",
+      "category": "intermediate",
+      "description": "Finding the right problems to solve.",
+      "resources": [
+        {
+          "title": "Teresa Torres Discovery",
+          "url": "https://www.producttalk.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Continuous Discovery",
+          "url": "https://www.producttalk.org/continuous-discovery-habits/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-onboarding"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-onboarding",
+      "title": "User Onboarding",
+      "icon": "🚪",
+      "category": "tools",
+      "description": "Designing great first-time experiences.",
+      "resources": [
+        {
+          "title": "Onboarding Guide",
+          "url": "https://www.nngroup.com/articles/user-onboarding/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Samuel Hulick",
+          "url": "https://www.useronboard.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "pm-legal"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-legal",
+      "title": "Legal & Compliance",
+      "icon": "⚖️",
+      "category": "tools",
+      "description": "Privacy, terms, and regulatory compliance.",
+      "resources": [
+        {
+          "title": "GDPR Guide",
+          "url": "https://gdpr.eu/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Terms of Service",
+          "url": "https://www.termsofservicegenerator.net/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-market-research",
+      "title": "Market Research",
+      "icon": "📊",
+      "category": "fundamentals",
+      "description": "TAM, SAM, SOM.",
+      "resources": [
+        {
+          "title": "Market Research",
+          "url": "https://www.productplan.com/glossary/market-research/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-customer-journey",
+      "title": "Customer Journey",
+      "icon": "🗺️",
+      "category": "intermediate",
+      "description": "Mapping user journeys.",
+      "resources": [
+        {
+          "title": "CJM Guide",
+          "url": "https://www.nngroup.com/articles/customer-journey-map/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-design-thinking",
+      "title": "Design Thinking",
+      "icon": "💡",
+      "category": "intermediate",
+      "description": "Ideation and prototyping.",
+      "resources": [
+        {
+          "title": "IDEO",
+          "url": "https://designthinking.ideo.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "d.school",
+          "url": "https://dschool.stanford.edu/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-figma",
+      "title": "Figma Skills",
+      "icon": "🎨",
+      "category": "intermediate",
+      "description": "UI design in Figma.",
+      "resources": [
+        {
+          "title": "Figma Learn",
+          "url": "https://www.figma.com/resource/learn-design/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-sql",
+      "title": "SQL for PMs",
+      "icon": "🗃️",
+      "category": "intermediate",
+      "description": "Writing SQL queries.",
+      "resources": [
+        {
+          "title": "SQL Mode",
+          "url": "https://mode.com/sql-tutorial/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-spreadsheets",
+      "title": "Spreadsheets",
+      "icon": "📊",
+      "category": "tools",
+      "description": "Advanced Excel/Sheets.",
+      "resources": [
+        {
+          "title": "ExcelJet",
+          "url": "https://exceljet.net/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-vision",
+      "title": "Product Vision",
+      "icon": "🔭",
+      "category": "intermediate",
+      "description": "Defining vision.",
+      "resources": [
+        {
+          "title": "SVPG Vision",
+          "url": "https://svpg.com/product-vision/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-feature-flags",
+      "title": "Feature Flags",
+      "icon": "🚩",
+      "category": "tools",
+      "description": "Incremental launches.",
+      "resources": [
+        {
+          "title": "LaunchDarkly",
+          "url": "https://docs.launchdarkly.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Feature Toggles",
+          "url": "https://martinfowler.com/articles/feature-toggles.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-retention",
+      "title": "Retention",
+      "icon": "🔄",
+      "category": "advanced",
+      "description": "Improving retention.",
+      "resources": [
+        {
+          "title": "Retention Guide",
+          "url": "https://www.reforge.com/blog/retention",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-launch",
+      "title": "Product Launch",
+      "icon": "🚀",
+      "category": "advanced",
+      "description": "Launch planning.",
+      "resources": [
+        {
+          "title": "Launch Guide",
+          "url": "https://www.productplan.com/glossary/product-launch/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-feedback",
+      "title": "User Feedback",
+      "icon": "💬",
+      "category": "intermediate",
+      "description": "Collecting feedback.",
+      "resources": [
+        {
+          "title": "Hotjar",
+          "url": "https://www.hotjar.com/feedback/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-pitching",
+      "title": "Pitching Ideas",
+      "icon": "🎤",
+      "category": "advanced",
+      "description": "Getting stakeholder buy-in.",
+      "resources": [
+        {
+          "title": "Product Pitch",
+          "url": "https://www.productplan.com/glossary/product-pitch/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-competitive",
+      "title": "Competitive Intel",
+      "icon": "🕵️",
+      "category": "intermediate",
+      "description": "Tracking competitors.",
+      "resources": [
+        {
+          "title": "Crunchbase",
+          "url": "https://www.crunchbase.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-data-viz",
+      "title": "Data Visualization",
+      "icon": "📈",
+      "category": "tools",
+      "description": "Charts and dashboards.",
+      "resources": [
+        {
+          "title": "Looker Studio",
+          "url": "https://lookerstudio.google.com/overview",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-api-product",
+      "title": "API as Product",
+      "icon": "🔗",
+      "category": "advanced",
+      "description": "API product management.",
+      "resources": [
+        {
+          "title": "API Product Mgmt",
+          "url": "https://swagger.io/resources/articles/best-practices-in-api-product-management/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-remote",
+      "title": "Remote Collaboration",
+      "icon": "🌐",
+      "category": "tools",
+      "description": "Working with remote teams.",
+      "resources": [
+        {
+          "title": "Async Communication",
+          "url": "https://doist.com/blog/async-communication/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "pm-b2b",
+      "title": "B2B Product Mgmt",
+      "icon": "🏢",
+      "category": "advanced",
+      "description": "Enterprise product challenges.",
+      "resources": [
+        {
+          "title": "B2B PM",
+          "url": "https://www.productplan.com/glossary/b2b-product-management/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    }
+  ]
 }

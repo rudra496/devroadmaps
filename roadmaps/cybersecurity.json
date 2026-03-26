@@ -1,33 +1,1175 @@
 {
-  "id": "cybersecurity",
-  "title": "Cybersecurity Analyst",
-  "description": "Protect systems and networks from security threats. Learn networking, Linux, scripting, web security, cryptography, penetration testing tools, and industry certifications.",
+  "title": "Cybersecurity",
+  "description": "Protect systems, networks, and applications from cyber threats.",
   "icon": "🔒",
-  "color": "#ef4444",
-  "time": "8-14 months",
-  "difficulty": "Beginner to Advanced",
-  "nodes": [
-    {"id":"cs-networking","title":"Networking Fundamentals","icon":"🌐","category":"fundamentals","description":"TCP/IP, OSI model, DNS, HTTP/HTTPS, firewalls, VPNs, and network protocols.","resources":[{"title":"Professor Messer Network+ (Free)","url":"https://www.professormesser.com/network-plus/n10-008/n10-008-video/sy0-701-comptia-security-2023/","type":"video","free":true},{"title":"NetworkChuck Networking","url":"https://www.youtube.com/c/NetworkChuck","type":"video","free":true}],"children":["cs-linux"]},
-    {"id":"cs-linux","title":"Linux for Security","icon":"🐧","category":"fundamentals","description":"Linux administration, file permissions, process management, log analysis, and command-line proficiency.","resources":[{"title":"OverTheWire Bandit","url":"https://overthewire.org/wargames/bandit/","type":"interactive","free":true},{"title":"Linux Journey","url":"https://linuxjourney.com/","type":"course","free":true}],"children":["cs-scripting"]},
-    {"id":"cs-scripting","title":"Scripting (Python/Bash)","icon":"🐍","category":"tools","description":"Python and Bash scripting for automation, log analysis, and security tooling.","resources":[{"title":"Python Official Tutorial","url":"https://docs.python.org/3/tutorial/","type":"docs","free":true},{"title":"CyberPython (GitHub)","url":"https://github.com/4ndr34z/CyberPython","type":"docs","free":true}],"children":["cs-web"]},
-    {"id":"cs-web","title":"Web Application Security","icon":"🕸️","category":"security","description":"OWASP Top 10 — SQL injection, XSS, CSRF, SSRF, authentication flaws, and API security.","resources":[{"title":"OWASP Top 10","url":"https://owasp.org/www-project-top-ten/","type":"docs","free":true},{"title":"PortSwigger Web Security Academy","url":"https://portswigger.net/web-security","type":"course","free":true}],"children":["cs-crypto"]},
-    {"id":"cs-crypto","title":"Cryptography","icon":"🔐","category":"fundamentals","description":"Symmetric/asymmetric encryption, hashing, digital signatures, PKI, TLS/SSL, and certificate management.","resources":[{"title":"Cryptography 101 (Khan Academy)","url":"https://www.khanacademy.org/computing/computer-science/cryptography","type":"course","free":true},{"title":"Practical Cryptography","url":"https://www.youtube.com/watch?v=Rp3iZcGCKYw","type":"video","free":true}],"children":["cs-recon"]},
-    {"id":"cs-recon","title":"Reconnaissance & OSINT","icon":"🔍","category":"security","description":"Information gathering — WHOIS, DNS enumeration, Shodan, Google dorking, social engineering, and passive reconnaissance.","resources":[{"title":"OSINT Framework","url":"https://osintframework.com/","type":"docs","free":true},{"title":"Shodan","url":"https://www.shodan.io/","type":"tools","free":true}],"children":["cs-vuln"]},
-    {"id":"cs-vuln","title":"Vulnerability Assessment","icon":"🐛","category":"security","description":"Identify and classify vulnerabilities using Nessus, OpenVAS, and manual techniques.","resources":[{"title":"OpenVAS Documentation","url":"https://www.openvas.org/","type":"docs","free":true},{"title":"Nmap Documentation","url":"https://nmap.org/docs.html","type":"docs","free":true}],"children":["cs-pentest"]},
-    {"id":"cs-pentest","title":"Penetration Testing","icon":"🎯","category":"security","description":"Methodology: planning, scanning, exploitation, post-exploitation, and reporting. Hands-on with Metasploit, Burp Suite.","resources":[{"title":"Metasploit Framework","url":"https://www.metasploit.com/","type":"docs","free":true},{"title":"TryHackMe (Free Rooms)","url":"https://tryhackme.com/","type":"interactive","free":true},{"title":"HackTheBox (Starting Point)","url":"https://www.hackthebox.com/starting-point","type":"interactive","free":true}],"children":["cs-tools"]},
-    {"id":"cs-tools","title":"Security Tools","icon":"🛠️","category":"tools","description":"Master essential tools — Nmap, Wireshark, Burp Suite, John the Ripper, Hashcat, and Nikto.","resources":[{"title":"Nmap Book (Free)","url":"https://nmap.org/book/","type":"docs","free":true},{"title":"Wireshark Wiki","url":"https://wiki.wireshark.org/","type":"docs","free":true}],"children":["cs-network-sec"]},
-    {"id":"cs-network-sec","title":"Network Security","icon":"🛡️","category":"security","description":"Firewalls, IDS/IPS, VPN configuration, network segmentation, and intrusion detection.","resources":[{"title":"Snort Documentation","url":"https://www.snort.org/","type":"docs","free":true},{"title":"Suricata Documentation","url":"https://suricata.readthedocs.io/","type":"docs","free":true}],"children":["cs-incident"]},
-    {"id":"cs-incident","title":"Incident Response","icon":"🚨","category":"advanced","description":"Incident handling process — preparation, detection, containment, eradication, recovery, and lessons learned.","resources":[{"title":"NIST Incident Handling Guide","url":"https://www.nist.gov/publications/computer-security-incident-handling-guide","type":"docs","free":true},{"title":"SANS Incident Response","url":"https://www.sans.org/white-papers/incident-handling/","type":"docs","free":true}],"children":["cs-forensics"]},
-    {"id":"cs-forensics","title":"Digital Forensics","icon":"🔬","category":"advanced","description":"Disk forensics, memory forensics, network forensics, and forensic toolkits (Autopsy, Volatility).","resources":[{"title":"Autopsy Documentation","url":"https://www.sleuthkit.org/autopsy/","type":"docs","free":true},{"title":"Volatility Framework","url":"https://volatilityfoundation.org/","type":"docs","free":true}],"children":["cs-malware"]},
-    {"id":"cs-malware","title":"Malware Analysis","icon":"🦠","category":"advanced","description":"Static and dynamic malware analysis, reverse engineering basics, sandboxing, and threat intelligence.","resources":[{"title":"Malware Analysis Tutorial","url":"https://about.gitlab.com/handbook/engineering/quality-guide/malware-analysis/","type":"docs","free":true},{"title":"ANY.RUN (Online Sandbox)","url":"https://any.run/","type":"interactive","free":true}],"children":["cs-cloud-sec"]},
-    {"id":"cs-cloud-sec","title":"Cloud Security","icon":"☁️","category":"advanced","description":"AWS/GCP/Azure security — IAM, security groups, encryption, compliance, and cloud-specific vulnerabilities.","resources":[{"title":"AWS Security Best Practices","url":"https://docs.aws.amazon.com/security/","type":"docs","free":true},{"title":"CIS Benchmarks","url":"https://www.cisecurity.org/cis-benchmarks","type":"docs","free":true}],"children":["cs-certs"]},
-    {"id":"cs-certs","title":"Certifications","icon":"🏆","category":"advanced","description":"CompTIA Security+, CEH, OSCP, CISSP — plan your certification path and prepare.","resources":[{"title":"CompTIA Security+","url":"https://www.comptia.org/certifications/security","type":"docs","free":true},{"title":"Professor Messer (Free Videos)","url":"https://www.professormesser.com/","type":"video","free":true},{"title":"Offensive Security (OSCP)","url":"https://www.offsec.com/courses/pen-200/","type":"docs","free":true}],"children":[]},
-    {"id":"cs-ctf","title":"CTF Challenges","icon":"🏁","category":"tools","description":"Practice with Capture The Flag competitions — picoCTF, HackerOne CTF, and online CTF platforms.","resources":[{"title":"picoCTF","url":"https://picoctf.org/","type":"interactive","free":true},{"title":"CTFtime","url":"https://ctftime.org/","type":"docs","free":true}],"children":["cs-pentest"]},
-    {"id":"cs-social","title":"Social Engineering","icon":"🎭","category":"security","description":"Phishing, pretexting, baiting, tailgating, and social engineering defense techniques.","resources":[{"title":"Social Engineering Toolkit (SET)","url":"https://github.com/trustedsec/social-engineer-toolkit","type":"docs","free":true},{"title":"Kevin Mitnick (YouTube)","url":"https://www.youtube.com/results?search_query=kevin+mitnick+social+engineering","type":"video","free":true}],"children":["cs-incident"]},
-    {"id":"cs-reporting","title":"Security Reporting","icon":"📝","category":"tools","description":"Writing security reports, vulnerability disclosures, risk assessments, and communicating findings to stakeholders.","resources":[{"title":"OWASP Vulnerability Reporting","url":"https://owasp.org/www-community/Responsible_Disclosure","type":"docs","free":true}],"children":["cs-certs"]},
-    {"id":"cs-iot","title":"IoT Security","icon":"📡","category":"advanced","description":"Securing embedded devices, firmware analysis, network segmentation, and IoT-specific attack vectors.","resources":[{"title":"OWASP IoT Top 10","url":"https://owasp.org/www-project-internet-of-things/","type":"docs","free":true}],"children":["cs-forensics"]},
-    {"id":"cs-wifi","title":"Wireless Security","icon":"📶","category":"security","description":"WiFi security protocols (WPA2/3), wireless attacks, Evil Twin, and packet analysis with Aircrack-ng.","resources":[{"title":"Aircrack-ng Documentation","url":"https://www.aircrack-ng.org/","type":"docs","free":true}],"children":["cs-network-sec"]},
-    {"id":"cs-siem","title":"SIEM & Log Analysis","icon":"📊","category":"tools","description":"Security Information and Event Management — ELK, Splunk (free tier), Wazuh, and log analysis techniques.","resources":[{"title":"Wazuh Documentation","url":"https://wazuh.com/documentation/","type":"docs","free":true},{"title":"ELK Stack Guide","url":"https://www.elastic.co/guide/","type":"docs","free":true}],"children":["cs-incident"]}
+  "categories": [
+    "fundamentals",
+    "intermediate",
+    "advanced",
+    "tools"
   ],
-  "connections":[["cs-networking","cs-linux"],["cs-linux","cs-scripting"],["cs-scripting","cs-web"],["cs-web","cs-crypto"],["cs-crypto","cs-recon"],["cs-recon","cs-vuln"],["cs-vuln","cs-pentest"],["cs-pentest","cs-tools"],["cs-tools","cs-network-sec"],["cs-network-sec","cs-incident"],["cs-incident","cs-forensics"],["cs-forensics","cs-malware"],["cs-malware","cs-cloud-sec"],["cs-cloud-sec","cs-certs"],["cs-ctf","cs-pentest"],["cs-social","cs-incident"],["cs-reporting","cs-certs"],["cs-iot","cs-forensics"],["cs-wifi","cs-network-sec"],["cs-siem","cs-incident"]]
+  "nodes": [
+    {
+      "id": "sec-networking",
+      "title": "Networking Fundamentals",
+      "icon": "🌐",
+      "category": "fundamentals",
+      "description": "TCP/IP, OSI model, DNS, and packet analysis.",
+      "resources": [
+        {
+          "title": "Computer Networking Course",
+          "url": "https://www.youtube.com/watch?v=IPvYjXCsTg8",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Network+ Guide",
+          "url": "https://www.professormesser.com/network-plus/n10-008/n10-008-video/sy0-701-802-comptia-network-/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-linux"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-linux",
+      "title": "Linux for Security",
+      "icon": "🐧",
+      "category": "fundamentals",
+      "description": "Linux administration for security professionals.",
+      "resources": [
+        {
+          "title": "Linux Journey",
+          "url": "https://linuxjourney.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OverTheWire",
+          "url": "https://overthewire.org/wargames/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-python"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-python",
+      "title": "Python for Security",
+      "icon": "🐍",
+      "category": "fundamentals",
+      "description": "Python scripting for security tools.",
+      "resources": [
+        {
+          "title": "Python for Hackers",
+          "url": "https://www.youtube.com/watch?v=s_YfEh8SjuI",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Automate the Boring Stuff",
+          "url": "https://automatetheboringstuff.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-web-fundamentals"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-web-fundamentals",
+      "title": "Web Fundamentals",
+      "icon": "🕸️",
+      "category": "fundamentals",
+      "description": "HTTP, cookies, sessions, and web architecture.",
+      "resources": [
+        {
+          "title": "MDN HTTP",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "PortSwigger Web Security",
+          "url": "https://portswigger.net/web-security",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-owasp"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-owasp",
+      "title": "OWASP Top 10",
+      "icon": "🛡️",
+      "category": "fundamentals",
+      "description": "Top 10 web application security risks.",
+      "resources": [
+        {
+          "title": "OWASP Top 10",
+          "url": "https://owasp.org/www-project-top-ten/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "PortSwigger Top 10",
+          "url": "https://portswigger.net/web-security/learn",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-sqli"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-sqli",
+      "title": "SQL Injection",
+      "icon": "💉",
+      "category": "intermediate",
+      "description": "Exploiting and preventing SQL injection.",
+      "resources": [
+        {
+          "title": "PortSwigger SQLi",
+          "url": "https://portswigger.net/web-security/sql-injection",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "SQL Injection Guide",
+          "url": "https://owasp.org/www-community/attacks/SQL_Injection",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-xss"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-xss",
+      "title": "Cross-Site Scripting",
+      "icon": "📜",
+      "category": "intermediate",
+      "description": "XSS types, exploitation, and prevention.",
+      "resources": [
+        {
+          "title": "PortSwigger XSS",
+          "url": "https://portswigger.net/web-security/cross-site-scripting",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "XSS Cheatsheet",
+          "url": "https://portswigger.net/web-security/cross-site-scripting/cheat-sheet",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-csrf"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-csrf",
+      "title": "CSRF Attacks",
+      "icon": "🔄",
+      "category": "intermediate",
+      "description": "Cross-site request forgery and defenses.",
+      "resources": [
+        {
+          "title": "PortSwigger CSRF",
+          "url": "https://portswigger.net/web-security/csrf",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OWASP CSRF",
+          "url": "https://owasp.org/www-community/attacks/csrf",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-auth-attacks"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-auth-attacks",
+      "title": "Authentication Attacks",
+      "icon": "🔓",
+      "category": "intermediate",
+      "description": "Brute force, credential stuffing, and bypasses.",
+      "resources": [
+        {
+          "title": "Auth Attacks Guide",
+          "url": "https://owasp.org/www-project-web-security-testing-guide/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "PortSwigger Auth",
+          "url": "https://portswigger.net/web-security/authentication",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-crypto"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-crypto",
+      "title": "Cryptography",
+      "icon": "🔐",
+      "category": "intermediate",
+      "description": "Symmetric, asymmetric, hashing, and encryption.",
+      "resources": [
+        {
+          "title": "Practical Cryptography",
+          "url": "https://www.youtube.com/watch?v=ZaHdrD0Ewsw",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Crypto 101",
+          "url": "https://www.crypto101.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-pki"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-pki",
+      "title": "PKI & TLS/SSL",
+      "icon": "📜",
+      "category": "intermediate",
+      "description": "Public key infrastructure and certificates.",
+      "resources": [
+        {
+          "title": "TLS Guide",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/Security/Transport_Layer_Security",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Let's Encrypt",
+          "url": "https://letsencrypt.org/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-wireless"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-wireless",
+      "title": "Wireless Security",
+      "icon": "📶",
+      "category": "intermediate",
+      "description": "WiFi security, WPA, and wireless attacks.",
+      "resources": [
+        {
+          "title": "Aircrack-ng Docs",
+          "url": "https://www.aircrack-ng.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Wireless Security Guide",
+          "url": "https://www WirelessDefence.org/Contents/WirelessHacking.htm",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-cloud-sec"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-cloud-sec",
+      "title": "Cloud Security",
+      "icon": "☁️",
+      "category": "advanced",
+      "description": "AWS, Azure, GCP security configurations.",
+      "resources": [
+        {
+          "title": "AWS Security Docs",
+          "url": "https://docs.aws.amazon.com/security/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "CIS Benchmarks",
+          "url": "https://www.cisecurity.org/cis-benchmarks/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-container-sec"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-container-sec",
+      "title": "Container Security",
+      "icon": "🐳",
+      "category": "advanced",
+      "description": "Docker and Kubernetes security.",
+      "resources": [
+        {
+          "title": "Docker Security",
+          "url": "https://docs.docker.com/engine/security/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "K8s Security",
+          "url": "https://kubernetes.io/docs/concepts/security/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-k8s-sec"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-k8s-sec",
+      "title": "Kubernetes Security",
+      "icon": "☸️",
+      "category": "advanced",
+      "description": "RBAC, network policies, and pod security.",
+      "resources": [
+        {
+          "title": "K8s Security",
+          "url": "https://kubernetes.io/docs/concepts/security/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "NSA K8s Hardening",
+          "url": "https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/2710320/nsa-issues-guidance-on-how-to-protect-kubernetes-systems/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-pentest"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-pentest",
+      "title": "Penetration Testing",
+      "icon": "🎯",
+      "category": "advanced",
+      "description": "Methodology, tools, and reporting.",
+      "resources": [
+        {
+          "title": "Pentest Methodology",
+          "url": "https://www.hackerone.com/knowledge-center/what-is-penetration-testing",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Pentesting Checklist",
+          "url": "https://sushant747.gitbooks.io/total-osint-guide/content/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-kali"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-kali",
+      "title": "Kali Linux",
+      "icon": "💀",
+      "category": "tools",
+      "description": "Penetration testing distribution.",
+      "resources": [
+        {
+          "title": "Kali Docs",
+          "url": "https://www.kali.org/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Kali Tools",
+          "url": "https://www.kali.org/tools-listing",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-burp"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-burp",
+      "title": "Burp Suite",
+      "icon": "🕷️",
+      "category": "tools",
+      "description": "Web application security testing.",
+      "resources": [
+        {
+          "title": "Burp Suite Docs",
+          "url": "https://portswigger.net/burp/documentation",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Burp Suite Community",
+          "url": "https://portswigger.net/burp/communitydownload",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-nmap"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-nmap",
+      "title": "Nmap",
+      "icon": "🗺️",
+      "category": "tools",
+      "description": "Network scanning and discovery.",
+      "resources": [
+        {
+          "title": "Nmap Docs",
+          "url": "https://nmap.org/docs.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Nmap Book",
+          "url": "https://nmap.org/book/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-metasploit"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-metasploit",
+      "title": "Metasploit",
+      "icon": "💥",
+      "category": "tools",
+      "description": "Exploitation framework.",
+      "resources": [
+        {
+          "title": "Metasploit Docs",
+          "url": "https://docs.metasploit.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Metasploit Tutorial",
+          "url": "https://www.offensive-security.com/metasploit-unleashed/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-wireshark"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-wireshark",
+      "title": "Wireshark",
+      "icon": "🦈",
+      "category": "tools",
+      "description": "Network protocol analyzer.",
+      "resources": [
+        {
+          "title": "Wireshark Docs",
+          "url": "https://www.wireshark.org/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Wireshark Tutorial",
+          "url": "https://www.wireshark.org/#learnWS",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-reverse"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-reverse",
+      "title": "Reverse Engineering",
+      "icon": "🔄",
+      "category": "advanced",
+      "description": "Binary analysis and reverse engineering.",
+      "resources": [
+        {
+          "title": "Reverse Engineering Tutorial",
+          "url": "https://www.youtube.com/watch?v=3gyHbWQkGMk",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Ghidra Docs",
+          "url": "https://ghidra-sre.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-malware"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-malware",
+      "title": "Malware Analysis",
+      "icon": "🦠",
+      "category": "advanced",
+      "description": "Understanding and analyzing malware.",
+      "resources": [
+        {
+          "title": "Malware Analysis Guide",
+          "url": "https://www.mandiant.com/resources/malware-analysis",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Remnux Docs",
+          "url": "https://remnux.org/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-forensics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-forensics",
+      "title": "Digital Forensics",
+      "icon": "🔍",
+      "category": "advanced",
+      "description": "Evidence collection and analysis.",
+      "resources": [
+        {
+          "title": "SANS Forensics",
+          "url": "https://www.sans.org/white-papers/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Autopsy",
+          "url": "https://www.sleuthkit.org/autopsy/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-incident-response"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-incident-response",
+      "title": "Incident Response",
+      "icon": "🚨",
+      "category": "advanced",
+      "description": "Handling and responding to security incidents.",
+      "resources": [
+        {
+          "title": "NIST IR Guide",
+          "url": "https://www.nist.gov/publications/guide-incident-handling",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "SANS IR",
+          "url": "https://www.sans.org/white-papers/incident-handlers-handbook/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-siem"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-siem",
+      "title": "SIEM",
+      "icon": "📊",
+      "category": "tools",
+      "description": "Security information and event management.",
+      "resources": [
+        {
+          "title": "Splunk Docs",
+          "url": "https://docs.splunk.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Wazuh Docs",
+          "url": "https://documentation.wazuh.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-compliance"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-compliance",
+      "title": "Compliance",
+      "icon": "📋",
+      "category": "tools",
+      "description": "GDPR, HIPAA, SOC2, and compliance frameworks.",
+      "resources": [
+        {
+          "title": "GDPR Guide",
+          "url": "https://gdpr.eu/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "SOC2 Guide",
+          "url": "https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-bugbounty"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-bugbounty",
+      "title": "Bug Bounty",
+      "icon": "💰",
+      "category": "tools",
+      "description": "Finding bugs for rewards.",
+      "resources": [
+        {
+          "title": "HackerOne",
+          "url": "https://www.hackerone.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Bugcrowd",
+          "url": "https://www.bugcrowd.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-certs"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-certs",
+      "title": "Certifications",
+      "icon": "📜",
+      "category": "tools",
+      "description": "CEH, OSCP, CISSP, and CompTIA Security+.",
+      "resources": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OSCP Guide",
+          "url": "https://www.offsec.com/courses/pen-200/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-social"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-social",
+      "title": "Social Engineering",
+      "icon": "🎭",
+      "category": "intermediate",
+      "description": "Phishing, pretexting, and human manipulation.",
+      "resources": [
+        {
+          "title": "Social Engineering Guide",
+          "url": "https://www.sans.org/reading-room/whitepapers/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GoPhish",
+          "url": "https://getgophish.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "sec-api-sec"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-api-sec",
+      "title": "API Security",
+      "icon": "🔗",
+      "category": "advanced",
+      "description": "Securing REST and GraphQL APIs.",
+      "resources": [
+        {
+          "title": "OWASP API Security",
+          "url": "https://owasp.org/www-project-api-security/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "42Crunch",
+          "url": "https://42crunch.com/resources/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-osint",
+      "title": "OSINT",
+      "icon": "🔍",
+      "category": "intermediate",
+      "description": "Open source intelligence.",
+      "resources": [
+        {
+          "title": "OSINT Framework",
+          "url": "https://osintframework.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-passwords",
+      "title": "Password Security",
+      "icon": "🔑",
+      "category": "intermediate",
+      "description": "Hashing and password policies.",
+      "resources": [
+        {
+          "title": "OWASP Passwords",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "HaveIBeenPwned",
+          "url": "https://haveibeenpwned.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-red-team",
+      "title": "Red Team Ops",
+      "icon": "🔴",
+      "category": "advanced",
+      "description": "Offensive security.",
+      "resources": [
+        {
+          "title": "MITRE ATT&CK",
+          "url": "https://attack.mitre.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-blue-team",
+      "title": "Blue Team Ops",
+      "icon": "🔵",
+      "category": "advanced",
+      "description": "Defensive security.",
+      "resources": [
+        {
+          "title": "Blue Team Resources",
+          "url": "https://www.sans.org/blue-team-resources/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-iam",
+      "title": "Identity & Access Mgmt",
+      "icon": "👤",
+      "category": "intermediate",
+      "description": "SSO, MFA.",
+      "resources": [
+        {
+          "title": "OAuth 2.0",
+          "url": "https://oauth.net/2/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "SAML",
+          "url": "https://www.okta.com/integrate/documentation/saml/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-firewall",
+      "title": "Firewalls",
+      "icon": "🧱",
+      "category": "intermediate",
+      "description": "Network firewalls.",
+      "resources": [
+        {
+          "title": "Firewall Guide",
+          "url": "https://www.cloudflare.com/learning/network-layer/what-is-a-firewall/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "iptables",
+          "url": "https://www.netfilter.org/projects/iptables/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-vpn",
+      "title": "VPN & Tunneling",
+      "icon": "🔒",
+      "category": "intermediate",
+      "description": "VPNs and encrypted tunnels.",
+      "resources": [
+        {
+          "title": "WireGuard",
+          "url": "https://www.wireguard.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OpenVPN",
+          "url": "https://openvpn.net/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-mobile-sec",
+      "title": "Mobile Security",
+      "icon": "📱",
+      "category": "advanced",
+      "description": "iOS and Android security.",
+      "resources": [
+        {
+          "title": "OWASP MASTG",
+          "url": "https://mas.owasp.org/MASTG/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-api-pentest",
+      "title": "API Pentesting",
+      "icon": "🔗",
+      "category": "advanced",
+      "description": "Testing API security.",
+      "resources": [
+        {
+          "title": "OWASP API Security",
+          "url": "https://owasp.org/www-project-api-security/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-threat-model",
+      "title": "Threat Modeling",
+      "icon": "🎯",
+      "category": "intermediate",
+      "description": "STRIDE and risk assessment.",
+      "resources": [
+        {
+          "title": "Threat Modeling",
+          "url": "https://owasp.org/www-community/Threat_Modeling",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "STRIDE",
+          "url": "https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-session-sec",
+      "title": "Session Security",
+      "icon": "🍪",
+      "category": "intermediate",
+      "description": "Session management.",
+      "resources": [
+        {
+          "title": "Session Management",
+          "url": "https://owasp.org/www-community/controls/session_management",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-ids",
+      "title": "IDS/IPS",
+      "icon": "🚨",
+      "category": "tools",
+      "description": "Intrusion detection.",
+      "resources": [
+        {
+          "title": "Snort",
+          "url": "https://www.snort.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Suricata",
+          "url": "https://suricata.readthedocs.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-phishing",
+      "title": "Phishing",
+      "icon": "🎣",
+      "category": "intermediate",
+      "description": "Phishing campaigns.",
+      "resources": [
+        {
+          "title": "GoPhish",
+          "url": "https://getgophish.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Phishing Guide",
+          "url": "https://owasp.org/www-community/attacks/phishing",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-vuln-assess",
+      "title": "Vulnerability Assessment",
+      "icon": "📋",
+      "category": "intermediate",
+      "description": "Scanning and CVEs.",
+      "resources": [
+        {
+          "title": "Nessus",
+          "url": "https://docs.tenable.com/nessus/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "CVE",
+          "url": "https://cve.mitre.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-appsec",
+      "title": "Application Security",
+      "icon": "🛡️",
+      "category": "intermediate",
+      "description": "Secure coding.",
+      "resources": [
+        {
+          "title": "OWASP Secure Coding",
+          "url": "https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-container-scan",
+      "title": "Container Scanning",
+      "icon": "🐳",
+      "category": "advanced",
+      "description": "Docker security scanning.",
+      "resources": [
+        {
+          "title": "Trivy",
+          "url": "https://aquasecurity.github.io/trivy/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Docker Bench",
+          "url": "https://github.com/docker/docker-bench-security",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-zero-trust",
+      "title": "Zero Trust",
+      "icon": "🚫",
+      "category": "advanced",
+      "description": "Zero trust architecture.",
+      "resources": [
+        {
+          "title": "Zero Trust",
+          "url": "https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-threat-intel",
+      "title": "Threat Intelligence",
+      "icon": "🧠",
+      "category": "tools",
+      "description": "CTI and threat sharing.",
+      "resources": [
+        {
+          "title": "MISP",
+          "url": "https://www.misp-project.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MITRE ATT&CK",
+          "url": "https://attack.mitre.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "sec-code-review",
+      "title": "Secure Code Review",
+      "icon": "👀",
+      "category": "advanced",
+      "description": "Reviewing code for vulns.",
+      "resources": [
+        {
+          "title": "OWASP Code Review",
+          "url": "https://owasp.org/www-project-code-review-guide/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Semgrep",
+          "url": "https://semgrep.dev/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    }
+  ]
 }

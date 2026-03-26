@@ -1,40 +1,1233 @@
 {
-  "id": "fullstack",
   "title": "Full Stack Developer",
-  "description": "Become a complete developer who can build entire applications from scratch. Covers frontend, backend, DevOps, and system design — everything needed to ship production-ready apps.",
-  "icon": "🚀",
-  "color": "#f59e0b",
-  "time": "12-18 months",
-  "difficulty": "Beginner to Advanced",
-  "nodes": [
-    {"id":"fs-html","title":"HTML5 & Semantic Markup","icon":"📄","category":"fundamentals","description":"The foundation of web pages. Learn tags, forms, semantic elements, and accessibility basics.","resources":[{"title":"MDN HTML Guide","url":"https://developer.mozilla.org/en-US/docs/Learn/HTML","type":"docs","free":true},{"title":"freeCodeCamp HTML","url":"https://www.freecodecamp.org/learn/responsive-web-design/","type":"course","free":true}],"children":["fs-css"]},
-    {"id":"fs-css","title":"CSS3 & Modern Layouts","icon":"🎨","category":"fundamentals","description":"Flexbox, Grid, responsive design, animations, and CSS custom properties for beautiful UIs.","resources":[{"title":"CSS-Tricks Flexbox Guide","url":"https://css-tricks.com/snippets/css/a-guide-to-flexbox/","type":"docs","free":true},{"title":"CSS-Tricks Grid Guide","url":"https://css-tricks.com/snippets/css/complete-guide-grid/","type":"docs","free":true}],"children":["fs-js"]},
-    {"id":"fs-js","title":"JavaScript ES6+","icon":"⚡","category":"fundamentals","description":"Modern JavaScript — async/await, modules, destructuring, closures, prototypes, and the event loop.","resources":[{"title":"JavaScript.info","url":"https://javascript.info/","type":"docs","free":true},{"title":"MDN JavaScript Guide","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide","type":"docs","free":true}],"children":["fs-ts"]},
-    {"id":"fs-ts","title":"TypeScript","icon":"🔷","category":"fundamentals","description":"Add static typing to JavaScript for safer, more maintainable full-stack codebases.","resources":[{"title":"TypeScript Handbook","url":"https://www.typescriptlang.org/docs/handbook/","type":"docs","free":true},{"title":"TypeScript Deep Dive","url":"https://basarat.gitbook.io/typescript/","type":"docs","free":true}],"children":["fs-react"]},
-    {"id":"fs-react","title":"React & Hooks","icon":"⚛️","category":"frameworks","description":"Component-based UI with React — hooks, state management, context, and modern patterns.","resources":[{"title":"React Official Docs","url":"https://react.dev/learn","type":"docs","free":true},{"title":"freeCodeCamp React","url":"https://www.freecodecamp.org/learn/front-end-development-libraries/","type":"course","free":true}],"children":["fs-nextjs"]},
-    {"id":"fs-nextjs","title":"Next.js (Full Stack Framework)","icon":"▲","category":"frameworks","description":"SSR, SSG, API routes, and full-stack React development with the Next.js framework.","resources":[{"title":"Next.js Docs","url":"https://nextjs.org/docs","type":"docs","free":true},{"title":"Next.js Learn","url":"https://nextjs.org/learn","type":"course","free":true}],"children":["fs-node"]},
-    {"id":"fs-node","title":"Node.js & Express","icon":"🟢","category":"frameworks","description":"Build backend APIs with Node.js and Express — routing, middleware, error handling, and file uploads.","resources":[{"title":"Express.js Guide","url":"https://expressjs.com/en/guide/routing.html","type":"docs","free":true},{"title":"Node.js Documentation","url":"https://nodejs.org/en/docs/","type":"docs","free":true}],"children":["fs-db"]},
-    {"id":"fs-db","title":"Databases (SQL + NoSQL)","icon":"🗄️","category":"databases","description":"PostgreSQL for relational data and MongoDB/Redis for NoSQL. Learn both paradigms.","resources":[{"title":"SQLBolt","url":"https://sqlbolt.com/","type":"interactive","free":true},{"title":"MongoDB University","url":"https://university.mongodb.com/","type":"course","free":true},{"title":"PostgreSQL Tutorial","url":"https://www.postgresqltutorial.com/","type":"docs","free":true}],"children":["fs-orm"]},
-    {"id":"fs-orm","title":"ORM / Query Builder","icon":"🔄","category":"databases","description":"Prisma, Drizzle, or SQLAlchemy for type-safe database access and migrations.","resources":[{"title":"Prisma Docs","url":"https://www.prisma.io/docs","type":"docs","free":true},{"title":"Drizzle ORM","url":"https://orm.drizzle.team/","type":"docs","free":true}],"children":["fs-auth"]},
-    {"id":"fs-auth","title":"Authentication & Authorization","icon":"🔐","category":"security","description":"JWT tokens, OAuth 2.0, NextAuth.js, session management, and role-based access control.","resources":[{"title":"NextAuth.js Docs","url":"https://next-auth.js.org/","type":"docs","free":true},{"title":"JWT.io","url":"https://jwt.io/introduction","type":"docs","free":true}],"children":["fs-state"]},
-    {"id":"fs-state","title":"State Management","icon":"🗄️","category":"frameworks","description":"Server state vs client state — React Query/TanStack Query, Zustand, or Redux Toolkit.","resources":[{"title":"TanStack Query Docs","url":"https://tanstack.com/query/latest","type":"docs","free":true},{"title":"Zustand Docs","url":"https://zustand-demo.pmnd.rs/","type":"docs","free":true}],"children":["fs-testing"]},
-    {"id":"fs-testing","title":"Full Stack Testing","icon":"🧪","category":"testing","description":"Unit tests (Jest/Vitest), component tests (RTL), E2E tests (Playwright), and API testing.","resources":[{"title":"Playwright Docs","url":"https://playwright.dev/docs/intro","type":"docs","free":true},{"title":"Vitest Docs","url":"https://vitest.dev/guide/","type":"docs","free":true}],"children":["fs-docker"]},
-    {"id":"fs-docker","title":"Docker & Containers","icon":"🐳","category":"devops","description":"Containerize your full-stack app with Docker and Docker Compose for consistent environments.","resources":[{"title":"Docker Getting Started","url":"https://docs.docker.com/get-started/","type":"docs","free":true},{"title":"freeCodeCamp Docker Course","url":"https://www.freecodecamp.org/news/learn-docker-by-building-a-crud-app/","type":"course","free":true}],"children":["fs-cicd"]},
-    {"id":"fs-cicd","title":"CI/CD Pipelines","icon":"🔄","category":"devops","description":"Automated testing and deployment with GitHub Actions — lint, test, build, and deploy on every push.","resources":[{"title":"GitHub Actions Docs","url":"https://docs.github.com/en/actions","type":"docs","free":true}],"children":["fs-deploy"]},
-    {"id":"fs-deploy","title":"Deployment & Hosting","icon":"🚀","category":"deployment","description":"Deploy frontend on Vercel/Netlify, backend on Railway/Render, and databases on Supabase/PlanetScale.","resources":[{"title":"Vercel Docs","url":"https://vercel.com/docs","type":"docs","free":true},{"title":"Railway Docs","url":"https://docs.railway.app/","type":"docs","free":true},{"title":"Supabase Docs","url":"https://supabase.com/docs","type":"docs","free":true}],"children":["fs-git"]},
-    {"id":"fs-git","title":"Git & Collaboration","icon":"🔀","category":"tools","description":"Git workflows, branching strategies, code reviews, and open-source contribution practices.","resources":[{"title":"Pro Git Book","url":"https://git-scm.com/book/en/v2","type":"docs","free":true},{"title":"GitHub Skills","url":"https://skills.github.com/","type":"course","free":true}],"children":["fs-perf"]},
-    {"id":"fs-perf","title":"Performance Optimization","icon":"⚡","category":"advanced","description":"Core Web Vitals, lazy loading, image optimization, database query optimization, and caching.","resources":[{"title":"web.dev Performance","url":"https://web.dev/explore/performance","type":"docs","free":true}],"children":["fs-security"]},
-    {"id":"fs-security","title":"Application Security","icon":"🛡️","category":"security","description":"OWASP Top 10, XSS/CSRF prevention, input validation, dependency auditing, and secure headers.","resources":[{"title":"OWASP Top 10","url":"https://owasp.org/www-project-top-ten/","type":"docs","free":true},{"title":"web.dev Security","url":"https://web.dev/explore/security","type":"docs","free":true}],"children":["fs-system-design"]},
-    {"id":"fs-system-design","title":"System Design Fundamentals","icon":"🏗️","category":"advanced","description":"Scalability, load balancing, caching layers, database sharding, message queues, and microservices.","resources":[{"title":"System Design Primer","url":"https://github.com/donnemartin/system-design-primer","type":"docs","free":true},{"title":"ByteByteGo","url":"https://bytebytego.com/","type":"course","free":true}],"children":["fs-monitoring"]},
-    {"id":"fs-monitoring","title":"Monitoring & Observability","icon":"📊","category":"devops","description":"Application monitoring, logging, error tracking (Sentry), and performance monitoring.","resources":[{"title":"Sentry Documentation","url":"https://docs.sentry.io/","type":"docs","free":true},{"title":"Prometheus Docs","url":"https://prometheus.io/docs/","type":"docs","free":true}],"children":["fs-realtime"]},
-    {"id":"fs-realtime","title":"Real-time Features","icon":"📡","category":"advanced","description":"WebSockets, Server-Sent Events, Socket.io for chat, notifications, and live updates.","resources":[{"title":"Socket.io Docs","url":"https://socket.io/docs/v4/","type":"docs","free":true}],"children":["fs-graphql"]},
-    {"id":"fs-graphql","title":"GraphQL (Optional)","icon":"🔮","category":"frameworks","description":"Alternative to REST — type-safe API queries with GraphQL and Apollo Server/Client.","resources":[{"title":"GraphQL Official","url":"https://graphql.org/learn/","type":"docs","free":true},{"title":"Apollo Docs","url":"https://www.apollographql.com/docs/","type":"docs","free":true}],"children":[]},
-    {"id":"fs-stripe","title":"Payments Integration","icon":"💳","category":"tools","description":"Stripe payments, subscriptions, webhooks, and handling payment flows securely.","resources":[{"title":"Stripe Documentation","url":"https://stripe.com/docs","type":"docs","free":true},{"title":"Stripe API Reference","url":"https://stripe.com/docs/api","type":"docs","free":true}],"children":["fs-deploy"]},
-    {"id":"fs-search","title":"Search (Elasticsearch/Algolia)","icon":"🔍","category":"tools","description":"Full-text search with Elasticsearch or Algolia for powerful search functionality.","resources":[{"title":"Elasticsearch Docs","url":"https://www.elastic.co/guide/","type":"docs","free":true},{"title":"Algolia Docs","url":"https://www.algolia.com/doc/","type":"docs","free":true}],"children":["fs-perf"]},
-    {"id":"fs-email","title":"Email & Notifications","icon":"📧","category":"tools","description":"Transactional emails with SendGrid/Resend and push notifications for user engagement.","resources":[{"title":"SendGrid Docs","url":"https://docs.sendgrid.com/","type":"docs","free":true},{"title":"Resend Docs","url":"https://resend.com/docs","type":"docs","free":true}],"children":["fs-testing"]},
-    {"id":"fs-aws","title":"Cloud Services (AWS/GCP)","icon":"☁️","category":"cloud","description":"AWS S3, EC2, Lambda, CloudFront, or GCP equivalents for scalable cloud infrastructure.","resources":[{"title":"AWS Free Tier","url":"https://aws.amazon.com/free/","type":"docs","free":true},{"title":"GCP Free Tier","url":"https://cloud.google.com/free","type":"docs","free":true}],"children":["fs-deploy"]},
-    {"id":"fs-redis","title":"Redis & Caching","icon":"🔴","category":"advanced","description":"In-memory caching with Redis for sessions, rate limiting, and performance optimization.","resources":[{"title":"Redis Documentation","url":"https://redis.io/docs/","type":"docs","free":true}],"children":["fs-perf"]},
-    {"id":"fs-queue","title":"Background Jobs","icon":"📨","category":"advanced","description":"BullMQ, Celery, or Cloud Tasks for async processing — emails, reports, and scheduled tasks.","resources":[{"title":"BullMQ Docs","url":"https://docs.bullmq.io/","type":"docs","free":true},{"title":"Celery Docs","url":"https://docs.celeryq.dev/","type":"docs","free":true}],"children":["fs-monitoring"]}
+  "description": "End-to-end web development from frontend to backend and deployment.",
+  "icon": "🌐",
+  "categories": [
+    "fundamentals",
+    "intermediate",
+    "advanced",
+    "tools"
   ],
-  "connections":[["fs-html","fs-css"],["fs-css","fs-js"],["fs-js","fs-ts"],["fs-ts","fs-react"],["fs-react","fs-nextjs"],["fs-nextjs","fs-node"],["fs-node","fs-db"],["fs-db","fs-orm"],["fs-orm","fs-auth"],["fs-auth","fs-state"],["fs-state","fs-testing"],["fs-testing","fs-docker"],["fs-docker","fs-cicd"],["fs-cicd","fs-deploy"],["fs-deploy","fs-git"],["fs-git","fs-perf"],["fs-perf","fs-security"],["fs-security","fs-system-design"],["fs-system-design","fs-monitoring"],["fs-monitoring","fs-realtime"],["fs-realtime","fs-graphql"],["fs-stripe","fs-deploy"],["fs-search","fs-perf"],["fs-email","fs-testing"],["fs-aws","fs-deploy"],["fs-redis","fs-perf"],["fs-queue","fs-monitoring"]]
+  "nodes": [
+    {
+      "id": "fs-html-css",
+      "title": "HTML & CSS",
+      "icon": "🎨",
+      "category": "fundamentals",
+      "description": "Web page structure and styling fundamentals.",
+      "resources": [
+        {
+          "title": "MDN HTML & CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "freeCodeCamp",
+          "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-js"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-js",
+      "title": "JavaScript",
+      "icon": "🟨",
+      "category": "fundamentals",
+      "description": "Core JS, DOM manipulation, and ES6+.",
+      "resources": [
+        {
+          "title": "MDN JS Guide",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "JavaScript.info",
+          "url": "https://javascript.info/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-react"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-react",
+      "title": "React",
+      "icon": "⚛️",
+      "category": "fundamentals",
+      "description": "Component-based UI with React and hooks.",
+      "resources": [
+        {
+          "title": "React Docs",
+          "url": "https://react.dev/learn",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "React Crash Course",
+          "url": "https://www.youtube.com/watch?v=w7ejDZ8SWv8",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-nodejs"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-nodejs",
+      "title": "Node.js & Express",
+      "icon": "🟢",
+      "category": "fundamentals",
+      "description": "Server-side JavaScript with Express framework.",
+      "resources": [
+        {
+          "title": "Express Docs",
+          "url": "https://expressjs.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Node.js Docs",
+          "url": "https://nodejs.org/en/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-db"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-db",
+      "title": "Databases",
+      "icon": "🗃️",
+      "category": "fundamentals",
+      "description": "SQL and NoSQL databases with Prisma ORM.",
+      "resources": [
+        {
+          "title": "Prisma Docs",
+          "url": "https://www.prisma.io/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "SQL Bolt",
+          "url": "https://sqlbolt.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-git"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-git",
+      "title": "Git & GitHub",
+      "icon": "📦",
+      "category": "fundamentals",
+      "description": "Version control, branching, and collaboration.",
+      "resources": [
+        {
+          "title": "Git Docs",
+          "url": "https://git-scm.com/doc",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GitHub Guides",
+          "url": "https://guides.github.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-auth"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-auth",
+      "title": "Authentication",
+      "icon": "🔑",
+      "category": "intermediate",
+      "description": "JWT, OAuth, sessions, and user management.",
+      "resources": [
+        {
+          "title": "JWT.io",
+          "url": "https://jwt.io/introduction",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "NextAuth.js",
+          "url": "https://next-auth.js.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-rest"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-rest",
+      "title": "REST API Design",
+      "icon": "🔗",
+      "category": "intermediate",
+      "description": "Building and consuming RESTful APIs.",
+      "resources": [
+        {
+          "title": "RESTful API Design",
+          "url": "https://restfulapi.net/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Google API Guide",
+          "url": "https://cloud.google.com/apis/design",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-graphql"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-graphql",
+      "title": "GraphQL",
+      "icon": "📡",
+      "category": "intermediate",
+      "description": "Queries, mutations, and type-safe API layer.",
+      "resources": [
+        {
+          "title": "GraphQL Learn",
+          "url": "https://graphql.org/learn/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Apollo Docs",
+          "url": "https://www.apollographql.com/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-state"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-state",
+      "title": "State Management",
+      "icon": "🗄️",
+      "category": "intermediate",
+      "description": "Client and server state with Redux/Zustand.",
+      "resources": [
+        {
+          "title": "Redux Toolkit",
+          "url": "https://redux-toolkit.js.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Zustand",
+          "url": "https://zustand-demo.pmnd.rs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-upload"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-upload",
+      "title": "File Upload & Storage",
+      "icon": "📁",
+      "category": "intermediate",
+      "description": "Handling file uploads with Multer and cloud storage.",
+      "resources": [
+        {
+          "title": "Multer Docs",
+          "url": "https://github.com/expressjs/multer",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "AWS S3 Docs",
+          "url": "https://docs.aws.amazon.com/s3/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-realtime"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-realtime",
+      "title": "Real-time Features",
+      "icon": "⚡",
+      "category": "intermediate",
+      "description": "WebSockets, Socket.IO, and live updates.",
+      "resources": [
+        {
+          "title": "Socket.IO Docs",
+          "url": "https://socket.io/docs/v4/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN WebSockets",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-testing"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-testing",
+      "title": "Full Stack Testing",
+      "icon": "🧪",
+      "category": "intermediate",
+      "description": "Frontend, backend, and E2E testing.",
+      "resources": [
+        {
+          "title": "Cypress Docs",
+          "url": "https://docs.cypress.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Jest Docs",
+          "url": "https://jestjs.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Testing Library",
+          "url": "https://testing-library.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-docker"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-docker",
+      "title": "Docker",
+      "icon": "🐳",
+      "category": "advanced",
+      "description": "Containerizing full stack applications.",
+      "resources": [
+        {
+          "title": "Docker Docs",
+          "url": "https://docs.docker.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Docker Compose",
+          "url": "https://docs.docker.com/compose/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-nextjs"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-nextjs",
+      "title": "Next.js",
+      "icon": "▲",
+      "category": "advanced",
+      "description": "Full-stack React framework with SSR.",
+      "resources": [
+        {
+          "title": "Next.js Docs",
+          "url": "https://nextjs.org/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Next.js Learn",
+          "url": "https://nextjs.org/learn",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-deploy"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-deploy",
+      "title": "Deployment",
+      "icon": "🚀",
+      "category": "tools",
+      "description": "Deploying to Vercel, AWS, and Docker.",
+      "resources": [
+        {
+          "title": "Vercel Docs",
+          "url": "https://vercel.com/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Railway",
+          "url": "https://docs.railway.app/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-cicd"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-cicd",
+      "title": "CI/CD Pipelines",
+      "icon": "🔄",
+      "category": "tools",
+      "description": "Automated testing and deployment.",
+      "resources": [
+        {
+          "title": "GitHub Actions",
+          "url": "https://docs.github.com/en/actions",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GitLab CI",
+          "url": "https://docs.gitlab.com/ee/ci/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-perf"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-perf",
+      "title": "Performance",
+      "icon": "⚡",
+      "category": "tools",
+      "description": "Optimization across the full stack.",
+      "resources": [
+        {
+          "title": "web.dev Performance",
+          "url": "https://web.dev/performance/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Lighthouse",
+          "url": "https://developer.chrome.com/docs/lighthouse/overview",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-security"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-security",
+      "title": "Security",
+      "icon": "🔒",
+      "category": "tools",
+      "description": "OWASP, CORS, CSP, and input validation.",
+      "resources": [
+        {
+          "title": "OWASP Top 10",
+          "url": "https://owasp.org/www-project-top-ten/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MDN Security",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/Security",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-sysdesign"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-sysdesign",
+      "title": "System Design",
+      "icon": "🏗️",
+      "category": "advanced",
+      "description": "Scalability, load balancing, and architecture.",
+      "resources": [
+        {
+          "title": "System Design Primer",
+          "url": "https://github.com/donnemartin/system-design-primer",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "ByteByteGo",
+          "url": "https://bytebytego.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-caching"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-caching",
+      "title": "Caching",
+      "icon": "💾",
+      "category": "advanced",
+      "description": "Redis, CDN, and caching strategies.",
+      "resources": [
+        {
+          "title": "Redis Docs",
+          "url": "https://redis.io/documentation",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Caching Strategies",
+          "url": "https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-mq"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-mq",
+      "title": "Message Queues",
+      "icon": "📨",
+      "category": "advanced",
+      "description": "Kafka, RabbitMQ for async processing.",
+      "resources": [
+        {
+          "title": "Kafka Docs",
+          "url": "https://kafka.apache.org/documentation/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "RabbitMQ Tutorial",
+          "url": "https://www.rabbitmq.com/tutorials",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-monitoring"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-monitoring",
+      "title": "Monitoring",
+      "icon": "📊",
+      "category": "tools",
+      "description": "Application monitoring and observability.",
+      "resources": [
+        {
+          "title": "Prometheus",
+          "url": "https://prometheus.io/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Grafana",
+          "url": "https://grafana.com/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-debugging"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-debugging",
+      "title": "Debugging",
+      "icon": "🔍",
+      "category": "tools",
+      "description": "Debugging techniques and tools.",
+      "resources": [
+        {
+          "title": "Chrome DevTools",
+          "url": "https://developer.chrome.com/docs/devtools/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Node.js Debugging",
+          "url": "https://nodejs.org/en/docs/guides/debugging-getting-started",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-seo"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-seo",
+      "title": "SEO",
+      "icon": "🔍",
+      "category": "tools",
+      "description": "Meta tags, SSR for SEO, and performance.",
+      "resources": [
+        {
+          "title": "web.dev SEO",
+          "url": "https://web.dev/learn-core-web-vitals/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Google SEO Guide",
+          "url": "https://developers.google.com/search/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-analytics"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-analytics",
+      "title": "Analytics",
+      "icon": "📈",
+      "category": "tools",
+      "description": "Tracking user behavior and metrics.",
+      "resources": [
+        {
+          "title": "Google Analytics",
+          "url": "https://analytics.google.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Mixpanel Docs",
+          "url": "https://mixpanel.com/help/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-typescript"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-typescript",
+      "title": "TypeScript",
+      "icon": "🔷",
+      "category": "fundamentals",
+      "description": "Type safety across the full stack.",
+      "resources": [
+        {
+          "title": "TypeScript Handbook",
+          "url": "https://www.typescriptlang.org/docs/handbook/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "TypeScript Crash Course",
+          "url": "https://www.youtube.com/watch?v=gieEQFIfgYc",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-env"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-env",
+      "title": "Environment Config",
+      "icon": "⚙️",
+      "category": "tools",
+      "description": "Environment variables, secrets, and config management.",
+      "resources": [
+        {
+          "title": "dotenv",
+          "url": "https://github.com/motdotla/dotenv",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Vault Docs",
+          "url": "https://www.vaultproject.io/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-email"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-email",
+      "title": "Email Integration",
+      "icon": "📧",
+      "category": "intermediate",
+      "description": "Transactional email with SendGrid/Resend.",
+      "resources": [
+        {
+          "title": "SendGrid Docs",
+          "url": "https://docs.sendgrid.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Resend Docs",
+          "url": "https://resend.com/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-payments"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-payments",
+      "title": "Payments",
+      "icon": "💳",
+      "category": "intermediate",
+      "description": "Stripe integration and payment processing.",
+      "resources": [
+        {
+          "title": "Stripe Docs",
+          "url": "https://stripe.com/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Stripe React",
+          "url": "https://stripe.com/docs/stripe-js/react",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-search"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-search",
+      "title": "Search",
+      "icon": "🔎",
+      "category": "advanced",
+      "description": "Elasticsearch, Algolia, and full-text search.",
+      "resources": [
+        {
+          "title": "Elasticsearch Docs",
+          "url": "https://www.elastic.co/guide/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Algolia Docs",
+          "url": "https://www.algolia.com/doc/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-cron"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-cron",
+      "title": "Background Jobs",
+      "icon": "⏰",
+      "category": "advanced",
+      "description": "Cron jobs, queues, and scheduled tasks.",
+      "resources": [
+        {
+          "title": "BullMQ Docs",
+          "url": "https://docs.bullmq.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Node-cron",
+          "url": "https://github.com/node-cron/node-cron",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "fs-i18n"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-i18n",
+      "title": "Internationalization",
+      "icon": "🌍",
+      "category": "tools",
+      "description": "Multi-language support and localization.",
+      "resources": [
+        {
+          "title": "i18next Docs",
+          "url": "https://www.i18next.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Next.js i18n",
+          "url": "https://nextjs.org/docs/advanced-features/i18n-routing",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-eslint",
+      "title": "Linting & Formatting",
+      "icon": "✨",
+      "category": "tools",
+      "description": "ESLint, Prettier, and code quality.",
+      "resources": [
+        {
+          "title": "ESLint Docs",
+          "url": "https://eslint.org/docs/latest/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Prettier",
+          "url": "https://prettier.io/docs/en/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-husky",
+      "title": "Git Hooks",
+      "icon": "🪝",
+      "category": "tools",
+      "description": "Husky, lint-staged, and pre-commit hooks.",
+      "resources": [
+        {
+          "title": "Husky",
+          "url": "https://typicode.github.io/husky/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "lint-staged",
+          "url": "https://github.com/okonet/lint-staged",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-image-optimization",
+      "title": "Image Optimization",
+      "icon": "🖼️",
+      "category": "tools",
+      "description": "Next.js Image, sharp, and responsive images.",
+      "resources": [
+        {
+          "title": "sharp",
+          "url": "https://sharp.pixelplumbing.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Next.js Image",
+          "url": "https://nextjs.org/docs/app/building-your-application/optimizing/images",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-stripe-payments",
+      "title": "Stripe Integration",
+      "icon": "💳",
+      "category": "intermediate",
+      "description": "Payment processing with Stripe.",
+      "resources": [
+        {
+          "title": "Stripe Docs",
+          "url": "https://stripe.com/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Stripe React",
+          "url": "https://stripe.com/docs/stripe-js/react",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-rate-limiting",
+      "title": "Rate Limiting",
+      "icon": "🚦",
+      "category": "tools",
+      "description": "Express rate limit and API protection.",
+      "resources": [
+        {
+          "title": "express-rate-limit",
+          "url": "https://www.npmjs.com/package/express-rate-limit",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Rate Limiting Guide",
+          "url": "https://cloud.google.com/architecture/rate-limiting-strategies-techniques",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-validation",
+      "title": "Form Validation",
+      "icon": "✅",
+      "category": "intermediate",
+      "description": "Zod, React Hook Form, and validation.",
+      "resources": [
+        {
+          "title": "React Hook Form",
+          "url": "https://react-hook-form.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Zod",
+          "url": "https://zod.dev/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-toast",
+      "title": "Toast Notifications",
+      "icon": "🔔",
+      "category": "tools",
+      "description": "React Hot Toast and notification systems.",
+      "resources": [
+        {
+          "title": "React Hot Toast",
+          "url": "https://react-hot-toast.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Sonner",
+          "url": "https://sonner.emilkowal.dev/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-modals",
+      "title": "Modals & Dialogs",
+      "icon": "💬",
+      "category": "tools",
+      "description": "Accessible modal patterns.",
+      "resources": [
+        {
+          "title": "Radix Dialog",
+          "url": "https://www.radix-ui.com/primitives/docs/components/dialog",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Headless UI Dialog",
+          "url": "https://headlessui.com/react/dialog",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-tables",
+      "title": "Data Tables",
+      "icon": "📊",
+      "category": "intermediate",
+      "description": "TanStack Table for complex tables.",
+      "resources": [
+        {
+          "title": "TanStack Table",
+          "url": "https://tanstack.com/table/v8",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MUI DataGrid",
+          "url": "https://mui.com/x/react-data-grid/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-cron-jobs",
+      "title": "Scheduled Tasks",
+      "icon": "⏰",
+      "category": "advanced",
+      "description": "Cron jobs and background processing.",
+      "resources": [
+        {
+          "title": "node-cron",
+          "url": "https://github.com/node-cron/node-cron",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "BullMQ",
+          "url": "https://docs.bullmq.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-webhooks",
+      "title": "Webhooks",
+      "icon": "🪝",
+      "category": "intermediate",
+      "description": "Sending and receiving webhooks.",
+      "resources": [
+        {
+          "title": "Svix Docs",
+          "url": "https://docs.svix.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Webhook Guide",
+          "url": "https://sendgrid.com/docs/for-developers/tracking-events/event-webhook/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-pagination",
+      "title": "Pagination",
+      "icon": "📄",
+      "category": "intermediate",
+      "description": "Cursor and offset pagination.",
+      "resources": [
+        {
+          "title": "Cursor Pagination",
+          "url": "https://slack.engineering/evolving-api-pagination-at-slack/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "TanStack Query Pagination",
+          "url": "https://tanstack.com/query/latest/docs/react/guides/paginated-queries",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-ai-integration",
+      "title": "AI Integration",
+      "icon": "🤖",
+      "category": "advanced",
+      "description": "OpenAI API, streaming, and AI features.",
+      "resources": [
+        {
+          "title": "OpenAI API",
+          "url": "https://platform.openai.com/docs/api-reference",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Vercel AI SDK",
+          "url": "https://sdk.vercel.ai/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-web-vitals",
+      "title": "Core Web Vitals",
+      "icon": "⚡",
+      "category": "tools",
+      "description": "Lighthouse, CLS, LCP, and FID.",
+      "resources": [
+        {
+          "title": "web.dev Vitals",
+          "url": "https://web.dev/vitals/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Lighthouse",
+          "url": "https://developer.chrome.com/docs/lighthouse/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-intl",
+      "title": "Internationalization",
+      "icon": "🌍",
+      "category": "tools",
+      "description": "Multi-language support.",
+      "resources": [
+        {
+          "title": "next-intl",
+          "url": "https://next-intl-docs.vercel.app/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "i18next",
+          "url": "https://www.i18next.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-sentry",
+      "title": "Error Tracking",
+      "icon": "🐛",
+      "category": "tools",
+      "description": "Sentry for error monitoring.",
+      "resources": [
+        {
+          "title": "Sentry Docs",
+          "url": "https://docs.sentry.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Sentry JavaScript",
+          "url": "https://docs.sentry.io/platforms/javascript/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "fs-playwright",
+      "title": "E2E Testing with Playwright",
+      "icon": "🎭",
+      "category": "advanced",
+      "description": "Browser automation testing.",
+      "resources": [
+        {
+          "title": "Playwright Docs",
+          "url": "https://playwright.dev/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Playwright Tutorial",
+          "url": "https://playwright.dev/docs/intro",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    }
+  ]
 }

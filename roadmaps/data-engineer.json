@@ -1,36 +1,1165 @@
 {
-  "id": "data-engineer",
   "title": "Data Engineer",
-  "description": "Design and build data pipelines, warehouses, and streaming systems. From SQL fundamentals to cloud data platforms, become the backbone of data-driven organizations.",
-  "icon": "📊",
-  "color": "#8b5cf6",
-  "time": "6-12 months",
-  "difficulty": "Beginner to Advanced",
-  "nodes": [
-    {"id":"de-python","title":"Python for Data","icon":"🐍","category":"fundamentals","description":"Python fundamentals with focus on data processing — Pandas, NumPy, and data manipulation.","resources":[{"title":"Python Tutorial","url":"https://docs.python.org/3/tutorial/","type":"docs","free":true},{"title":"Pandas Documentation","url":"https://pandas.pydata.org/docs/","type":"docs","free":true}],"children":["de-sql"]},
-    {"id":"de-sql","title":"Advanced SQL","icon":"🗃️","category":"databases","description":"Complex queries, window functions, CTEs, stored procedures, query optimization, and database design.","resources":[{"title":"SQLBolt","url":"https://sqlbolt.com/","type":"interactive","free":true},{"title":"Mode SQL Tutorial","url":"https://mode.com/sql-tutorial/","type":"course","free":true},{"title":"Use The Index Luke","url":"https://use-the-index-luke.com/","type":"docs","free":true}],"children":["de-db"]},
-    {"id":"de-db","title":"Database Systems","icon":"🗄️","category":"databases","description":"PostgreSQL, MySQL, and NoSQL databases (MongoDB, Cassandra). ACID, indexing, partitioning, and replication.","resources":[{"title":"PostgreSQL Tutorial","url":"https://www.postgresqltutorial.com/","type":"docs","free":true},{"title":"MongoDB University","url":"https://university.mongodb.com/","type":"course","free":true}],"children":["de-etl"]},
-    {"id":"de-etl","title":"ETL Fundamentals","icon":"🔄","category":"fundamentals","description":"Extract, Transform, Load patterns — data extraction, cleaning, transformation, and loading into target systems.","resources":[{"title":"ETL Best Practices","url":"https://www.ibm.com/topics/etl","type":"docs","free":true}],"children":["de-python-etl"]},
-    {"id":"de-python-etl","title":"Python ETL Tools","icon":"🔧","category":"tools","description":"Airflow, Prefect, or Dagster for orchestrating data pipelines and workflow management.","resources":[{"title":"Apache Airflow Documentation","url":"https://airflow.apache.org/docs/","type":"docs","free":true},{"title":"Prefect Documentation","url":"https://docs.prefect.io/","type":"docs","free":true}],"children":["de-spark"]},
-    {"id":"de-spark","title":"Apache Spark","icon":"⚡","category":"frameworks","description":"Distributed data processing with PySpark — RDDs, DataFrames, Spark SQL, and optimization.","resources":[{"title":"Spark Official Documentation","url":"https://spark.apache.org/docs/latest/","type":"docs","free":true},{"title":"Databricks Community Edition","url":"https://community.cloud.databricks.com/","type":"interactive","free":true}],"children":["de-streaming"]},
-    {"id":"de-streaming","title":"Stream Processing","icon":"📡","category":"advanced","description":"Real-time data processing with Apache Kafka, Flink, or Spark Streaming.","resources":[{"title":"Apache Kafka Documentation","url":"https://kafka.apache.org/documentation/","type":"docs","free":true},{"title":"Apache Flink Documentation","url":"https://flink.apache.org/docs/stable/","type":"docs","free":true}],"children":["de-warehouse"]},
-    {"id":"de-warehouse","title":"Data Warehousing","icon":"🏢","category":"databases","description":"Data warehouse design — star/snowflake schemas, fact tables, dimensional modeling, and ETL to warehouse.","resources":[{"title":"The Data Warehouse Toolkit (Kimball)","url":"https://www.kimballgroup.com/data-warehouse-education/","type":"docs","free":true},{"title":"dbt Documentation","url":"https://docs.getdbt.com/","type":"docs","free":true}],"children":["de-cloud"]},
-    {"id":"de-cloud","title":"Cloud Data Platforms","icon":"☁️","category":"cloud","description":"AWS (S3, Redshift, Glue), GCP (BigQuery, Dataflow), or Azure (Synapse, Data Factory).","resources":[{"title":"AWS Analytics Services","url":"https://aws.amazon.com/analytics/","type":"docs","free":true},{"title":"BigQuery Documentation","url":"https://cloud.google.com/bigquery/docs","type":"docs","free":true}],"children":["de-orchestration"]},
-    {"id":"de-orchestration","title":"Workflow Orchestration","icon":"📋","category":"devops","description":"Orchestrate complex data workflows with Airflow, Dagster, or Prefect — DAGs, scheduling, monitoring.","resources":[{"title":"Airflow Concepts","url":"https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/","type":"docs","free":true},{"title":"Dagster Documentation","url":"https://docs.dagster.io/","type":"docs","free":true}],"children":["de-quality"]},
-    {"id":"de-quality","title":"Data Quality & Testing","icon":"✅","category":"testing","description":"Data validation, schema testing, anomaly detection, and data quality frameworks (Great Expectations, dbt tests).","resources":[{"title":"Great Expectations","url":"https://docs.greatexpectations.io/","type":"docs","free":true},{"title":"dbt Testing","url":"https://docs.getdbt.com/docs/build/tests","type":"docs","free":true}],"children":["de-security"]},
-    {"id":"de-security","title":"Data Security & Governance","icon":"🔒","category":"security","description":"Data encryption, access control, PII handling, GDPR compliance, and data governance frameworks.","resources":[{"title":"AWS Data Security","url":"https://aws.amazon.com/security/data-protection/","type":"docs","free":true},{"title":"GDPR Official Text","url":"https://gdpr.eu/","type":"docs","free":true}],"children":["de-perf"]},
-    {"id":"de-perf","title":"Data Pipeline Performance","icon":"⚡","category":"advanced","description":"Optimize data pipelines — partitioning, caching, parallelism, incremental loading, and cost optimization.","resources":[{"title":"Spark Tuning Guide","url":"https://spark.apache.org/docs/latest/tuning.html","type":"docs","free":true}],"children":["de-git"]},
-    {"id":"de-git","title":"Git & Version Control for Data","icon":"🔀","category":"tools","description":"Version control data pipelines, dbt projects, and use DVC for data versioning.","resources":[{"title":"DVC Documentation","url":"https://dvc.org/","type":"docs","free":true},{"title":"Pro Git Book","url":"https://git-scm.com/book/en/v2","type":"docs","free":true}],"children":["de-docker"]},
-    {"id":"de-docker","title":"Docker for Data Engineering","icon":"🐳","category":"devops","description":"Containerize data pipelines, run local data stacks with Docker Compose, and container best practices.","resources":[{"title":"Docker Documentation","url":"https://docs.docker.com/","type":"docs","free":true}],"children":["de-kubernetes"]},
-    {"id":"de-kubernetes","title":"Kubernetes for Data","icon":"☸️","category":"devops","description":"Run data infrastructure on Kubernetes — Spark on K8s, Airflow on K8s, and resource management.","resources":[{"title":"Spark on Kubernetes","url":"https://spark.apache.org/docs/latest/running-on-kubernetes.html","type":"docs","free":true}],"children":["de-ml-pipelines"]},
-    {"id":"de-ml-pipelines","title":"ML Data Pipelines","icon":"🤖","category":"advanced","description":"Build data pipelines for ML — feature stores, data versioning, and MLflow integration.","resources":[{"title":"MLflow Documentation","url":"https://mlflow.org/docs/latest/index.html","type":"docs","free":true},{"title":"Feast (Feature Store)","url":"https://docs.feast.dev/","type":"docs","free":true}],"children":["de-api"]},
-    {"id":"de-api","title":"Data APIs","icon":"🔌","category":"tools","description":"Build data APIs with FastAPI, GraphQL, or REST — serve data to downstream applications.","resources":[{"title":"FastAPI Documentation","url":"https://fastapi.tiangolo.com/","type":"docs","free":true}],"children":["de-monitoring"]},
-    {"id":"de-monitoring","title":"Data Pipeline Monitoring","icon":"📊","category":"devops","description":"Monitor pipeline health, data freshness, SLA tracking, and alerting for data issues.","resources":[{"title":"Airflow Monitoring","url":"https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/monitoring.html","type":"docs","free":true},{"title":"Prometheus Documentation","url":"https://prometheus.io/docs/","type":"docs","free":true}],"children":[]},
-    {"id":"de-nosql","title":"NoSQL Deep Dive","icon":"📦","category":"databases","description":"Document stores (MongoDB), key-value (Redis), column-family (Cassandra), and graph databases (Neo4j).","resources":[{"title":"MongoDB University","url":"https://university.mongodb.com/","type":"course","free":true},{"title":"Neo4j GraphAcademy","url":"https://graphacademy.neo4j.com/","type":"course","free":true}],"children":["de-streaming"]},
-    {"id":"de-scheduling","title":"Job Scheduling","icon":"⏰","category":"tools","description":"Cron, Airflow schedules, or cloud schedulers for recurring data jobs and maintenance tasks.","resources":[{"title":"Cron Guide","url":"https://crontab.guru/","type":"docs","free":true}],"children":["de-orchestration"]},
-    {"id":"de-serialization","title":"Data Formats & Serialization","icon":"📄","category":"tools","description":"JSON, CSV, Parquet, Avro, Protobuf — choosing the right format for storage and transfer.","resources":[{"title":"Apache Parquet","url":"https://parquet.apache.org/","type":"docs","free":true},{"title":"Apache Avro","url":"https://avro.apache.org/docs/","type":"docs","free":true}],"children":["de-etl"]},
-    {"id":"de-metadata","title":"Data Catalogs & Lineage","icon":"📚","category":"tools","description":"Data catalogs (Apache Atlas, DataHub), data lineage tracking, and metadata management.","resources":[{"title":"DataHub (LinkedIn)","url":"https://datahubproject.io/","type":"docs","free":true},{"title":"Apache Atlas","url":"https://atlas.apache.org/","type":"docs","free":true}],"children":["de-quality"]},
-    {"id":"de-cost","title":"Cloud Cost Optimization","icon":"💰","category":"advanced","description":"Optimize cloud data costs — right-sizing, reserved capacity, spot instances, and cost monitoring.","resources":[{"title":"AWS Cost Explorer","url":"https://aws.amazon.com/aws-cost-management/aws-cost-explorer/","type":"docs","free":true}],"children":["de-perf"]}
+  "description": "Build data pipelines, warehouses, and infrastructure for analytics.",
+  "icon": "🗃️",
+  "categories": [
+    "fundamentals",
+    "intermediate",
+    "advanced",
+    "tools"
   ],
-  "connections":[["de-python","de-sql"],["de-sql","de-db"],["de-db","de-etl"],["de-etl","de-python-etl"],["de-python-etl","de-spark"],["de-spark","de-streaming"],["de-streaming","de-warehouse"],["de-warehouse","de-cloud"],["de-cloud","de-orchestration"],["de-orchestration","de-quality"],["de-quality","de-security"],["de-security","de-perf"],["de-perf","de-git"],["de-git","de-docker"],["de-docker","de-kubernetes"],["de-kubernetes","de-ml-pipelines"],["de-ml-pipelines","de-api"],["de-api","de-monitoring"],["de-nosql","de-streaming"],["de-scheduling","de-orchestration"],["de-serialization","de-etl"],["de-metadata","de-quality"],["de-cost","de-perf"]]
+  "nodes": [
+    {
+      "id": "de-python",
+      "title": "Python for Data",
+      "icon": "🐍",
+      "category": "fundamentals",
+      "description": "Python for data processing and pipelines.",
+      "resources": [
+        {
+          "title": "Python Docs",
+          "url": "https://docs.python.org/3/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "freeCodeCamp Python",
+          "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-sql"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-sql",
+      "title": "Advanced SQL",
+      "icon": "🗃️",
+      "category": "fundamentals",
+      "description": "Window functions, CTEs, and complex queries.",
+      "resources": [
+        {
+          "title": "SQL Window Functions",
+          "url": "https://www.postgresql.org/docs/current/functions-window.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Mode SQL Tutorial",
+          "url": "https://mode.com/sql-tutorial/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-modeling"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-modeling",
+      "title": "Data Modeling",
+      "icon": "🏗️",
+      "category": "fundamentals",
+      "description": "Dimensional modeling, star schema, and snowflake.",
+      "resources": [
+        {
+          "title": "Data Modeling Guide",
+          "url": "https://www.guru99.com/data-warehouse-dimensional-modeling.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "dbt Modeling",
+          "url": "https://docs.getdbt.com/best-practices/building-models",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-etl"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-etl",
+      "title": "ETL Fundamentals",
+      "icon": "🔄",
+      "category": "fundamentals",
+      "description": "Extract, transform, load processes.",
+      "resources": [
+        {
+          "title": "ETL Guide",
+          "url": "https://www.ibm.com/topics/etl",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "ETL Best Practices",
+          "url": "https://www.astronomer.io/guides/etl-best-practices/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-elt"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-elt",
+      "title": "ELT & Modern Data Stack",
+      "icon": "⚡",
+      "category": "intermediate",
+      "description": "Modern ELT with cloud warehouses.",
+      "resources": [
+        {
+          "title": "Fivetran Docs",
+          "url": "https://fivetran.com/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "dbt Docs",
+          "url": "https://docs.getdbt.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-spark"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-spark",
+      "title": "Apache Spark",
+      "icon": "🔥",
+      "category": "intermediate",
+      "description": "Distributed data processing.",
+      "resources": [
+        {
+          "title": "Spark Docs",
+          "url": "https://spark.apache.org/docs/latest/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Spark Tutorial",
+          "url": "https://spark.apache.org/docs/latest/quick-start.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-flink"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-flink",
+      "title": "Apache Flink",
+      "icon": "🌊",
+      "category": "advanced",
+      "description": "Stream processing framework.",
+      "resources": [
+        {
+          "title": "Flink Docs",
+          "url": "https://flink.apache.org/docs/stable/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Flink Tutorial",
+          "url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/try-flink/overview/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-kafka"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-kafka",
+      "title": "Apache Kafka",
+      "icon": "📨",
+      "category": "intermediate",
+      "description": "Distributed event streaming platform.",
+      "resources": [
+        {
+          "title": "Kafka Docs",
+          "url": "https://kafka.apache.org/documentation/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Kafka Tutorial",
+          "url": "https://kafka.apache.org/quickstart",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-airflow"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-airflow",
+      "title": "Apache Airflow",
+      "icon": "🌬️",
+      "category": "intermediate",
+      "description": "Workflow orchestration platform.",
+      "resources": [
+        {
+          "title": "Airflow Docs",
+          "url": "https://airflow.apache.org/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Airflow Tutorial",
+          "url": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-dbt"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-dbt",
+      "title": "dbt",
+      "icon": "🔧",
+      "category": "intermediate",
+      "description": "Data transformation in the warehouse.",
+      "resources": [
+        {
+          "title": "dbt Docs",
+          "url": "https://docs.getdbt.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "dbt Learn",
+          "url": "https://courses.getdbt.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-warehouse"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-warehouse",
+      "title": "Data Warehousing",
+      "icon": "🏛️",
+      "category": "fundamentals",
+      "description": "Snowflake, BigQuery, and Redshift.",
+      "resources": [
+        {
+          "title": "Snowflake Docs",
+          "url": "https://docs.snowflake.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "BigQuery Docs",
+          "url": "https://cloud.google.com/bigquery/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-snowflake"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-snowflake",
+      "title": "Snowflake",
+      "icon": "❄️",
+      "category": "intermediate",
+      "description": "Cloud data platform.",
+      "resources": [
+        {
+          "title": "Snowflake University",
+          "url": "https://www.snowflake.com/developers/learn/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Snowflake Docs",
+          "url": "https://docs.snowflake.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-bigquery"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-bigquery",
+      "title": "Google BigQuery",
+      "icon": "📊",
+      "category": "intermediate",
+      "description": "Serverless data warehouse.",
+      "resources": [
+        {
+          "title": "BigQuery Docs",
+          "url": "https://cloud.google.com/bigquery/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "BigQuery Tutorial",
+          "url": "https://cloud.google.com/bigquery/docs/tutorials",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-redshift"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-redshift",
+      "title": "Amazon Redshift",
+      "icon": "🟥",
+      "category": "intermediate",
+      "description": "AWS data warehouse service.",
+      "resources": [
+        {
+          "title": "Redshift Docs",
+          "url": "https://docs.aws.amazon.com/redshift/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Redshift Tutorial",
+          "url": "https://docs.aws.amazon.com/redshift/latest/gsg/tutorial-loading-data.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-lake"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-lake",
+      "title": "Data Lakes",
+      "icon": "🏞️",
+      "category": "advanced",
+      "description": "S3-based data lakes and architecture.",
+      "resources": [
+        {
+          "title": "AWS Data Lake",
+          "url": "https://aws.amazon.com/big-data/datalakes-and-analytics/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Delta Lake",
+          "url": "https://delta.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-delta"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-delta",
+      "title": "Delta Lake",
+      "icon": "🔷",
+      "category": "advanced",
+      "description": "ACID transactions on data lakes.",
+      "resources": [
+        {
+          "title": "Delta Lake Docs",
+          "url": "https://docs.delta.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Delta Lake Guide",
+          "url": "https://delta.io/learn/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-streaming"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-streaming",
+      "title": "Streaming Data",
+      "icon": "⚡",
+      "category": "advanced",
+      "description": "Real-time data pipelines.",
+      "resources": [
+        {
+          "title": "Kafka Streams",
+          "url": "https://kafka.apache.org/documentation/streams/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Spark Streaming",
+          "url": "https://spark.apache.org/docs/latest/streaming-programming-guide.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-quality"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-quality",
+      "title": "Data Quality",
+      "icon": "✅",
+      "category": "intermediate",
+      "description": "Testing and validating data.",
+      "resources": [
+        {
+          "title": "Great Expectations",
+          "url": "https://docs.greatexpectations.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "dbt Tests",
+          "url": "https://docs.getdbt.com/guides/building-a-dbt-project/testing-and-documenting",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-orchestration"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-orchestration",
+      "title": "Orchestration",
+      "icon": "🎵",
+      "category": "advanced",
+      "description": "Workflow scheduling and management.",
+      "resources": [
+        {
+          "title": "Airflow Docs",
+          "url": "https://airflow.apache.org/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Prefect Docs",
+          "url": "https://docs.prefect.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-cicd"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-cicd",
+      "title": "CI/CD for Data",
+      "icon": "🔄",
+      "category": "tools",
+      "description": "Testing and deploying data pipelines.",
+      "resources": [
+        {
+          "title": "Data CI/CD Guide",
+          "url": "https://www.fivetran.com/blog/data-ci-cd",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "dbt Cloud CI",
+          "url": "https://docs.getdbt.com/docs/deploy/ci-jobs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-monitoring-de"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-monitoring-de",
+      "title": "Monitoring",
+      "icon": "📊",
+      "category": "tools",
+      "description": "Pipeline monitoring and alerting.",
+      "resources": [
+        {
+          "title": "Airflow Monitoring",
+          "url": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/index.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Datadog",
+          "url": "https://docs.datadoghq.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-security-de"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-security-de",
+      "title": "Data Security",
+      "icon": "🔒",
+      "category": "tools",
+      "description": "Encryption, masking, and access control.",
+      "resources": [
+        {
+          "title": "AWS Data Security",
+          "url": "https://aws.amazon.com/security/security-programs/data-protection/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Data Governance",
+          "url": "https://www.ibm.com/topics/data-governance",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-governance"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-governance",
+      "title": "Data Governance",
+      "icon": "📋",
+      "category": "tools",
+      "description": "Policies, quality, and compliance.",
+      "resources": [
+        {
+          "title": "DAMA Guide",
+          "url": "https://www.dama.org/cpages/home",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Data Governance Guide",
+          "url": "https://www.ibm.com/topics/data-governance",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-catalog"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-catalog",
+      "title": "Data Catalog",
+      "icon": "📚",
+      "category": "tools",
+      "description": "Data discovery and metadata.",
+      "resources": [
+        {
+          "title": "Apache Atlas",
+          "url": "https://atlas.apache.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "DataHub",
+          "url": "https://datahubproject.io/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-lineage"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-lineage",
+      "title": "Data Lineage",
+      "icon": "🔗",
+      "category": "advanced",
+      "description": "Tracking data flow across systems.",
+      "resources": [
+        {
+          "title": "Data Lineage Guide",
+          "url": "https://www.atlan.com/data-lineage/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OpenLineage",
+          "url": "https://openlineage.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-testing-de"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-testing-de",
+      "title": "Data Testing",
+      "icon": "🧪",
+      "category": "tools",
+      "description": "Testing data transformations.",
+      "resources": [
+        {
+          "title": "dbt Testing",
+          "url": "https://docs.getdbt.com/guides/building-a-dbt-project/testing-and-documenting",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Great Expectations",
+          "url": "https://docs.greatexpectations.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-aws-data"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-aws-data",
+      "title": "AWS Data Services",
+      "icon": "☁️",
+      "category": "tools",
+      "description": "AWS data and analytics services.",
+      "resources": [
+        {
+          "title": "AWS Analytics",
+          "url": "https://aws.amazon.com/analytics/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "AWS Glue",
+          "url": "https://docs.aws.amazon.com/glue/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-gcp-data"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-gcp-data",
+      "title": "GCP Data Services",
+      "icon": "🌐",
+      "category": "tools",
+      "description": "GCP data and analytics.",
+      "resources": [
+        {
+          "title": "GCP Data",
+          "url": "https://cloud.google.com/products/data",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Dataflow Docs",
+          "url": "https://cloud.google.com/dataflow/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-cost"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-cost",
+      "title": "Cost Optimization",
+      "icon": "💰",
+      "category": "tools",
+      "description": "Optimizing data infrastructure costs.",
+      "resources": [
+        {
+          "title": "Snowflake Cost",
+          "url": "https://docs.snowflake.com/en/user-guide/cost-optimization",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "BigQuery Cost",
+          "url": "https://cloud.google.com/bigquery/pricing",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-mongodb-de"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-mongodb-de",
+      "title": "MongoDB for Data",
+      "icon": "🍃",
+      "category": "fundamentals",
+      "description": "Document-based data storage.",
+      "resources": [
+        {
+          "title": "MongoDB Docs",
+          "url": "https://www.mongodb.com/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MongoDB University",
+          "url": "https://university.mongodb.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-parquet"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-parquet",
+      "title": "Parquet & File Formats",
+      "icon": "📁",
+      "category": "intermediate",
+      "description": "Columnar storage formats.",
+      "resources": [
+        {
+          "title": "Parquet Docs",
+          "url": "https://parquet.apache.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "ORC Format",
+          "url": "https://orc.apache.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "de-schedules"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-schedules",
+      "title": "Scheduling",
+      "icon": "⏰",
+      "category": "tools",
+      "description": "Cron, scheduling patterns, and SLAs.",
+      "resources": [
+        {
+          "title": "Airflow Scheduling",
+          "url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Cron Guide",
+          "url": "https://crontab.guru/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-polars",
+      "title": "Polars & DuckDB",
+      "icon": "⚡",
+      "category": "fundamentals",
+      "description": "Fast data processing libraries.",
+      "resources": [
+        {
+          "title": "Polars",
+          "url": "https://pola.rs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "DuckDB",
+          "url": "https://duckdb.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-api-extract",
+      "title": "API Data Extraction",
+      "icon": "🔗",
+      "category": "intermediate",
+      "description": "Extracting data from APIs.",
+      "resources": [
+        {
+          "title": "Requests",
+          "url": "https://requests.readthedocs.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "FastAPI",
+          "url": "https://fastapi.tiangolo.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-schema-reg",
+      "title": "Schema Registry",
+      "icon": "📋",
+      "category": "intermediate",
+      "description": "Schema management.",
+      "resources": [
+        {
+          "title": "Confluent Schema Registry",
+          "url": "https://docs.confluent.io/platform/current/schema-registry/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Avro",
+          "url": "https://avro.apache.org/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-dataops",
+      "title": "DataOps",
+      "icon": "🔄",
+      "category": "tools",
+      "description": "Data operations.",
+      "resources": [
+        {
+          "title": "DataOps",
+          "url": "https://www.dataops.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "DataOps Manifesto",
+          "url": "https://www.dataops.org/manifesto.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-airflow-adv",
+      "title": "Airflow Advanced",
+      "icon": "🌬️",
+      "category": "advanced",
+      "description": "Custom operators and hooks.",
+      "resources": [
+        {
+          "title": "Airflow Operators",
+          "url": "https://airflow.apache.org/docs/apache-airflow/stable/howto/operator/index.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-spark-sql",
+      "title": "Spark SQL",
+      "icon": "🔥",
+      "category": "advanced",
+      "description": "SQL interface for Spark.",
+      "resources": [
+        {
+          "title": "Spark SQL",
+          "url": "https://spark.apache.org/docs/latest/sql-programming-guide.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-kafka-connect",
+      "title": "Kafka Connect",
+      "icon": "📨",
+      "category": "intermediate",
+      "description": "Connectors for Kafka.",
+      "resources": [
+        {
+          "title": "Kafka Connect",
+          "url": "https://kafka.apache.org/documentation/#connect",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-data-vault",
+      "title": "Data Vault",
+      "icon": "🏦",
+      "category": "advanced",
+      "description": "Data Vault modeling.",
+      "resources": [
+        {
+          "title": "Data Vault Alliance",
+          "url": "https://www.datavaultalliance.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-privacy",
+      "title": "Data Privacy",
+      "icon": "🔐",
+      "category": "tools",
+      "description": "GDPR and anonymization.",
+      "resources": [
+        {
+          "title": "GDPR",
+          "url": "https://gdpr.eu/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-terraform-de",
+      "title": "Terraform for Data",
+      "icon": "🏗️",
+      "category": "tools",
+      "description": "IaC for data infrastructure.",
+      "resources": [
+        {
+          "title": "Terraform",
+          "url": "https://developer.hashicorp.com/terraform/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-docker-de",
+      "title": "Docker for Data",
+      "icon": "🐳",
+      "category": "tools",
+      "description": "Containerizing pipelines.",
+      "resources": [
+        {
+          "title": "Docker",
+          "url": "https://docs.docker.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-debezium",
+      "title": "Change Data Capture",
+      "icon": "🔄",
+      "category": "advanced",
+      "description": "CDC with Debezium.",
+      "resources": [
+        {
+          "title": "Debezium",
+          "url": "https://debezium.io/documentation/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-dbt-adv",
+      "title": "dbt Advanced",
+      "icon": "🔧",
+      "category": "intermediate",
+      "description": "dbt macros, tests, and packages.",
+      "resources": [
+        {
+          "title": "dbt Macros",
+          "url": "https://docs.getdbt.com/reference/dbt-jinja-functions/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "dbt Packages",
+          "url": "https://docs.getdbt.com/docs/build/packages",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-scd",
+      "title": "Slowly Changing Dimensions",
+      "icon": "📈",
+      "category": "intermediate",
+      "description": "SCD Type 1, 2, 3.",
+      "resources": [
+        {
+          "title": "SCD Guide",
+          "url": "https://www.kimballgroup.com/data-warehouse-education/kimball-techniques/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "dbt SCD",
+          "url": "https://docs.getdbt.com/reference/resource-configs/incremental_strategy",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-airflow-plugins",
+      "title": "Airflow Plugins",
+      "icon": "🧩",
+      "category": "advanced",
+      "description": "Custom Airflow plugins.",
+      "resources": [
+        {
+          "title": "Airflow Plugins",
+          "url": "https://airflow.apache.org/docs/apache-airflow/stable/howto/custom-operator.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-bq-ml",
+      "title": "BigQuery ML",
+      "icon": "🤖",
+      "category": "advanced",
+      "description": "ML inside BigQuery.",
+      "resources": [
+        {
+          "title": "BQ ML",
+          "url": "https://cloud.google.com/bigquery-ml/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-data-quality-adv",
+      "title": "Data Quality Advanced",
+      "icon": "✅",
+      "category": "tools",
+      "description": "Great Expectations advanced.",
+      "resources": [
+        {
+          "title": "Great Expectations",
+          "url": "https://docs.greatexpectations.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Soda",
+          "url": "https://docs.soda.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "de-metadata",
+      "title": "Metadata Management",
+      "icon": "🏷️",
+      "category": "tools",
+      "description": "Managing data definitions.",
+      "resources": [
+        {
+          "title": "OpenMetadata",
+          "url": "https://openmetadata.org/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "DataHub",
+          "url": "https://datahubproject.io/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    }
+  ]
 }

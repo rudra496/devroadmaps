@@ -1,35 +1,1143 @@
 {
-  "id": "blockchain",
   "title": "Blockchain / Web3 Developer",
-  "description": "Build decentralized applications and smart contracts on blockchain. From fundamentals to DeFi and security auditing, master the Web3 development stack.",
+  "description": "Build decentralized applications and smart contracts on blockchain.",
   "icon": "⛓️",
-  "color": "#6366f1",
-  "time": "6-12 months",
-  "difficulty": "Beginner to Advanced",
-  "nodes": [
-    {"id":"bc-fundamentals","title":"Blockchain Fundamentals","icon":"📚","category":"fundamentals","description":"How blockchain works — distributed ledger, consensus mechanisms, blocks, transactions, and decentralization.","resources":[{"title":"Blockchain Demo","url":"https://anders.com/blockchain/","type":"interactive","free":true},{"title":"Ethereum Whitepaper","url":"https://ethereum.org/en/whitepaper/","type":"docs","free":true}],"children":["bc-crypto"]},
-    {"id":"bc-crypto","title":"Cryptography Basics","icon":"🔐","category":"fundamentals","description":"Public/private keys, hashing, digital signatures, and elliptic curve cryptography.","resources":[{"title":"Khan Academy Cryptography","url":"https://www.khanacademy.org/computing/computer-science/cryptography","type":"course","free":true}],"children":["bc-ethereum"]},
-    {"id":"bc-ethereum","title":"Ethereum Ecosystem","icon":"💎","category":"fundamentals","description":"Ethereum architecture, EVM, gas, accounts, transactions, and the Ethereum Virtual Machine.","resources":[{"title":"Ethereum Documentation","url":"https://ethereum.org/en/developers/docs/","type":"docs","free":true},{"title":"Ethereum.org Learn","url":"https://ethereum.org/en/learn/","type":"course","free":true}],"children":["bc-solidity"]},
-    {"id":"bc-solidity","title":"Solidity Programming","icon":"📝","category":"frameworks","description":"Write smart contracts with Solidity — data types, functions, modifiers, events, and inheritance.","resources":[{"title":"Solidity Docs","url":"https://docs.soliditylang.org/","type":"docs","free":true},{"title":"CryptoZombies","url":"https://cryptozombies.io/","type":"course","free":true},{"title":"Solidity by Example","url":"https://solidity-by-example.org/","type":"docs","free":true}],"children":["bc-patterns"]},
-    {"id":"bc-patterns","title":"Smart Contract Patterns","icon":"🧩","category":"frameworks","description":"ERC-20 tokens, ERC-721 NFTs, ERC-1155, factory patterns, proxy patterns, and upgradeable contracts.","resources":[{"title":"OpenZeppelin Contracts","url":"https://docs.openzeppelin.com/contracts/","type":"docs","free":true},{"title":"EIP Standards","url":"https://eips.ethereum.org/","type":"docs","free":true}],"children":["bc-tools"]},
-    {"id":"bc-tools","title":"Development Tools","icon":"🛠️","category":"tools","description":"Hardhat, Foundry, Remix, Truffle — development frameworks for writing, testing, and deploying smart contracts.","resources":[{"title":"Hardhat Documentation","url":"https://hardhat.org/docs","type":"docs","free":true},{"title":"Foundry Book","url":"https://book.getfoundry.sh/","type":"docs","free":true}],"children":["bc-testing"]},
-    {"id":"bc-testing","title":"Smart Contract Testing","icon":"🧪","category":"testing","description":"Unit testing, integration testing, forked mainnet testing, and gas optimization with Hardhat/Foundry.","resources":[{"title":"Hardhat Testing","url":"https://hardhat.org/hardhat-runner/docs/guides/test-contracts","type":"docs","free":true},{"title":"Foundry Testing","url":"https://book.getfoundry.sh/forge/writing-tests","type":"docs","free":true}],"children":["bc-security"]},
-    {"id":"bc-security","title":"Smart Contract Security","icon":"🛡️","category":"security","description":"Reentrancy, overflow, front-running, flash loan attacks, and security best practices for smart contracts.","resources":[{"title":"Smart Contract Security (Consensys)","url":"https://consensys.github.io/smart-contract-best-practices/","type":"docs","free":true},{"title":"Damn Vulnerable DeFi","url":"https://www.damnvulnerabledefi.xyz/","type":"interactive","free":true}],"children":["bc-frontend"]},
-    {"id":"bc-frontend","title":"DApp Frontend (ethers.js/web3.js)","icon":"🌐","category":"frameworks","description":"Connect frontend to blockchain — ethers.js, web3.js, wallet connection, and reading/writing contract state.","resources":[{"title":"ethers.js Documentation","url":"https://docs.ethers.org/v6/","type":"docs","free":true},{"title":"wagmi + RainbowKit","url":"https://wagmi.sh/","type":"docs","free":true}],"children":["bc-defi"]},
-    {"id":"bc-defi","title":"DeFi Fundamentals","icon":"🏦","category":"advanced","description":"Decentralized exchanges, lending protocols, yield farming, liquidity pools, and AMM mechanisms.","resources":[{"title":"DeFi MOOC (YouTube)","url":"https://www.youtube.com/results?search_query=defi+explained","type":"video","free":true},{"title":"Uniswap Docs","url":"https://docs.uniswap.org/","type":"docs","free":true}],"children":["bc-nft"]},
-    {"id":"bc-nft","title":"NFTs & Digital Assets","icon":"🖼️","category":"advanced","description":"NFT standards, metadata, marketplaces, royalty standards (ERC-2981), and on-chain vs off-chain storage.","resources":[{"title":"OpenSea Developer Docs","url":"https://docs.opensea.io/","type":"docs","free":true},{"title":"IPFS Documentation","url":"https://docs.ipfs.tech/","type":"docs","free":true}],"children":["bc-governance"]},
-    {"id":"bc-governance","title":"DAOs & Governance","icon":"🏛️","category":"advanced","description":"Decentralized autonomous organizations — governance tokens, voting mechanisms, and treasury management.","resources":[{"title":"Aragon Documentation","url":"https://docs.aragon.org/","type":"docs","free":true},{"title":"Snapshot Documentation","url":"https://docs.snapshot.org/","type":"docs","free":true}],"children":["bc-layer2"]},
-    {"id":"bc-layer2","title":"Layer 2 & Scaling","icon":"⚡","category":"advanced","description":"Polygon, Arbitrum, Optimism, rollups, state channels, and sidechains for scaling Ethereum.","resources":[{"title":"L2Beat","url":"https://l2beat.com/","type":"docs","free":true},{"title":"Polygon Documentation","url":"https://polygon.technology/docs/","type":"docs","free":true}],"children":["bc-cross-chain"]},
-    {"id":"bc-cross-chain","title":"Cross-Chain & Bridges","icon":"🌉","category":"advanced","description":"Cross-chain bridges, interoperability protocols, and multi-chain development.","resources":[{"title":"Chainlink Documentation","url":"https://docs.chain.link/","type":"docs","free":true}],"children":["bc-auditing"]},
-    {"id":"bc-auditing","title":"Security Auditing","icon":"🔍","category":"security","description":"Formal verification, static analysis (Slither), manual review, and bug bounty programs.","resources":[{"title":"Slither (Trail of Bits)","url":"https://github.com/crytic/slither","type":"docs","free":true},{"title":"Code4rena","url":"https://code4rena.com/","type":"docs","free":true}],"children":["bc-deploy"]},
-    {"id":"bc-deploy","title":"Deployment & Verification","icon":"🚀","category":"deployment","description":"Deploy contracts to testnets and mainnets, verify source code, and manage contract lifecycle.","resources":[{"title":"Etherscan Contract Verification","url":"https://docs.etherscan.io/","type":"docs","free":true},{"title":"Alchemy Documentation","url":"https://docs.alchemy.com/","type":"docs","free":true}],"children":[]},
-    {"id":"bc-ipfs","title":"Decentralized Storage","icon":"💾","category":"tools","description":"IPFS, Arweave, Filecoin for decentralized file storage and data persistence.","resources":[{"title":"IPFS Documentation","url":"https://docs.ipfs.tech/","type":"docs","free":true},{"title":"Arweave Documentation","url":"https://docs.arweave.org/","type":"docs","free":true}],"children":["bc-frontend"]},
-    {"id":"bc-oracles","title":"Oracles (Chainlink)","icon":"🔮","category":"tools","description":"Chainlink oracles — price feeds, VRF, and connecting smart contracts to real-world data.","resources":[{"title":"Chainlink Documentation","url":"https://docs.chain.link/","type":"docs","free":true},{"title":"Chainlink VRF","url":"https://docs.chain.link/vrf/v2/introduction","type":"docs","free":true}],"children":["bc-defi"]},
-    {"id":"bc-gas","title":"Gas Optimization","icon":"⛽","category":"advanced","description":"Reduce gas costs — storage optimization, batch operations, and efficient data structures.","resources":[{"title":"Gas Optimization Guide","url":"https://github.com/ethereum/solidity/blob/develop/docs/gas-optimization.rst","type":"docs","free":true}],"children":["bc-auditing"]},
-    {"id":"bc-standards","title":"Ethereum Standards (EIPs)","icon":"📋","category":"fundamentals","description":"Ethereum Improvement Proposals — understand the standards that define the Ethereum ecosystem.","resources":[{"title":"EIPs Repository","url":"https://eips.ethereum.org/","type":"docs","free":true}],"children":["bc-patterns"]},
-    {"id":"bc-wallets","title":"Wallet Integration","icon":"👛","category":"tools","description":"MetaMask, WalletConnect, and wallet adapter patterns for DApp user authentication.","resources":[{"title":"MetaMask Documentation","url":"https://docs.metamask.io/","type":"docs","free":true},{"title":"WalletConnect Docs","url":"https://docs.walletconnect.com/","type":"docs","free":true}],"children":["bc-frontend"]},
-    {"id":"bc-fork","title":"Testnets & Forking","icon":"🔄","category":"tools","description":"Local development with forked mainnets, testnet deployment, and testing environments.","resources":[{"title":"Hardhat Network Forking","url":"https://hardhat.org/hardhat-network/docs/guides/forking-other-networks","type":"docs","free":true}],"children":["bc-testing"]},
-    {"id":"bc-altchains","title":"Alternative Chains","icon":"🔗","category":"advanced","description":"Solana, Cosmos, Polkadot — explore non-EVM ecosystems and their development paradigms.","resources":[{"title":"Solana Documentation","url":"https://docs.solana.com/","type":"docs","free":true},{"title":"Cosmos Documentation","url":"https://docs.cosmos.network/","type":"docs","free":true}],"children":["bc-cross-chain"]}
+  "categories": [
+    "fundamentals",
+    "intermediate",
+    "advanced",
+    "tools"
   ],
-  "connections":[["bc-fundamentals","bc-crypto"],["bc-crypto","bc-ethereum"],["bc-ethereum","bc-solidity"],["bc-solidity","bc-patterns"],["bc-patterns","bc-tools"],["bc-tools","bc-testing"],["bc-testing","bc-security"],["bc-security","bc-frontend"],["bc-frontend","bc-defi"],["bc-defi","bc-nft"],["bc-nft","bc-governance"],["bc-governance","bc-layer2"],["bc-layer2","bc-cross-chain"],["bc-cross-chain","bc-auditing"],["bc-auditing","bc-deploy"],["bc-ipfs","bc-frontend"],["bc-oracles","bc-defi"],["bc-gas","bc-auditing"],["bc-standards","bc-patterns"],["bc-wallets","bc-frontend"],["bc-fork","bc-testing"],["bc-altchains","bc-cross-chain"]]
+  "nodes": [
+    {
+      "id": "bc-fundamentals",
+      "title": "Blockchain Fundamentals",
+      "icon": "⛓️",
+      "category": "fundamentals",
+      "description": "Distributed ledgers, consensus, and blocks.",
+      "resources": [
+        {
+          "title": "Blockchain Guide",
+          "url": "https://www.investopedia.com/blockchain-explained-what-is-it/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "freeCodeCamp Blockchain",
+          "url": "https://www.freecodecamp.org/news/learn-blockchain-solidity-full-stack-web3-development/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Blockgeeks",
+          "url": "https://blockgeeks.com/guides/what-is-blockchain-technology/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-crypto"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-crypto",
+      "title": "Cryptography Basics",
+      "icon": "🔐",
+      "category": "fundamentals",
+      "description": "Hashing, digital signatures, and public key crypto.",
+      "resources": [
+        {
+          "title": "Crypto 101",
+          "url": "https://www.crypto101.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Practical Crypto",
+          "url": "https://www.youtube.com/watch?v=ZaHdrD0Ewsw",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-ethereum"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-ethereum",
+      "title": "Ethereum",
+      "icon": "💎",
+      "category": "fundamentals",
+      "description": "Ethereum network, accounts, and transactions.",
+      "resources": [
+        {
+          "title": "Ethereum Docs",
+          "url": "https://ethereum.org/en/developers/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Ethereum Whitepaper",
+          "url": "https://ethereum.org/en/whitepaper/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-solidity"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-solidity",
+      "title": "Solidity",
+      "icon": "📝",
+      "category": "intermediate",
+      "description": "Smart contract programming language.",
+      "resources": [
+        {
+          "title": "Solidity Docs",
+          "url": "https://docs.soliditylang.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "CryptoZombies",
+          "url": "https://cryptozombies.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Solidity by Example",
+          "url": "https://solidity-by-example.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-smart-contracts"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-smart-contracts",
+      "title": "Smart Contracts",
+      "icon": "📜",
+      "category": "intermediate",
+      "description": "Writing, deploying, and interacting with contracts.",
+      "resources": [
+        {
+          "title": "Smart Contract Guide",
+          "url": "https://ethereum.org/en/developers/docs/smart-contracts/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Remix IDE",
+          "url": "https://remix.ethereum.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-testing-sc"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-testing-sc",
+      "title": "Smart Contract Testing",
+      "icon": "🧪",
+      "category": "intermediate",
+      "description": "Foundry, Hardhat, and testing frameworks.",
+      "resources": [
+        {
+          "title": "Foundry Book",
+          "url": "https://book.getfoundry.sh/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Hardhat Docs",
+          "url": "https://hardhat.org/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-security-audit"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-security-audit",
+      "title": "Security Auditing",
+      "icon": "🛡️",
+      "category": "advanced",
+      "description": "Smart contract security and vulnerability detection.",
+      "resources": [
+        {
+          "title": "SWC Registry",
+          "url": "https://swcregistry.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OpenZeppelin Security",
+          "url": "https://docs.openzeppelin.com/contracts/4.x/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Slither",
+          "url": "https://github.com/crytic/slither",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-defi"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-defi",
+      "title": "DeFi",
+      "icon": "🏦",
+      "category": "advanced",
+      "description": "Decentralized finance protocols.",
+      "resources": [
+        {
+          "title": "DeFi Guide",
+          "url": "https://ethereum.org/en/defi/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "DeFi MOOC",
+          "url": "https://www.defi-mooc.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-nfts"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-nfts",
+      "title": "NFTs",
+      "icon": "🖼️",
+      "category": "advanced",
+      "description": "Non-fungible token standards and marketplaces.",
+      "resources": [
+        {
+          "title": "NFT Guide",
+          "url": "https://ethereum.org/en/nft/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "OpenZeppelin ERC-721",
+          "url": "https://docs.openzeppelin.com/contracts/4.x/erc721",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-daos"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-daos",
+      "title": "DAOs",
+      "icon": "🏛️",
+      "category": "advanced",
+      "description": "Decentralized autonomous organizations.",
+      "resources": [
+        {
+          "title": "DAO Guide",
+          "url": "https://ethereum.org/en/dao/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Aragon Docs",
+          "url": "https://docs.aragon.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-ipfs"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-ipfs",
+      "title": "IPFS & Storage",
+      "icon": "📦",
+      "category": "intermediate",
+      "description": "Decentralized file storage.",
+      "resources": [
+        {
+          "title": "IPFS Docs",
+          "url": "https://docs.ipfs.tech/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Filecoin Docs",
+          "url": "https://docs.filecoin.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-the-graph"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-the-graph",
+      "title": "The Graph",
+      "icon": "📊",
+      "category": "intermediate",
+      "description": "Indexing blockchain data.",
+      "resources": [
+        {
+          "title": "The Graph Docs",
+          "url": "https://thegraph.com/docs/en/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "The Graph Tutorial",
+          "url": "https://thegraph.com/docs/en/developing/creating-a-subgraph/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-frontend-integration"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-frontend-integration",
+      "title": "Web3 Frontend",
+      "icon": "🌐",
+      "category": "intermediate",
+      "description": "ethers.js, web3.js, and wallet connections.",
+      "resources": [
+        {
+          "title": "ethers.js Docs",
+          "url": "https://docs.ethers.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "web3.js Docs",
+          "url": "https://web3js.readthedocs.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Wagmi Docs",
+          "url": "https://wagmi.sh/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-wallets"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-wallets",
+      "title": "Wallet Integration",
+      "icon": "👛",
+      "category": "intermediate",
+      "description": "MetaMask, WalletConnect, and wallet providers.",
+      "resources": [
+        {
+          "title": "MetaMask Docs",
+          "url": "https://docs.metamask.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "WalletConnect",
+          "url": "https://walletconnect.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-gas"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-gas",
+      "title": "Gas Optimization",
+      "icon": "⛽",
+      "category": "advanced",
+      "description": "Reducing gas costs in smart contracts.",
+      "resources": [
+        {
+          "title": "Gas Optimization Guide",
+          "url": "https://book.getfoundry.sh/forge/gas-reports",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Gas Optimization Tips",
+          "url": "https://www.trufflesuite.com/docs/truffle/gas-usage-tips",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-l2"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-l2",
+      "title": "Layer 2",
+      "icon": "🏗️",
+      "category": "advanced",
+      "description": "Rollups, sidechains, and scaling solutions.",
+      "resources": [
+        {
+          "title": "L2 Guide",
+          "url": "https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Optimism Docs",
+          "url": "https://optimism.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Arbitrum Docs",
+          "url": "https://docs.arbitrum.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-cross-chain"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-cross-chain",
+      "title": "Cross-chain",
+      "icon": "🔗",
+      "category": "advanced",
+      "description": "Bridges and cross-chain protocols.",
+      "resources": [
+        {
+          "title": "Cross-chain Guide",
+          "url": "https://ethereum.org/en/developers/docs/bridges/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Chainlink Docs",
+          "url": "https://docs.chain.link/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-token-standards"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-token-standards",
+      "title": "Token Standards",
+      "icon": "🪙",
+      "category": "intermediate",
+      "description": "ERC-20, ERC-721, ERC-1155 standards.",
+      "resources": [
+        {
+          "title": "OpenZeppelin Contracts",
+          "url": "https://docs.openzeppelin.com/contracts/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "EIPs",
+          "url": "https://eips.ethereum.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-governance"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-governance",
+      "title": "Governance",
+      "icon": "🗳️",
+      "category": "advanced",
+      "description": "On-chain governance and voting.",
+      "resources": [
+        {
+          "title": "Snapshot Docs",
+          "url": "https://docs.snapshot.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Tally Docs",
+          "url": "https://www.withtally.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-mev"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-mev",
+      "title": "MEV",
+      "icon": "⚡",
+      "category": "advanced",
+      "description": "Maximal extractable value and flashbots.",
+      "resources": [
+        {
+          "title": "Flashbots Docs",
+          "url": "https://docs.flashbots.net/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "MEV Explained",
+          "url": "https://ethereum.org/en/developers/docs/mev/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-tooling"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-tooling",
+      "title": "Development Tools",
+      "icon": "🔧",
+      "category": "tools",
+      "description": "Remix, Tenderly, Hardhat, and debugging.",
+      "resources": [
+        {
+          "title": "Remix IDE",
+          "url": "https://remix.ethereum.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Tenderly",
+          "url": "https://tenderly.co/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Hardhat",
+          "url": "https://hardhat.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-rust"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-rust",
+      "title": "Rust for Web3",
+      "icon": "🦀",
+      "category": "advanced",
+      "description": "Rust for blockchain development.",
+      "resources": [
+        {
+          "title": "Rust Book",
+          "url": "https://doc.rust-lang.org/book/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Rustlings",
+          "url": "https://github.com/rust-lang/rustlings",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-substrate"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-substrate",
+      "title": "Substrate",
+      "icon": "🏗️",
+      "category": "advanced",
+      "description": "Building custom blockchains.",
+      "resources": [
+        {
+          "title": "Substrate Docs",
+          "url": "https://docs.substrate.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Substrate Tutorial",
+          "url": "https://docs.substrate.io/tutorials/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-solana"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-solana",
+      "title": "Solana",
+      "icon": "🟣",
+      "category": "advanced",
+      "description": "High-performance blockchain.",
+      "resources": [
+        {
+          "title": "Solana Docs",
+          "url": "https://docs.solana.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Solana Cookbook",
+          "url": "https://solanacookbook.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-move"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-move",
+      "title": "Move Language",
+      "icon": "📍",
+      "category": "advanced",
+      "description": "Resource-oriented programming for Sui/Aptos.",
+      "resources": [
+        {
+          "title": "Move Book",
+          "url": "https://move-language.github.io/move/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Sui Docs",
+          "url": "https://docs.sui.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-eth-api"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-eth-api",
+      "title": "Ethereum JSON-RPC",
+      "icon": "📡",
+      "category": "intermediate",
+      "description": "Interacting with Ethereum nodes.",
+      "resources": [
+        {
+          "title": "JSON-RPC Docs",
+          "url": "https://ethereum.org/en/developers/docs/apis/json-rpc/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Alchemy Docs",
+          "url": "https://docs.alchemy.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "bc-abi"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-abi",
+      "title": "ABI & Encoding",
+      "icon": "📝",
+      "category": "intermediate",
+      "description": "Contract ABI, encoding, and decoding.",
+      "resources": [
+        {
+          "title": "ABI Spec",
+          "url": "https://docs.soliditylang.org/en/develop/abi-spec.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "ABI Guide",
+          "url": "https://ethereum.org/en/developers/docs/smart-contracts/abi/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-erc20",
+      "title": "ERC-20 Tokens",
+      "icon": "🪙",
+      "category": "intermediate",
+      "description": "Fungible token standard.",
+      "resources": [
+        {
+          "title": "OpenZeppelin ERC-20",
+          "url": "https://docs.openzeppelin.com/contracts/4.x/erc20",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-erc721",
+      "title": "ERC-721 NFTs",
+      "icon": "🖼️",
+      "category": "intermediate",
+      "description": "NFT token standard.",
+      "resources": [
+        {
+          "title": "OpenZeppelin ERC-721",
+          "url": "https://docs.openzeppelin.com/contracts/4.x/erc721",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-solidity-patterns",
+      "title": "Solidity Patterns",
+      "icon": "📐",
+      "category": "intermediate",
+      "description": "Design patterns in Solidity.",
+      "resources": [
+        {
+          "title": "Solidity Patterns",
+          "url": "https://fravoll.github.io/solidity-patterns/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-hardhat",
+      "title": "Hardhat",
+      "icon": "🔨",
+      "category": "intermediate",
+      "description": "Ethereum dev environment.",
+      "resources": [
+        {
+          "title": "Hardhat",
+          "url": "https://hardhat.org/docs",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Hardhat Tutorial",
+          "url": "https://hardhat.org/tutorial",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-foundry",
+      "title": "Foundry",
+      "icon": "⚡",
+      "category": "intermediate",
+      "description": "Fast testing framework.",
+      "resources": [
+        {
+          "title": "Foundry Book",
+          "url": "https://book.getfoundry.sh/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-openzeppelin",
+      "title": "OpenZeppelin",
+      "icon": "🛡️",
+      "category": "intermediate",
+      "description": "Secure contract library.",
+      "resources": [
+        {
+          "title": "OpenZeppelin",
+          "url": "https://docs.openzeppelin.com/contracts/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-wagmi",
+      "title": "Wagmi & RainbowKit",
+      "icon": "🌈",
+      "category": "intermediate",
+      "description": "React hooks for Ethereum.",
+      "resources": [
+        {
+          "title": "Wagmi",
+          "url": "https://wagmi.sh/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "RainbowKit",
+          "url": "https://www.rainbowkit.com/docs",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-arbitrum",
+      "title": "Arbitrum",
+      "icon": "🔷",
+      "category": "advanced",
+      "description": "Optimistic rollup L2.",
+      "resources": [
+        {
+          "title": "Arbitrum Docs",
+          "url": "https://docs.arbitrum.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-optimism",
+      "title": "Optimism",
+      "icon": "🔵",
+      "category": "advanced",
+      "description": "Optimistic rollup.",
+      "resources": [
+        {
+          "title": "Optimism",
+          "url": "https://docs.optimism.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-polygon",
+      "title": "Polygon",
+      "icon": "🟣",
+      "category": "intermediate",
+      "description": "Ethereum sidechain.",
+      "resources": [
+        {
+          "title": "Polygon Docs",
+          "url": "https://polygon.technology/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-chainlink",
+      "title": "Chainlink Oracles",
+      "icon": "🔗",
+      "category": "intermediate",
+      "description": "Decentralized oracles.",
+      "resources": [
+        {
+          "title": "Chainlink",
+          "url": "https://docs.chain.link/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-uniswap",
+      "title": "Uniswap & DEXs",
+      "icon": "💱",
+      "category": "advanced",
+      "description": "Decentralized exchanges.",
+      "resources": [
+        {
+          "title": "Uniswap",
+          "url": "https://docs.uniswap.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-aave",
+      "title": "Aave Lending",
+      "icon": "🏦",
+      "category": "advanced",
+      "description": "DeFi lending.",
+      "resources": [
+        {
+          "title": "Aave",
+          "url": "https://docs.aave.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-ipfs-adv",
+      "title": "IPFS Advanced",
+      "icon": "📦",
+      "category": "advanced",
+      "description": "File pinning and content addressing.",
+      "resources": [
+        {
+          "title": "IPFS",
+          "url": "https://docs.ipfs.tech/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Pinata",
+          "url": "https://docs.pinata.cloud/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-tokenomics",
+      "title": "Tokenomics",
+      "icon": "💰",
+      "category": "advanced",
+      "description": "Token design and economics.",
+      "resources": [
+        {
+          "title": "Tokenomics",
+          "url": "https://www.coingecko.com/learn/tokenomics-explained",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-defi-sec",
+      "title": "DeFi Security",
+      "icon": "🔒",
+      "category": "advanced",
+      "description": "Smart contract security in DeFi.",
+      "resources": [
+        {
+          "title": "Rekt News",
+          "url": "https://rekt.news/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-safe",
+      "title": "Safe Multisig",
+      "icon": "🔐",
+      "category": "tools",
+      "description": "Multi-sig wallet.",
+      "resources": [
+        {
+          "title": "Safe",
+          "url": "https://docs.safe.global/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-eth-clients",
+      "title": "Ethereum Clients",
+      "icon": "💻",
+      "category": "intermediate",
+      "description": "Geth, Nethermind.",
+      "resources": [
+        {
+          "title": "Geth",
+          "url": "https://geth.ethereum.org/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Nethermind",
+          "url": "https://docs.nethermind.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-erc1155",
+      "title": "ERC-1155",
+      "icon": "🎮",
+      "category": "intermediate",
+      "description": "Multi-token standard.",
+      "resources": [
+        {
+          "title": "ERC-1155",
+          "url": "https://eips.ethereum.org/EIPS/eip-1155",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-snapshot-voting",
+      "title": "Snapshot Voting",
+      "icon": "🗳️",
+      "category": "advanced",
+      "description": "Decentralized voting.",
+      "resources": [
+        {
+          "title": "Snapshot",
+          "url": "https://docs.snapshot.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-fair-launch",
+      "title": "Token Launches",
+      "icon": "🚀",
+      "category": "advanced",
+      "description": "Fair launches and distribution.",
+      "resources": [
+        {
+          "title": "Token Engineering",
+          "url": "https://tokenengineeringcommons.github.io/website/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-moralis",
+      "title": "Moralis & Web3 APIs",
+      "icon": "📡",
+      "category": "intermediate",
+      "description": "Web3 backend as a service.",
+      "resources": [
+        {
+          "title": "Moralis",
+          "url": "https://docs.moralis.io/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Alchemy",
+          "url": "https://docs.alchemy.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "bc-web3js-adv",
+      "title": "Web3.js Advanced",
+      "icon": "🌐",
+      "category": "intermediate",
+      "description": "Advanced web3.js usage.",
+      "resources": [
+        {
+          "title": "Web3.js",
+          "url": "https://web3js.readthedocs.io/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    }
+  ]
 }

@@ -1,34 +1,1157 @@
 {
-  "id": "game-dev",
   "title": "Game Developer",
-  "description": "Create interactive games from concept to publication. Learn game engines, programming, 2D/3D graphics, physics, audio, and how to publish and monetize your games.",
+  "description": "Create immersive games from concept to release.",
   "icon": "🎮",
-  "color": "#f97316",
-  "time": "8-14 months",
-  "difficulty": "Beginner to Advanced",
-  "nodes": [
-    {"id":"gd-engine","title":"Choose a Game Engine","icon":"🎮","category":"fundamentals","description":"Unity (C#), Godot (GDScript/C#), Unreal (C++), or Phaser (JS) — pick based on your goals.","resources":[{"title":"Unity Learn (Free)","url":"https://learn.unity.com/","type":"course","free":true},{"title":"Godot Documentation","url":"https://docs.godotengine.org/","type":"docs","free":true},{"title":"Unreal Engine Learning","url":"https://dev.epicgames.com/community/unreal-engine/learning","type":"course","free":true}],"children":["gd-lang"]},
-    {"id":"gd-lang","title":"Programming for Games","icon":"💻","category":"fundamentals","description":"C# for Unity, GDScript for Godot, C++ for Unreal, or JavaScript for web games — game loops, state machines, and OOP.","resources":[{"title":"C# Documentation","url":"https://learn.microsoft.com/en-us/dotnet/csharp/","type":"docs","free":true},{"title":"GDScript Basics","url":"https://docs.godotengine.org/en/stable/getting_started/first_script.html","type":"docs","free":true}],"children":["gd-math"]},
-    {"id":"gd-math","title":"Game Math & Physics","icon":"🔢","category":"fundamentals","description":"Vectors, matrices, quaternions, collision detection, and physics simulations.","resources":[{"title":"3Blue1Brown Linear Algebra","url":"https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab","type":"video","free":true},{"title":"Game Math (Catlike Coding)","url":"https://catlikecoding.com/unity/tutorials/","type":"docs","free":true}],"children":["gd-2d"]},
-    {"id":"gd-2d","title":"2D Game Development","icon":"🖼️","category":"frameworks","description":"Sprites, tilemaps, 2D physics, cameras, parallax scrolling, and 2D animation.","resources":[{"title":"Unity 2D Game Kit","url":"https://learn.unity.com/project/2d-game-kit","type":"course","free":true},{"title":"Godot 2D Docs","url":"https://docs.godotengine.org/en/stable/getting_started/first_2d_game/index.html","type":"docs","free":true}],"children":["gd-3d"]},
-    {"id":"gd-3d","title":"3D Game Development","icon":"🌐","category":"frameworks","description":"3D meshes, materials, lighting, cameras, terrain, and 3D rendering pipelines.","resources":[{"title":"Unity 3D Tutorials","url":"https://learn.unity.com/","type":"course","free":true},{"title":"Godot 3D Docs","url":"https://docs.godotengine.org/en/stable/getting_started/first_3d_game/index.html","type":"docs","free":true}],"children":["gd-physics"]},
-    {"id":"gd-physics","title":"Physics Engine","icon":"⚡","category":"frameworks","description":"Rigid bodies, colliders, triggers, raycasting, joints, and physics materials.","resources":[{"title":"Unity Physics","url":"https://docs.unity3d.com/Manual/PhysicsSection.html","type":"docs","free":true},{"title":"Godot Physics","url":"https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html","type":"docs","free":true}],"children":["gd-animation"]},
-    {"id":"gd-animation","title":"Animation Systems","icon":"🏃","category":"frameworks","description":"Sprite animation, skeletal animation, animation state machines, blend trees, and IK.","resources":[{"title":"Unity Animation","url":"https://docs.unity3d.com/Manual/AnimationSection.html","type":"docs","free":true},{"title":"Godot Animation","url":"https://docs.godotengine.org/en/stable/tutorials/animation/animation_tree.html","type":"docs","free":true}],"children":["gd-audio"]},
-    {"id":"gd-audio","title":"Audio & Sound Design","icon":"🔊","category":"tools","description":"Sound effects, background music, spatial audio, audio mixing, and FMOD/Wwise integration.","resources":[{"title":"FMOD Studio","url":"https://www.fmod.com/","type":"docs","free":true},{"title":"Free Sound Effects","url":"https://freesound.org/","type":"docs","free":true}],"children":["gd-ui"]},
-    {"id":"gd-ui","title":"Game UI/UX","icon":"🖥️","category":"design","description":"Menus, HUD, health bars, inventory UI, and in-game interfaces.","resources":[{"title":"Unity UI Toolkit","url":"https://docs.unity3d.com/Manual/UIElements.html","type":"docs","free":true},{"title":"Godot UI System","url":"https://docs.godotengine.org/en/stable/tutorials/ui/gui_containers.html","type":"docs","free":true}],"children":["gd-ai"]},
-    {"id":"gd-ai","title":"Game AI","icon":"🤖","category":"advanced","description":"Pathfinding (A*), behavior trees, finite state machines, and NPC AI patterns.","resources":[{"title":"A* Pathfinding Project","url":"https://arongranberg.com/astar/","type":"docs","free":true},{"title":"Game AI Programming (YouTube)","url":"https://www.youtube.com/results?search_query=game+ai+programming+tutorial","type":"video","free":true}],"children":["gd-multiplayer"]},
-    {"id":"gd-multiplayer","title":"Multiplayer & Networking","icon":"🌐","category":"advanced","description":"Client-server architecture, netcode, latency compensation, and networking solutions (Mirror, FishNet, Photon).","resources":[{"title":"Mirror (Unity Networking)","url":"https://mirror-networking.com/","type":"docs","free":true},{"title":"Godot Multiplayer","url":"https://docs.godotengine.org/en/stable/tutorials/networking/high_level_multiplayer.html","type":"docs","free":true}],"children":["gd-optimization"]},
-    {"id":"gd-optimization","title":"Performance Optimization","icon":"⚡","category":"advanced","description":"Profiling, object pooling, LOD, occlusion culling, and draw call optimization.","resources":[{"title":"Unity Performance","url":"https://docs.unity3d.com/Manual/Profiling.html","type":"docs","free":true},{"title":"Godot Performance","url":"https://docs.godotengine.org/en/stable/tutorials/performance/index.html","type":"docs","free":true}],"children":["gd-testing"]},
-    {"id":"gd-testing","title":"Game Testing & QA","icon":"🧪","category":"testing","description":"Playtesting, unit testing game logic, automated testing, and bug tracking.","resources":[{"title":"Unity Test Framework","url":"https://docs.unity3d.com/Packages/com.unity.test-framework@1.1/manual/index.html","type":"docs","free":true}],"children":["gd-build"]},
-    {"id":"gd-build","title":"Build & Distribution","icon":"🔨","category":"deployment","description":"Build for multiple platforms — PC, Mac, Linux, WebGL, mobile, and console.","resources":[{"title":"Unity Platform Setup","url":"https://docs.unity3d.com/Manual/PlatformSpecific.html","type":"docs","free":true}],"children":["gd-publish"]},
-    {"id":"gd-publish","title":"Publishing & Stores","icon":"🏪","category":"deployment","description":"Steam, Itch.io, Epic Games Store, App Store, Google Play — store pages, requirements, and submission.","resources":[{"title":"Steamworks Documentation","url":"https://partner.steamgames.com/doc/sdk","type":"docs","free":true},{"title":"Itch.io for Developers","url":"https://itch.io/developers","type":"docs","free":true}],"children":["gd-monetize"]},
-    {"id":"gd-monetize","title":"Monetization","icon":"💰","category":"advanced","description":"In-app purchases, ads, premium models, DLC, and business models for indie games.","resources":[{"title":"Unity IAP","url":"https://docs.unity3d.com/Manual/UnityIAP.html","type":"docs","free":true}],"children":[]},
-    {"id":"gd-shaders","title":"Shader Programming","icon":"🎨","category":"advanced","description":"HLSL/GLSL shaders, Shader Graph, post-processing effects, and visual effects.","resources":[{"title":"Shader Tutorial (Catlike Coding)","url":"https://catlikecoding.com/unity/tutorials/custom-srp/","type":"docs","free":true},{"title":"The Book of Shaders","url":"https://thebookofshaders.com/","type":"docs","free":true}],"children":["gd-optimization"]},
-    {"id":"gd-vcs","title":"Version Control for Games","icon":"🔀","category":"tools","description":"Git LFS for large files, asset versioning, and team collaboration workflows.","resources":[{"title":"Git LFS Documentation","url":"https://git-lfs.github.com/","type":"docs","free":true},{"title":"Unity Version Control","url":"https://unity.com/products/unity-version-control","type":"docs","free":true}],"children":["gd-multiplayer"]},
-    {"id":"gd-design","title":"Game Design Principles","icon":"📋","category":"design","description":"Game loops, mechanics, level design, difficulty curves, player psychology, and prototyping.","resources":[{"title":"Game Design Workshop (YouTube)","url":"https://www.youtube.com/results?search_query=game+design+principles","type":"video","free":true},{"title":"Game Design Document Template","url":"https://www.gamedeveloper.com/design/how-to-write-a-game-design-document","type":"docs","free":true}],"children":["gd-2d"]},
-    {"id":"gd-procedural","title":"Procedural Generation","icon":"🎲","category":"advanced","description":"Procedural terrain, dungeon generation, noise functions (Perlin/Simplex), and infinite worlds.","resources":[{"title":"Procedural Generation Wiki","url":"https://pcg.wikidot.com/","type":"docs","free":true}],"children":["gd-3d"]},
-    {"id":"gd-particles","title":"Particle Systems & VFX","icon":"✨","category":"advanced","description":"Particle effects, trails, explosions, weather effects, and visual polish.","resources":[{"title":"Unity VFX Graph","url":"https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@latest","type":"docs","free":true},{"title":"Godot GPUParticles","url":"https://docs.godotengine.org/en/stable/classes/class_gpuparticles2d.html","type":"docs","free":true}],"children":["gd-optimization"]},
-    {"id":"gd-web","title":"Web Games (HTML5)","icon":"🌐","category":"frameworks","description":"Phaser, Three.js, or Godot WebGL export — build games that run in the browser.","resources":[{"title":"Phaser Documentation","url":"https://phaser.io/docs/","type":"docs","free":true},{"title":"Three.js Documentation","url":"https://threejs.org/docs/","type":"docs","free":true}],"children":["gd-build"]}
+  "categories": [
+    "fundamentals",
+    "intermediate",
+    "advanced",
+    "tools"
   ],
-  "connections":[["gd-engine","gd-lang"],["gd-lang","gd-math"],["gd-math","gd-2d"],["gd-2d","gd-3d"],["gd-3d","gd-physics"],["gd-physics","gd-animation"],["gd-animation","gd-audio"],["gd-audio","gd-ui"],["gd-ui","gd-ai"],["gd-ai","gd-multiplayer"],["gd-multiplayer","gd-optimization"],["gd-optimization","gd-testing"],["gd-testing","gd-build"],["gd-build","gd-publish"],["gd-publish","gd-monetize"],["gd-shaders","gd-optimization"],["gd-vcs","gd-multiplayer"],["gd-design","gd-2d"],["gd-procedural","gd-3d"],["gd-particles","gd-optimization"],["gd-web","gd-build"]]
+  "nodes": [
+    {
+      "id": "gd-design",
+      "title": "Game Design Fundamentals",
+      "icon": "🎮",
+      "category": "fundamentals",
+      "description": "Game loops, mechanics, and player experience.",
+      "resources": [
+        {
+          "title": "Game Design Guide",
+          "url": "https://www.gameanalytics.com/blog/game-design-basics/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Brackeys Game Dev",
+          "url": "https://www.youtube.com/c/Brackeys",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-unity"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-unity",
+      "title": "Unity",
+      "icon": "🎯",
+      "category": "fundamentals",
+      "description": "Game engine for 2D and 3D games.",
+      "resources": [
+        {
+          "title": "Unity Learn",
+          "url": "https://learn.unity.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Unity Docs",
+          "url": "https://docs.unity3d.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Brackeys Unity",
+          "url": "https://www.youtube.com/playlist?list=PLPV2KyIb3jz4tKvY2wX2-dJasUyDgVEkP",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-godot"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-godot",
+      "title": "Godot Engine",
+      "icon": "🤖",
+      "category": "fundamentals",
+      "description": "Open-source game engine.",
+      "resources": [
+        {
+          "title": "Godot Docs",
+          "url": "https://docs.godotengine.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Godot Tutorials",
+          "url": "https://godottutorials.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GDQuest",
+          "url": "https://www.gdquest.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-unreal"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-unreal",
+      "title": "Unreal Engine",
+      "icon": "🔵",
+      "category": "intermediate",
+      "description": "AAA game engine with Blueprints and C++.",
+      "resources": [
+        {
+          "title": "Unreal Docs",
+          "url": "https://docs.unrealengine.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Unreal Learn",
+          "url": "https://dev.epicgames.com/community/unreal-engine/learning",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-csharp"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-csharp",
+      "title": "C# for Games",
+      "icon": "🔷",
+      "category": "fundamentals",
+      "description": "C# programming for Unity.",
+      "resources": [
+        {
+          "title": "C# Docs",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "C# Yellow Book",
+          "url": "https://www.robmiles.com/c-yellow-book",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-cpp"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-cpp",
+      "title": "C++ for Games",
+      "icon": "⚡",
+      "category": "intermediate",
+      "description": "C++ programming for Unreal and systems.",
+      "resources": [
+        {
+          "title": "LearnCpp",
+          "url": "https://www.learncpp.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "C++ Reference",
+          "url": "https://en.cppreference.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-blueprints"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-blueprints",
+      "title": "Blueprints",
+      "icon": "📐",
+      "category": "intermediate",
+      "description": "Visual scripting in Unreal Engine.",
+      "resources": [
+        {
+          "title": "Blueprints Docs",
+          "url": "https://docs.unrealengine.com/5.0/en-US/ProgrammingAndScripting/Blueprints/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "UE5 Blueprints Tutorial",
+          "url": "https://dev.epicgames.com/community/unreal-engine/learning",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-gdscript"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-gdscript",
+      "title": "GDScript",
+      "icon": "📝",
+      "category": "intermediate",
+      "description": "Python-like scripting for Godot.",
+      "resources": [
+        {
+          "title": "GDScript Docs",
+          "url": "https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "GDScript Tutorial",
+          "url": "https://docs.godotengine.org/en/stable/getting_started/first_script/index.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-2d"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-2d",
+      "title": "2D Physics & Games",
+      "icon": "🕹️",
+      "category": "intermediate",
+      "description": "2D colliders, rigidbodies, and sprites.",
+      "resources": [
+        {
+          "title": "Unity 2D",
+          "url": "https://docs.unity3d.com/Manual/2D.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Godot 2D Docs",
+          "url": "https://docs.godotengine.org/en/stable/tutorials/2d/index.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-3d-math"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-3d-math",
+      "title": "3D Math",
+      "icon": "📐",
+      "category": "intermediate",
+      "description": "Vectors, matrices, quaternions.",
+      "resources": [
+        {
+          "title": "3D Math Primer",
+          "url": "https://www.3dkingdoms.com/weekly/weekly.php?a=2",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Math for Game Devs",
+          "url": "https://www.youtube.com/c/FreyaHolm%C3%A9r",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-shaders"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-shaders",
+      "title": "Shaders",
+      "icon": "🌈",
+      "category": "advanced",
+      "description": "HLSL, GLSL, and shader programming.",
+      "resources": [
+        {
+          "title": "Shader Tutorial",
+          "url": "https://www.shadertoy.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Unity Shaders",
+          "url": "https://docs.unity3d.com/Manual/shader-writing.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "The Book of Shaders",
+          "url": "https://thebookofshaders.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-audio"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-audio",
+      "title": "Game Audio",
+      "icon": "🔊",
+      "category": "intermediate",
+      "description": "Sound effects, music, and spatial audio.",
+      "resources": [
+        {
+          "title": "FMOD Docs",
+          "url": "https://www.fmod.com/docs/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Unity Audio",
+          "url": "https://docs.unity3d.com/Manual/Audio.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-animation"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-animation",
+      "title": "Animation",
+      "icon": "🏃",
+      "category": "intermediate",
+      "description": "Keyframe, skeletal, and procedural animation.",
+      "resources": [
+        {
+          "title": "Unity Animation",
+          "url": "https://docs.unity3d.com/Manual/AnimationSection.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Mixamo",
+          "url": "https://www.mixamo.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-ui"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-ui",
+      "title": "Game UI/UX",
+      "icon": "🖥️",
+      "category": "intermediate",
+      "description": "Menus, HUDs, and user experience.",
+      "resources": [
+        {
+          "title": "Unity UI",
+          "url": "https://docs.unity3d.com/Manual/UICanvas.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Godot UI",
+          "url": "https://docs.godotengine.org/en/stable/tutorials/ui/index.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-ai"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-ai",
+      "title": "Game AI",
+      "icon": "🤖",
+      "category": "advanced",
+      "description": "NPC behavior, pathfinding, and decision trees.",
+      "resources": [
+        {
+          "title": "Unity NavMesh",
+          "url": "https://docs.unity3d.com/Manual/Navigation.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Game AI Programming",
+          "url": "https://www.gameaipro.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-multiplayer"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-multiplayer",
+      "title": "Multiplayer",
+      "icon": "👥",
+      "category": "advanced",
+      "description": "Networking, Netcode, and online systems.",
+      "resources": [
+        {
+          "title": "Unity Netcode",
+          "url": "https://docs-multiplayer.unity3d.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Godot Multiplayer",
+          "url": "https://docs.godotengine.org/en/stable/tutorials/networking/high_level_multiplayer.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-networking"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-networking",
+      "title": "Game Networking",
+      "icon": "🌐",
+      "category": "advanced",
+      "description": "Client-server, state sync, and lag compensation.",
+      "resources": [
+        {
+          "title": "Multiplayer Guide",
+          "url": "https://gafferongames.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Godot Networking",
+          "url": "https://docs.godotengine.org/en/stable/tutorials/networking/index.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-particles"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-particles",
+      "title": "Particle Systems",
+      "icon": "✨",
+      "category": "intermediate",
+      "description": "Visual effects and particle editors.",
+      "resources": [
+        {
+          "title": "Unity Particles",
+          "url": "https://docs.unity3d.com/Manual/PartSystems.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Godot Particles",
+          "url": "https://docs.godotengine.org/en/stable/classes/class_gpu_particles2d.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-procedural"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-procedural",
+      "title": "Procedural Generation",
+      "icon": "🔄",
+      "category": "advanced",
+      "description": "Random maps, terrain, and content.",
+      "resources": [
+        {
+          "title": "PCG Guide",
+          "url": "https://www.redblobgames.com/maps/terrain-from-noise/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Unity PCG",
+          "url": "https://docs.unity3d.com/Manual/ProceduralGeneration.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-optimization"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-optimization",
+      "title": "Optimization",
+      "icon": "⚡",
+      "category": "advanced",
+      "description": "Profiling, draw calls, and memory.",
+      "resources": [
+        {
+          "title": "Unity Profiler",
+          "url": "https://docs.unity3d.com/Manual/Profiler.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Unity Optimization",
+          "url": "https://docs.unity3d.com/Manual/MobileOptimizationPracticalGuide.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-testing-games"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-testing-games",
+      "title": "Game Testing",
+      "icon": "🧪",
+      "category": "tools",
+      "description": "QA testing and bug tracking.",
+      "resources": [
+        {
+          "title": "Unity Test Framework",
+          "url": "https://docs.unity3d.com/Packages/com.unity.test-framework@latest",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Game Testing Guide",
+          "url": "https://www.gamedeveloper.com/disciplines/the-guide-to-game-testing",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-publishing"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-publishing",
+      "title": "Publishing",
+      "icon": "📤",
+      "category": "tools",
+      "description": "Releasing games on platforms.",
+      "resources": [
+        {
+          "title": "Steamworks",
+          "url": "https://partner.steamgames.com/doc/home",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Unity Publishing",
+          "url": "https://docs.unity3d.com/Manual/Publishing.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-monetization"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-monetization",
+      "title": "Monetization",
+      "icon": "💰",
+      "category": "tools",
+      "description": "IAP, ads, and revenue models.",
+      "resources": [
+        {
+          "title": "Unity IAP",
+          "url": "https://docs.unity3d.com/Manual/UnityIAP.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Steam Monetization",
+          "url": "https://partner.steamgames.com/doc/features/microtransactions",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-vcs"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-vcs",
+      "title": "Version Control",
+      "icon": "📦",
+      "category": "tools",
+      "description": "Git and LFS for game assets.",
+      "resources": [
+        {
+          "title": "Git LFS",
+          "url": "https://git-lfs.github.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Git Docs",
+          "url": "https://git-scm.com/doc",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-steam"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-steam",
+      "title": "Steam Platform",
+      "icon": "🎮",
+      "category": "tools",
+      "description": "Steam SDK, achievements, and integration.",
+      "resources": [
+        {
+          "title": "Steamworks SDK",
+          "url": "https://partner.steamgames.com/doc/sdk",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Steam Direct",
+          "url": "https://partner.steamgames.com/doc/store/direct",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-mobile-publishing"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-mobile-publishing",
+      "title": "Mobile Publishing",
+      "icon": "📱",
+      "category": "tools",
+      "description": "Publishing to App Store and Play Store.",
+      "resources": [
+        {
+          "title": "Unity Mobile",
+          "url": "https://docs.unity3d.com/Manual/MobileDevelopment.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Google Play",
+          "url": "https://play.google.com/console",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-input"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-input",
+      "title": "Input Systems",
+      "icon": "🎮",
+      "category": "intermediate",
+      "description": "Keyboard, gamepad, and touch input.",
+      "resources": [
+        {
+          "title": "Unity Input System",
+          "url": "https://docs.unity3d.com/Packages/com.unity.inputsystem@latest",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Godot Input",
+          "url": "https://docs.godotengine.org/en/stable/tutorials/inputs/input_examples.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-level-design"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-level-design",
+      "title": "Level Design",
+      "icon": "🗺️",
+      "category": "intermediate",
+      "description": "Designing engaging game levels.",
+      "resources": [
+        {
+          "title": "Level Design Guide",
+          "url": "https://www.gamedeveloper.com/programming/introduction-to-level-design",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Unity Level Design",
+          "url": "https://learn.unity.com/tutorial/creating-a-simple-level",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-storytelling"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-storytelling",
+      "title": "Story & Narrative",
+      "icon": "📖",
+      "category": "intermediate",
+      "description": "Writing, dialogue, and branching narratives.",
+      "resources": [
+        {
+          "title": "Game Narrative",
+          "url": "https://www.youtube.com/watch?v=LcDM2j82S_c",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Ink Docs",
+          "url": "https://inklestudios.com/ink/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-localization"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-localization",
+      "title": "Localization",
+      "icon": "🌍",
+      "category": "tools",
+      "description": "Multi-language game support.",
+      "resources": [
+        {
+          "title": "Unity I2 Localization",
+          "url": "https://docs.unity3d.com/Packages/com.unity.2d.ik@latest",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Godot Localization",
+          "url": "https://docs.godotengine.org/en/stable/tutorials/i18n/index.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [
+        "gd-accessibility-games"
+      ],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-accessibility-games",
+      "title": "Game Accessibility",
+      "icon": "♿",
+      "category": "tools",
+      "description": "Making games playable for everyone.",
+      "resources": [
+        {
+          "title": "Game Accessibility Guidelines",
+          "url": "https://gameaccessibilityguidelines.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "IGDA Accessibility",
+          "url": "https://igda-gasig.org/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-physics-3d",
+      "title": "3D Physics",
+      "icon": "🏀",
+      "category": "intermediate",
+      "description": "3D colliders and forces.",
+      "resources": [
+        {
+          "title": "Unity Physics",
+          "url": "https://docs.unity3d.com/Manual/PhysicsSection.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-shader-graph",
+      "title": "Shader Graph",
+      "icon": "🎨",
+      "category": "advanced",
+      "description": "Visual shader programming.",
+      "resources": [
+        {
+          "title": "Unity Shader Graph",
+          "url": "https://docs.unity3d.com/Manual/shader-graph.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-post-fx",
+      "title": "Post Processing",
+      "icon": "📷",
+      "category": "intermediate",
+      "description": "Bloom, depth of field.",
+      "resources": [
+        {
+          "title": "Unity Post Processing",
+          "url": "https://docs.unity3d.com/Packages/com.unity.postprocessing@latest",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-save",
+      "title": "Save Systems",
+      "icon": "💾",
+      "category": "intermediate",
+      "description": "Save/load game state.",
+      "resources": [
+        {
+          "title": "Unity PlayerPrefs",
+          "url": "https://docs.unity3d.com/ScriptReference/PlayerPrefs.html",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Godot Save",
+          "url": "https://docs.godotengine.org/en/stable/tutorials/io/saving_games.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-terrain",
+      "title": "Terrain",
+      "icon": "🏔️",
+      "category": "intermediate",
+      "description": "Terrain tools and heightmaps.",
+      "resources": [
+        {
+          "title": "Unity Terrain",
+          "url": "https://docs.unity3d.com/Manual/terrain-UsingTerrains.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-fmod",
+      "title": "FMOD Studio",
+      "icon": "🎵",
+      "category": "advanced",
+      "description": "Audio middleware.",
+      "resources": [
+        {
+          "title": "FMOD",
+          "url": "https://www.fmod.com/docs/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-behavior-trees",
+      "title": "Behavior Trees",
+      "icon": "🌳",
+      "category": "advanced",
+      "description": "AI decision making.",
+      "resources": [
+        {
+          "title": "Behavior Trees",
+          "url": "https://www.gamedeveloper.com/programming/behavior-trees-for-ai-how-they-work",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-physics-mat",
+      "title": "Physics Materials",
+      "icon": "🧲",
+      "category": "intermediate",
+      "description": "Friction and bounciness.",
+      "resources": [
+        {
+          "title": "Unity Physics Materials",
+          "url": "https://docs.unity3d.com/Manual/class-PhysicMaterial.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-vr",
+      "title": "VR Development",
+      "icon": "🥽",
+      "category": "advanced",
+      "description": "VR support.",
+      "resources": [
+        {
+          "title": "Unity XR",
+          "url": "https://docs.unity3d.com/Manual/XR.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-ar",
+      "title": "AR Development",
+      "icon": "📱",
+      "category": "advanced",
+      "description": "Augmented reality.",
+      "resources": [
+        {
+          "title": "AR Foundation",
+          "url": "https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@latest",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-leaderboards",
+      "title": "Leaderboards",
+      "icon": "🏆",
+      "category": "tools",
+      "description": "Online leaderboards.",
+      "resources": [
+        {
+          "title": "Steam Leaderboards",
+          "url": "https://partner.steamgames.com/doc/features/leaderboards",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-achievements",
+      "title": "Achievements",
+      "icon": "🎖️",
+      "category": "tools",
+      "description": "Unlockable achievements.",
+      "resources": [
+        {
+          "title": "Steam Achievements",
+          "url": "https://partner.steamgames.com/doc/features/achievements",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-modding",
+      "title": "Mod Support",
+      "icon": "🔧",
+      "category": "advanced",
+      "description": "Moddable games.",
+      "resources": [
+        {
+          "title": "Harmony",
+          "url": "https://github.com/pardeike/Harmony",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-adv-shaders",
+      "title": "Advanced Shaders",
+      "icon": "🌈",
+      "category": "advanced",
+      "description": "Raymarching and PBR.",
+      "resources": [
+        {
+          "title": "Shadertoy",
+          "url": "https://www.shadertoy.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Book of Shaders",
+          "url": "https://thebookofshaders.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-sfx",
+      "title": "Sound Design",
+      "icon": "🔊",
+      "category": "intermediate",
+      "description": "Game sound effects.",
+      "resources": [
+        {
+          "title": "Bfxr",
+          "url": "https://www.bfxr.net/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "jsfxr",
+          "url": "https://sfxr.me/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-debug-games",
+      "title": "Game Debugging",
+      "icon": "🐛",
+      "category": "tools",
+      "description": "Debugging tools.",
+      "resources": [
+        {
+          "title": "Unity Console",
+          "url": "https://docs.unity3d.com/Manual/Console.html",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-engine-sel",
+      "title": "Engine Selection",
+      "icon": "⚖️",
+      "category": "fundamentals",
+      "description": "Choosing the right engine.",
+      "resources": [
+        {
+          "title": "Engine Comparison",
+          "url": "https://www.gamedeveloper.com/tools/game-engine-comparison",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-2d-art",
+      "title": "2D Art & Sprites",
+      "icon": "🎨",
+      "category": "intermediate",
+      "description": "Creating game sprites.",
+      "resources": [
+        {
+          "title": "Aseprite",
+          "url": "https://www.aseprite.org/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "Piskel",
+          "url": "https://www.piskelapp.com/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    },
+    {
+      "id": "gd-multiplayer-adv",
+      "title": "Netcode Advanced",
+      "icon": "🌐",
+      "category": "advanced",
+      "description": "Advanced multiplayer networking.",
+      "resources": [
+        {
+          "title": "Mirror (Unity)",
+          "url": "https://mirror-networking.com/",
+          "type": "docs",
+          "free": true
+        },
+        {
+          "title": "FishNet (Godot)",
+          "url": "https://fish-net.github.io/FishNet/",
+          "type": "docs",
+          "free": true
+        }
+      ],
+      "children": [],
+      "difficulty": "Beginner"
+    }
+  ]
 }
