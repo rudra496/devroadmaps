@@ -18,7 +18,7 @@
       "resources": [
         {
           "title": "Blockchain Guide",
-          "url": "https://www.investopedia.com/blockchain-explained-what-is-it/",
+          "url": "https://ethereum.org/en/developers/docs/",
           "type": "docs",
           "free": true
         },
@@ -398,7 +398,7 @@
         },
         {
           "title": "Gas Optimization Tips",
-          "url": "https://www.trufflesuite.com/docs/truffle/gas-usage-tips",
+          "url": "https://ethereum.org/en/developers/docs/gas/",
           "type": "docs",
           "free": true
         }

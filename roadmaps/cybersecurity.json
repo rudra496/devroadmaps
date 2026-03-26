@@ -43,7 +43,7 @@
       "resources": [
         {
           "title": "Linux Journey",
-          "url": "https://linuxjourney.com/",
+          "url": "https://linuxcommand.org/lc3_learning_the_shell.php",
           "type": "docs",
           "free": true
         },
