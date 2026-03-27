@@ -230,8 +230,12 @@ MIT License — free for personal and commercial use.
 ## 🌐 Connect
 
 - [![GitHub](https://img.shields.io/badge/GitHub-rudra496-181717?logo=github)](https://github.com/rudra496)
-- [![Twitter](https://img.shields.io/badge/X-@rudra496-1DA1F2?logo=x)](https://x.com/rudra496)
-- [![Discord](https://img.shields.io/badge/Discord-Coming_Soon-5865F2?logo=discord)](#)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-rudrasarker-0A66C2?logo=linkedin)](https://www.linkedin.com/in/rudrasarker)
+- [![X/Twitter](https://img.shields.io/badge/X-@Rudra496-000000?logo=x)](https://x.com/Rudra496)
+- [![Facebook](https://img.shields.io/badge/Facebook-rudrasarker130-1877F2?logo=facebook)](https://www.facebook.com/rudrasarker130)
+- [![YouTube](https://img.shields.io/badge/YouTube-@rudrasarker9732-FF0000?logo=youtube)](https://youtube.com/@rudrasarker9732)
+- [![Dev.to](https://img.shields.io/badge/Dev.to-rudra__sarker-000000?logo=devdotto)](https://dev.to/rudra_sarker)
+- [![ResearchGate](https://img.shields.io/badge/ResearchGate-Rudra_Sarker-00CCBB?logo=researchgate)](https://www.researchgate.net/profile/Rudra-Sarker-3)
 
 ---
 
