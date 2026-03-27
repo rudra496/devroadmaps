@@ -226,3 +226,16 @@ MIT License — free for personal and commercial use.
 [⭐ Star this repo](https://github.com/rudra496/devroadmaps) if you find it useful!
 
 </div>
+
+## 🌐 Connect
+
+- [![GitHub](https://img.shields.io/badge/GitHub-rudra496-181717?logo=github)](https://github.com/rudra496)
+- [![Twitter](https://img.shields.io/badge/X-@rudra496-1DA1F2?logo=x)](https://x.com/rudra496)
+- [![Discord](https://img.shields.io/badge/Discord-Coming_Soon-5865F2?logo=discord)](#)
+
+---
+
+<p align="center">
+  <strong>Built with ❤️ by <a href="https://github.com/rudra496">rudra496</a></strong><br>
+  <sub>MIT License · Free & Open Source Forever</sub>
+</p>
