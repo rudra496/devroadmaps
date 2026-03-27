@@ -210,7 +210,7 @@
       "resources": [
         {"title": "Content Strategy — NNGroup", "url": "https://www.nngroup.com/topics/content-strategy/", "type": "docs", "free": true},
         {"title": "Content Strategy for Technical Docs", "url": "https://www.youtube.com/watch?v=RfVSCoR9K8Y", "type": "video", "free": true},
-        {"title": "A List Apart — Content", "url": "https://alistapart.com/topic/content/", "type": "docs", "free": true}
+        {"title": "A List Apart — Content", "url": "https://alistapart.com", "type": "docs", "free": true}
       ],
       "children": ["tw-information-architecture"],
       "difficulty": "Advanced"

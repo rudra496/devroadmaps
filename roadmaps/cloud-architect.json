@@ -217,7 +217,7 @@
       "difficulty": "Intermediate",
       "resources": [
         { "title": "AWS ElastiCache Docs", "url": "https://docs.aws.amazon.com/elasticache/", "type": "docs", "free": true },
-        { "title": "Caching Best Practices", "url": "https://aws.amazon.com/builders-library/caching-strategies/", "type": "docs", "free": true }
+        { "title": "Caching Best Practices", "url": "https://aws.amazon.com/architecture/", "type": "docs", "free": true }
       ]
     },
     {

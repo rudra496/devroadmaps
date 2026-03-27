@@ -13,13 +13,13 @@
 
 **The open-source roadmap.sh alternative**
 
-> 17 comprehensive roadmaps • 850+ topics • 3,000+ free resources • 100% free forever
+> 17 comprehensive roadmaps • 800+ topics • 1,700+ free resources • 100% free forever
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-brightgreen)](https://rudra496.github.io/devroadmaps)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Roadmaps](https://img.shields.io/badge/Roadmaps-17-purple)](#roadmaps)
-[![Topics](https://img.shields.io/badge/Topics-850%2B-orange)](#)
-[![Resources](https://img.shields.io/badge/Resources-3000%2B-green)](#)
+[![Topics](https://img.shields.io/badge/Topics-800%2B-orange)](#)
+[![Resources](https://img.shields.io/badge/Resources-1700%2B-green)](#)
 
 ---
 
@@ -28,8 +28,8 @@
 | Feature | DevRoadmaps | roadmap.sh |
 |---------|:-----------:|:----------:|
 | Interactive progress tracking | ✅ | ❌ |
-| 850+ curated topics | ✅ | ~300 |
-| 3,000+ free resources | ✅ | Limited |
+| 800+ curated topics | ✅ | ~300 |
+| 1,700+ free resources | ✅ | Limited |
 | Community tips | ✅ | ❌ |
 | Resource ratings | ✅ | ❌ |
 | Resource type filtering | ✅ | ❌ |

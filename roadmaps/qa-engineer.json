@@ -405,7 +405,7 @@
       "description": "Testing in agile: sprints, standups, user stories, acceptance criteria.",
       "resources": [
         {"title": "Agile Testing — Atlassian", "url": "https://www.atlassian.com/agile", "type": "docs", "free": true},
-        {"title": "Agile Testing Quadrants", "url": "https://agiletesting.quadrants/", "type": "docs", "free": true},
+        {"title": "Agile Testing Quadrants", "url": "https://katalon.com/resources-center/blog/agile-testing-quadrants", "type": "docs", "free": true},
         {"title": "Testing in Scrum", "url": "https://www.scrum.org/", "type": "docs", "free": true}
       ],
       "children": ["qa-shift-left"],
