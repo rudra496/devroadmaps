@@ -15,7 +15,7 @@
 
 > 17 comprehensive roadmaps • 850+ topics • 3,000+ free resources • 100% free forever
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-brightgreen)](https://yourusername.github.io/devroadmaps)
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-brightgreen)](https://rudra496.github.io/devroadmaps)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Roadmaps](https://img.shields.io/badge/Roadmaps-17-purple)](#roadmaps)
 [![Topics](https://img.shields.io/badge/Topics-850%2B-orange)](#)
@@ -147,7 +147,7 @@ Just open `index.html` in your browser — no build step needed!
 
 ### Option 3: Clone & Serve
 ```bash
-git clone https://github.com/yourusername/devroadmaps.git
+git clone https://github.com/rudra496/devroadmaps.git
 cd devroadmaps
 python3 -m http.server 8000
 # Open http://localhost:8000
@@ -223,6 +223,6 @@ MIT License — free for personal and commercial use.
 
 **Made with ❤️ for developers everywhere**
 
-[⭐ Star this repo](https://github.com/yourusername/devroadmaps) if you find it useful!
+[⭐ Star this repo](https://github.com/rudra496/devroadmaps) if you find it useful!
 
 </div>
