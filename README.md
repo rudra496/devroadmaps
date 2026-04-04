@@ -17,6 +17,9 @@
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-brightgreen)](https://rudra496.github.io/devroadmaps)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/rudra496/devroadmaps?style=social)](https://github.com/rudra496/devroadmaps/stargazers)
+[![Forks](https://img.shields.io/github/forks/rudra496/devroadmaps?style=social)](https://github.com/rudra496/devroadmaps/network/members)
+[![Issues](https://img.shields.io/github/issues/rudra496/devroadmaps)](https://github.com/rudra496/devroadmaps/issues)
 [![Roadmaps](https://img.shields.io/badge/Roadmaps-17-purple)](#roadmaps)
 [![Topics](https://img.shields.io/badge/Topics-800%2B-orange)](#)
 [![Resources](https://img.shields.io/badge/Resources-1700%2B-green)](#)
@@ -212,6 +215,16 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 - 💬 Share community tips
 - 🎨 Improve the design
 - 📝 Improve documentation
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#rudra496/devroadmaps&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=rudra496/devroadmaps&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=rudra496/devroadmaps&type=Date" />
+   <img alt="Star History" src="https://api.star-history.com/svg?repos=rudra496/devroadmaps&type=Date" />
+ </picture>
+</a>
 
 ## 📄 License
 
