@@ -42,7 +42,7 @@
 | Auto theme (system preference) | ✅ | ❌ |
 | Keyboard navigation | ✅ | ❌ |
 | Dark & light mode | ✅ | ❌ |
-| 100% free | ✅ | Partial |
+| Free & open source | ✅ | Partial |
 | Zero dependencies | ✅ | ✅ |
 | Offline capable | ✅ | ❌ |
 | Minimap navigation | ✅ | ❌ |
