@@ -13,7 +13,7 @@
 
 **The open-source roadmap.sh alternative**
 
-> 17 comprehensive roadmaps • 800+ topics • 1,700+ free resources • 100% free forever
+> 17 comprehensive roadmaps • 800+ topics • 1,700+ free resources • Free and open-source
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-brightgreen)](https://rudra496.github.io/devroadmaps)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
