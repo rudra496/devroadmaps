@@ -1,142 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roadmap — DevRoadmaps</title>
-    <meta name="description" content="Interactive developer roadmap with progress tracking, community tips, and free curated resources on DevRoadmaps.">
-    <meta property="og:title" content="Roadmap — DevRoadmaps">
-    <meta property="og:description" content="Interactive developer roadmap with progress tracking, community tips, and free curated resources.">
-    <meta property="og:url" content="https://rudra496.github.io/devroadmaps/roadmap.html">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Roadmap — DevRoadmaps">
-    <meta name="twitter:creator" content="@rudra496">
-    <link rel="canonical" href="https://rudra496.github.io/devroadmaps/roadmap.html">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>">
-</head>
-<body class="roadmap-page">
+    <meta
+      name="description"
+      content="Interactive developer roadmap with progress tracking, community tips, and free curated resources on DevRoadmaps."
+    />
+    <meta property="og:title" content="Roadmap — DevRoadmaps" />
+    <meta
+      property="og:description"
+      content="Interactive developer roadmap with progress tracking, community tips, and free curated resources."
+    />
+    <meta
+      property="og:url"
+      content="https://rudra496.github.io/devroadmaps/roadmap.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Roadmap — DevRoadmaps" />
+    <meta name="twitter:creator" content="@rudra496" />
+    <link
+      rel="canonical"
+      href="https://rudra496.github.io/devroadmaps/roadmap.html"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>"
+    />
+  </head>
+  <body class="roadmap-page">
     <canvas id="particles"></canvas>
 
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">🗺️ DevRoadmaps</a>
-            <div class="nav-links" id="navLinks">
-                <a href="index.html#roadmaps">All Roadmaps</a>
-                <a href="index.html#features">Features</a>
-            </div>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
+      <div
+        class="nav-container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+        "
+      >
+        <a href="index.html" class="nav-logo">🗺️ DevRoadmaps</a>
+
+        <div style="display: flex; align-items: center; gap: 25px">
+          <div class="nav-links" id="navLinks" style="display: flex; gap: 20px">
+            <a href="index.html#roadmaps">All Roadmaps</a>
+            <a href="index.html#features">Features</a>
+          </div>
+
+          <button
+            id="theme-toggle"
+            type="button"
+            class="flex items-center justify-center w-10 h-10 ml-2 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300"
+          >
+            <span id="theme-toggle-dark-icon" class="hidden text-xl">🌙</span>
+            <span id="theme-toggle-light-icon" class="hidden text-xl">☀️</span>
+          </button>
+
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
+      </div>
     </nav>
 
     <header class="roadmap-header" id="roadmapHeader">
-        <div class="container">
-            <a href="index.html#roadmaps" class="back-link">← All Roadmaps</a>
-            <div class="roadmap-title-area">
-                <span class="roadmap-icon" id="roadmapIcon"></span>
-                <h1 id="roadmapTitle">Loading...</h1>
-            </div>
-            <p class="roadmap-desc" id="roadmapDesc"></p>
-            <div class="roadmap-controls">
-                <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search topics..." autocomplete="off">
-                </div>
-                <div class="filter-buttons" id="filterButtons">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="fundamentals">📖 Fundamentals</button>
-                    <button class="filter-btn" data-filter="intermediate">📘 Intermediate</button>
-                    <button class="filter-btn" data-filter="advanced">📕 Advanced</button>
-                    <button class="filter-btn" data-filter="tools">🔧 Tools</button>
-                </div>
-                <div class="filter-buttons" id="resourceTypeFilters" style="margin-top:8px">
-                    <button class="filter-btn active" data-rtype="all">📋 All Resources</button>
-                    <button class="filter-btn" data-rtype="docs">📖 Docs</button>
-                    <button class="filter-btn" data-rtype="video">🎥 Video</button>
-                    <button class="filter-btn" data-rtype="course">🎯 Course</button>
-                    <button class="filter-btn" data-rtype="tutorial">🛠️ Tutorial</button>
-                    <button class="filter-btn" data-rtype="tool">🔧 Tool</button>
-                </div>
-                <div class="action-buttons">
-                    <button class="btn btn-sm" id="resetBtn">Reset Progress</button>
-                    <button class="btn btn-sm" id="printBtn">🖨️ Print</button>
-                    <button class="btn btn-sm" id="printChecklistBtn">✅ Print Checklist</button>
-                    <button class="btn btn-sm" id="printBookmarksBtn">📌 Print Bookmarks</button>
-                    <button class="btn btn-sm" id="expandAllBtn">Expand All</button>
-                    <button class="btn btn-sm" onclick="toggleTimer(currentRoadmap)" id="timerToggle">▶ Start Timer</button>
-                    <span class="nav-badge" title="Study Timer"><span id="timerDisplay">25:00</span> <span id="timerLabel">🍅 Focus</span></span>
-                    <span class="nav-badge" title="Total Study Time">⏱️ <span class="total-study-time">0m 0s</span></span>
-                </div>
-            </div>
-            <div class="progress-bar-container">
-                <div class="progress-bar" id="progressBar"><div class="progress-fill" id="progressFill"></div></div>
-                <span class="progress-text" id="progressText">0%</span>
-            </div>
-            <div class="learner-count-display" style="text-align:center;margin-top:8px;font-size:13px;color:var(--text-muted)">
-                <span id="learnerCount"></span>
-            </div>
+      <div class="container">
+        <a href="index.html#roadmaps" class="back-link">← All Roadmaps</a>
+        <div class="roadmap-title-area">
+          <span class="roadmap-icon" id="roadmapIcon"></span>
+          <h1 id="roadmapTitle">Loading...</h1>
         </div>
+        <p class="roadmap-desc" id="roadmapDesc"></p>
+        <div class="roadmap-controls">
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search topics..."
+              autocomplete="off"
+            />
+          </div>
+          <div class="filter-buttons" id="filterButtons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="fundamentals">
+              📖 Fundamentals
+            </button>
+            <button class="filter-btn" data-filter="intermediate">
+              📘 Intermediate
+            </button>
+            <button class="filter-btn" data-filter="advanced">
+              📕 Advanced
+            </button>
+            <button class="filter-btn" data-filter="tools">🔧 Tools</button>
+          </div>
+          <div
+            class="filter-buttons"
+            id="resourceTypeFilters"
+            style="margin-top: 8px"
+          >
+            <button class="filter-btn active" data-rtype="all">
+              📋 All Resources
+            </button>
+            <button class="filter-btn" data-rtype="docs">📖 Docs</button>
+            <button class="filter-btn" data-rtype="video">🎥 Video</button>
+            <button class="filter-btn" data-rtype="course">🎯 Course</button>
+            <button class="filter-btn" data-rtype="tutorial">
+              🛠️ Tutorial
+            </button>
+            <button class="filter-btn" data-rtype="tool">🔧 Tool</button>
+          </div>
+          <div class="action-buttons">
+            <button class="btn btn-sm" id="resetBtn">Reset Progress</button>
+            <button class="btn btn-sm" id="printBtn">🖨️ Print</button>
+            <button class="btn btn-sm" id="printChecklistBtn">
+              ✅ Print Checklist
+            </button>
+            <button class="btn btn-sm" id="printBookmarksBtn">
+              📌 Print Bookmarks
+            </button>
+            <button class="btn btn-sm" id="expandAllBtn">Expand All</button>
+            <button
+              class="btn btn-sm"
+              onclick="toggleTimer(currentRoadmap)"
+              id="timerToggle"
+            >
+              ▶ Start Timer
+            </button>
+            <span class="nav-badge" title="Study Timer"
+              ><span id="timerDisplay">25:00</span>
+              <span id="timerLabel">🍅 Focus</span></span
+            >
+            <span class="nav-badge" title="Total Study Time"
+              >⏱️ <span class="total-study-time">0m 0s</span></span
+            >
+          </div>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <span class="progress-text" id="progressText">0%</span>
+        </div>
+        <div
+          class="learner-count-display"
+          style="
+            text-align: center;
+            margin-top: 8px;
+            font-size: 13px;
+            color: var(--text-muted);
+          "
+        >
+          <span id="learnerCount"></span>
+        </div>
+      </div>
     </header>
 
     <main class="roadmap-main">
-        <div class="container">
-            <div class="roadmap-layout">
-                <!-- Minimap -->
-                <aside class="minimap" id="minimap">
-                    <div class="minimap-content" id="minimapContent"></div>
-                </aside>
+      <div class="container">
+        <div class="roadmap-layout">
+          <!-- Minimap -->
+          <aside class="minimap" id="minimap">
+            <div class="minimap-content" id="minimapContent"></div>
+          </aside>
 
-                <!-- Roadmap Nodes -->
-                <div class="roadmap-nodes" id="roadmapNodes">
-                    <!-- Populated by JS -->
-                </div>
-            </div>
+          <!-- Roadmap Nodes -->
+          <div class="roadmap-nodes" id="roadmapNodes">
+            <!-- Populated by JS -->
+          </div>
         </div>
+      </div>
     </main>
 
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      ↑
+    </button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      🌙
+    </button>
 
     <script src="js/main.js"></script>
     <script src="js/community.js"></script>
     <script src="js/learning-paths.js"></script>
     <script src="js/timer.js"></script>
     <script>
-    const params = new URLSearchParams(window.location.search);
-    const currentRoadmap = params.get('roadmap') || '';
-    initTimerWidget();
+      const params = new URLSearchParams(window.location.search);
+      const currentRoadmap = params.get("roadmap") || "";
+      initTimerWidget();
 
-    // Wire up print buttons
-    document.getElementById('printChecklistBtn')?.addEventListener('click', () => {
-        const progressKey = `progress-${currentRoadmap}`;
-        const completed = JSON.parse(localStorage.getItem(progressKey) || '{}');
-        fetch(`roadmaps/${currentRoadmap}.json`).then(r => r.json()).then(data => {
-            printChecklist(data.nodes, completed);
-        });
-    });
-    document.getElementById('printBookmarksBtn')?.addEventListener('click', () => {
-        const bookmarks = JSON.parse(localStorage.getItem('devroadmaps-bookmarks') || '[]');
-        printBookmarksSummary(bookmarks);
-    });
-
-    // Resource type filter
-    let activeResourceType = 'all';
-    document.querySelectorAll('#resourceTypeFilters .filter-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('#resourceTypeFilters .filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            activeResourceType = btn.dataset.rtype;
-            document.querySelectorAll('.resource-link').forEach(link => {
-                if (activeResourceType === 'all') {
-                    link.style.display = '';
-                } else {
-                    link.style.display = link.dataset.type === activeResourceType ? '' : 'none';
-                }
+      // Wire up print buttons
+      document
+        .getElementById("printChecklistBtn")
+        ?.addEventListener("click", () => {
+          const progressKey = `progress-${currentRoadmap}`;
+          const completed = JSON.parse(
+            localStorage.getItem(progressKey) || "{}",
+          );
+          fetch(`roadmaps/${currentRoadmap}.json`)
+            .then((r) => r.json())
+            .then((data) => {
+              printChecklist(data.nodes, completed);
             });
         });
-    });
+      document
+        .getElementById("printBookmarksBtn")
+        ?.addEventListener("click", () => {
+          const bookmarks = JSON.parse(
+            localStorage.getItem("devroadmaps-bookmarks") || "[]",
+          );
+          printBookmarksSummary(bookmarks);
+        });
+
+      // Resource type filter
+      let activeResourceType = "all";
+      document
+        .querySelectorAll("#resourceTypeFilters .filter-btn")
+        .forEach((btn) => {
+          btn.addEventListener("click", () => {
+            document
+              .querySelectorAll("#resourceTypeFilters .filter-btn")
+              .forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+            activeResourceType = btn.dataset.rtype;
+            document.querySelectorAll(".resource-link").forEach((link) => {
+              if (activeResourceType === "all") {
+                link.style.display = "";
+              } else {
+                link.style.display =
+                  link.dataset.type === activeResourceType ? "" : "none";
+              }
+            });
+          });
+        });
     </script>
-</body>
+  </body>
 </html>
