@@ -147,6 +147,46 @@ function initParticles() {
   draw();
 }
 
+// === Typing Effect ===
+function initTypingEffect() {
+  const target = document.getElementById("typingTarget");
+  if (!target) return;
+  const phrases = [
+    "Your journey from beginner to professional starts here.",
+    "17 roadmaps. 1,700+ free resources. Zero cost.",
+    "Track your progress. Bookmark topics. Stay focused.",
+    "Learn Frontend, Backend, DevOps, AI, Cybersecurity, and more.",
+  ];
+  let phraseIdx = 0;
+  let charIdx = 0;
+  let deleting = false;
+
+  function type() {
+    const phrase = phrases[phraseIdx];
+    if (!deleting) {
+      target.textContent = phrase.slice(0, charIdx + 1);
+      charIdx++;
+      if (charIdx >= phrase.length) {
+        deleting = true;
+        setTimeout(type, 2000);
+        return;
+      }
+      setTimeout(type, 40);
+    } else {
+      target.textContent = phrase.slice(0, charIdx - 1);
+      charIdx--;
+      if (charIdx <= 0) {
+        deleting = false;
+        phraseIdx = (phraseIdx + 1) % phrases.length;
+        setTimeout(type, 400);
+        return;
+      }
+      setTimeout(type, 20);
+    }
+  }
+  type();
+}
+
 // === Hamburger Menu ===
 function initHamburger() {
   const btn = document.getElementById("hamburger");
@@ -186,7 +226,7 @@ function initScrollAnimations() {
     { threshold: 0.1 },
   );
   document
-    .querySelectorAll("[data-animate]")
+    .querySelectorAll("[data-animate], .animate-on-scroll")
     .forEach((el) => observer.observe(el));
 }
 
@@ -302,17 +342,10 @@ async function initRoadmapViewer() {
     return ratingMgr ? ratingMgr.getRating(nodeId, resIdx) : 0;
   }
 
-  // Learner count
-  const learnerKey = `learner-count-${slug}`;
-  let learnerCount = parseInt(localStorage.getItem(learnerKey) || "0");
+  // Learner count — show your own progress
   function updateLearnerCount(done, total) {
-    const pct = total > 0 ? done / total : 0;
-    if (!learnerCount) {
-      learnerCount = Math.max(Math.floor(pct * 47 + 20), 1);
-      localStorage.setItem(learnerKey, learnerCount.toString());
-    }
     const el = document.getElementById("learnerCount");
-    if (el) el.textContent = `${learnerCount} learners`;
+    if (el) el.textContent = `${done}/${total} topics completed`;
   }
 
   const progressKey = `progress-${slug}`;
@@ -579,6 +612,7 @@ async function initRoadmapViewer() {
 document.addEventListener("DOMContentLoaded", () => {
   initParticles();
   initTheme();
+  initTypingEffect();
   initHamburger();
   initBackToTop();
   initFAQ();
@@ -591,49 +625,38 @@ document.addEventListener("DOMContentLoaded", () => {
     initLandingRoadmaps();
   }
 
-  // Scroll animations (for non-roadmap elements)
   initScrollAnimations();
 });
 
-// toggle button logic
+// Theme toggle
 const initTheme = () => {
   const themeToggleBtn = document.getElementById("theme-toggle");
 
   const setTheme = (isDark) => {
-    // Select icons INSIDE the function to ensure they are captured
     const darkIcon = document.getElementById("theme-toggle-dark-icon");
     const lightIcon = document.getElementById("theme-toggle-light-icon");
 
     if (isDark) {
       document.documentElement.classList.add("dark");
       document.documentElement.setAttribute("data-theme", "dark");
-
-      // If DARK mode is active, we show the SUN (to switch to light)
       if (darkIcon) darkIcon.classList.add("hidden");
       if (lightIcon) lightIcon.classList.remove("hidden");
-
       localStorage.setItem("color-theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
       document.documentElement.setAttribute("data-theme", "light");
-
-      // If LIGHT mode is active, we show the MOON (to switch to dark)
       if (lightIcon) lightIcon.classList.add("hidden");
       if (darkIcon) darkIcon.classList.remove("hidden");
-
       localStorage.setItem("color-theme", "light");
     }
   };
 
   const savedTheme = localStorage.getItem("color-theme");
   const systemPrefersDark = window.matchMedia(
-    "(prefers-color-scheme: dark)",
+    "(prefers-color-scheme: dark)"
   ).matches;
-
-  // Logic: Use saved preference, otherwise fallback to system default
   const isCurrentlyDark =
     savedTheme === "dark" || (!savedTheme && systemPrefersDark);
-
   setTheme(isCurrentlyDark);
 
   if (themeToggleBtn) {
@@ -643,21 +666,3 @@ const initTheme = () => {
     };
   }
 };
-// 2. THE INITIALIZATION BLOCK
-document.addEventListener("DOMContentLoaded", () => {
-  initParticles();
-  initTheme(); // This calls the function above
-  initHamburger();
-  initBackToTop();
-  initFAQ();
-
-  const isRoadmapPage = document.querySelector(".roadmap-page");
-  if (isRoadmapPage) {
-    initRoadmapViewer();
-  } else {
-    initCounters();
-    initLandingRoadmaps(); // THIS is what builds your cards!
-  }
-
-  initScrollAnimations();
-});

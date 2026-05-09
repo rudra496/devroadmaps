@@ -10,7 +10,8 @@ const CERTIFICATIONS = [
     color: "#FF9900",
     roadmaps: ["cloud-architect", "devops"],
     requiredNodes: [
-      { roadmap: "cloud-architect", nodeIds: ["cloud-fundamentals", "aws-core-ec2", "aws-core-s3", "aws-core-vpc", "aws-core-iam", "aws-core-lambda", "aws-networking", "aws-security", "iaas-paas-saas", "well-architected"] },
+      { roadmap: "cloud-architect", nodeIds: ["cloud-fundamentals", "cloud-iaas-paas-saas", "cloud-aws-core", "cloud-aws-advanced", "cloud-networking", "cloud-security", "cloud-well-architected", "cloud-storage", "cloud-database", "cloud-identity"] },
+      { roadmap: "devops", nodeIds: ["dev-aws-core", "dev-aws-advanced", "dev-aws-s3", "dev-aws-ec2", "dev-aws-lambda"] }
     ],
     totalStudyHours: 100,
     examCode: "SAA-C03",
@@ -24,8 +25,8 @@ const CERTIFICATIONS = [
     color: "#FF9900",
     roadmaps: ["devops", "cloud-architect"],
     requiredNodes: [
-      { roadmap: "cloud-architect", nodeIds: ["aws-core-iam", "aws-core-lambda", "aws-core-s3", "api-gateway"] },
-      { roadmap: "devops", nodeIds: ["docker", "ci-cd", "iac-terraform", "monitoring"] }
+      { roadmap: "cloud-architect", nodeIds: ["cloud-aws-core", "cloud-serverless", "cloud-storage", "cloud-api-gateway", "cloud-identity"] },
+      { roadmap: "devops", nodeIds: ["dev-docker", "dev-ghactions", "dev-terraform", "dev-prometheus", "dev-aws-lambda"] }
     ],
     totalStudyHours: 80,
     examCode: "DVA-C02",
@@ -39,7 +40,8 @@ const CERTIFICATIONS = [
     color: "#4285F4",
     roadmaps: ["cloud-architect", "devops"],
     requiredNodes: [
-      { roadmap: "cloud-architect", nodeIds: ["cloud-fundamentals", "iaas-paas-saas", "gcp-compute", "gcp-storage", "gcp-bigquery"] }
+      { roadmap: "cloud-architect", nodeIds: ["cloud-fundamentals", "cloud-iaas-paas-saas", "cloud-gcp", "cloud-storage", "cloud-networking"] },
+      { roadmap: "devops", nodeIds: ["dev-gcp", "dev-gcp-compute"] }
     ],
     totalStudyHours: 80,
     examCode: "ACE-GCE",
@@ -53,10 +55,10 @@ const CERTIFICATIONS = [
     color: "#326CE5",
     roadmaps: ["devops"],
     requiredNodes: [
-      { roadmap: "devops", nodeIds: ["docker", "kubernetes", "kubernetes-helm", "container-orchestration", "cloud-security", "monitoring", "networking"] }
+      { roadmap: "devops", nodeIds: ["dev-docker", "dev-k8s", "dev-helm", "dev-istio", "dev-prometheus", "dev-networking", "dev-troubleshooting"] }
     ],
     totalStudyHours: 120,
-    examCode: "CKA-2024",
+    examCode: "CKA",
     topics: ["Cluster Architecture", "Workloads", "Networking", "Storage", "Security", "Troubleshooting"]
   },
   {
@@ -67,7 +69,7 @@ const CERTIFICATIONS = [
     color: "#C8102E",
     roadmaps: ["cybersecurity"],
     requiredNodes: [
-      { roadmap: "cybersecurity", nodeIds: ["sec-networking", "sec-linux", "sec-web", "owasp", "cryptography", "wireless-security"] }
+      { roadmap: "cybersecurity", nodeIds: ["sec-networking", "sec-linux", "sec-web-fundamentals", "sec-owasp", "sec-crypto", "sec-wireless", "sec-identity"] }
     ],
     totalStudyHours: 60,
     examCode: "SY0-701",
@@ -81,7 +83,7 @@ const CERTIFICATIONS = [
     color: "#1A5276",
     roadmaps: ["cybersecurity"],
     requiredNodes: [
-      { roadmap: "cybersecurity", nodeIds: ["sec-networking", "sec-web", "owasp", "cryptography", "penetration-testing", "malware-analysis", "forensics"] }
+      { roadmap: "cybersecurity", nodeIds: ["sec-networking", "sec-web-fundamentals", "sec-owasp", "sec-crypto", "sec-pentest", "sec-malware", "sec-forensics"] }
     ],
     totalStudyHours: 120,
     examCode: "312-50v13",
@@ -95,7 +97,8 @@ const CERTIFICATIONS = [
     color: "#7B42BC",
     roadmaps: ["devops", "cloud-architect"],
     requiredNodes: [
-      { roadmap: "devops", nodeIds: ["iac-terraform", "cloud-fundamentals", "iac-cloudformation"] }
+      { roadmap: "devops", nodeIds: ["dev-terraform", "dev-aws-core"] },
+      { roadmap: "cloud-architect", nodeIds: ["cloud-iac", "cloud-fundamentals"] }
     ],
     totalStudyHours: 40,
     examCode: "003",
@@ -105,7 +108,6 @@ const CERTIFICATIONS = [
 
 const CERT_STORAGE_KEY = 'devroadmaps_certifications';
 
-// Get tracked certifications from localStorage
 function getTrackedCerts() {
   try {
     const data = localStorage.getItem(CERT_STORAGE_KEY);
@@ -115,12 +117,10 @@ function getTrackedCerts() {
   }
 }
 
-// Save tracking data
 function saveTrackedCerts(data) {
   localStorage.setItem(CERT_STORAGE_KEY, JSON.stringify(data));
 }
 
-// Start tracking a certification
 function startTracking(certId) {
   const tracked = getTrackedCerts();
   if (!tracked[certId]) {
@@ -133,23 +133,12 @@ function startTracking(certId) {
   }
 }
 
-// Stop tracking a certification
 function stopTracking(certId) {
   const tracked = getTrackedCerts();
   delete tracked[certId];
   saveTrackedCerts(tracked);
 }
 
-// Mark a node as studied for a cert
-function markNodeStudied(certId, nodeId) {
-  const tracked = getTrackedCerts();
-  if (tracked[certId] && !tracked[certId].completedNodes.includes(nodeId)) {
-    tracked[certId].completedNodes.push(nodeId);
-    saveTrackedCerts(tracked);
-  }
-}
-
-// Calculate completion percentage for a cert
 function getCertProgress(certId) {
   const cert = CERTIFICATIONS.find(c => c.id === certId);
   const tracked = getTrackedCerts();
@@ -160,22 +149,6 @@ function getCertProgress(certId) {
   return Math.round((completed / totalRequired) * 100);
 }
 
-// Get all studied node IDs from progress
-function getAllStudiedNodeIds() {
-  const progress = getProgress();
-  const studied = new Set();
-  Object.values(progress).forEach(data => {
-    data.completedNodes.forEach(id => studied.add(id));
-  });
-  return studied;
-}
-
-// Get progress for all certs
-function getProgress() {
-  return getTrackedCerts();
-}
-
-// Get study hours remaining for a cert
 function getRemainingHours(certId) {
   const cert = CERTIFICATIONS.find(c => c.id === certId);
   const tracked = getTrackedCerts();
@@ -186,12 +159,11 @@ function getRemainingHours(certId) {
   return Math.max(0, cert.totalStudyHours - studied);
 }
 
-// Render certification cards
 function renderCertifications(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  const progress = getProgress();
+  const progress = getTrackedCerts();
 
   const html = `
     <div class="cert-grid">
@@ -224,7 +196,7 @@ function renderCertifications(containerId) {
             </div>
             <button class="cert-btn ${isTracking ? 'stop' : 'start'}"
                     onclick="toggleCert('${cert.id}')" style="background: ${cert.color}">
-              ${isTracking ? '⏹ Stop Tracking' : '▶ Start Tracking'}
+              ${isTracking ? 'Stop Tracking' : 'Start Tracking'}
             </button>
           </div>`;
       }).join('')}
@@ -234,7 +206,6 @@ function renderCertifications(containerId) {
   container.innerHTML = html;
 }
 
-// Toggle tracking
 function toggleCert(certId) {
   const tracked = getTrackedCerts();
   if (tracked[certId]) {
@@ -245,19 +216,6 @@ function toggleCert(certId) {
   renderCertifications('certifications');
 }
 
-// Export cert data
-function exportCertProgress() {
-  const progress = getProgress();
-  const blob = new Blob([JSON.stringify(progress, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'cert-progress.json';
-  a.click();
-  URL.revokeObjectURL(url);
-}
-
-// Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
   renderCertifications('certifications');
 });

@@ -13,7 +13,7 @@ We take security seriously and will address vulnerabilities promptly.
 If you discover a security vulnerability, please report it responsibly:
 
 1. **Do NOT** open a public issue for security vulnerabilities.
-2. Email us at [INSERT SECURITY EMAIL] with the subject line `[Security] Vulnerability Report`.
+2. Open a private security advisory on GitHub or email the repository owner.
 3. Include as much detail as possible: steps to reproduce, affected components, potential impact.
 4. We will acknowledge receipt within 48 hours and aim to resolve within 7 days.
 

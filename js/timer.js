@@ -55,28 +55,28 @@ function startTimer(roadmap) {
   timerRunning = true;
   updateTimerUI();
 
-  const elapsedAtStart = Date.now();
-  timerInterval = setInterval(() => {
+  function tick() {
     timerSeconds--;
     if (timerSeconds <= 0) {
       clearInterval(timerInterval);
       timerRunning = false;
       if (timerMode === 'work') {
         addStudyTime(timerRoadmap, POMODORO_WORK);
-        alert('🍅 Pomodoro complete! Take a 5-minute break.');
-        // Auto start break
+        alert('Pomodoro complete! Take a 5-minute break.');
         timerMode = 'break';
         timerSeconds = POMODORO_BREAK;
         timerRunning = true;
-        timerInterval = setInterval(arguments.callee, 1000);
+        timerInterval = setInterval(tick, 1000);
       } else {
         timerMode = 'work';
-        alert('☕ Break over! Ready for another session?');
+        alert('Break over! Ready for another session?');
         resetTimerUI();
       }
     }
     updateTimerUI();
-  }, 1000);
+  }
+
+  timerInterval = setInterval(tick, 1000);
 }
 
 function stopTimer() {
@@ -128,7 +128,7 @@ function initTimerWidget() {
 }
 
 // Achievements check
-function checkAchievements() {
+async function checkAchievements() {
   const achievements = [];
   const studyTotal = getTotalStudyTime();
 
@@ -138,7 +138,6 @@ function checkAchievements() {
   const ROADMAP_SLUGS = ['frontend','backend','fullstack','ml-ai','devops','mobile','cybersecurity','data-engineer','blockchain','game-dev','embedded-iot','product-manager','devsecops','qa-engineer','technical-writer'];
   let totalCompleted = 0;
   let startedRoadmaps = 0;
-  let completedAnyRoadmap = false;
 
   for (const slug of ROADMAP_SLUGS) {
     const progress = JSON.parse(localStorage.getItem(`progress-${slug}`) || '{}');
@@ -152,6 +151,20 @@ function checkAchievements() {
   if (getBookmarks().length >= 10) achievements.push('bookmark_10');
   if (startedRoadmaps >= 5) achievements.push('five_roadmaps');
 
+  // Check if any roadmap is fully completed
+  for (const slug of ROADMAP_SLUGS) {
+    try {
+      const resp = await fetch(`roadmaps/${slug}.json`);
+      const data = await resp.json();
+      const progress = JSON.parse(localStorage.getItem(`progress-${slug}`) || '{}');
+      const done = Object.values(progress).filter(v => v).length;
+      if (done >= data.nodes.length && data.nodes.length > 0) {
+        achievements.push('roadmap_complete');
+        break;
+      }
+    } catch (e) {}
+  }
+
   return achievements;
 }
 
@@ -162,7 +175,7 @@ async function initAchievements() {
   try {
     const resp = await fetch('achievements.json');
     const all = await resp.json();
-    const unlocked = checkAchievements();
+    const unlocked = await checkAchievements();
 
     all.forEach(a => {
       const isUnlocked = unlocked.includes(a.id);

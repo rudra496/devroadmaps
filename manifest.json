@@ -1,7 +1,7 @@
 {
   "name": "DevRoadmaps",
   "short_name": "DevRoadmaps",
-  "description": "Interactive developer roadmaps with 800+ learning topics and 3000+ free resources",
+  "description": "Interactive developer roadmaps with 795 learning topics and 1700+ free resources",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0f0f23",

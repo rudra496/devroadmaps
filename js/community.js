@@ -61,20 +61,13 @@ function initRatings(roadmapSlug) {
     };
 }
 
-// === Learner Counter (motivational) ===
-function getLearnerCount(roadmapSlug) {
-    const key = `learner-count-${roadmapSlug}`;
-    const stored = parseInt(localStorage.getItem(key) || '0');
-    return stored;
-}
-
-function generateLearnerCount(roadmapSlug, percentComplete) {
-    const key = `learner-count-${roadmapSlug}`;
-    // Generate a plausible motivational number based on completion
-    const base = Math.floor(percentComplete * 47 + Math.random() * 20);
-    const count = Math.max(base, 1);
-    localStorage.setItem(key, count.toString());
-    return count;
+// === Learner Counter ===
+// This is local-only — shows your own progress activity
+function getLearnerProgress(roadmapSlug) {
+    const progressKey = `progress-${roadmapSlug}`;
+    const completed = JSON.parse(localStorage.getItem(progressKey) || '{}');
+    const done = Object.values(completed).filter(v => v).length;
+    return done;
 }
 
 // === Resource Type Filter ===
@@ -94,19 +87,10 @@ function filterResources(resources, type) {
 
 // === Theme: Auto mode ===
 function initAutoTheme() {
-    const saved = localStorage.getItem('devroadmaps-theme');
-    if (saved === 'auto' || !saved) {
+    const saved = localStorage.getItem('color-theme');
+    if (!saved) {
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-
-        // Listen for system changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-            const current = localStorage.getItem('devroadmaps-theme');
-            if (current === 'auto' || !current) {
-                document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
-                updateThemeIcon();
-            }
-        });
     }
 }
 

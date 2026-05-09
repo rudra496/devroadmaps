@@ -1,55 +1,15 @@
-// Community Forum — Simulated community discussions
+// Community Forum — Community discussions stored locally
 
 const FORUM_STORAGE_KEY = 'devroadmaps_forum';
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
 const FORUM_CATEGORIES = ['General', 'Help', 'Show & Tell', 'Feedback', 'Resources'];
 
-const DEFAULT_POSTS = [
-  {
-    id: 1, category: 'Show & Tell',
-    title: 'Just completed the Full Stack roadmap in 4 months!',
-    author: 'dev_alex',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=alex',
-    message: 'Started with zero web dev experience. The roadmap structure made it so easy to follow. Built 3 portfolio projects along the way. Just landed my first junior developer role!',
-    timestamp: '2026-03-20T10:30:00Z',
-    replies: 23, likes: 47
-  },
-  {
-    id: 2, category: 'Help',
-    title: 'Struggling with Kubernetes — any tips?',
-    author: 'learn_k8s',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=k8s',
-    message: 'I\'m on the DevOps roadmap and hitting the Kubernetes section. The concepts are overwhelming. What resources helped you understand pods, services, and ingress?',
-    timestamp: '2026-03-22T14:15:00Z',
-    replies: 15, likes: 12
-  },
-  {
-    id: 3, category: 'General',
-    title: 'Which roadmap should I start with if I want to go into AI?',
-    author: 'future_ml_eng',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=ml',
-    message: 'I have basic Python skills and want to become an ML engineer. Should I do the ML/AI roadmap directly or start with backend first?',
-    timestamp: '2026-03-25T09:00:00Z',
-    replies: 31, likes: 28
-  },
-  {
-    id: 4, category: 'Resources',
-    title: 'Free alternatives to paid courses for React',
-    author: 'budget_dev',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=react',
-    message: 'Found some amazing free resources not in the roadmap: Scrimba has great interactive React tutorials, and EpicWeb.dev by Kent C. Dodds is now free!',
-    timestamp: '2026-03-24T16:45:00Z',
-    replies: 8, likes: 35
-  },
-  {
-    id: 5, category: 'Feedback',
-    title: 'Suggestion: Add estimated completion time per node',
-    author: 'planner_mike',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=mike',
-    message: 'It would be really helpful if each node showed how long it typically takes to learn that topic. Would make planning study schedules much easier.',
-    timestamp: '2026-03-26T11:20:00Z',
-    replies: 5, likes: 19
-  }
-];
+const DEFAULT_POSTS = [];
 
 function getPosts() {
   try {
@@ -136,12 +96,12 @@ function renderForum(containerId, filterCategory) {
           <div class="post-avatar"><img src="${post.avatar}" alt="${post.author}" onerror="this.style.display='none'"></div>
           <div class="post-content">
             <div class="post-meta">
-              <span class="post-category-tag">${post.category}</span>
-              <span class="post-author-name">${post.author}</span>
+              <span class="post-category-tag">${escapeHtml(post.category)}</span>
+              <span class="post-author-name">${escapeHtml(post.author)}</span>
               <span class="post-time">${timeAgo(post.timestamp)}</span>
             </div>
-            <h3 class="post-title">${post.title}</h3>
-            <p class="post-message">${post.message}</p>
+            <h3 class="post-title">${escapeHtml(post.title)}</h3>
+            <p class="post-message">${escapeHtml(post.message)}</p>
             <div class="post-actions">
               <button onclick="likePost(${post.id}); renderForum('${containerId}')">❤️ ${post.likes || 0}</button>
               <span>💬 ${post.replies || 0}</span>
@@ -150,7 +110,7 @@ function renderForum(containerId, filterCategory) {
         </div>
       `).join('')}
     </div>
-    <p class="forum-note">🌐 Community features coming soon — real accounts, replies, and moderation.</p>
+    <p class="forum-note">Posts are stored locally in your browser. Share your learning journey!</p>
   `;
 
   container.innerHTML = html;
