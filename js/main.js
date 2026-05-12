@@ -575,9 +575,12 @@ async function initRoadmapViewer() {
     document
       .querySelectorAll(".node")
       .forEach((n) => n.classList.toggle("expanded", allExpanded));
-    document.getElementById("expandAllBtn").textContent = allExpanded
-      ? "Collapse All"
-      : "Expand All";
+    const btn = document.getElementById("expandAllBtn");
+    if (typeof I18n !== "undefined") {
+      btn.textContent = allExpanded ? I18n.t("btn_collapse_all") : I18n.t("btn_expand_all");
+    } else {
+      btn.textContent = allExpanded ? "Collapse All" : "Expand All";
+    }
   });
 
   // Keyboard navigation
