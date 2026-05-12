@@ -97,17 +97,18 @@
           >🗺️ <span class="logo-text">DevRoadmaps</span></a
         >
         <div class="nav-links" id="navLinks">
-          <a href="#roadmaps">Roadmaps</a>
-          <a href="#features">Features</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#community">Community</a>
-          <a href="#faq">FAQ</a>
+          <a href="#roadmaps" data-i18n="nav_roadmaps">Roadmaps</a>
+          <a href="#features" data-i18n="nav_features">Features</a>
+          <a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a>
+          <a href="#certifications" data-i18n="nav_certifications">Certifications</a>
+          <a href="#community" data-i18n="nav_community">Community</a>
+          <a href="#faq" data-i18n="nav_faq">FAQ</a>
           <a
             href="https://github.com/rudra496/devroadmaps"
             target="_blank"
             rel="noopener"
             class="nav-cta"
+            data-i18n="nav_star_github"
             >⭐ Star on GitHub</a
           >
           <span class="nav-badge" id="bookmarkToggle" title="Bookmarks"
@@ -116,6 +117,7 @@
           <span class="nav-badge" title="Total Study Time"
             >⏱️ <span class="total-study-time">0m 0s</span></span
           >
+          <div id="langSelectorNav"></div>
           <button
             id="theme-toggle"
             type="button"
@@ -135,48 +137,49 @@
     <header class="hero" id="hero">
       <div class="hero-bg-mesh" aria-hidden="true"></div>
       <div class="hero-content">
-        <div class="hero-badge animate-on-scroll">🎓 Free & Open Source</div>
+        <div class="hero-badge animate-on-scroll" data-i18n="hero_badge">🎓 Free & Open Source</div>
         <h1 class="hero-title animate-on-scroll">
-          <span class="gradient-text">Developer Roadmaps</span>
+          <span class="gradient-text" data-i18n="hero_title">Developer Roadmaps</span>
         </h1>
         <p class="hero-typing animate-on-scroll" id="typingTarget"></p>
-        <p class="hero-desc animate-on-scroll">
+        <p class="hero-desc animate-on-scroll" data-i18n="hero_desc">
           795 curated topics with 1,700+ free resources across 17 roadmaps.
           Interactive progress tracking, bookmarks, community tips, resource
           ratings, study timer, and achievement badges to guide your journey.
         </p>
         <div class="hero-buttons animate-on-scroll">
-          <a href="#roadmaps" class="btn btn-primary btn-glow"
+          <a href="#roadmaps" class="btn btn-primary btn-glow" data-i18n="hero_btn_explore"
             >Explore Roadmaps →</a
           >
           <a
             href="https://github.com/rudra496/devroadmaps"
             target="_blank"
             class="btn btn-secondary"
+            data-i18n="hero_btn_github"
             >View on GitHub ⭐</a
           >
         </div>
         <div class="hero-stats animate-on-scroll">
           <div class="stat-item">
             <span class="stat-number" data-target="17">0</span>
-            <span class="stat-label">Roadmaps</span>
+            <span class="stat-label" data-i18n="stats_roadmaps">Roadmaps</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
             <span class="stat-number" data-target="795">0</span>
-            <span class="stat-label">Topics</span>
+            <span class="stat-label" data-i18n="stats_topics">Topics</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
             <span class="stat-number" data-target="1700">0</span
             ><span class="stat-suffix">+</span>
-            <span class="stat-label">Resources</span>
+            <span class="stat-label" data-i18n="stats_resources">Resources</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
             <span class="stat-number" data-target="100">0</span
             ><span class="stat-suffix">%</span>
-            <span class="stat-label">Free</span>
+            <span class="stat-label" data-i18n="stats_free">Free</span>
           </div>
         </div>
       </div>
@@ -189,9 +192,9 @@
     <section class="section" id="roadmaps">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <span class="section-tag">🗺️ Roadmaps</span>
-          <h2 class="section-title">Choose Your Path</h2>
-          <p class="section-subtitle">
+          <span class="section-tag" data-i18n="section_roadmaps_tag">🗺️ Roadmaps</span>
+          <h2 class="section-title" data-i18n="section_roadmaps_title">Choose Your Path</h2>
+          <p class="section-subtitle" data-i18n="section_roadmaps_subtitle">
             17 comprehensive roadmaps covering every major tech discipline
           </p>
         </div>
@@ -204,13 +207,14 @@
               id="roadmapSearch"
               placeholder="Search roadmaps..."
               autocomplete="off"
+              data-i18n-placeholder="search_roadmaps_placeholder"
             />
           </div>
           <div class="filter-pills" id="difficultyFilters">
-            <button class="pill active" data-diff="all">All</button>
-            <button class="pill" data-diff="beginner">Beginner</button>
-            <button class="pill" data-diff="intermediate">Intermediate</button>
-            <button class="pill" data-diff="advanced">Advanced</button>
+            <button class="pill active" data-diff="all" data-i18n="filter_all">All</button>
+            <button class="pill" data-diff="beginner" data-i18n="filter_beginner">Beginner</button>
+            <button class="pill" data-diff="intermediate" data-i18n="filter_intermediate">Intermediate</button>
+            <button class="pill" data-diff="advanced" data-i18n="filter_advanced">Advanced</button>
           </div>
         </div>
         <div class="roadmaps-grid" id="roadmapsGrid">
@@ -223,9 +227,9 @@
     <section class="section section-alt" id="features">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <span class="section-tag">✨ Features</span>
-          <h2 class="section-title">Why DevRoadmaps?</h2>
-          <p class="section-subtitle">
+          <span class="section-tag" data-i18n="section_features_tag">✨ Features</span>
+          <h2 class="section-title" data-i18n="section_features_title">Why DevRoadmaps?</h2>
+          <p class="section-subtitle" data-i18n="section_features_subtitle">
             Everything you need to master your craft, completely free
           </p>
         </div>
@@ -794,6 +798,7 @@
 
     <!-- Theme Toggle -->
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
     <script src="js/community.js"></script>
     <script src="js/learning-paths.js"></script>
@@ -803,6 +808,12 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+        // Inject language selector into navbar
+        const langNav = document.getElementById("langSelectorNav");
+        if (langNav) langNav.appendChild(I18n.buildSelector());
+
+        I18n.init();
+
         initLearningPaths();
         initBookmarkPanel();
         initTimerWidget();

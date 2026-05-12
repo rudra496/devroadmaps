@@ -48,9 +48,11 @@
 
         <div style="display: flex; align-items: center; gap: 25px">
           <div class="nav-links" id="navLinks" style="display: flex; gap: 20px">
-            <a href="index.html#roadmaps">All Roadmaps</a>
-            <a href="index.html#features">Features</a>
+            <a href="index.html#roadmaps" data-i18n="nav_roadmaps">Roadmaps</a>
+            <a href="index.html#features" data-i18n="nav_features">Features</a>
           </div>
+
+          <div id="langSelectorNav"></div>
 
           <button
             id="theme-toggle"
@@ -70,7 +72,7 @@
 
     <header class="roadmap-header" id="roadmapHeader">
       <div class="container">
-        <a href="index.html#roadmaps" class="back-link">← All Roadmaps</a>
+        <a href="index.html#roadmaps" class="back-link" data-i18n="roadmap_back">← All Roadmaps</a>
         <div class="roadmap-title-area">
           <span class="roadmap-icon" id="roadmapIcon"></span>
           <h1 id="roadmapTitle">Loading...</h1>
@@ -83,51 +85,53 @@
               id="searchInput"
               placeholder="Search topics..."
               autocomplete="off"
+              data-i18n-placeholder="roadmap_search_placeholder"
             />
           </div>
           <div class="filter-buttons" id="filterButtons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="fundamentals">
+            <button class="filter-btn active" data-filter="all" data-i18n="roadmap_filter_all">All</button>
+            <button class="filter-btn" data-filter="fundamentals" data-i18n="roadmap_filter_fundamentals">
               📖 Fundamentals
             </button>
-            <button class="filter-btn" data-filter="intermediate">
+            <button class="filter-btn" data-filter="intermediate" data-i18n="roadmap_filter_intermediate">
               📘 Intermediate
             </button>
-            <button class="filter-btn" data-filter="advanced">
+            <button class="filter-btn" data-filter="advanced" data-i18n="roadmap_filter_advanced">
               📕 Advanced
             </button>
-            <button class="filter-btn" data-filter="tools">🔧 Tools</button>
+            <button class="filter-btn" data-filter="tools" data-i18n="roadmap_filter_tools">🔧 Tools</button>
           </div>
           <div
             class="filter-buttons"
             id="resourceTypeFilters"
             style="margin-top: 8px"
           >
-            <button class="filter-btn active" data-rtype="all">
+            <button class="filter-btn active" data-rtype="all" data-i18n="roadmap_res_all">
               📋 All Resources
             </button>
-            <button class="filter-btn" data-rtype="docs">📖 Docs</button>
-            <button class="filter-btn" data-rtype="video">🎥 Video</button>
-            <button class="filter-btn" data-rtype="course">🎯 Course</button>
-            <button class="filter-btn" data-rtype="tutorial">
+            <button class="filter-btn" data-rtype="docs" data-i18n="roadmap_res_docs">📖 Docs</button>
+            <button class="filter-btn" data-rtype="video" data-i18n="roadmap_res_video">🎥 Video</button>
+            <button class="filter-btn" data-rtype="course" data-i18n="roadmap_res_course">🎯 Course</button>
+            <button class="filter-btn" data-rtype="tutorial" data-i18n="roadmap_res_tutorial">
               🛠️ Tutorial
             </button>
-            <button class="filter-btn" data-rtype="tool">🔧 Tool</button>
+            <button class="filter-btn" data-rtype="tool" data-i18n="roadmap_res_tool">🔧 Tool</button>
           </div>
           <div class="action-buttons">
-            <button class="btn btn-sm" id="resetBtn">Reset Progress</button>
-            <button class="btn btn-sm" id="printBtn">🖨️ Print</button>
-            <button class="btn btn-sm" id="printChecklistBtn">
+            <button class="btn btn-sm" id="resetBtn" data-i18n="btn_reset_progress">Reset Progress</button>
+            <button class="btn btn-sm" id="printBtn" data-i18n="btn_print">🖨️ Print</button>
+            <button class="btn btn-sm" id="printChecklistBtn" data-i18n="btn_print_checklist">
               ✅ Print Checklist
             </button>
-            <button class="btn btn-sm" id="printBookmarksBtn">
+            <button class="btn btn-sm" id="printBookmarksBtn" data-i18n="btn_print_bookmarks">
               📌 Print Bookmarks
             </button>
-            <button class="btn btn-sm" id="expandAllBtn">Expand All</button>
+            <button class="btn btn-sm" id="expandAllBtn" data-i18n="btn_expand_all">Expand All</button>
             <button
               class="btn btn-sm"
               onclick="toggleTimer(currentRoadmap)"
               id="timerToggle"
+              data-i18n="btn_start_timer"
             >
               ▶ Start Timer
             </button>
@@ -183,6 +187,7 @@
       🌙
     </button>
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
     <script src="js/community.js"></script>
     <script src="js/learning-paths.js"></script>
@@ -190,6 +195,14 @@
     <script>
       const params = new URLSearchParams(window.location.search);
       const currentRoadmap = params.get("roadmap") || "";
+
+      // Inject language selector and initialise i18n
+      document.addEventListener("DOMContentLoaded", () => {
+        const langNav = document.getElementById("langSelectorNav");
+        if (langNav) langNav.appendChild(I18n.buildSelector());
+        I18n.init();
+      });
+
       initTimerWidget();
 
       // Wire up print buttons

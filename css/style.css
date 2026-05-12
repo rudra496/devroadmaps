@@ -1977,6 +1977,38 @@ footer {
   font-size: 14px; /* Adjust size if needed */
 }
 
+/* === Language Selector === */
+.lang-selector {
+  display: inline-flex;
+  align-items: center;
+}
+.lang-select {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237c5cfc'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 24px;
+}
+.lang-select:hover,
+.lang-select:focus {
+  border-color: var(--border-hover);
+  outline: none;
+}
+.lang-select option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
 #theme-toggle span {
   line-height: 1; /* Prevents icons from making the button taller */
 }
