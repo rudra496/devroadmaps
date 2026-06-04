@@ -1,0 +1,313 @@
+{
+  "title": "Site Reliability Engineer (SRE)",
+  "description": "Master reliability engineering — from SLOs, SLIs, and error budgets to incident response, chaos engineering, capacity planning, and building resilient distributed systems at scale.",
+  "icon": "🛡️",
+  "categories": ["fundamentals", "intermediate", "advanced", "tools"],
+  "nodes": [
+    {
+      "id": "sre-linux-basics",
+      "title": "Linux System Administration",
+      "icon": "🐧",
+      "category": "fundamentals",
+      "description": "Process management, systemd, kernel tuning, file descriptors, resource limits, and performance basics.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Linux Journey", "url": "https://linuxjourney.com/", "type": "course", "free": true },
+        { "title": "Linux Performance", "url": "https://www.brendangregg.com/linuxperf.html", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-networking",
+      "title": "Networking Deep Dive",
+      "icon": "🌐",
+      "category": "fundamentals",
+      "description": "TCP/IP stack, DNS resolution, HTTP/2, TLS handshake, connection pooling, packet analysis with tcpdump.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Beej's Guide to Networking", "url": "https://beej.us/guide/bgnet/", "type": "docs", "free": true },
+        { "title": "tcpdump Tutorial", "url": "https://danielmiessler.com/p/a-primer-on-tcpdump/", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "sre-programming",
+      "title": "Programming (Go/Python)",
+      "icon": "💻",
+      "category": "fundamentals",
+      "description": "Go for tooling and automation, Python for scripting and glue code — concurrency, CLIs, and HTTP clients.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Go by Example", "url": "https://gobyexample.com/", "type": "tutorial", "free": true },
+        { "title": "Automate the Boring Stuff (Python)", "url": "https://automatetheboringstuff.com/", "type": "course", "free": true },
+        { "title": "Effective Go", "url": "https://go.dev/doc/effective_go", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-sli-slo-sla",
+      "title": "SLIs, SLOs & SLAs",
+      "icon": "🎯",
+      "category": "fundamentals",
+      "description": "Define Service Level Indicators, set Service Level Objectives, and understand SLA commitments.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Google SRE Book", "url": "https://sre.google/sre-book/table-of-contents/", "type": "docs", "free": true },
+        { "title": "SLO Examples", "url": "https://sre.google/workbook/slo-examples/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-error-budgets",
+      "title": "Error Budgets",
+      "icon": "💰",
+      "category": "fundamentals",
+      "description": "Calculate error budgets, use them to balance reliability with feature velocity, and burn-rate alerts.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Google SRE Workbook — Error Budgets", "url": "https://sre.google/workbook/error-budgets/", "type": "docs", "free": true },
+        { "title": "Burn Rate Alerts", "url": "https://sre.google/workbook/alerting-on-slos/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-monitoring",
+      "title": "Monitoring & Observability",
+      "icon": "📊",
+      "category": "intermediate",
+      "description": "Prometheus, Grafana, OpenTelemetry — metrics, logs, traces, RED/USE methods, and golden signals.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Prometheus Documentation", "url": "https://prometheus.io/docs/", "type": "docs", "free": true },
+        { "title": "Grafana Dashboards", "url": "https://grafana.com/grafana/dashboards/", "type": "tool", "free": true },
+        { "title": "OpenTelemetry Docs", "url": "https://opentelemetry.io/docs/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-alerting",
+      "title": "Alerting Strategies",
+      "icon": "🚨",
+      "category": "intermediate",
+      "description": "Alert on symptoms not causes, multi-window burn-rate alerts, alert deduplication, and routing.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Alerting on SLOs", "url": "https://sre.google/workbook/alerting-on-slos/", "type": "docs", "free": true },
+        { "title": "Prometheus Alerting", "url": "https://prometheus.io/docs/alerting/latest/alertmanager/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-incident-response",
+      "title": "Incident Response",
+      "icon": "🔥",
+      "category": "intermediate",
+      "description": "Incident command, war rooms, communication protocols, severity levels, and real-time coordination.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Google SRE — Managing Critical Incidents", "url": "https://sre.google/workbook/managing-critical-incidents/", "type": "docs", "free": true },
+        { "title": "Incident.io Blog", "url": "https://incident.io/blog", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-postmortem",
+      "title": "Postmortem & Blameless Culture",
+      "icon": "📝",
+      "category": "intermediate",
+      "description": "Write effective postmortems, identify root causes, track action items, and build blameless culture.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Google SRE — Postmortem Culture", "url": "https://sre.google/sre-book/postmortem-culture/", "type": "docs", "free": true },
+        { "title": "Postmortem Templates", "url": "https://postmortems.pagerduty.com/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-oncall",
+      "title": "On-Call Management",
+      "icon": "📞",
+      "category": "intermediate",
+      "description": "Design on-call rotations, escalation policies, runbooks, and sustainable on-call practices.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Google SRE — On-Call", "url": "https://sre.google/sre-book/on-call/", "type": "docs", "free": true },
+        { "title": "PagerDuty Runbook", "url": "https://www.pagerduty.com/resources/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-capacity-planning",
+      "title": "Capacity Planning",
+      "icon": "📈",
+      "category": "intermediate",
+      "description": "Forecast traffic, load testing, resource provisioning, headroom planning, and growth modeling.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Google SRE — Capacity Planning", "url": "https://sre.google/workbook/capacity-planning/", "type": "docs", "free": true },
+        { "title": "Vegeta Load Testing", "url": "https://github.com/tsenart/vegeta", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "sre-toil-reduction",
+      "title": "Toil Reduction & Automation",
+      "icon": "🤖",
+      "category": "intermediate",
+      "description": "Identify toil, automate repetitive tasks, build self-healing systems, and measure engineering time.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Google SRE — Eliminating Toil", "url": "https://sre.google/sre-book/eliminating-toil/", "type": "docs", "free": true },
+        { "title": "Ansible Automation", "url": "https://docs.ansible.com/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-distributed-systems",
+      "title": "Distributed Systems Theory",
+      "icon": "🌍",
+      "category": "advanced",
+      "description": "CAP theorem, consensus algorithms (Raft, Paxos), eventual consistency, distributed transactions, and failure modes.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Designing Data-Intensive Applications", "url": "https://dataintensive.net/", "type": "docs", "free": true },
+        { "title": "Raft Consensus Visualization", "url": "https://thesecretlivesofdata.com/raft/", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "sre-chaos-eng",
+      "title": "Chaos Engineering",
+      "icon": "💥",
+      "category": "advanced",
+      "description": "Chaos Monkey, Litmus, Gremlin — inject failures intentionally to validate resilience and find weaknesses.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Principles of Chaos Engineering", "url": "https://principlesofchaos.org/", "type": "docs", "free": true },
+        { "title": "Litmus Chaos", "url": "https://litmuschaos.io/", "type": "tool", "free": true },
+        { "title": "Chaos Mesh", "url": "https://chaos-mesh.org/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "sre-resilience-patterns",
+      "title": "Resilience Patterns",
+      "icon": "🔄",
+      "category": "advanced",
+      "description": "Circuit breakers, bulkheads, retries with backoff, rate limiting, graceful degradation, and fallbacks.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Polly (.NET Resilience)", "url": "https://www.pollydocs.org/", "type": "docs", "free": true },
+        { "title": "Resilience4j", "url": "https://resilience4j.readme.io/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-release-eng",
+      "title": "Release Engineering",
+      "icon": "🚀",
+      "category": "advanced",
+      "description": "Canary deployments, blue-green, rolling updates, feature flags, progressive rollouts, and rollback strategies.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Google SRE — Release Engineering", "url": "https://sre.google/sre-book/release-engineering/", "type": "docs", "free": true },
+        { "title": "Flagger (Canary)", "url": "https://flagger.app/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "sre-k8s-operations",
+      "title": "Kubernetes Operations",
+      "icon": "☸️",
+      "category": "intermediate",
+      "description": "Cluster upgrades, node management, resource quotas, pod disruption budgets, and autoscaling.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Kubernetes Operations", "url": "https://kubernetes.io/docs/tasks/administer-cluster/", "type": "docs", "free": true },
+        { "title": "Kops", "url": "https://kops.sigs.k8s.io/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "sre-infrastructure-code",
+      "title": "Infrastructure as Code",
+      "icon": "🏗️",
+      "category": "intermediate",
+      "description": "Terraform, Pulumi, Ansible — declarative infrastructure, state management, and drift detection.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Terraform Learn", "url": "https://learn.hashicorp.com/terraform", "type": "course", "free": true },
+        { "title": "Ansible Documentation", "url": "https://docs.ansible.com/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-data-reliability",
+      "title": "Data Reliability",
+      "icon": "🗄️",
+      "category": "advanced",
+      "description": "Database replication, backup/restore testing, connection pooling, read replicas, and failover strategies.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Patroni (PostgreSQL HA)", "url": "https://patroni.readthedocs.io/", "type": "docs", "free": true },
+        { "title": "Vitess", "url": "https://vitess.io/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "sre-security",
+      "title": "Security for SRE",
+      "icon": "🔐",
+      "category": "intermediate",
+      "description": "Zero-trust networking, mTLS, secret management, vulnerability scanning, and security automation.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Google SRE — Security", "url": "https://sre.google/workbook/security/", "type": "docs", "free": true },
+        { "title": "Falco Runtime Security", "url": "https://falco.org/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "sre-logging-tracing",
+      "title": "Distributed Logging & Tracing",
+      "icon": "🔍",
+      "category": "intermediate",
+      "description": "Structured logging, correlation IDs, distributed tracing with Jaeger/Zipkin, log aggregation.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Jaeger Tracing", "url": "https://www.jaegertracing.io/docs/", "type": "docs", "free": true },
+        { "title": "Grafana Loki", "url": "https://grafana.com/docs/loki/latest/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "sre-service-level",
+      "title": "Service Level Management",
+      "icon": "📉",
+      "category": "advanced",
+      "description": "Multi-tier SLOs, dependency mapping, composite SLIs, and negotiating reliability targets with stakeholders.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Google SRE Workbook — SLOs", "url": "https://sre.google/workbook/slo-examples/", "type": "docs", "free": true },
+        { "title": "Sloth (SLO Generator)", "url": "https://sloth.dev/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "sre-disaster-recovery",
+      "title": "Disaster Recovery",
+      "icon": "🆘",
+      "category": "advanced",
+      "description": "DR planning, RTO/RPO, backup verification, multi-region failover, and game day exercises.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Google SRE — DR", "url": "https://sre.google/workbook/disaster-recovery/", "type": "docs", "free": true },
+        { "title": "Velero (K8s Backup)", "url": "https://velero.io/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "sre-performance",
+      "title": "Performance Engineering",
+      "icon": "⚡",
+      "category": "advanced",
+      "description": "Profiling, flame graphs, benchmarking, latency analysis, and performance regression testing.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Brendan Gregg — Flame Graphs", "url": "https://www.brendangregg.com/flamegraphs.html", "type": "docs", "free": true },
+        { "title": "pprof (Go Profiling)", "url": "https://go.dev/blog/pprof", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "sre-tools",
+      "title": "Essential SRE Tools",
+      "icon": "🧰",
+      "category": "tools",
+      "description": "Prometheus, Grafana, PagerDuty, Terraform, Ansible, kubectl, k9s, Helm, and incident management platforms.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Prometheus", "url": "https://prometheus.io/", "type": "tool", "free": true },
+        { "title": "Grafana", "url": "https://grafana.com/", "type": "tool", "free": true },
+        { "title": "k9s", "url": "https://k9scli.io/", "type": "tool", "free": true },
+        { "title": "Terraform", "url": "https://www.terraform.io/", "type": "tool", "free": true }
+      ]
+    }
+  ]
+}

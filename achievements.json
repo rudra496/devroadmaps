@@ -1,8 +1,22 @@
 [
-  {"id": "first_complete", "title": "First Steps", "description": "Complete your first node", "icon": "🌟"},
-  {"id": "ten_nodes", "title": "Getting Serious", "description": "Complete 10 nodes", "icon": "🔥"},
+  {"id": "first_complete", "title": "First Steps", "description": "Complete your first topic", "icon": "🌟"},
+  {"id": "ten_nodes", "title": "Getting Serious", "description": "Complete 10 topics", "icon": "🔥"},
+  {"id": "twenty_five_nodes", "title": "Rising Star", "description": "Complete 25 topics", "icon": "⭐"},
+  {"id": "fifty_nodes", "title": "Half Century", "description": "Complete 50 topics", "icon": "💎"},
+  {"id": "hundred_nodes", "title": "Centurion", "description": "Complete 100 topics across all roadmaps", "icon": "🏅"},
   {"id": "roadmap_complete", "title": "Roadmap Master", "description": "Complete an entire roadmap", "icon": "🏆"},
   {"id": "five_roadmaps", "title": "Polymath", "description": "Start 5 different roadmaps", "icon": "🧠"},
-  {"id": "bookmark_10", "title": "Collector", "description": "Bookmark 10 nodes", "icon": "📌"},
-  {"id": "study_hour", "title": "Dedicated", "description": "Study for 1 hour total", "icon": "⏰"}
+  {"id": "bookmark_10", "title": "Collector", "description": "Bookmark 10 topics", "icon": "📌"},
+  {"id": "bookmark_25", "title": "Knowledge Hunter", "description": "Bookmark 25 topics", "icon": "🎯"},
+  {"id": "study_hour", "title": "Dedicated", "description": "Study for 1 hour total", "icon": "⏰"},
+  {"id": "study_5hours", "title": "Marathon Learner", "description": "Study for 5 hours total", "icon": "📚"},
+  {"id": "study_10hours", "title": "Knowledge Warrior", "description": "Study for 10 hours total", "icon": "⚔️"},
+  {"id": "study_25hours", "title": "Learning Legend", "description": "Study for 25 hours total", "icon": "👑"},
+  {"id": "streak_3", "title": "Consistent", "description": "Maintain a 3-day streak", "icon": "🔥"},
+  {"id": "streak_7", "title": "Week Warrior", "description": "Maintain a 7-day streak", "icon": "💪"},
+  {"id": "streak_30", "title": "Monthly Master", "description": "Maintain a 30-day streak", "icon": "🌙"},
+  {"id": "challenge_5", "title": "Challenge Seeker", "description": "Complete 5 daily challenges", "icon": "🎮"},
+  {"id": "challenge_15", "title": "Challenge Champion", "description": "Complete 15 daily challenges", "icon": "🥇"},
+  {"id": "note_5", "title": "Note Taker", "description": "Write 5 learning notes", "icon": "📝"},
+  {"id": "note_20", "title": "Journal Keeper", "description": "Write 20 learning notes", "icon": "📖"}
 ]

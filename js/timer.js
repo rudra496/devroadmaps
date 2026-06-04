@@ -132,10 +132,14 @@ async function checkAchievements() {
   const achievements = [];
   const studyTotal = getTotalStudyTime();
 
+  // Study time achievements
   if (studyTotal >= 3600) achievements.push('study_hour');
+  if (studyTotal >= 18000) achievements.push('study_5hours');
+  if (studyTotal >= 36000) achievements.push('study_10hours');
+  if (studyTotal >= 90000) achievements.push('study_25hours');
 
   // Check completed nodes across all roadmaps
-  const ROADMAP_SLUGS = ['frontend','backend','fullstack','ml-ai','devops','mobile','cybersecurity','data-engineer','blockchain','game-dev','embedded-iot','product-manager','devsecops','qa-engineer','technical-writer'];
+  const ROADMAP_SLUGS = ['frontend','backend','fullstack','ml-ai','devops','mobile','cybersecurity','data-engineer','blockchain','game-dev','embedded-iot','product-manager','devsecops','qa-engineer','technical-writer','low-code-no-code','cloud-architect','platform-engineer','sre','ar-vr'];
   let totalCompleted = 0;
   let startedRoadmaps = 0;
 
@@ -148,8 +152,38 @@ async function checkAchievements() {
 
   if (totalCompleted >= 1) achievements.push('first_complete');
   if (totalCompleted >= 10) achievements.push('ten_nodes');
-  if (getBookmarks().length >= 10) achievements.push('bookmark_10');
+  if (totalCompleted >= 25) achievements.push('twenty_five_nodes');
+  if (totalCompleted >= 50) achievements.push('fifty_nodes');
+  if (totalCompleted >= 100) achievements.push('hundred_nodes');
+
+  const bookmarks = typeof getBookmarks === 'function' ? getBookmarks() : [];
+  if (bookmarks.length >= 10) achievements.push('bookmark_10');
+  if (bookmarks.length >= 25) achievements.push('bookmark_25');
   if (startedRoadmaps >= 5) achievements.push('five_roadmaps');
+
+  // Streak achievements
+  try {
+    const streakData = JSON.parse(localStorage.getItem('devroadmaps-streak') || '{"current":0}');
+    if (streakData.current >= 3) achievements.push('streak_3');
+    if (streakData.current >= 7) achievements.push('streak_7');
+    if (streakData.current >= 30) achievements.push('streak_30');
+  } catch (e) {}
+
+  // Challenge achievements
+  try {
+    const challenges = JSON.parse(localStorage.getItem('devroadmaps-challenges') || '[]');
+    if (challenges.length >= 5) achievements.push('challenge_5');
+    if (challenges.length >= 15) achievements.push('challenge_15');
+  } catch (e) {}
+
+  // Notes achievements
+  try {
+    const notes = JSON.parse(localStorage.getItem('devroadmaps-notes') || '{}');
+    let noteCount = 0;
+    Object.values(notes).forEach(arr => { if (Array.isArray(arr)) noteCount += arr.length; });
+    if (noteCount >= 5) achievements.push('note_5');
+    if (noteCount >= 20) achievements.push('note_20');
+  } catch (e) {}
 
   // Check if any roadmap is fully completed
   for (const slug of ROADMAP_SLUGS) {

@@ -1,5 +1,5 @@
 // Service Worker for DevRoadmaps — Offline Support
-const CACHE_NAME = 'devroadmaps-v5';
+const CACHE_NAME = 'devroadmaps-v6';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -9,6 +9,15 @@ const STATIC_ASSETS = [
   './js/community.js',
   './js/learning-paths.js',
   './js/timer.js',
+  './js/share-card.js',
+  './js/command-palette.js',
+  './js/daily-challenge.js',
+  './js/notes.js',
+  './js/comparison.js',
+  './js/project-ideas.js',
+  './js/interview-prep.js',
+  './js/data-export.js',
+  './js/skill-radar.js',
   './roadmaps/index.json',
 ];
 
@@ -17,7 +26,8 @@ const ROADMAP_FILES = [
   'frontend', 'backend', 'fullstack', 'ml-ai', 'devops', 'mobile',
   'cybersecurity', 'data-engineer', 'blockchain', 'game-dev',
   'embedded-iot', 'product-manager', 'devsecops', 'qa-engineer',
-  'technical-writer', 'low-code-no-code', 'cloud-architect'
+  'technical-writer', 'low-code-no-code', 'cloud-architect',
+  'platform-engineer', 'sre', 'ar-vr'
 ];
 
 // Install event — cache static assets

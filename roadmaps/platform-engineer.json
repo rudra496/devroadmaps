@@ -1,0 +1,389 @@
+{
+  "title": "Platform Engineer",
+  "description": "Build and maintain internal developer platforms — from container orchestration and CI/CD pipelines to self-service infrastructure, developer portals, and observability at scale.",
+  "icon": "🔧",
+  "categories": ["fundamentals", "intermediate", "advanced", "tools"],
+  "nodes": [
+    {
+      "id": "plat-linux-fundamentals",
+      "title": "Linux & Shell Fundamentals",
+      "icon": "🐧",
+      "category": "fundamentals",
+      "description": "Linux system administration, shell scripting, process management, file systems, and networking basics.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Linux Journey", "url": "https://linuxjourney.com/", "type": "course", "free": true },
+        { "title": "The Linux Command Line (Book)", "url": "https://linuxcommand.org/tlcl.php", "type": "docs", "free": true },
+        { "title": "Shell Scripting Tutorial", "url": "https://www.shellscript.sh/", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "plat-networking",
+      "title": "Networking Fundamentals",
+      "icon": "🌐",
+      "category": "fundamentals",
+      "description": "TCP/IP, DNS, HTTP/S, load balancing, VPNs, subnets, firewalls, and network troubleshooting.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Networking for Developers", "url": "https://www.youtube.com/watch?v=0TLDTodZA7L&list=PLG49S3nxzAnmpdmXUROvS7BOeNp3CQ6O", "type": "video", "free": true },
+        { "title": "Cloudflare Learning Center", "url": "https://www.cloudflare.com/learning/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-version-control",
+      "title": "Git & Version Control",
+      "icon": "📝",
+      "category": "fundamentals",
+      "description": "Git workflows, branching strategies, merge conflicts, rebasing, and collaboration with GitHub/GitLab.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Pro Git Book", "url": "https://git-scm.com/book/en/v2", "type": "docs", "free": true },
+        { "title": "Learn Git Branching", "url": "https://learngitbranching.js.org/", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "plat-containers",
+      "title": "Container Fundamentals",
+      "icon": "📦",
+      "category": "fundamentals",
+      "description": "Docker containers, images, Dockerfiles, volumes, networking, multi-stage builds, and container security.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Docker Getting Started", "url": "https://docs.docker.com/get-started/", "type": "docs", "free": true },
+        { "title": "Docker Tutorial for Beginners", "url": "https://www.youtube.com/watch?v=fqMOX6JJhFA", "type": "video", "free": true },
+        { "title": "Play with Docker", "url": "https://labs.play-with-docker.com/", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "plat-container-orchestration",
+      "title": "Container Orchestration (Kubernetes)",
+      "icon": "☸️",
+      "category": "intermediate",
+      "description": "Kubernetes architecture, pods, deployments, services, ConfigMaps, secrets, Helm charts, and cluster management.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Kubernetes Documentation", "url": "https://kubernetes.io/docs/home/", "type": "docs", "free": true },
+        { "title": "Kubernetes the Hard Way", "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way", "type": "tutorial", "free": true },
+        { "title": "KillerCoda Labs", "url": "https://killercoda.com/", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "plat-cicd",
+      "title": "CI/CD Pipelines",
+      "icon": "🔄",
+      "category": "intermediate",
+      "description": "GitHub Actions, GitLab CI, Jenkins, ArgoCD — build, test, deploy automation pipelines.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "GitHub Actions Documentation", "url": "https://docs.github.com/en/actions", "type": "docs", "free": true },
+        { "title": "CI/CD Pipeline Tutorial", "url": "https://www.youtube.com/watch?v=Q9zU6D7zR4s", "type": "video", "free": true },
+        { "title": "ArgoCD Getting Started", "url": "https://argo-cd.readthedocs.io/en/stable/getting_started/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-iac",
+      "title": "Infrastructure as Code",
+      "icon": "🏗️",
+      "category": "intermediate",
+      "description": "Terraform, Pulumi, CloudFormation — declarative infrastructure management, modules, state, and drift detection.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Terraform Learn", "url": "https://learn.hashicorp.com/terraform", "type": "course", "free": true },
+        { "title": "Terraform Documentation", "url": "https://developer.hashicorp.com/terraform/docs", "type": "docs", "free": true },
+        { "title": "Pulumi Getting Started", "url": "https://www.pulumi.com/docs/get-started/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-cloud-providers",
+      "title": "Cloud Providers (AWS/GCP/Azure)",
+      "icon": "☁️",
+      "category": "intermediate",
+      "description": "Core services across major cloud providers — compute, storage, networking, IAM, and managed services.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "AWS Free Tier", "url": "https://aws.amazon.com/free/", "type": "tool", "free": true },
+        { "title": "GCP Free Tier", "url": "https://cloud.google.com/free", "type": "tool", "free": true },
+        { "title": "Azure Free Account", "url": "https://azure.microsoft.com/en-us/free/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "plat-observability",
+      "title": "Observability & Monitoring",
+      "icon": "📊",
+      "category": "intermediate",
+      "description": "Prometheus, Grafana, ELK Stack, Datadog — metrics, logs, traces, alerts, and dashboards.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Prometheus Documentation", "url": "https://prometheus.io/docs/", "type": "docs", "free": true },
+        { "title": "Grafana Tutorials", "url": "https://grafana.com/tutorials/", "type": "tutorial", "free": true },
+        { "title": "OpenTelemetry", "url": "https://opentelemetry.io/docs/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-service-mesh",
+      "title": "Service Mesh",
+      "icon": "🕸️",
+      "category": "advanced",
+      "description": "Istio, Linkerd — traffic management, mTLS, circuit breaking, canary deployments, and observability.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Istio Documentation", "url": "https://istio.io/latest/docs/", "type": "docs", "free": true },
+        { "title": "Linkerd Getting Started", "url": "https://linkerd.io/2/getting-started/", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "plat-dev-portals",
+      "title": "Developer Portals & Self-Service",
+      "icon": "🚪",
+      "category": "advanced",
+      "description": "Backstage, custom developer portals, service catalogs, templates, and self-service infrastructure.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Backstage Documentation", "url": "https://backstage.io/docs/overview/what-is-backstage", "type": "docs", "free": true },
+        { "title": "Backstage Getting Started", "url": "https://backstage.io/docs/getting-started/", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "plat-secret-mgmt",
+      "title": "Secret Management",
+      "icon": "🔐",
+      "category": "advanced",
+      "description": "HashiCorp Vault, AWS Secrets Manager, sealed secrets — managing credentials, certificates, and encryption keys.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Vault Tutorials", "url": "https://learn.hashicorp.com/vault", "type": "course", "free": true },
+        { "title": "Sealed Secrets", "url": "https://github.com/bitnami-labs/sealed-secrets", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-policy-governance",
+      "title": "Policy & Governance",
+      "icon": "📋",
+      "category": "advanced",
+      "description": "OPA/Gatekeeper, Kyverno, Sentinel — policy-as-code for Kubernetes, cloud resources, and CI/CD pipelines.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "OPA Documentation", "url": "https://www.openpolicyagent.org/docs/latest/", "type": "docs", "free": true },
+        { "title": "Kyverno Documentation", "url": "https://kyverno.io/docs/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-scalability",
+      "title": "Scalability & Reliability",
+      "icon": "📈",
+      "category": "advanced",
+      "description": "Horizontal/vertical scaling, auto-scaling, disaster recovery, multi-region deployments, chaos engineering.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Chaos Engineering (Gremlin)", "url": "https://www.gremlin.com/chaos-engineering/", "type": "docs", "free": true },
+        { "title": "Litmus Chaos", "url": "https://litmuschaos.io/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "plat-crossplane",
+      "title": "Crossplane & Control Planes",
+      "icon": "🧩",
+      "category": "advanced",
+      "description": "Build custom control planes with Crossplane — manage cloud resources through Kubernetes-native APIs.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Crossplane Documentation", "url": "https://docs.crossplane.io/", "type": "docs", "free": true },
+        { "title": "Crossplane Getting Started", "url": "https://docs.crossplane.io/latest/getting-started/", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "plat-helm",
+      "title": "Helm & Kustomize",
+      "icon": "⎈",
+      "category": "intermediate",
+      "description": "Helm charts, Kustomize overlays — package management and configuration for Kubernetes.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Helm Documentation", "url": "https://helm.sh/docs/", "type": "docs", "free": true },
+        { "title": "Kustomize Documentation", "url": "https://kubectl.docs.kubernetes.io/guides/introduction/kustomize/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-cost-optimization",
+      "title": "Cost Optimization",
+      "icon": "💰",
+      "category": "advanced",
+      "description": "Cloud cost analysis, right-sizing, spot instances, reserved capacity, Kubecost, and FinOps practices.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Kubecost", "url": "https://www.kubecost.com/", "type": "tool", "free": true },
+        { "title": "AWS Cost Explorer", "url": "https://aws.amazon.com/aws-cost-management/aws-cost-explorer/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-security",
+      "title": "Platform Security",
+      "icon": "🛡️",
+      "category": "intermediate",
+      "description": "RBAC, network policies, pod security standards, container scanning, SAST/DAST in pipelines.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Kubernetes Security Best Practices", "url": "https://kubernetes.io/docs/concepts/security/", "type": "docs", "free": true },
+        { "title": "Trivy Container Scanner", "url": "https://aquasecurity.github.io/trivy/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "plat-gitops",
+      "title": "GitOps Workflows",
+      "icon": "🔀",
+      "category": "intermediate",
+      "description": "GitOps principles with Flux and ArgoCD — declarative infrastructure driven by Git.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Flux Documentation", "url": "https://fluxcd.io/docs/", "type": "docs", "free": true },
+        { "title": "ArgoCD Documentation", "url": "https://argo-cd.readthedocs.io/en/stable/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-dbaas",
+      "title": "Database as a Service",
+      "icon": "🗄️",
+      "category": "intermediate",
+      "description": "Managed databases, database operators, backup strategies, connection pooling, and multi-tenancy.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "CrunchyData PostgreSQL Operator", "url": "https://access.crunchydata.com/documentation/postgres-operator/", "type": "docs", "free": true },
+        { "title": "Strimzi Kafka Operator", "url": "https://strimzi.io/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "plat-internal-tools",
+      "title": "Internal Tooling & Automation",
+      "icon": "🔨",
+      "category": "advanced",
+      "description": "Custom CLIs, automation scripts, webhook handlers, bot integrations, and platform glue code.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Cobra CLI (Go)", "url": "https://github.com/spf13/cobra", "type": "docs", "free": true },
+        { "title": "Click (Python)", "url": "https://click.palletsprojects.com/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-api-gateway",
+      "title": "API Gateways & Management",
+      "icon": "🚦",
+      "category": "intermediate",
+      "description": "Kong, Envoy, Traefik — rate limiting, authentication, routing, and API versioning.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Kong Documentation", "url": "https://docs.konghq.com/", "type": "docs", "free": true },
+        { "title": "Envoy Documentation", "url": "https://www.envoyproxy.io/docs/envoy/latest/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-logging",
+      "title": "Centralized Logging",
+      "icon": "📋",
+      "category": "intermediate",
+      "description": "ELK Stack, Loki, Fluentd/Fluent Bit — log aggregation, structured logging, and log analysis.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Grafana Loki", "url": "https://grafana.com/docs/loki/latest/", "type": "docs", "free": true },
+        { "title": "Fluentd Documentation", "url": "https://docs.fluentd.org/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-incident-mgmt",
+      "title": "Incident Management",
+      "icon": "🚨",
+      "category": "advanced",
+      "description": "On-call rotations, runbooks, post-mortems, PagerDuty/OpsGenie, and blameless culture.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Google SRE Book — On-Call", "url": "https://sre.google/sre-book/on-call/", "type": "docs", "free": true },
+        { "title": "Postmortem Template", "url": "https://sre.google/sre-book/postmortem-culture/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-terraform-modules",
+      "title": "Terraform Modules & Patterns",
+      "icon": "🧱",
+      "category": "advanced",
+      "description": "Reusable Terraform modules, Terragrunt, module registries, testing with Terratest.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Terraform Modules", "url": "https://developer.hashicorp.com/terraform/language/modules", "type": "docs", "free": true },
+        { "title": "Terragrunt", "url": "https://terragrunt.gruntwork.io/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "plat-ci-templates",
+      "title": "CI/CD Templates & Libraries",
+      "icon": "📚",
+      "category": "intermediate",
+      "description": "Reusable pipeline templates, shared libraries, composite actions, and pipeline-as-code patterns.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "GitHub Actions Reusable Workflows", "url": "https://docs.github.com/en/actions/using-workflows/reusing-workflows", "type": "docs", "free": true },
+        { "title": "GitLab CI Templates", "url": "https://docs.gitlab.com/ee/ci/yaml/includes.html", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-k8s-operators",
+      "title": "Kubernetes Operators",
+      "icon": "⚙️",
+      "category": "advanced",
+      "description": "Build and use Kubernetes operators with Operator SDK, Kubebuilder, and Ansible Operator.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Operator SDK", "url": "https://sdk.operatorframework.io/", "type": "docs", "free": true },
+        { "title": "Kubebuilder", "url": "https://book.kubebuilder.io/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-supply-chain",
+      "title": "Software Supply Chain Security",
+      "icon": "🔗",
+      "category": "advanced",
+      "description": "SBOM, SLSA framework, Sigstore/Cosign, artifact signing, provenance, and chain-of-custody.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Sigstore", "url": "https://www.sigstore.dev/", "type": "tool", "free": true },
+        { "title": "SLSA Framework", "url": "https://slsa.dev/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-devex",
+      "title": "Developer Experience (DevEx)",
+      "icon": "✨",
+      "category": "advanced",
+      "description": "Measuring and improving developer productivity, golden paths, onboarding, and platform adoption.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Team Topologies", "url": "https://teamtopologies.com/", "type": "docs", "free": true },
+        { "title": "DORA Metrics", "url": "https://dora.dev/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "plat-multi-cluster",
+      "title": "Multi-Cluster Management",
+      "icon": "🌍",
+      "category": "advanced",
+      "description": "Federation, Karmada, Cluster API, multi-cluster networking, and workload distribution.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Cluster API", "url": "https://cluster-api.sigs.k8s.io/", "type": "docs", "free": true },
+        { "title": "Karmada", "url": "https://karmada.io/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "plat-tools",
+      "title": "Essential Platform Tools",
+      "icon": "🧰",
+      "category": "tools",
+      "description": "kubectl, k9s, Lens, Skaffold, Tilt, Telepresence, Dive, krew plugins, and more.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "k9s", "url": "https://k9scli.io/", "type": "tool", "free": true },
+        { "title": "Lens IDE", "url": "https://k8slens.dev/", "type": "tool", "free": true },
+        { "title": "Skaffold", "url": "https://skaffold.dev/", "type": "tool", "free": true },
+        { "title": "Tilt", "url": "https://tilt.dev/", "type": "tool", "free": true }
+      ]
+    }
+  ]
+}

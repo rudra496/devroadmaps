@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rudra496.github.io/devroadmaps/sitemap.xml
+
+# DevRoadmaps - Free Developer Roadmaps
+# https://github.com/rudra496/devroadmaps

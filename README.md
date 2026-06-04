@@ -11,71 +11,91 @@
 
 # DevRoadmaps
 
-**Free, open-source developer roadmaps**
+**Free, open-source interactive developer roadmaps**
 
-> 17 roadmaps · 795 topics · 1,700+ free resources · Interactive progress tracking
+> 20 roadmaps · 920+ topics · 2,000+ free resources · Daily challenges · Skill radar · Interview prep
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-brightgreen)](https://rudra496.github.io/devroadmaps)
+[![Live Demo](https://img.shields.io/badge/🌐_Live-rudra496.github.io/devroadmaps-brightgreen)](https://rudra496.github.io/devroadmaps)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/rudra496/devroadmaps?style=social)](https://github.com/rudra496/devroadmaps/stargazers)
 [![Forks](https://img.shields.io/github/forks/rudra496/devroadmaps?style=social)](https://github.com/rudra496/devroadmaps/network/members)
-[![Issues](https://img.shields.io/github/issues/rudra496/devroadmaps)](https://github.com/rudra496/devroadmaps/issues)
 
 ---
 
+</div>
+
+## Why DevRoadmaps?
+
+Most developer roadmap repos are just static images or markdown lists. **DevRoadmaps is interactive** — click any topic, mark it complete, track your progress, write notes, and earn achievements. No account needed, no tracking, no ads.
+
 ## Features
 
-- **Interactive progress tracking** — Click any topic to expand, mark complete, and track progress visually
-- **1,700+ curated free resources** — Links to MDN, freeCodeCamp, official docs, YouTube, and more
-- **Community tips** — Share and read tips for each topic (stored locally)
-- **Resource ratings** — Rate resources 1-5 stars
-- **Resource type filtering** — Filter by docs, video, course, tutorial, or tool
-- **Search & filter** — Search within roadmaps and filter by difficulty
-- **Print as poster** — Print any roadmap as a clean poster or checklist
+### Core
+- **20 comprehensive roadmaps** — From Frontend to AR/VR, Platform Engineering to SRE
+- **2,000+ curated free resources** — MDN, freeCodeCamp, official docs, YouTube, and more
+- **Interactive progress tracking** — Click topics, mark complete, visualize your journey
+- **Search & filter** — Search within roadmaps, filter by difficulty and category
+- **Keyboard navigation** — Arrow keys, Enter to expand, Space to complete
 - **Dark & light mode** — With auto (system preference) support
-- **Keyboard navigation** — Arrow keys, Enter to expand, Space to mark complete
-- **Offline capable** — Works without internet once loaded
+- **Print as poster** — Print any roadmap as a clean poster or checklist
+- **Fully responsive** — Works on desktop, tablet, and mobile
+- **Offline capable** — PWA with service worker, works without internet
 - **Zero dependencies** — Pure HTML, CSS, and JavaScript
-- **Minimap navigation** — Quick sidebar navigation for long roadmaps
+
+### Productivity
+- **Command palette** — Press `Ctrl+K` to quickly jump to any roadmap or feature
+- **Pomodoro study timer** — Built-in timer with break reminders and time tracking
 - **Bookmarks** — Save topics across roadmaps and export as a study plan
-- **Pomodoro timer** — Built-in study timer with break reminders
-- **Achievements** — Unlock badges as you learn
+- **Learning notes** — Write personal notes per roadmap, your private learning journal
+- **Data export/import** — Backup and restore all your learning data
+
+### Learning Tools
+- **Daily challenges** — New coding challenge every day with streak tracking
+- **Skill radar chart** — Visual overview of your progress across all skill areas
+- **Project ideas** — Curated hands-on project ideas for each career path
+- **Interview prep** — Practice with curated interview questions and answers
+- **Roadmap comparison** — Compare any two roadmaps side by side
+- **Shareable progress cards** — Generate beautiful PNG cards to share on social media
+
+### Community & Gamification
+- **20 achievements** — Unlock badges as you learn (streaks, challenges, study time, notes)
+- **Community tips** — Share and read tips for each topic
+- **Resource ratings** — Rate resources 1-5 stars
+- **Community forum** — Local discussion board for learners
 - **Certification tracker** — Map progress to real exam topics (AWS, GCP, CKA, Security+, etc.)
 - **Learning paths** — Pre-built paths combining nodes from multiple roadmaps
 
 ## Roadmaps
 
-| # | Roadmap | Topics | Resources |
-|---|---------|:------:|:---------:|
-| 1 | [Frontend Developer](roadmaps/frontend.json) | 52 | 114 |
-| 2 | [Backend Developer](roadmaps/backend.json) | 50 | 104 |
-| 3 | [Full Stack Developer](roadmaps/fullstack.json) | 50 | 101 |
-| 4 | [ML / AI Engineer](roadmaps/ml-ai.json) | 50 | 103 |
-| 5 | [DevOps / Cloud](roadmaps/devops.json) | 50 | 104 |
-| 6 | [Mobile Developer](roadmaps/mobile.json) | 50 | 99 |
-| 7 | [Cybersecurity](roadmaps/cybersecurity.json) | 50 | 92 |
-| 8 | [Data Engineer](roadmaps/data-engineer.json) | 50 | 90 |
-| 9 | [Blockchain / Web3](roadmaps/blockchain.json) | 50 | 88 |
-| 10 | [Game Developer](roadmaps/game-dev.json) | 50 | 89 |
-| 11 | [Embedded / IoT](roadmaps/embedded-iot.json) | 50 | 86 |
-| 12 | [Product Manager](roadmaps/product-manager.json) | 50 | 86 |
-| 13 | [DevSecOps Engineer](roadmaps/devsecops.json) | 42 | 128 |
-| 14 | [QA / Test Engineer](roadmaps/qa-engineer.json) | 42 | 127 |
-| 15 | [Technical Writer](roadmaps/technical-writer.json) | 41 | 124 |
-| 16 | [Low-Code / No-Code](roadmaps/low-code-no-code.json) | 32 | 79 |
-| 17 | [Cloud Architect](roadmaps/cloud-architect.json) | 36 | 92 |
-
-**Total: 795 topics, 1,706 resources across 17 roadmaps**
+| # | Roadmap | Topics | Difficulty | Est. Time |
+|---|---------|:------:|:----------:|:---------:|
+| 1 | [Frontend Developer](roadmaps/frontend.json) | 52 | Beginner | 6 months |
+| 2 | [Backend Developer](roadmaps/backend.json) | 50 | Intermediate | 6 months |
+| 3 | [Full Stack Developer](roadmaps/fullstack.json) | 50 | Intermediate | 8 months |
+| 4 | [ML / AI Engineer](roadmaps/ml-ai.json) | 50 | Advanced | 12 months |
+| 5 | [DevOps / Cloud](roadmaps/devops.json) | 50 | Intermediate | 8 months |
+| 6 | [Mobile Developer](roadmaps/mobile.json) | 50 | Intermediate | 6 months |
+| 7 | [Cybersecurity](roadmaps/cybersecurity.json) | 50 | Advanced | 10 months |
+| 8 | [Data Engineer](roadmaps/data-engineer.json) | 50 | Advanced | 8 months |
+| 9 | [Blockchain / Web3](roadmaps/blockchain.json) | 50 | Advanced | 10 months |
+| 10 | [Game Developer](roadmaps/game-dev.json) | 50 | Intermediate | 12 months |
+| 11 | [Embedded / IoT](roadmaps/embedded-iot.json) | 50 | Advanced | 10 months |
+| 12 | [Product Manager](roadmaps/product-manager.json) | 50 | Intermediate | 6 months |
+| 13 | [DevSecOps Engineer](roadmaps/devsecops.json) | 42 | Advanced | 10 months |
+| 14 | [QA / Test Engineer](roadmaps/qa-engineer.json) | 42 | Intermediate | 6 months |
+| 15 | [Technical Writer](roadmaps/technical-writer.json) | 41 | Beginner | 4 months |
+| 16 | [Low-Code / No-Code](roadmaps/low-code-no-code.json) | 32 | Beginner | 3 months |
+| 17 | [Cloud Architect](roadmaps/cloud-architect.json) | 36 | Advanced | 12 months |
+| 18 | [Platform Engineer](roadmaps/platform-engineer.json) | 30 | Intermediate | 8 months |
+| 19 | [Site Reliability Engineer](roadmaps/sre.json) | 25 | Advanced | 10 months |
+| 20 | [AR / VR Developer](roadmaps/ar-vr.json) | 22 | Intermediate | 8 months |
 
 ## Quick Start
 
-### Visit Live Site
+### Live Site
 Open [rudra496.github.io/devroadmaps](https://rudra496.github.io/devroadmaps) in your browser.
 
-### Open Locally
-Just open `index.html` in your browser — no build step needed.
-
-### Clone & Serve
+### Run Locally
 ```bash
 git clone https://github.com/rudra496/devroadmaps.git
 cd devroadmaps
@@ -83,31 +103,48 @@ python3 -m http.server 8000
 # Open http://localhost:8000
 ```
 
+No build step, no install, no dependencies. Just open `index.html`.
+
 ## Tech Stack
 
-- **HTML5** — Semantic markup
-- **CSS3** — Custom properties, glassmorphism, animations
-- **Vanilla JavaScript** — Zero dependencies
-- **GitHub Pages** — Hosting
+- **HTML5** — Semantic markup with structured data
+- **CSS3** — Custom properties, glassmorphism, animations, responsive
+- **Vanilla JavaScript** — Zero dependencies, modular architecture
+- **Canvas API** — Shareable progress card generation
+- **SVG** — Skill radar chart visualization
+- **LocalStorage** — Client-side data persistence
+- **Service Worker** — PWA offline support
+- **GitHub Pages** — Free hosting
 
 ## Project Structure
 
 ```
 devroadmaps/
-├── index.html              # Landing page
-├── roadmap.html            # Roadmap viewer
+├── index.html              # Landing page with all sections
+├── roadmap.html            # Interactive roadmap viewer
+├── sitemap.xml             # SEO sitemap
+├── robots.txt              # Search engine directives
 ├── css/style.css           # All styles (dark + light themes)
 ├── js/
-│   ├── main.js             # Core JavaScript
+│   ├── main.js             # Core: particles, roadmaps grid, viewer, theme
 │   ├── community.js        # Community tips, ratings, filters
 │   ├── learning-paths.js   # Learning paths & bookmarks
-│   ├── timer.js            # Study timer & achievements
+│   ├── timer.js            # Pomodoro timer & achievements
 │   ├── certifications.js   # Certification tracker
-│   └── community-forum.js  # Community discussion board
-├── roadmaps/               # 17 roadmap JSON files
-├── achievements.json       # Achievement definitions
+│   ├── community-forum.js  # Community discussion board
+│   ├── share-card.js       # Canvas-based progress card generator
+│   ├── command-palette.js  # Ctrl+K quick navigation
+│   ├── daily-challenge.js  # Daily coding challenges with streak
+│   ├── notes.js            # Per-roadmap learning notes
+│   ├── comparison.js       # Roadmap comparison tool
+│   ├── project-ideas.js    # Curated project ideas per roadmap
+│   ├── interview-prep.js   # Interview questions & answers
+│   ├── data-export.js      # Export/import/clear user data
+│   └── skill-radar.js      # SVG skill radar visualization
+├── roadmaps/               # 20 roadmap JSON files + index.json
+├── achievements.json       # 20 achievement definitions
 ├── manifest.json           # PWA manifest
-├── sw.js                   # Service worker
+├── sw.js                   # Service worker (offline support)
 ├── .github/
 │   ├── ISSUE_TEMPLATE/     # Bug report & feature request
 │   └── workflows/          # CI workflows
@@ -118,6 +155,16 @@ devroadmaps/
 └── LICENSE
 ```
 
+## Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl+K` / `Cmd+K` | Open command palette |
+| `↑` / `↓` | Navigate between topics |
+| `Enter` | Expand/collapse topic |
+| `Space` | Mark topic as complete |
+| `Esc` | Close palette/modal |
+
 ## Contributing
 
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
@@ -125,10 +172,10 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 **Ways to contribute:**
 - Fix broken resource links
 - Add new resources to existing roadmaps
-- Propose a new roadmap
+- Propose a new roadmap (open an issue first)
 - Share community tips
-- Improve the design
-- Improve documentation
+- Improve the design or accessibility
+- Add interview questions or project ideas
 
 ## Star History
 
@@ -175,11 +222,12 @@ MIT License — free for personal and commercial use.
 | [MindWell](https://github.com/rudra496/mindwell) | ![Stars](https://img.shields.io/github/stars/rudra496/mindwell?style=social) | Free mental health support platform |
 | [ScienceLab 3D](https://github.com/rudra496/sciencelab3d) | ![Stars](https://img.shields.io/github/stars/rudra496/sciencelab3d?style=social) | 40+ virtual STEM experiments |
 | [SightlineAI](https://github.com/rudra496/sightlineai) | ![Stars](https://img.shields.io/github/stars/rudra496/sightlineai?style=social) | AI smart glasses for the blind |
+| [TermMind](https://github.com/rudra496/termmind) | ![Stars](https://img.shields.io/github/stars/rudra496/termmind?style=social) | AI-powered terminal CLI assistant |
 
 ---
 
 <div align="center">
 
-**[⭐ Star this repo](../../stargazers) · [🍴 Fork it](../../fork) · [👤 Follow @rudra496](https://github.com/rudra496)**
+**[Star this repo](../../stargazers) · [Fork it](../../fork) · [Follow @rudra496](https://github.com/rudra496)**
 
 </div>

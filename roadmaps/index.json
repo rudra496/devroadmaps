@@ -15,5 +15,8 @@
   {"id": "qa-engineer", "title": "QA / Test Engineer", "icon": "🧪", "nodes": 42, "resources": 127, "difficulty": "Intermediate", "time": "6 months"},
   {"id": "technical-writer", "title": "Technical Writer", "icon": "✍️", "nodes": 41, "resources": 124, "difficulty": "Beginner", "time": "4 months"},
   {"id": "low-code-no-code", "title": "Low-Code / No-Code", "icon": "⚡", "nodes": 32, "resources": 79, "difficulty": "Beginner", "time": "3 months"},
-  {"id": "cloud-architect", "title": "Cloud Architect", "icon": "🏗️", "nodes": 36, "resources": 92, "difficulty": "Advanced", "time": "12 months"}
+  {"id": "cloud-architect", "title": "Cloud Architect", "icon": "🏗️", "nodes": 36, "resources": 92, "difficulty": "Advanced", "time": "12 months"},
+  {"id": "platform-engineer", "title": "Platform Engineer", "icon": "🔧", "nodes": 30, "resources": 76, "difficulty": "Intermediate", "time": "8 months"},
+  {"id": "sre", "title": "Site Reliability Engineer", "icon": "🛡️", "nodes": 25, "resources": 70, "difficulty": "Advanced", "time": "10 months"},
+  {"id": "ar-vr", "title": "AR / VR Developer", "icon": "🥽", "nodes": 22, "resources": 68, "difficulty": "Intermediate", "time": "8 months"}
 ]

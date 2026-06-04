@@ -80,6 +80,24 @@ const ROADMAPS = [
     icon: "🏗️",
     title: "Cloud Architect",
   },
+  {
+    id: "platform-engineer",
+    slug: "platform-engineer",
+    icon: "🔧",
+    title: "Platform Engineer",
+  },
+  {
+    id: "sre",
+    slug: "sre",
+    icon: "🛡️",
+    title: "Site Reliability Engineer",
+  },
+  {
+    id: "ar-vr",
+    slug: "ar-vr",
+    icon: "🥽",
+    title: "AR / VR Developer",
+  },
 ];
 
 // === Particle System ===
@@ -153,9 +171,10 @@ function initTypingEffect() {
   if (!target) return;
   const phrases = [
     "Your journey from beginner to professional starts here.",
-    "17 roadmaps. 1,700+ free resources. Zero cost.",
+    "20 roadmaps. 2,000+ free resources. Zero cost.",
     "Track your progress. Bookmark topics. Stay focused.",
     "Learn Frontend, Backend, DevOps, AI, Cybersecurity, and more.",
+    "Daily challenges. Skill radar. Interview prep. Project ideas.",
   ];
   let phraseIdx = 0;
   let charIdx = 0;

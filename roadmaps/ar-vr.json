@@ -1,0 +1,280 @@
+{
+  "title": "AR / VR Developer",
+  "icon": "🥽",
+  "description": "Build immersive augmented and virtual reality experiences — from 3D math and game engines to WebXR, spatial computing, hand tracking, and deploying to Meta Quest, Apple Vision Pro, and HoloLens.",
+  "categories": ["fundamentals", "intermediate", "advanced", "tools"],
+  "nodes": [
+    {
+      "id": "arvr-3d-math",
+      "title": "3D Math Fundamentals",
+      "icon": "📐",
+      "category": "fundamentals",
+      "description": "Vectors, matrices, quaternions, transformations, projections, and coordinate systems for 3D space.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "3D Math Primer for Graphics", "url": "https://gamemath.com/", "type": "docs", "free": true },
+        { "title": "Khan Academy — Linear Algebra", "url": "https://www.khanacademy.org/math/linear-algebra", "type": "course", "free": true },
+        { "title": "Essence of Linear Algebra", "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hEabe", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-computer-graphics",
+      "title": "Computer Graphics Basics",
+      "icon": "🎨",
+      "category": "fundamentals",
+      "description": "Rendering pipeline, shaders, lighting models, textures, ray casting vs ray tracing, and the GPU pipeline.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "LearnOpenGL", "url": "https://learnopengl.com/", "type": "tutorial", "free": true },
+        { "title": "Scratchapixel", "url": "https://www.scratchapixel.com/", "type": "docs", "free": true },
+        { "title": "The Book of Shaders", "url": "https://thebookofshaders.com/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-unity-basics",
+      "title": "Unity Engine Fundamentals",
+      "icon": "🎮",
+      "category": "fundamentals",
+      "description": "Unity Editor, GameObjects, Components, scripting with C#, physics, animations, and the asset pipeline.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Unity Learn", "url": "https://learn.unity.com/", "type": "course", "free": true },
+        { "title": "Unity Documentation", "url": "https://docs.unity3d.com/", "type": "docs", "free": true },
+        { "title": "Unity for Beginners (Brackeys)", "url": "https://www.youtube.com/playlist?list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-unreal-basics",
+      "title": "Unreal Engine Fundamentals",
+      "icon": "🎯",
+      "category": "fundamentals",
+      "description": "Unreal Editor, Blueprints, C++ basics, Actors, Levels, Materials, and the Unreal rendering pipeline.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Unreal Online Learning", "url": "https://dev.epicgames.com/community/learning", "type": "course", "free": true },
+        { "title": "Unreal Documentation", "url": "https://docs.unrealengine.com/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-xr-concepts",
+      "title": "XR Concepts (AR/VR/MR)",
+      "icon": "🥽",
+      "category": "fundamentals",
+      "description": "Virtual Reality vs Augmented Reality vs Mixed Reality, spatial computing, presence, immersion, and comfort.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "XR Glossary", "url": "https://developer.oculus.com/design/design-guidelines/", "type": "docs", "free": true },
+        { "title": "Introduction to XR", "url": "https://www.youtube.com/watch?v=awnQGNnLQcQ", "type": "video", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-unity-xr",
+      "title": "Unity XR Development",
+      "icon": "📱",
+      "category": "intermediate",
+      "description": "Unity XR Interaction Toolkit, XR Plug-in Management, input actions, locomotion, and hand tracking.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Unity XR Documentation", "url": "https://docs.unity3d.com/Manual/XR.html", "type": "docs", "free": true },
+        { "title": "XR Interaction Toolkit", "url": "https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@latest", "type": "docs", "free": true },
+        { "title": "Unity XR Tutorial", "url": "https://learn.unity.com/course/introduction-to-xr", "type": "course", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-webxr",
+      "title": "WebXR & Browser-Based XR",
+      "icon": "🌐",
+      "category": "intermediate",
+      "description": "WebXR Device API, A-Frame, Three.js with WebXR, building AR/VR experiences that run in the browser.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "WebXR Documentation", "url": "https://immersiveweb.dev/", "type": "docs", "free": true },
+        { "title": "A-Frame", "url": "https://aframe.io/", "type": "docs", "free": true },
+        { "title": "Three.js WebXR", "url": "https://threejs.org/docs/#manual/en/introduction/How-to-use-WebXR", "type": "tutorial", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-3d-modeling",
+      "title": "3D Modeling & Assets",
+      "icon": "🗿",
+      "category": "intermediate",
+      "description": "Blender for 3D modeling, UV unwrapping, texturing, LOD optimization, and importing assets to game engines.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Blender Beginner Tutorial", "url": "https://www.youtube.com/watch?v=nIoXOplUvAw", "type": "video", "free": true },
+        { "title": "Blender Documentation", "url": "https://docs.blender.org/manual/en/latest/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-interaction-design",
+      "title": "XR Interaction Design",
+      "icon": "✋",
+      "category": "intermediate",
+      "description": "Grabbing, pointing, teleportation, UI in 3D space, gaze-based interaction, and haptic feedback.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Oculus Design Guidelines", "url": "https://developer.oculus.com/design/", "type": "docs", "free": true },
+        { "title": "Apple HIG for visionOS", "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-spatial-audio",
+      "title": "Spatial Audio",
+      "icon": "🔊",
+      "category": "intermediate",
+      "description": "3D audio, binaural rendering, occlusion, reverb, and spatial audio plugins for Unity/Unreal.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Oculus Spatial Audio", "url": "https://developer.oculus.com/documentation/unity/audio-osp-overview/", "type": "docs", "free": true },
+        { "title": "Steam Audio", "url": "https://valvesoftware.github.io/steam-audio/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-ar-foundation",
+      "title": "AR Development (ARCore/ARKit)",
+      "icon": "📸",
+      "category": "intermediate",
+      "description": "Google ARCore, Apple ARKit — plane detection, image tracking, face tracking, and environmental understanding.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Google ARCore", "url": "https://developers.google.com/ar", "type": "docs", "free": true },
+        { "title": "Apple ARKit", "url": "https://developer.apple.com/augmented-reality/", "type": "docs", "free": true },
+        { "title": "Unity AR Foundation", "url": "https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@latest", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-hand-tracking",
+      "title": "Hand & Body Tracking",
+      "icon": "🤚",
+      "category": "advanced",
+      "description": "Hand tracking APIs, gesture recognition, body pose estimation, eye tracking, and natural input.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Oculus Hand Tracking", "url": "https://developer.oculus.com/documentation/unity/move-handtracking/", "type": "docs", "free": true },
+        { "title": "MediaPipe", "url": "https://ai.google.dev/edge/mediapipe", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-passthrough",
+      "title": "Passthrough & Mixed Reality",
+      "icon": "👁️",
+      "category": "advanced",
+      "description": "Camera passthrough, scene understanding, meshing real environments, and blending virtual with physical.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Meta Passthrough API", "url": "https://developer.oculus.com/documentation/unity/unity-passthrough/", "type": "docs", "free": true },
+        { "title": "visionOS RealityKit", "url": "https://developer.apple.com/documentation/realitykit", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-performance",
+      "title": "XR Performance Optimization",
+      "icon": "⚡",
+      "category": "advanced",
+      "description": "Foveated rendering, draw call batching, occlusion culling, texture compression, and maintaining 90fps.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Unity XR Optimization", "url": "https://docs.unity3d.com/Manual/xr-performance.html", "type": "docs", "free": true },
+        { "title": "Oculus Performance Guide", "url": "https://developer.oculus.com/documentation/unity/bp-overview/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-comfort",
+      "title": "XR Comfort & Safety",
+      "icon": "😌",
+      "category": "intermediate",
+      "description": "Motion sickness prevention, comfort modes, vignetting, snap turning, and accessibility in XR.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Oculus Comfort Guide", "url": "https://developer.oculus.com/design/locomotion/", "type": "docs", "free": true },
+        { "title": "XR Accessibility", "url": "https://developer.oculus.com/design/accessibility/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-multiplayer",
+      "title": "Multiplayer & Social XR",
+      "icon": "👥",
+      "category": "advanced",
+      "description": "Networked avatars, voice chat, shared spaces, Photon/Mirror networking, and social VR platforms.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Photon for Unity", "url": "https://doc.photonengine.com/pun/current", "type": "docs", "free": true },
+        { "title": "Mirror Networking", "url": "https://mirror-networking.gitbook.io/", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-visionos",
+      "title": "visionOS & Apple Vision Pro",
+      "icon": "🍎",
+      "category": "advanced",
+      "description": "SwiftUI for visionOS, RealityKit, Reality Composer Pro, immersive spaces, and eye/hand input.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "visionOS Documentation", "url": "https://developer.apple.com/visionos/", "type": "docs", "free": true },
+        { "title": "RealityKit", "url": "https://developer.apple.com/documentation/realitykit", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-computer-vision",
+      "title": "Computer Vision for AR",
+      "icon": "👁️",
+      "category": "advanced",
+      "description": "Object detection, SLAM, depth estimation, image recognition, and ML-powered scene understanding.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "OpenCV Documentation", "url": "https://docs.opencv.org/", "type": "docs", "free": true },
+        { "title": "MediaPipe Solutions", "url": "https://ai.google.dev/edge/mediapipe/solutions", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-avatars",
+      "title": "Avatars & Character Rendering",
+      "icon": "🧑‍💻",
+      "category": "advanced",
+      "description": "Full-body avatars, facial expressions, lip sync, inverse kinematics, and Meta Human.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Meta Avatars SDK", "url": "https://developer.oculus.com/documentation/unity/meta-avatars/", "type": "docs", "free": true },
+        { "title": "MetaHuman Creator", "url": "https://www.unrealengine.com/en-US/metahuman-creator", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-shaders",
+      "title": "Shaders & Visual Effects",
+      "icon": "✨",
+      "category": "advanced",
+      "description": "HLSL/GLSL shaders, Shader Graph, post-processing, particle systems, and XR-specific visual effects.",
+      "difficulty": "Advanced",
+      "resources": [
+        { "title": "Shader Graph Tutorials", "url": "https://docs.unity3d.com/Packages/com.unity.shadergraph@latest", "type": "docs", "free": true },
+        { "title": "Shadertoy", "url": "https://www.shadertoy.com/", "type": "tool", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-deployment",
+      "title": "Deployment & Publishing",
+      "icon": "🚀",
+      "category": "intermediate",
+      "description": "Build for Meta Quest, Pico, SteamVR, App Store, and web distribution — store guidelines and optimization.",
+      "difficulty": "Intermediate",
+      "resources": [
+        { "title": "Meta Quest Publishing", "url": "https://developer.oculus.com/resources/publishing-on-oculus/", "type": "docs", "free": true },
+        { "title": "SteamVR", "url": "https://store.steampowered.com/steamvr", "type": "docs", "free": true }
+      ]
+    },
+    {
+      "id": "arvr-tools",
+      "title": "Essential XR Tools",
+      "icon": "🧰",
+      "category": "tools",
+      "description": "Unity, Unreal Engine, Blender, A-Frame, Three.js, Meta Quest Developer Hub, Reality Composer Pro.",
+      "difficulty": "Beginner",
+      "resources": [
+        { "title": "Unity", "url": "https://unity.com/", "type": "tool", "free": true },
+        { "title": "Unreal Engine", "url": "https://www.unrealengine.com/", "type": "tool", "free": true },
+        { "title": "Blender", "url": "https://www.blender.org/", "type": "tool", "free": true },
+        { "title": "Meta Quest Developer Hub", "url": "https://developer.oculus.com/meta-quest-developer-hub/", "type": "tool", "free": true }
+      ]
+    }
+  ]
+}
