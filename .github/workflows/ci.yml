@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate HTML files
-        uses: Cyb3r-Jakob/html5validator-action@v7.2.0
+        uses: witnick/html5validator-action@v7.2.0
         with:
           root: .
           format: gnu
