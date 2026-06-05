@@ -19,10 +19,32 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/rudra496/devroadmaps?style=social)](https://github.com/rudra496/devroadmaps/stargazers)
 [![Forks](https://img.shields.io/github/forks/rudra496/devroadmaps?style=social)](https://github.com/rudra496/devroadmaps/network/members)
+[![Issues](https://img.shields.io/github/issues/rudra496/devroadmaps)](https://github.com/rudra496/devroadmaps/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/rudra496/devroadmaps)](https://github.com/rudra496/devroadmaps/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/rudra496/devroadmaps)](https://github.com/rudra496/devroadmaps/commits)
+[![Contributors](https://img.shields.io/github/contributors/rudra496/devroadmaps)](https://github.com/rudra496/devroadmaps/graphs/contributors)
+[![Repo Size](https://img.shields.io/github/repo-size/rudra496/devroadmaps)](https://github.com/rudra496/devroadmaps)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 ---
 
 </div>
+
+## Table of Contents
+
+- [Why DevRoadmaps?](#why-devroadmaps)
+- [Features](#features)
+- [Roadmaps](#roadmaps)
+- [Quick Start](#quick-start)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Keyboard Shortcuts](#keyboard-shortcuts)
+- [Contributing](#contributing)
+- [Documentation](#-documentation)
+- [Changelog](#-changelog)
+- [Star History](#star-history)
+- [Connect](#connect)
+- [More Open Source Projects](#more-open-source-projects)
 
 ## Why DevRoadmaps?
 
@@ -164,6 +186,15 @@ devroadmaps/
 | `Enter` | Expand/collapse topic |
 | `Space` | Mark topic as complete |
 | `Esc` | Close palette/modal |
+
+## 📚 Documentation
+
+- [Data Format Guide](docs/DATA_FORMAT.md) — JSON schema for roadmap files
+- [Architecture Overview](docs/README.md) — Module design and data flow
+- [Changelog](CHANGELOG.md) — Version history and release notes
+- [Roadmap](ROADMAP.md) — Planned features and improvements
+- [Support](SUPPORT.md) — Getting help
+- [Security](SECURITY.md) — Reporting vulnerabilities
 
 ## Contributing
 

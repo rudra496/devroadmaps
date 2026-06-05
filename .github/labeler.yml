@@ -1,0 +1,27 @@
+roadmaps:
+  - changed-files:
+      - any-glob-to-any-file: "roadmaps/**"
+
+css:
+  - changed-files:
+      - any-glob-to-any-file: "css/**"
+
+javascript:
+  - changed-files:
+      - any-glob-to-any-file: "js/**"
+
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.md"
+          - "docs/**"
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file: ".github/workflows/**"
+
+html:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "*.html"
+          - "*.htm"

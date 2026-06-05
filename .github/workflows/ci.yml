@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  validate-html:
+    name: Validate HTML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate HTML files
+        uses: Cyb3r-Jakob/html5validator-action@v7.2.0
+        with:
+          root: .
+          format: gnu
+          css: true
+        continue-on-error: true
+
+  validate-json:
+    name: Validate Roadmap JSON
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JSON files
+        run: |
+          for f in roadmaps/*.json; do
+            echo "Validating $f..."
+            python3 -c "import json; json.load(open('$f'))" || exit 1
+          done
+          echo "All JSON files valid!"
+
+  link-check:
+    name: Check Links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --no-progress './**/*.html' './**/*.md'
+          fail: false
+        continue-on-error: true
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint JavaScript
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npx --yes eslint@latest js/ --no-eslintrc --rule '{"no-unused-vars":"warn","no-undef":"error"}' --parser-options=ecmaVersion:2022,sourceType:module
+        continue-on-error: true
