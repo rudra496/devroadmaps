@@ -2,8 +2,8 @@ name: Welcome New Contributors
 on:
   issues:
     types: [opened]
-  pull_request:
-    types: [opened]
+  pull_request_target:
+    types: [opened, reopened]
 jobs:
   welcome:
     runs-on: ubuntu-latest
@@ -11,8 +11,8 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - uses: actions/first-interaction@v1
+      - uses: actions/first-interaction@v3
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: "Welcome! Thanks for opening your first issue. We'll review it soon."
-          pr-message: "Welcome! Thanks for your first PR. A maintainer will review it shortly."
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          issue_message: "Welcome! Thanks for opening your first issue. We'll review it soon."
+          pr_message: "Welcome! Thanks for your first PR. A maintainer will review it shortly."
