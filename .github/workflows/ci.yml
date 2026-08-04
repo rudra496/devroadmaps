@@ -51,7 +51,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Lint JavaScript
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
       - run: npx --yes eslint@latest js/ --no-eslintrc --rule '{"no-unused-vars":"warn","no-undef":"error"}' --parser-options=ecmaVersion:2022,sourceType:module
