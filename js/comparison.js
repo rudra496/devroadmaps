@@ -93,38 +93,88 @@ async function compareRoadmaps() {
             tools: dataB.nodes.filter(n => n.category === 'tools').length,
         };
 
-function escapeHTML(str) {
-    if (str == null) return '';
-    return String(str)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#039;');
-}
+        results.replaceChildren();
 
-        results.innerHTML = `
-            <div class="comparison-table">
-                <div class="comparison-row header">
-                    <div class="comparison-cell">Metric</div>
-                    <div class="comparison-cell">${escapeHTML(statsA.icon)} ${escapeHTML(statsA.title)}</div>
-                    <div class="comparison-cell">${escapeHTML(statsB.icon)} ${escapeHTML(statsB.title)}</div>
-                </div>
-                ${comparisonRow('Total Topics', statsA.nodes, statsB.nodes)}
-                ${comparisonRow('Free Resources', statsA.resources, statsB.resources)}
-                ${comparisonRow('📖 Fundamentals', statsA.fundamentals, statsB.fundamentals)}
-                ${comparisonRow('📘 Intermediate', statsA.intermediate, statsB.intermediate)}
-                ${comparisonRow('📕 Advanced', statsA.advanced, statsB.advanced)}
-                ${comparisonRow('🔧 Tools', statsA.tools, statsB.tools)}
-                ${comparisonRow('Resources/Topic', (statsA.resources / statsA.nodes).toFixed(1), (statsB.resources / statsB.nodes).toFixed(1))}
-            </div>
-            <div class="comparison-actions">
-                <a href="roadmap.html?roadmap=${slugA}" class="btn btn-sm">Open ${statsA.title} →</a>
-                <a href="roadmap.html?roadmap=${slugB}" class="btn btn-sm">Open ${statsB.title} →</a>
-            </div>
-        `;
+        const table = document.createElement('div');
+        table.className = 'comparison-table';
+
+        const headerRow = document.createElement('div');
+        headerRow.className = 'comparison-row header';
+
+        const cellMetric = document.createElement('div');
+        cellMetric.className = 'comparison-cell';
+        cellMetric.textContent = 'Metric';
+
+        const cellA = document.createElement('div');
+        cellA.className = 'comparison-cell';
+        cellA.textContent = `${statsA.icon || ''} ${statsA.title || ''}`;
+
+        const cellB = document.createElement('div');
+        cellB.className = 'comparison-cell';
+        cellB.textContent = `${statsB.icon || ''} ${statsB.title || ''}`;
+
+        headerRow.appendChild(cellMetric);
+        headerRow.appendChild(cellA);
+        headerRow.appendChild(cellB);
+        table.appendChild(headerRow);
+
+        const rowsData = [
+            ['Total Topics', statsA.nodes, statsB.nodes],
+            ['Free Resources', statsA.resources, statsB.resources],
+            ['📖 Fundamentals', statsA.fundamentals, statsB.fundamentals],
+            ['📘 Intermediate', statsA.intermediate, statsB.intermediate],
+            ['📕 Advanced', statsA.advanced, statsB.advanced],
+            ['🔧 Tools', statsA.tools, statsB.tools],
+            ['Resources/Topic', (statsA.resources / statsA.nodes).toFixed(1), (statsB.resources / statsB.nodes).toFixed(1)]
+        ];
+
+        for (const [lbl, vA, vB] of rowsData) {
+            const row = document.createElement('div');
+            row.className = 'comparison-row';
+
+            const cLbl = document.createElement('div');
+            cLbl.className = 'comparison-cell label';
+            cLbl.textContent = lbl;
+
+            const cA = document.createElement('div');
+            cA.className = 'comparison-cell' + (parseFloat(vA) > parseFloat(vB) ? ' winner' : '');
+            cA.textContent = String(vA);
+
+            const cB = document.createElement('div');
+            cB.className = 'comparison-cell' + (parseFloat(vB) > parseFloat(vA) ? ' winner' : '');
+            cB.textContent = String(vB);
+
+            row.appendChild(cLbl);
+            row.appendChild(cA);
+            row.appendChild(cB);
+            table.appendChild(row);
+        }
+
+        const actions = document.createElement('div');
+        actions.className = 'comparison-actions';
+
+        const linkA = document.createElement('a');
+        linkA.href = `roadmap.html?roadmap=${encodeURIComponent(slugA)}`;
+        linkA.className = 'btn btn-sm';
+        linkA.textContent = `Open ${statsA.title || ''} →`;
+
+        const linkB = document.createElement('a');
+        linkB.href = `roadmap.html?roadmap=${encodeURIComponent(slugB)}`;
+        linkB.className = 'btn btn-sm';
+        linkB.textContent = `Open ${statsB.title || ''} →`;
+
+        actions.appendChild(linkA);
+        actions.appendChild(linkB);
+
+        results.appendChild(table);
+        results.appendChild(actions);
     } catch (e) {
-        results.innerHTML = '<p style="text-align:center;color:var(--text-muted);">Error loading roadmaps. Please try again.</p>';
+        results.replaceChildren();
+        const pErr = document.createElement('p');
+        pErr.style.textAlign = 'center';
+        pErr.style.color = 'var(--text-muted)';
+        pErr.textContent = 'Error loading roadmaps. Please try again.';
+        results.appendChild(pErr);
     }
 }
 
