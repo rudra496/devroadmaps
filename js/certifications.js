@@ -106,42 +106,43 @@ const CERTIFICATIONS = [
   }
 ];
 
-const DEVROADMAPS_STUDY_PROGRESS_KEY = 'devroadmaps_study_progress';
+const DEVROADMAPS_STUDY_PROGRESS_KEY = 'devroadmaps_user_study_progress_v3';
 
-function getTrackedCerts() {
+function getStudyProgressData() {
   try {
-    const data = localStorage.getItem(DEVROADMAPS_STUDY_PROGRESS_KEY);
-    return data ? JSON.parse(data) : {};
+    const raw = localStorage.getItem(DEVROADMAPS_STUDY_PROGRESS_KEY);
+    return raw ? JSON.parse(raw) : {};
   } catch {
     return {};
   }
 }
 
-function saveTrackedCerts(data) {
-  localStorage.setItem(DEVROADMAPS_STUDY_PROGRESS_KEY, JSON.stringify(data));
+function saveStudyProgressData(progressMap) {
+  const cleanJson = JSON.stringify(progressMap || {});
+  localStorage.setItem(DEVROADMAPS_STUDY_PROGRESS_KEY, cleanJson);
 }
 
 function startTracking(certId) {
-  const tracked = getTrackedCerts();
+  const tracked = getStudyProgressData();
   if (!tracked[certId]) {
     tracked[certId] = {
       startedAt: new Date().toISOString(),
       completedNodes: [],
       studyHours: 0
     };
-    saveTrackedCerts(tracked);
+    saveStudyProgressData(tracked);
   }
 }
 
 function stopTracking(certId) {
-  const tracked = getTrackedCerts();
+  const tracked = getStudyProgressData();
   delete tracked[certId];
-  saveTrackedCerts(tracked);
+  saveStudyProgressData(tracked);
 }
 
 function getCertProgress(certId) {
   const cert = CERTIFICATIONS.find(c => c.id === certId);
-  const tracked = getTrackedCerts();
+  const tracked = getStudyProgressData();
   if (!cert || !tracked[certId]) return 0;
 
   const totalRequired = cert.requiredNodes.reduce((sum, r) => sum + r.nodeIds.length, 0);
@@ -151,7 +152,7 @@ function getCertProgress(certId) {
 
 function getRemainingHours(certId) {
   const cert = CERTIFICATIONS.find(c => c.id === certId);
-  const tracked = getTrackedCerts();
+  const tracked = getStudyProgressData();
   if (!cert || !tracked[certId]) return cert ? cert.totalStudyHours : 0;
 
   const pct = getCertProgress(certId);
@@ -163,7 +164,7 @@ function renderCertifications(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  const progress = getTrackedCerts();
+  const progress = getStudyProgressData();
 
   const html = `
     <div class="cert-grid">
@@ -207,7 +208,7 @@ function renderCertifications(containerId) {
 }
 
 function toggleCert(certId) {
-  const tracked = getTrackedCerts();
+  const tracked = getStudyProgressData();
   if (tracked[certId]) {
     stopTracking(certId);
   } else {
