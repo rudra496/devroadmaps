@@ -180,13 +180,26 @@ async function renderBookmarkList() {
       if (!node) continue;
       const el = document.createElement('div');
       el.className = 'bookmark-item';
-      el.innerHTML = `
-        <div>
-          <small style="color:var(--text-muted)">${data.icon} ${data.title}</small><br>
-          <strong>${node.icon} ${node.title}</strong>
-        </div>
-        <a href="roadmap.html?roadmap=${slug}" class="btn btn-sm">Open →</a>
-      `;
+      const infoDiv = document.createElement('div');
+      
+      const small = document.createElement('small');
+      small.style.color = 'var(--text-muted)';
+      small.textContent = `${data.icon || ''} ${data.title || ''}`;
+      
+      const strong = document.createElement('strong');
+      strong.textContent = `${node.icon || ''} ${node.title || ''}`;
+      
+      infoDiv.appendChild(small);
+      infoDiv.appendChild(document.createElement('br'));
+      infoDiv.appendChild(strong);
+      
+      const link = document.createElement('a');
+      link.href = `roadmap.html?roadmap=${encodeURIComponent(slug)}`;
+      link.className = 'btn btn-sm';
+      link.textContent = 'Open →';
+      
+      el.appendChild(infoDiv);
+      el.appendChild(link);
       list.appendChild(el);
     } catch (e) {}
   }

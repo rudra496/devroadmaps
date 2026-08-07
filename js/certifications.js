@@ -106,11 +106,11 @@ const CERTIFICATIONS = [
   }
 ];
 
-const CERT_STORAGE_KEY = 'devroadmaps_certifications';
+const DEVROADMAPS_STUDY_PROGRESS_KEY = 'devroadmaps_study_progress';
 
 function getTrackedCerts() {
   try {
-    const data = localStorage.getItem(CERT_STORAGE_KEY);
+    const data = localStorage.getItem(DEVROADMAPS_STUDY_PROGRESS_KEY);
     return data ? JSON.parse(data) : {};
   } catch {
     return {};
@@ -118,7 +118,7 @@ function getTrackedCerts() {
 }
 
 function saveTrackedCerts(data) {
-  localStorage.setItem(CERT_STORAGE_KEY, JSON.stringify(data));
+  localStorage.setItem(DEVROADMAPS_STUDY_PROGRESS_KEY, JSON.stringify(data));
 }
 
 function startTracking(certId) {

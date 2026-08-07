@@ -125,6 +125,16 @@ function printChecklist(nodes, completed) {
     w.print();
 }
 
+function escapeHTML(str) {
+    if (str == null) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
+
 function printBookmarksSummary(bookmarks) {
     const w = window.open('', '_blank');
     let html = `<html><head><title>Bookmarks Summary</title>
@@ -136,7 +146,7 @@ function printBookmarksSummary(bookmarks) {
     </style></head><body>`;
     html += `<h1>📌 DevRoadmaps Bookmarks</h1><p>${bookmarks.length} bookmarked topics</p>`;
     bookmarks.forEach(b => {
-        html += `<div class="bookmark"><h3>${b.icon} ${b.title}</h3><p>Roadmap: ${b.roadmap}</p></div>`;
+        html += `<div class="bookmark"><h3>${escapeHTML(b.icon)} ${escapeHTML(b.title)}</h3><p>Roadmap: ${escapeHTML(b.roadmap)}</p></div>`;
     });
     html += `</body></html>`;
     w.document.write(html);

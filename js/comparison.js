@@ -93,12 +93,22 @@ async function compareRoadmaps() {
             tools: dataB.nodes.filter(n => n.category === 'tools').length,
         };
 
+function escapeHTML(str) {
+    if (str == null) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
+
         results.innerHTML = `
             <div class="comparison-table">
                 <div class="comparison-row header">
                     <div class="comparison-cell">Metric</div>
-                    <div class="comparison-cell">${statsA.icon} ${statsA.title}</div>
-                    <div class="comparison-cell">${statsB.icon} ${statsB.title}</div>
+                    <div class="comparison-cell">${escapeHTML(statsA.icon)} ${escapeHTML(statsA.title)}</div>
+                    <div class="comparison-cell">${escapeHTML(statsB.icon)} ${escapeHTML(statsB.title)}</div>
                 </div>
                 ${comparisonRow('Total Topics', statsA.nodes, statsB.nodes)}
                 ${comparisonRow('Free Resources', statsA.resources, statsB.resources)}
