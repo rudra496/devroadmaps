@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use DevRoadmaps or reference its educational curriculum engineering structures, please cite it as below."
+title: "DevRoadmaps: Open-Source Interactive Curriculum Platform and Pedagogical Career Navigation Architecture"
+authors:
+  - family-names: "Sarker"
+    given-names: "Rudra"
+    affiliation: "Shahjalal University of Science and Technology, Bangladesh"
+    orcid: "https://orcid.org/0009-0001-4545-0932"
+abstract: "DevRoadmaps is an open-source pedagogical software platform and progressive web application providing interactive computer science curricula, structured competency pathways across 20 technical domains, 870+ topic graphs, and offline-accessible educational resources aligned with UN SDG 4 (Quality Education)."
+version: "2.0.0"
+date-released: "2026-08-26"
+license: "MIT"
+repository-code: "https://github.com/rudra496/devroadmaps"
+url: "https://rudra496.github.io/devroadmaps"
+keywords:
+  - "computer-science-education"
+  - "curriculum-engineering"
+  - "pedagogy"
+  - "progressive-web-app"
+  - "career-pathways"
+  - "sdg4"
+  - "open-source"
