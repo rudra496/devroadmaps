@@ -17,6 +17,7 @@
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live-rudra496.github.io/devroadmaps-brightgreen)](https://rudra496.github.io/devroadmaps)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22118838.svg)](https://doi.org/10.5281/zenodo.22118838)
 [![Stars](https://img.shields.io/github/stars/rudra496/devroadmaps?style=social)](https://github.com/rudra496/devroadmaps/stargazers)
 [![Forks](https://img.shields.io/github/forks/rudra496/devroadmaps?style=social)](https://github.com/rudra496/devroadmaps/network/members)
 [![Issues](https://img.shields.io/github/issues/rudra496/devroadmaps)](https://github.com/rudra496/devroadmaps/issues)
